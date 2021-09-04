@@ -1,8 +1,8 @@
-## Olá!
-
-Entusiasta por tecnologia, autodidata e curiosa.
-<br>
-Estudando desenvolvimento de software Back-end.
+- 👋 Hi, I’m @heviane
+- 👀 I’m interested in learning
+- 🌱 I’m currently learning Java and JavaScript
+- 💞️ I’m looking to collaborate on projects
+- 📫 How to reach me: heviane@gmail.com
 
 <a href="https://www.linkedin.com/in/heviane-bastos-37b9b91b/" target="_blank">
   <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></img></a>
