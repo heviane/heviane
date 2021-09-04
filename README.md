@@ -6,7 +6,7 @@ Estudando desenvolvimento de software Back-end.
 
 <a href="https://www.linkedin.com/in/heviane-bastos-37b9b91b/" target="_blank">
   <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></img></a>
-<a href ="mailto: heviane@gmail.com">
+<a href ="mailto:heviane@gmail.com">
   <img src="https://img.shields.io/badge/Gmail-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white"></img></a>
 
 <div>
