@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @heviane
 - 👀 I’m interested in learning
-- 🌱 I’m currently learning Java and JavaScript
+- 🌱 I’m currently learning JavaScript
 - 💞️ I’m looking to collaborate on projects
 - 📫 How to reach me: heviane@gmail.com
 
