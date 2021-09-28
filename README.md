@@ -15,5 +15,4 @@
   <p align="left"><br>
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="javascript"  width="40" height="40">
   </p>
-  
 ##
