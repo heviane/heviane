@@ -11,6 +11,3 @@
     <img height="165em" src="https://github-readme-stats.vercel.app/api?username=heviane&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
     <img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=heviane&layout=compact&langs_count=16&theme=algolia"/>
   <div>
-  <p align="left"><br>
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="javascript"  width="40" height="40">
-  </p>
