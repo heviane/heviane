@@ -7,11 +7,8 @@
 <div style="display: inline_block">
   <a href="https://www.linkedin.com/in/heviane-bastos/" target="_blank"><img height="20" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="mailto:heviane@gmail.com"><img height="20" src="https://img.shields.io/badge/-heviane@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white"></a>
+  <a href="mailto:heviane@gmail.com"><img height="20" src="https://img.shields.io/github/followers/heviane?label=follow&style=social"></a>
 </div>
-
-[![Gmail: heviane@gmail.com](https://img.shields.io/twitter/url?label=email&logo=gmail&style=social&url=http%3A%2F%2Fmailto%3Aheviane7%40gmail.com)](mailto:heviane@gmail.com)
-[![Linkedin: heviane-bastos](https://img.shields.io/badge/-heviane-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/heviane-bastos/)](https://www.linkedin.com/in/heviane-bastos/)
-[![GitHub: heviane](https://img.shields.io/github/followers/heviane?label=follow&style=social)](https://github.com/heviane)
 
 <div>
 <img height="165em" src="https://github-readme-stats.vercel.app/api?username=heviane&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
