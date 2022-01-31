@@ -1,8 +1,6 @@
 - 👋 Hi, I’m @heviane
 - 👀 I’m interested in learning
 - 🌱 I’m currently learning JavaScript
-- 💞️ I’m looking to collaborate on projects
-- 📫 How to reach me: heviane@gmail.com
     
 <div style="display: inline_block">
   <a href="https://www.linkedin.com/in/heviane-bastos/" target="_blank"><img height="20" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
