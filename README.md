@@ -27,5 +27,3 @@
 	<img align="center" alt="MySQL" height="30" width="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png">
 	<img align="center" alt="MongoDB" height="30" width="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png">
 </div>
-
-<img align="center" alt="Rainbow-Cat" height="130" width="130" src="https://i0.wp.com/gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2021/02/nyan-cat-1.gif?fit=706%2C610&ssl=1">
