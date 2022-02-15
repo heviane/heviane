@@ -1,10 +1,13 @@
+# Heviane Bastos - Software Developer
+
 - 👋 Hi, I’m @heviane
 - 👀 I’m interested in learning
     
 <div style="display: inline_block">
   <a href="https://www.linkedin.com/in/heviane-bastos/" target="_blank"><img height="20" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="mailto:heviane@gmail.com"><img height="20" src="https://img.shields.io/badge/-heviane@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white"></a>
-  <a href="mailto:heviane@gmail.com"><img height="20" src="https://img.shields.io/github/followers/heviane?label=follow&style=social"></a>
+  <a href="mailto:heviane@gmail.com"><img height="20" src="https://img.shields.io/github/followers/heviane?label=follow&style=social">
+  </a>
 </div>
 
 <div>
