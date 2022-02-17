@@ -2,6 +2,8 @@
 
 - 👋 Hi, I’m @heviane
 - 👀 I’m interested in learning
+- [Github Pages](https://heviane.github.io)
+- [Portfólio](https://heviane.github.io/heviane)
     
 <div style="display: inline_block">
   <a href="https://www.linkedin.com/in/heviane-bastos/" target="_blank"><img height="20" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
