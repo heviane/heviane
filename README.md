@@ -3,7 +3,7 @@
 👀 Desenvolvedora de software com 9 anos de experiência com Genexus e SQL Server.<br>
 Atualmente em fase de transição de carreira, estudando com foco em **Javascript** e as principais ferramentas de mercado relacionadas: **Node**, **React** e **React-Native**.
 
-**Portfolio**: [https://heviane.github.io/heviane](https://heviane.github.io/heviane)
+**Portfolio**: [https://heviane.github.io](https://heviane.github.io)
     
 <div style="display: inline_block">
   <a href="https://www.linkedin.com/in/heviane-bastos/" target="_blank"><img height="20" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
