@@ -1,6 +1,4 @@
-![heviane](https://komarev.com/ghpvc/?username=heviane)
-
-# Hi, <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> I’m Heviane Bastos 👩‍🎓
+# Hi, I’m Heviane Bastos 👩‍🎓
 
 I'm learning at the moment **javascript** e **node**.
 
@@ -34,4 +32,4 @@ I'm learning at the moment **javascript** e **node**.
 ![Github Stats](https://github-readme-stats.vercel.app/api?username=heviane&show_icons=true&theme=algolia&include_all_commits=true&count_private=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=heviane&layout=compact&langs_count=16&theme=algolia)
 
-![Snake animation](https://github.com/heviane/heviane/blob/output/github-contribution-grid-snake.svg)
+![heviane](https://komarev.com/ghpvc/?username=heviane)
