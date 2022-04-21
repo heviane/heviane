@@ -1,40 +1,37 @@
-# Hi, I’m Heviane Bastos 👩‍🎓
+# Hi, <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> I’m Heviane Bastos 👩‍🎓
 
-👀 Desenvolvedora de software atualmente focada em **javascript** e **node**.
+![heviane](https://komarev.com/ghpvc/?username=heviane)
 
-**Portfolio**: [https://heviane.github.io](https://heviane.github.io)
-    
-<div style="display: inline_block">
-  <a href="https://www.linkedin.com/in/heviane-bastos/" target="_blank"><img height="20" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-  <a href="mailto:heviane@gmail.com"><img height="20" src="https://img.shields.io/badge/-heviane@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white"></a>
-</div>
+I'm learning at the moment **javascript** e **node**.
 
-<div>
-<img height="165em" src="https://github-readme-stats.vercel.app/api?username=heviane&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
-<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=heviane&layout=compact&langs_count=16&theme=algolia"/>
-<div>
-   
-## Skills
+[![Linkedin Badge](https://img.shields.io/badge/-heviane-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/heviane-bastos)](https://www.linkedin.com/in/heviane-bastos)
+[![Instagram Badge](https://img.shields.io/badge/-byheviane-purple?style=flat-square&logo=instagram&logoColor=white&link=https://www.instagram.com/byheviane)](https://www.instagram.com/byheviane)
+[![Medium Badge](https://img.shields.io/badge/-@heviane-03a57a?style=flat-square&labelColor=000000&logo=Medium&link=https://medium.com/@heviane)](https://medium.com/@heviane)
+[![Gmail Badge](https://img.shields.io/badge/-heviane@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:heviane@gmail.com)](mailto:heviane@gmail.com)
 
-<div style="display: inline_block">
-	<img align="center" alt="HTML5" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-	<img align="center" alt="CSS3" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-	<img align="center" alt="JavaScript" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-	<img align="center" alt="TypeScript" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
-	<img align="center" alt="Node" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
-	<img align="center" alt="React" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-	<img align="center" alt="SQL" height="30" width="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png">
-	<img align="center" alt="MongoDB" height="30" width="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png">
-</div>
-<br>
+## 💻 Technologies
 
-## Tools
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
+![Bootstrap](https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=bootstrap)
+![React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react)
+![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
+![Nodejs](https://img.shields.io/badge/-Nodejs-black?style=flat-square&logo=Node.js)
+![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript)
 
-<div style="display: inline_block">
-	<img align="center" alt="Visual Studio Code" height="30" width="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png">
-	<img align="center" alt="Git" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
-	<img align="center" alt="GitHub" height="30" width="30" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png">
-</div>
-<br>
+![MySQL](https://img.shields.io/badge/-MySQL-black?style=flat-square&logo=mysql)
+![MongoDB](https://img.shields.io/badge/-MongoDB-black?style=flat-square&logo=mongodb)
+
+## 🚀 Tools
+
+![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
+![Docker](https://img.shields.io/badge/-Docker-black?style=flat-square&logo=docker)
+![Heroku](https://img.shields.io/badge/-Heroku-430098?style=flat-square&logo=heroku)
+
+## ⚡ GitHub Stats
+
+![Github Stats](https://github-readme-stats.vercel.app/api?username=heviane&show_icons=true&theme=algolia&include_all_commits=true&count_private=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=heviane&layout=compact&langs_count=16&theme=algolia)
 
 ![Snake animation](https://github.com/heviane/heviane/blob/output/github-contribution-grid-snake.svg)
