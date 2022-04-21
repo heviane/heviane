@@ -1,6 +1,6 @@
-# Hi, <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> I’m Heviane Bastos 👩‍🎓
-
 ![heviane](https://komarev.com/ghpvc/?username=heviane)
+
+# Hi, <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> I’m Heviane Bastos 👩‍🎓
 
 I'm learning at the moment **javascript** e **node**.
 
