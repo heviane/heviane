@@ -1,7 +1,6 @@
-# Hi, I’m Heviane Bastos 👋
+# Hi, I’m Heviane Bastos 👩‍🎓
 
-👀 Desenvolvedora de software com 9 anos de experiência com Genexus e SQL Server.<br>
-Atualmente em fase de transição de carreira, estudando com foco em **Javascript** e as principais ferramentas de mercado relacionadas: **Node**, **React** e **React-Native**.
+👀 Desenvolvedora de software atualmente focada em **javascript** e **node**.
 
 **Portfolio**: [https://heviane.github.io](https://heviane.github.io)
     
@@ -15,7 +14,7 @@ Atualmente em fase de transição de carreira, estudando com foco em **Javascrip
 <img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=heviane&layout=compact&langs_count=16&theme=algolia"/>
 <div>
    
-## Skills:
+## Skills
 
 <div style="display: inline_block">
 	<img align="center" alt="HTML5" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
@@ -29,7 +28,7 @@ Atualmente em fase de transição de carreira, estudando com foco em **Javascrip
 </div>
 <br>
 
-## Tools:
+## Tools
 
 <div style="display: inline_block">
 	<img align="center" alt="Visual Studio Code" height="30" width="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png">
