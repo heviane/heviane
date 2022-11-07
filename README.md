@@ -1,7 +1,5 @@
 # Hi, I’m Heviane Bastos 👩‍🎓
 
-I'm working at the moment [javascript](https://www.javascript.com) e [node](https://nodejs.org)
-
 [![Linkedin Badge](https://img.shields.io/badge/-heviane-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/heviane-bastos)](https://www.linkedin.com/in/heviane-bastos)
 [![Instagram Badge](https://img.shields.io/badge/-byheviane-purple?style=flat-square&logo=instagram&logoColor=white&link=https://www.instagram.com/byheviane)](https://www.instagram.com/byheviane)
 [![Medium Badge](https://img.shields.io/badge/-@heviane-03a57a?style=flat-square&labelColor=000000&logo=Medium&link=https://medium.com/@heviane)](https://medium.com/@heviane)
