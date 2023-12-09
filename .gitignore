@@ -1,0 +1,5 @@
+# Ignore all files in the "backup" directory
+backup/*
+
+# Ignore the "NOTES.md" file at the root of the repository
+NOTES.md

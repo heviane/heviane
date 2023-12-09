@@ -1,34 +1,31 @@
-# Hi, I’m Heviane Bastos 👩‍🎓
+<h1 align="center">
+  Hello World, I'm Heviane Bastos 👋
+</h1>
 
-I'm working at the moment [javascript](https://www.javascript.com) e [node](https://nodejs.org)
+Olá!
 
-[![Linkedin Badge](https://img.shields.io/badge/-heviane-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/heviane-bastos)](https://www.linkedin.com/in/heviane-bastos)
-[![Instagram Badge](https://img.shields.io/badge/-byheviane-purple?style=flat-square&logo=instagram&logoColor=white&link=https://www.instagram.com/byheviane)](https://www.instagram.com/byheviane)
-[![Medium Badge](https://img.shields.io/badge/-@heviane-03a57a?style=flat-square&labelColor=000000&logo=Medium&link=https://medium.com/@heviane)](https://medium.com/@heviane)
+Eu sou desenvolvedora Genexus, e estudante na área de desenvolvimento de software. 👩‍🎓
+
+[![Linkedin Badge](https://img.shields.io/badge/-heviane-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/heviane-bastos)](https://www.linkedin.com/in/heviane-bastos)&nbsp;
 [![Gmail Badge](https://img.shields.io/badge/-heviane@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:heviane@gmail.com)](mailto:heviane@gmail.com)
 
 ## 💻 Technologies
 
-![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
-![Bootstrap](https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=bootstrap)
-![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
-![Nodejs](https://img.shields.io/badge/-Nodejs-black?style=flat-square&logo=Node.js)
-![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react)
+![Genexus](https://img.shields.io/badge/-Genexus-black?style=flat-square&logo=Genexus&logoColor=white)&nbsp;
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)&nbsp;
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)&nbsp;
+![SQL Server](https://img.shields.io/badge/-SQLServer-black?style=flat-square&logo=sqlserver)&nbsp;
 
-![MySQL](https://img.shields.io/badge/-MySQL-black?style=flat-square&logo=mysql)
-![MongoDB](https://img.shields.io/badge/-MongoDB-black?style=flat-square&logo=mongodb)
+## Technologies I'm studying 🚀
 
-## 🚀 Tools
-
-![Ubuntu](https://img.shields.io/badge/Ubuntu-E95410?style=flat-square&logo=ubuntu&logoColor=white)
-[![Visual Studio](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)](https://visualstudio.microsoft.com)
-![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat-square&logo=markdown&logoColor=white)
-![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
-![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
-![Docker](https://img.shields.io/badge/-Docker-black?style=flat-square&logo=docker)
-![Heroku](https://img.shields.io/badge/-Heroku-430098?style=flat-square&logo=heroku)
+![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)&nbsp;
+![Nodejs](https://img.shields.io/badge/-Nodejs-black?style=flat-square&logo=Node.js)&nbsp;
+![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)&nbsp;
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95410?style=flat-square&logo=ubuntu&logoColor=white)&nbsp;
+![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)&nbsp;
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)&nbsp;
+![Docker](https://img.shields.io/badge/-Docker-black?style=flat-square&logo=docker)&nbsp;
+![NoSQL](https://img.shields.io/badge/-NoSQL-black?style=flat-square&logo=nosql)&nbsp;
 
 ## ⚡ GitHub Stats
 
