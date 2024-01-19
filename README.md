@@ -2,30 +2,36 @@
   Hello World, I'm Heviane Bastos 👋
 </h1>
 
-Olá, sou desenvolvedora de software com experência em Genexus.
+## 🧑‍💻 About Me
+
+Sou estudante do curso de Análise e Desenvolvimento de Sistemas na Unisinos. Possuo formação técnica em informática na QI - Faculdade e Escola Técnica. Fui desenvolvedora GeneXus por mais de 9 anos, onde trabalhei na maioria das vezes com sistemas corporativos em ambiente web e win, integração via webservices no padrão SOAP e automatização de rotinas. Atualmente estou em fase de transição de carreira, migrando da tecnologia GeneXus para as tecnologias Javascript (Node, React).
 
 [![Linkedin Badge](https://img.shields.io/badge/-heviane-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/heviane-bastos)](https://www.linkedin.com/in/heviane-bastos)&nbsp;
 [![Gmail Badge](https://img.shields.io/badge/-heviane@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:heviane@gmail.com)](mailto:heviane@gmail.com)
 
 ## 🛠 &nbsp;Tech Stack
 
-### 👩‍💻 &nbsp;Back-End
+### 💻 &nbsp;Back-End
 
 ![Genexus](https://img.shields.io/badge/-Genexus-E7ECEB?style=for-the-badge&logo=genexus&logoColor=1572B6)&nbsp;
 ![Node.js](https://img.shields.io/badge/Node.js-E7ECEB?style=for-the-badge&logo=node.js&logoColor=53D9A2)&nbsp;
+<!-- Study more
 ![TypeScript](https://img.shields.io/badge/TypeScript-E7ECEB?style=for-the-badge&logo=typescript&logoColor=1572B6)&nbsp;
+ -->
 
-## 🎨 &nbsp;Front-end
+### 🎨 &nbsp;Front-end
 
 ![HTML](https://img.shields.io/badge/-HTML-E7ECEB?style=for-the-badge&logo=HTML5&logoColor=C86833)&nbsp;
 ![CSS](https://img.shields.io/badge/-CSS-E7ECEB?style=for-the-badge&logo=CSS3&logoColor=139DFF)&nbsp;
 ![JavaScript](https://img.shields.io/badge/-JavaScript-E7ECEB?style=for-the-badge&logo=javascript&logoColor=1572B6)&nbsp;
 
-### ⚡ &nbsp;Database
+### 📂&nbsp;Database
 
 ![SqlServer](https://img.shields.io/badge/-Microsoft%20SQL%20Server-E7ECEB?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=FDFD62)&nbsp;
 ![MySQL](https://img.shields.io/badge/-MySQL-E7ECEB?style=for-the-badge&logo=mysql&logoColor=004D8F)&nbsp;
+<!-- Study more
 ![MongoDB](https://img.shields.io/badge/-MongoDB-E7ECEB?style=for-the-badge&logo=mongodb&logoColor=C86833)&nbsp;
+-->
 
 ## ⚡ GitHub Stats 🚀
 
