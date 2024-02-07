@@ -3,7 +3,7 @@
 </h1>
 
 <!-- ## 🧑‍💻 About Me ✨ -->
-<h4 align="center">
+<h3 align="center">
 Sou uma entusiasta do desenvolvimento de software! 🤓 <br>
 <a href="https://www.linkedin.com/in/heviane-bastos"><img src="https://img.shields.io/badge/-heviane-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/heviane-bastos" alt="Linkedin" /></a>
 &nbsp;
@@ -12,7 +12,7 @@ Sou uma entusiasta do desenvolvimento de software! 🤓 <br>
 <a href="https://www.dio.me/users/byHeviane"><img src="https://img.shields.io/badge/-DIO.me-purple?style=flat-square&logo=dio.me&logoColor=white&link=https://www.dio.me/users/byHeviane" alt="DIO.me" /></a>
 &nbsp;
 <a href="mailto:heviane@gmail.com"><img src="https://img.shields.io/badge/-heviane@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:heviane@gmail.com" alt="Gmail" /></a>
-</h4>
+</h3>
 
 <!-- [![Linkedin Badge](https://img.shields.io/badge/-heviane-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/heviane-bastos)](https://www.linkedin.com/in/heviane-bastos)&nbsp;
 [![Gmail Badge](https://img.shields.io/badge/-heviane@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:heviane@gmail.com)](mailto:heviane@gmail.com) -->
