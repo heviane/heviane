@@ -2,9 +2,9 @@
   Hello World, I'm Heviane Bastos 👋
 </h1>
 
-## 🧑‍💻 About Me
+<!-- ## 🧑‍💻 About Me ✨ -->
 
-Sou estudante do curso de Análise e Desenvolvimento de Sistemas na Unisinos. Possuo formação técnica em informática na QI - Faculdade e Escola Técnica. Fui desenvolvedora GeneXus por mais de 9 anos, onde trabalhei na maioria das vezes com sistemas corporativos em ambiente web e win, integração via webservices no padrão SOAP e automatização de rotinas. Atualmente estou em fase de transição de carreira, migrando da tecnologia GeneXus para as tecnologias Javascript (Node, React).
+Sou uma entusiasta do desenvolvimento de software, e estou constantemente aprimorando minhas habilidades!
 
 [![Linkedin Badge](https://img.shields.io/badge/-heviane-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/heviane-bastos)](https://www.linkedin.com/in/heviane-bastos)&nbsp;
 [![Gmail Badge](https://img.shields.io/badge/-heviane@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:heviane@gmail.com)](mailto:heviane@gmail.com)
@@ -31,6 +31,21 @@ Sou estudante do curso de Análise e Desenvolvimento de Sistemas na Unisinos. Po
 ![MySQL](https://img.shields.io/badge/-MySQL-E7ECEB?style=for-the-badge&logo=mysql&logoColor=004D8F)&nbsp;
 <!-- Study more
 ![MongoDB](https://img.shields.io/badge/-MongoDB-E7ECEB?style=for-the-badge&logo=mongodb&logoColor=C86833)&nbsp;
+-->
+
+<!-- 
+🔬 Highlighted Projects:
+
+[Project Name 1] - Uncover the secrets of [brief description].
+[Project Name 2] - Dive into the world of [brief description].
+
+📚 Resources:
+
+Explore the documentation for detailed insights into each project. Contributions and feedback are always welcome. 👍
+
+Ready to embark on a journey of discovery? Clone, fork, and join the quest for knowledge! 💻 
+
+*** pin relevant projects ***
 -->
 
 ## ⚡ GitHub Stats 🚀
