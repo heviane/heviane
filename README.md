@@ -4,7 +4,7 @@
 
 <!-- ## 🧑‍💻 About Me ✨ -->
 <h3 align="center">
-Sou uma entusiasta do desenvolvimento de software! 🤓 </br>
+Sou uma entusiasta do desenvolvimento de software! 🤓 </br></br>
 <a href="https://www.linkedin.com/in/heviane-bastos"><img src="https://img.shields.io/badge/-heviane-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/heviane-bastos" alt="Linkedin" /></a>
 &nbsp;
 <a href="https://medium.com/@heviane"><img src="https://img.shields.io/badge/-medium.com/@heviane-darkgreen?style=flat-square&logo=medium&logoColor=white&link=https://medium.com/@heviane" alt="Medium.com/@heviane" /></a>
