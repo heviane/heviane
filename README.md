@@ -4,13 +4,10 @@
 
 <!-- ## 🧑‍💻 About Me ✨ -->
 <h3 align="center">
-Sou uma entusiasta do desenvolvimento de software! 🤓 </br></br>
+🎯 Sou uma entusiasta do desenvolvimento de software! 🤓 </br>
 <a href="https://www.linkedin.com/in/heviane-bastos"><img src="https://img.shields.io/badge/-heviane-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/heviane-bastos" alt="Linkedin" /></a>
-&nbsp;
-<a href="https://medium.com/@heviane"><img src="https://img.shields.io/badge/-medium.com/@heviane-darkgreen?style=flat-square&logo=medium&logoColor=white&link=https://medium.com/@heviane" alt="Medium.com/@heviane" /></a>
-&nbsp;
+<a href="https://medium.com/@heviane"><img src="https://img.shields.io/badge/-@heviane-darkgreen?style=flat-square&logo=medium&logoColor=white&link=https://medium.com/@heviane" alt="Medium.com/@heviane" /></a>
 <a href="https://www.dio.me/users/byHeviane"><img src="https://img.shields.io/badge/-DIO.me-purple?style=flat-square&logo=dio.me&logoColor=white&link=https://www.dio.me/users/byHeviane" alt="DIO.me" /></a>
-&nbsp;
 <a href="mailto:heviane@gmail.com"><img src="https://img.shields.io/badge/-heviane@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:heviane@gmail.com" alt="Gmail" /></a>
 </h3>
 
