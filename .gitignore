@@ -2,4 +2,4 @@
 backup/*
 
 # Ignore the "NOTES.md" file at the root of the repository
-NOTES.md
+notes.md
