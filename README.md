@@ -1,6 +1,4 @@
-<h1>Hello World! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="40px"></h1> 
-
-## I'm Heviane and I'm a software developer 🤓 
+# Heviane Bastos - Software Developer <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="40px">
 
 <!--
   <a href="https://git.io/typing-svg">
@@ -8,11 +6,10 @@
   </a>
 -->
 
-<h3 align="center">
+
 <a href="https://www.linkedin.com/in/heviane-bastos"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" height="25" alt="Linkedin" /></a>
 <a href="https://www.dio.me/users/byheviane"><img src="https://img.shields.io/badge/-DIO.me-purple?style=flat-square&logo=dio.me&logoColor=white&link=https://www.dio.me/users/byheviane" height="25" alt="DIO.me" /></a>
 <a href="mailto:heviane@gmail.com"><img src="https://img.shields.io/badge/-heviane@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:heviane@gmail.com" height="25" alt="Gmail" /></a>
-</h3>
 
 ## A little of what I know and am studying to know 📚 
 
@@ -58,12 +55,10 @@
 
 </br>
 
-<!--
 ## GitHub Stats 🚀
 
 ![Github Stats](https://github-readme-stats.vercel.app/api?username=heviane&show_icons=true&theme=algolia&include_all_commits=true&count_private=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=heviane&layout=compact&langs_count=16&theme=algolia)
--->
 
 ## GitHub Stats 🚀
 
@@ -73,6 +68,8 @@
     <img width="41%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=heviane&layout=compact&title_color=80F7D4&text_color=fff&bg_color=0d1117&border_color=fff0" />
   </div>
 </div>
+
+<img src="./.github/assets/lineBar.png" width="100%" height="8px"/>
 
 ## 
 
