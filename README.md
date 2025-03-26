@@ -57,8 +57,16 @@
 
 ## GitHub Stats 🚀
 
+<!--
 ![Github Stats](https://github-readme-stats.vercel.app/api?username=heviane&show_icons=true&theme=algolia&include_all_commits=true&count_private=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=heviane&layout=compact&langs_count=16&theme=algolia)
+-->
+
+<div align="center"> 
+    <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=heviane&show_icons=true&count_private=true&theme=algolia&include_all_commits=true" /> 
+    <img width="41%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=heviane&layout=compact&langs_count=16&theme=algolia" />
+</div>
+
 
 ## GitHub Stats 🚀
 
