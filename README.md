@@ -9,7 +9,9 @@
 <a href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=heviane-bastos">
 <img src="https://img.shields.io/badge/Follow%20Me%20on%20LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&hide_border=true" alt="LinkedIn Follow Button" width="130" height="25" />
 </a>
+<!--
 <a href="https://www.linkedin.com/in/heviane-bastos"><img src="https://img.shields.io/badge/My LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" height="25" alt="Linkedin" /></a>
+-->
 <a href="https://www.dio.me/users/byheviane"><img src="https://img.shields.io/badge/-DIO.me-purple?style=flat-square&logo=dio.me&logoColor=white&link=https://www.dio.me/users/byheviane" height="25" alt="DIO.me" /></a>
 <a href="mailto:heviane@gmail.com"><img src="https://img.shields.io/badge/-heviane@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:heviane@gmail.com" height="25" alt="Gmail" /></a>
 
