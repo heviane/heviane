@@ -15,7 +15,7 @@
 ## A little of what I know and am studying to know 📚 
 
   <div>
-    <img src="./.github/assets/icons/icon-genexus.png" height="25" alt="Genexus logo"/>
+    <img src="https://github.com/heviane/images/blob/main/icon-genexus.png" height="25" alt="Genexus logo"/>
     <!-- LINUX -->
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="25" alt="Linux logo"  />
     <!-- UBUNTU -->
