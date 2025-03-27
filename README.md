@@ -9,20 +9,17 @@
 <a href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=heviane-bastos">
 <img src="https://img.shields.io/badge/Follow%20Me%20on%20LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&hide_border=true" alt="LinkedIn Follow Button" width="130" height="25" />
 </a>
-<!--
-<a href="https://www.linkedin.com/in/heviane-bastos"><img src="https://img.shields.io/badge/My LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" height="25" alt="Linkedin" /></a>
--->
 <a href="https://www.dio.me/users/byheviane"><img src="https://img.shields.io/badge/-DIO.me-purple?style=flat-square&logo=dio.me&logoColor=white&link=https://www.dio.me/users/byheviane" height="25" alt="DIO.me" /></a>
 <a href="mailto:heviane@gmail.com"><img src="https://img.shields.io/badge/-heviane@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:heviane@gmail.com" height="25" alt="Gmail" /></a>
 
 ## A little of what I know and am studying to know 📚 
 
   <div>
-    <img src="https://github.com/heviane/images/blob/main/icon-genexus.png" height="25" alt="linux logo" />
+    <img src="./.github/assets/icons/icon-genexus.png" height="25" alt="Genexus logo"/>
     <!-- LINUX -->
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="25" alt="linux logo"  />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="25" alt="Linux logo"  />
     <!-- UBUNTU -->
-    <img src="https://cdn.simpleicons.org/ubuntu/E95420" height="25" alt="ubuntu logo"  />
+    <img src="https://cdn.simpleicons.org/ubuntu/E95420" height="25" alt="Ubuntu logo"  />
     <!-- VSCODE -->
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="25" alt="vscode logo"  />
     <!-- GIT -->
@@ -57,20 +54,12 @@
     <img src="https://cdn.simpleicons.org/android/3DDC84" height="25" alt="android logo"  />
   </div>
 
-</br>
-
 ## GitHub Stats 🚀
-
-<!--
-![Github Stats](https://github-readme-stats.vercel.app/api?username=heviane&show_icons=true&theme=algolia&include_all_commits=true&count_private=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=heviane&layout=compact&langs_count=16&theme=algolia)
--->
 
 <div align="center"> 
     <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=heviane&show_icons=true&count_private=true&theme=algolia&include_all_commits=true" /> 
     <img width="41%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=heviane&layout=compact&langs_count=16&theme=algolia" />
 </div>
-
 
 ## GitHub Stats 🚀
 
@@ -83,28 +72,10 @@
 
 <img src="./.github/assets/lineBar.png" width="100%" height="8px"/>
 
-## 
-
-<div align="right">Made with 💚 by <a href="https://github.com/heviane">@heviane</a></div>
-<!--
-[![Profile Views](https://komarev.com/ghpvc/?username=heviane&color=blue&style=for-the-badge&label=Profile+Views)](https://github.com/heviane)
--->
+<div>Made with 💚 by <a href="https://github.com/heviane">@heviane</a></div>
 <a href="https://github.com/heviane">
-<img src="https://komarev.com/ghpvc/?username=heviane&color=blue&style=for-the-badge&label=Profile+Views&hide_border=true" alt="GitHub Profile Views" width="130" align="right" />
+<img src="https://komarev.com/ghpvc/?username=heviane&color=blue&style=for-the-badge&label=Profile+Views&hide_border=true" alt="GitHub Profile Views" width="130" />
 </a>
-<!--
-[![GitHub Followers](https://img.shields.io/github/followers/heviane?label=Followers&logo=GitHub&style=for-the-badge&hide_border=true)](https://github.com/heviane?tab=followers)
--->
 <a href="https://github.com/heviane?tab=followers" />
-<img src="https://img.shields.io/github/followers/heviane?label=Followers&logo=GitHub&style=for-the-badge&hide_border=true" alt="GitHub Followers conunter" width="130" align="right" />
+<img src="https://img.shields.io/github/followers/heviane?label=Followers&logo=GitHub&style=for-the-badge&hide_border=true" alt="GitHub Followers conunter" width="130" />
 </a>
-</br></br>
-<!--
-[![Follow Me on LinkedIn](https://img.shields.io/badge/Follow%20Me%20on%20LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=heviane-bastos)
--->
-
-<!--
-<a href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=heviane-bastos">
-<img src="https://img.shields.io/badge/Follow%20Me%20on%20LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&hide_border=true" alt="LinkedIn Follow Button" width="130" align="right" height="23" />
-</a>
--->
