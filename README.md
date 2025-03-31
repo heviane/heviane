@@ -24,16 +24,15 @@ Busco por oportunidades para contribuir com o desenvolvimento da empresa e cresc
     <!-- Low code -->
     <img src="https://github.com/heviane/images/blob/main/tech/low-code/icon-genexus.png" height="25" alt="Genexus logo" />
     <!-- Operational system -->
-    <img src="https://github.com/heviane/images/blob/main/tech/so/icon-windows.svg" height="25" alt="Linux logo" />
-    <img src="https://github.com/heviane/images/blob/main/tech/so/icon-linux.svg" height="25" alt="Linux logo" />
-    <img src="https://github.com/heviane/images/blob/main/tech/so/icon-ubuntu.svg" height="25" alt="Ubuntu logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/so/icon-windows.svg" height="25" alt="windows logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/so/icon-linux.svg" height="25" alt="linux logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/so/icon-ubuntu.svg" height="25" alt="ubuntu logo" />
     <!-- Tool -->
     <img src="https://github.com/heviane/images/blob/main/tech/tool/icon-vscode.svg" height="25" alt="vscode logo" />
     <img src="https://github.com/heviane/images/blob/main/tech/tool/icon-git.svg" height="25" alt="git logo" />
     <img src="https://github.com/heviane/images/blob/main/tech/tool/icon-github.svg" height="25" alt="github logo" />
     <!-- Language -->
     <img src="https://github.com/heviane/images/blob/main/tech/language/icon-bash.svg" height="25" alt="bash logo" />
-    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-markdown.svg" height="25" alt="markdown logo" />
     <img src="https://github.com/heviane/images/blob/main/tech/language/icon-javascript.svg" height="25" alt="javascript logo" />
     <img src="https://github.com/heviane/images/blob/main/tech/language/icon-typescript.svg" height="25" alt="typescript logo" />
     <img src="https://github.com/heviane/images/blob/main/tech/language/icon-html5.svg" height="25" alt="html5 logo" />
@@ -43,12 +42,11 @@ Busco por oportunidades para contribuir com o desenvolvimento da empresa e cresc
     <!-- Pattern -->
     <img src="https://github.com/heviane/images/blob/main/tech/pattern/icon-regex.svg" height="25" alt="regex logo" />
     <!-- Relational database -->
-    <img src="https://github.com/heviane/images/blob/main/tech/database/icon-sqlserver.svg" height="25" alt="mysql logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/database/icon-sqlserver.svg" height="25" alt="sqlserver logo" />
     <img src="https://github.com/heviane/images/blob/main/tech/database/icon-mysql.svg" height="25" alt="mysql logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/database/icon-postgresSQL.svg" height="25" alt="postgresql logo" />
     <!-- Mobile -->
-    <img src="https://github.com/heviane/images/blob/main/tech/mobile/icon-android.svg" height="25" alt="android logo" />
     <img src="https://github.com/heviane/images/blob/main/tech/mobile/icon-androidstudio.svg" height="25" alt="android studio logo" />
-    <img src="https://github.com/heviane/images/blob/main/tech/mobile/icon-ios.svg" height="25" alt="iOS logo" />
     <img src="https://github.com/heviane/images/blob/main/tech/mobile/icon-xcode.svg" height="25" alt="xcode logo" />
   </div>
 
