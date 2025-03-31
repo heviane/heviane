@@ -42,7 +42,7 @@ Busco por oportunidades para contribuir com o desenvolvimento da empresa e cresc
     <img src="https://github.com/heviane/images/blob/main/tech/framework/frontend/icon-bootstrap.svg" height="25" alt="bootstrap logo" />
     <!-- Pattern -->
     <img src="https://github.com/heviane/images/blob/main/tech/pattern/icon-regex.svg" height="25" alt="regex logo" />
-    <!-- Relational database -->
+    <!-- database SQL -->
     <img src="https://github.com/heviane/images/blob/main/tech/database/icon-sqlserver.svg" height="25" alt="sqlserver logo" />
     <img src="https://github.com/heviane/images/blob/main/tech/database/icon-mysql.svg" height="25" alt="mysql logo" />
     <img src="https://github.com/heviane/images/blob/main/tech/database/icon-postgresSQL.svg" height="25" alt="postgresql logo" />
