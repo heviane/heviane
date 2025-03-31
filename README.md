@@ -34,6 +34,7 @@ Busco por oportunidades para contribuir com o desenvolvimento da empresa e cresc
     <!-- Language -->
     <img src="https://github.com/heviane/images/blob/main/tech/language/icon-bash.svg" height="25" alt="bash logo" />
     <img src="https://github.com/heviane/images/blob/main/tech/language/icon-javascript.svg" height="25" alt="javascript logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-node.js.svg" height="25" alt="node.js logo" />
     <img src="https://github.com/heviane/images/blob/main/tech/language/icon-typescript.svg" height="25" alt="typescript logo" />
     <img src="https://github.com/heviane/images/blob/main/tech/language/icon-html5.svg" height="25" alt="html5 logo" />
     <img src="https://github.com/heviane/images/blob/main/tech/language/icon-css3.svg" height="25" alt="css3 logo" />
