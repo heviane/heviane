@@ -6,6 +6,12 @@
   </a>
 -->
 
+<p>
+Sou desenvolvedora de software com mais de 10 anos de experiência utilizando GeneXus, atuei em diversos projetos em ambiente web e win, e mais recentemente em ambiente mobile para as plataformas Android e iOS, onde pude aplicar e aprimorar minha expertise em criação de soluções escaláveis e adaptáveis às necessidades do cliente.
+
+Busco por oportunidades para contribuir com o desenvolvimento da empresa e crescer profissionalmente. 💻🚀
+</p>
+
 <a href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=heviane-bastos">
 <img src="https://img.shields.io/badge/Follow%20Me%20on%20LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&hide_border=true" alt="LinkedIn Follow Button" width="130" height="25" />
 </a>
@@ -15,43 +21,28 @@
 ## A little of what I know and am studying to know 📚 
 
   <div>
-    <img src="https://github.com/heviane/images/blob/main/icon-genexus.png" height="25" alt="Genexus logo"/>
-    <!-- LINUX -->
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="25" alt="Linux logo"  />
-    <!-- UBUNTU -->
-    <img src="https://cdn.simpleicons.org/ubuntu/E95420" height="25" alt="Ubuntu logo"  />
-    <!-- VSCODE -->
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="25" alt="vscode logo"  />
-    <!-- GIT -->
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="25" alt="git logo"  />
-    <!-- GITHUB -->
-    <img src="https://skillicons.dev/icons?i=github" height="25" alt="github logo"  />
-    <!-- BASH -->
-    <img src="https://cdn.simpleicons.org/gnubash/4EAA25" height="25" alt="bash logo"  />
-    <!-- MARKDOWN -->
-    <img src="https://skillicons.dev/icons?i=md" height="25" alt="markdown logo"  />
-    <!-- HTML5 -->
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="25" alt="html5 logo"  />
-    <!-- CSS3 -->
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="25" alt="css3 logo"  />
-    <!-- BOOTSTRAP -->
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="25" alt="bootstrap logo"  />
-    <!-- JAVASCRIPT -->
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="25" alt="javascript logo"  />
-    <!-- TYPESCRIPT -->
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="25" alt="typescript logo"  />
-    <!-- REGEX -->
-    <img src="https://skillicons.dev/icons?i=regex" height="25" alt="regex logo"  />
-    <!-- SQL SERVER 
-    <img src="https://github.com/heviane/images/blob/main/icon-sqlserver.jpg" height="25" alt="mysql logo"  />-->
-    <!-- MYSQL -->
-    <img src="https://cdn.simpleicons.org/mysql/4479A1" height="25" alt="mysql logo"  />
-    <!-- MONGODB -->
-    <img src="https://skillicons.dev/icons?i=mongodb" height="25" alt="mongodb logo"  />
-    <!-- REDIS -->
-    <img src="https://cdn.simpleicons.org/redis/DC382D" height="25" alt="redis logo"  />
-    <!-- ANDROID -->
-    <img src="https://cdn.simpleicons.org/android/3DDC84" height="25" alt="android logo"  />
+    <img src="https://github.com/heviane/images/blob/main/icon-genexus.png" height="25" alt="Genexus logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/so/icon-windows.svg" height="25" alt="Linux logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/so/icon-linux.svg" height="25" alt="Linux logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/so/icon-ubuntu.svg" height="25" alt="Ubuntu logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/tool/icon-vscode.svg" height="25" alt="vscode logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/tool/icon-git.svg" height="25" alt="git logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/tool/icon-github.svg" height="25" alt="github logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-bash.svg" height="25" alt="bash logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-markdown.svg" height="25" alt="markdown logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-javascript.svg" height="25" alt="javascript logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-typescript.svg" height="25" alt="typescript logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-html5.svg" height="25" alt="html5 logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-css3.svg" height="25" alt="css3 logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/framework/frontend/icon-bootstrap.svg" height="25" alt="bootstrap logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/pattern/icon-regex.svg" height="25" alt="regex logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/database/icon-sqlserver.svg" height="25" alt="mysql logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/database/icon-mysql.svg" height="25" alt="mysql logo" />
+    <!-- MOBILE -->
+    <img src="https://github.com/heviane/images/blob/main/tech/mobile/icon-android.svg" height="25" alt="android logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/mobile/icon-androidstudio.svg" height="25" alt="android studio logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/mobile/icon-ios.svg" height="25" alt="iOS logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/mobile/icon-xcode.svg" height="25" alt="xcode logo" />
   </div>
 
 ## GitHub Stats 🚀
