@@ -40,12 +40,6 @@ This document lists and describes my favorite extensions for Visual Studio Code,
 - **[Tabnine AI Autocomplete](https://marketplace.visualstudio.com/items?itemName=tabnine.tabnine-vscode)** (`tabnine.tabnine-vscode@3.250.0`) - AI-powered code autocomplete.  
 - **[VSCode Preview Server](https://marketplace.visualstudio.com/items?itemName=yuichinukiyama.vscode-preview-server)** (`yuichinukiyama.vscode-preview-server@1.3.0`) - Quick preview server for web projects.  
 
----  
-
-📌 **Tip:** To install all these extensions at once, use the following command in the VSCode terminal:  
-
-```sh
-code --install-extension extension-name
-```  
+---   
 
 🚀 **Keep your VSCode optimized and productive with these extensions!**  
