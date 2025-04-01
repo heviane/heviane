@@ -69,9 +69,9 @@ Busco por oportunidades para contribuir com o desenvolvimento da empresa e cresc
 
 ## 📂 My Docs
 
-- [📁 How to generate extensions.json](docs/How-to-generate-extensions-json.md)
+- [📁 How to document and share extensions](docs/how-to-document-and-share-extensions.md)
 
-- [📁 My favorite extensions for VSCode](docs/list-of-my-vscode-extensions-en-us.md)
+- [📁 My favorite extensions](docs/my-favorite-extensions.md)
 
 ## 
 

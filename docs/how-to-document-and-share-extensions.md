@@ -1,9 +1,6 @@
-# How to generate extensions.json
+# How to document and share extensions
 
-
-Automatically create an **`extensions.json`** file in Visual Studio Code listing all your installed extensions. 
-
-Here is a **shell script** to generate the file automatically:  
+Automatically create an "extensions.json" file to list all your installed extensions, share and automatically install from the generated file.
 
 ---
 
@@ -12,13 +9,17 @@ Here is a **shell script** to generate the file automatically:
 Open the terminal in **VS Code** and run the following command: 
 
 ```sh
-echo '{ "recommendations": [' > extensions.json && code --list-extensions | sed 's/^/    "/;s/$/",/' >> extensions.json && echo '] }' >> extensions.json
+echo '{ "recommendations": [' > .vscode/extensions.json && code --list-extensions | sed 's/^/ "/;s/$/",/' >> .vscode/extensions.json && echo '] }' >> .vscode/extensions.json
 ```
 
 🔹 **Command Explanation:**
 - Creates the `extensions.json` file and adds the beginning of the JSON.
 - Gets the list of extensions and formats each line correctly with quotes and commas.
-- Ends the JSON by closing the array.  
+- Ends the JSON by closing the array. 
+
+> **⚠️ IMPORTANT:**
+> 
+> Always run this command after installing new extensions to keep the `extensions.json` file up to date.
 
 ---
 
