@@ -67,6 +67,14 @@ Busco por oportunidades para contribuir com o desenvolvimento da empresa e cresc
 <img src="./.github/assets/lineBar.png" width="100%" height="8px"/>
 -->
 
+## 📂 My Docs
+
+- [📁 How to generate extensions.json](docs/How-to-generate-extensions-json.md)
+
+- [📁 My favorite extensions for VSCode](docs/list-of-my-vscode-extensions-en-us.md)
+
+## 
+
 <div>Made with 💚 by <a href="https://github.com/heviane">@heviane</a></div>
 <a href="https://github.com/heviane">
 <img src="https://komarev.com/ghpvc/?username=heviane&color=blue&style=for-the-badge&label=Profile+Views&hide_border=true" alt="GitHub Profile Views" width="130" />
