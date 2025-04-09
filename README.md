@@ -68,8 +68,9 @@ Estou em busca de novas oportunidades para contribuir com o crescimento de equip
 -->
 
 ## 📂 My Docs
-
+<!--
 - [📁 How to document and share extensions](docs/how-to-document-and-share-extensions.md)
+-->
 
 - [📁 My favorite extensions](docs/my-favorite-extensions.md)
 
