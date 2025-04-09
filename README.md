@@ -7,9 +7,9 @@
 -->
 
 <p>
-Sou desenvolvedora de software com mais de 10 anos de experiência utilizando GeneXus, atuei em diversos projetos em ambiente web e win, e mais recentemente em ambiente mobile para as plataformas Android e iOS, onde pude aplicar e aprimorar minha expertise em criação de soluções escaláveis e adaptáveis às necessidades do cliente.
+💻 Desenvolvedora de Software com mais de 10 anos de experiência utilizando GeneXus, atuando em projetos nos ambientes Web, Desktop (Win) e, mais recentemente, Mobile (Android e iOS), onde pude aplicar e aprimorar minha expertise em criação de soluções escaláveis e adaptáveis às necessidades do cliente.
 
-Busco por oportunidades para contribuir com o desenvolvimento da empresa e crescer profissionalmente. 💻🚀
+Estou em busca de novas oportunidades para contribuir com o crescimento de equipes e projetos, enquanto continuo crescendo como profissional de tecnologia.🚀
 </p>
 
 <a href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=heviane-bastos">
