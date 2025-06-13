@@ -22,7 +22,7 @@ Estou em busca de novas oportunidades para contribuir com o crescimento de equip
 
   <div>
     <!-- Low code -->
-    <img src="https://github.com/heviane/images/blob/main/tech/low-code/icon-genexus.png" height="25" alt="Genexus logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/low-code/icon-genexus.png" height="25" alt="Genexus logo" title="Genexus - Plataforma Low Code para desenvolvimento de software" />
     <!-- Operational system -->
     <img src="https://github.com/heviane/images/blob/main/tech/so/icon-windows.svg" height="25" alt="windows logo" />
     <img src="https://github.com/heviane/images/blob/main/tech/so/icon-linux.svg" height="25" alt="linux logo" />
