@@ -54,7 +54,11 @@ Estou em busca de novas oportunidades para contribuir com o crescimento de equip
 ## GitHub Stats 🚀
 
 <div align="center">
+
+<!--    *** Link com problema ***
 <img width="45%" height="195px" src="https://github-readme-stats.vercel.app/api?username=heviane&show_icons=true&count_private=true&theme=algolia&include_all_commits=true&cache_seconds=86400" />
+-->
+
 <img width="45%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=heviane&layout=compact&langs_count=16&theme=algolia" />
 </div>
 
@@ -67,13 +71,6 @@ Estou em busca de novas oportunidades para contribuir com o crescimento de equip
 </div>
 <img src="./.github/assets/lineBar.png" width="100%" height="8px"/>
 -->
-
-## 📂 My Docs
-<!--
-- [📁 How to document and share extensions](docs/how-to-document-and-share-extensions.md)
--->
-
-- [📁 My favorite extensions](docs/my-favorite-extensions.md)
 
 ## 
 
