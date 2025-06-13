@@ -1,4 +1,4 @@
-# Heviane Bastos - Software Developer <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="40px">
+# Heviane Bastos - Desenvolvedora de Software <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="40px">
 
 <!--
   <a href="https://git.io/typing-svg">
@@ -18,7 +18,7 @@ Estou em busca de novas oportunidades para contribuir com o crescimento de equip
 <a href="https://www.dio.me/users/byheviane"><img src="https://img.shields.io/badge/-DIO.me-purple?style=flat-square&logo=dio.me&logoColor=white&link=https://www.dio.me/users/byheviane" height="25" alt="DIO.me" /></a>
 <a href="mailto:heviane@gmail.com"><img src="https://img.shields.io/badge/-heviane@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:heviane@gmail.com" height="25" alt="Gmail" /></a>
 
-## A little of what I know and am studying to know 📚 
+## Um pouco do que eu sei e estou estudando 📚 
 
   <div>
     <!-- Low code -->
@@ -45,7 +45,7 @@ Estou em busca de novas oportunidades para contribuir com o crescimento de equip
     <img src="https://github.com/heviane/images/blob/main/tech/mobile/icon-xcode.svg" height="25" alt="xcode logo" title="Xcode - IDE para Desenvolvimento iOS" />
   </div>
 
-## GitHub Stats 🚀
+## GitHub Status 🚀
 
 <div align="center">
 
