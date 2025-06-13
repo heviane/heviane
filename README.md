@@ -74,7 +74,6 @@ Estou em busca de novas oportunidades para contribuir com o crescimento de equip
 
 ## 
 
-<div>Made with 💚 by <a href="https://github.com/heviane">@heviane</a></div>
 <a href="https://github.com/heviane">
 <img src="https://komarev.com/ghpvc/?username=heviane&color=blue&style=for-the-badge&label=Profile+Views&hide_border=true" alt="GitHub Profile Views" width="130" />
 </a>
