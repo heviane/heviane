@@ -24,31 +24,25 @@ Estou em busca de novas oportunidades para contribuir com o crescimento de equip
     <!-- Low code -->
     <img src="https://github.com/heviane/images/blob/main/tech/low-code/icon-genexus.png" height="25" alt="Genexus logo" title="Genexus - Plataforma Low Code para desenvolvimento de software" />
     <!-- Operational system -->
-    <img src="https://github.com/heviane/images/blob/main/tech/so/icon-windows.svg" height="25" alt="windows logo" />
-    <img src="https://github.com/heviane/images/blob/main/tech/so/icon-linux.svg" height="25" alt="linux logo" />
-    <img src="https://github.com/heviane/images/blob/main/tech/so/icon-ubuntu.svg" height="25" alt="ubuntu logo" />
-    <!-- Tool -->
-    <img src="https://github.com/heviane/images/blob/main/tech/tool/icon-vscode.svg" height="25" alt="vscode logo" />
-    <img src="https://github.com/heviane/images/blob/main/tech/tool/icon-git.svg" height="25" alt="git logo" />
-    <img src="https://github.com/heviane/images/blob/main/tech/tool/icon-github.svg" height="25" alt="github logo" />
-    <!-- Language -->
-    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-bash.svg" height="25" alt="bash logo" />
-    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-javascript.svg" height="25" alt="javascript logo" />
-    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-node.js.svg" height="25" alt="node.js logo" />
-    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-typescript.svg" height="25" alt="typescript logo" />
-    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-html5.svg" height="25" alt="html5 logo" />
-    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-css3.svg" height="25" alt="css3 logo" />
-    <!-- Framework -->
-    <img src="https://github.com/heviane/images/blob/main/tech/framework/frontend/icon-bootstrap.svg" height="25" alt="bootstrap logo" />
-    <!-- Pattern -->
-    <img src="https://github.com/heviane/images/blob/main/tech/pattern/icon-regex.svg" height="25" alt="regex logo" />
-    <!-- database SQL -->
-    <img src="https://github.com/heviane/images/blob/main/tech/database/sql/icon-sqlserver.svg" height="25" alt="sqlserver logo" />
-    <img src="https://github.com/heviane/images/blob/main/tech/database/sql/icon-mysql.svg" height="25" alt="mysql logo" />
-    <img src="https://github.com/heviane/images/blob/main/tech/database/sql/icon-postgresSQL.svg" height="25" alt="postgresql logo" />
-    <!-- Mobile -->
-    <img src="https://github.com/heviane/images/blob/main/tech/mobile/icon-androidstudio.svg" height="25" alt="android studio logo" />
-    <img src="https://github.com/heviane/images/blob/main/tech/mobile/icon-xcode.svg" height="25" alt="xcode logo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/so/icon-windows.svg" height="25" alt="windows logo" title="Windows - Sistema Operacional" />
+    <img src="https://github.com/heviane/images/blob/main/tech/so/icon-linux.svg" height="25" alt="linux logo" title="Linux - Sistema Operacional" />
+    <img src="https://github.com/heviane/images/blob/main/tech/so/icon-ubuntu.svg" height="25" alt="ubuntu logo" title="Ubuntu - Distribuição Linux" />
+    <img src="https://github.com/heviane/images/blob/main/tech/tool/icon-vscode.svg" height="25" alt="vscode logo" title="VSCode - Editor de Código" />
+    <img src="https://github.com/heviane/images/blob/main/tech/tool/icon-git.svg" height="25" alt="git logo" title="Git - Controle de Versão" />
+    <img src="https://github.com/heviane/images/blob/main/tech/tool/icon-github.svg" height="25" alt="github logo" title="GitHub - Hospedagem de Código" />
+    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-bash.svg" height="25" alt="bash logo" title="Bash - Shell Script" />
+    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-javascript.svg" height="25" alt="javascript logo" title="JavaScript - Linguagem de Programação" />
+    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-node.js.svg" height="25" alt="node.js logo" title="Node.js - Ambiente de Execução JavaScript" />
+    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-typescript.svg" height="25" alt="typescript logo" title="TypeScript - Superset de JavaScript" />
+    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-html5.svg" height="25" alt="html5 logo" title="HTML5 - Linguagem de Marcação" />
+    <img src="https://github.com/heviane/images/blob/main/tech/language/icon-css3.svg" height="25" alt="css3 logo" title="CSS3 - Folhas de Estilo" />
+    <img src="https://github.com/heviane/images/blob/main/tech/framework/frontend/icon-bootstrap.svg" height="25" alt="bootstrap logo" title="Bootstrap - Framework CSS" />
+    <img src="https://github.com/heviane/images/blob/main/tech/pattern/icon-regex.svg" height="25" alt="regex logo" title="Regex - Expressões Regulares" />
+    <img src="https://github.com/heviane/images/blob/main/tech/database/sql/icon-sqlserver.svg" height="25" alt="sqlserver logo" title="SQL Server - Banco de Dados" />
+    <img src="https://github.com/heviane/images/blob/main/tech/database/sql/icon-mysql.svg" height="25" alt="mysql logo" title="MySQL - Banco de Dados" />
+    <img src="https://github.com/heviane/images/blob/main/tech/database/sql/icon-postgresSQL.svg" height="25" alt="postgresql logo" title="PostgreSQL - Banco de Dados" />
+    <img src="https://github.com/heviane/images/blob/main/tech/mobile/icon-androidstudio.svg" height="25" alt="android studio logo" title="Android Studio - IDE para Desenvolvimento Mobile" />
+    <img src="https://github.com/heviane/images/blob/main/tech/mobile/icon-xcode.svg" height="25" alt="xcode logo" title="Xcode - IDE para Desenvolvimento iOS" />
   </div>
 
 ## GitHub Stats 🚀
