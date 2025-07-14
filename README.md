@@ -60,6 +60,8 @@ Esta é a stack de tecnologias com as quais tenho trabalhado e estudado recentem
 ## 📊 Estatísticas do GitHub
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=heviane&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=heviane&layout=compact&langs_count=7&theme=dracula"/>
+
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=heviane&show_icons=true&theme=dracula&include_all_commits=true" alt="Estatísticas do GitHub de Heviane"/>
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=heviane&layout=compact&langs_count=7&theme=dracula" alt="Linguagens mais usadas por Heviane"/>
+
 </div>
