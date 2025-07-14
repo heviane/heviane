@@ -1,3 +1,14 @@
 {
-  "window.zoomLevel": 1
+  // Configura o Prettier como o formatador padrão para vários tipos de arquivo.
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Ativa a formatação automática ao salvar um arquivo.
+  // Essencial para manter a consistência do código sem esforço.
+  "editor.formatOnSave": true,
+
+  // Ativa o "auto fix" do ESLint ao salvar.
+  // Corrige automaticamente problemas de linting que são seguros de corrigir.
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
 }
