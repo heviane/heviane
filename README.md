@@ -2,9 +2,9 @@
 
 ## Desenvolvedora de Software | Web | Desktop | Mobile
 
-💻 Desenvolvedora de Software com mais de 10 anos de experiência consolidada, atuando em projetos nos ambientes Web, Desktop e, mais recentemente, Mobile (Android e iOS), onde pude aplicar e aprimorar minha expertise em criação de soluções escaláveis e adaptáveis às necessidades do cliente.
+💻 Desenvolvedora de Software com experiência em projetos Web, Desktop e, mais recentemente, Mobile (Android e iOS), onde pude aplicar e aprimorar minha expertise em criação de soluções escaláveis e adaptáveis às necessidades do cliente.
 
-Este espaço é meu portfólio e um hub para meus projetos pessoais. Estou sempre em busca de novos desafios e oportunidades para colaborar e aprender. 🚀
+Estou sempre em busca de novos desafios e oportunidades para colaborar e aprender. 🚀
 
 <div align="center">
   <a href="https://www.linkedin.com/in/hevianebastos" target="_blank">
