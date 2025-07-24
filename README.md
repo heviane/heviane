@@ -32,7 +32,7 @@ Esta é a stack de tecnologias com as quais tenho trabalhado e estudado recentem
   <img src="https://heviane.github.io/image-gallery/tech/tool/icon-git.svg" height="25" alt="git logo" style="width: 30%; margin: 5px;"/>
   <img src="https://heviane.github.io/image-gallery/tech/tool/icon-github.svg" height="25" alt="github logo" style="width: 30%; margin: 5px;"/>
   <!-- Low code -->
-  <img src="https://heviane.github.io/image-gallery/tech/low-code/icon-genexus.png" height="25" alt="Genexus logo" style="width: 30%; margin: 5px;"/>
+  <img src="https://heviane.github.io/image-gallery/tech/low-code/icon-genexus.png" height="25" alt="Genexus logo" style="margin: 5px;"/>
   <!-- Language -->
   <img src="https://heviane.github.io/image-gallery/tech/language/icon-bash.svg" height="25" alt="bash logo" style="width: 30%; margin: 5px;"/>
   <img src="https://heviane.github.io/image-gallery/tech/language/icon-javascript.svg" height="25" alt="javascript logo" style="width: 30%; margin: 5px;"/>
