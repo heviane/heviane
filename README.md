@@ -22,7 +22,7 @@ Estou sempre em busca de novos desafios e oportunidades para colaborar e aprende
 
 Esta é a stack de tecnologias com as quais tenho trabalhado e estudado recentemente.
 
-<p align="center" style="display: flex; flex-wrap: wrap; gap: 10px;">
+<div align="center">
   <img src="https://heviane.github.io/image-gallery/tech/so/icon-windows.svg" height="40" alt="Windows logo"/>
   <img src="https://heviane.github.io/image-gallery/tech/so/icon-linux.svg" height="40" alt="Linux logo"/>
   <img src="https://heviane.github.io/image-gallery/tech/so/icon-apple.svg" height="40" alt="macOS logo"/>
@@ -44,7 +44,7 @@ Esta é a stack de tecnologias com as quais tenho trabalhado e estudado recentem
   <img src="https://heviane.github.io/image-gallery/tech/mobile/icon-androidstudio.svg" height="40" alt="Android Studio logo"/>
   <img src="https://heviane.github.io/image-gallery/tech/mobile/icon-xcode.svg" height="40" alt="Xcode logo"/>
   <img src="https://heviane.github.io/image-gallery/tech/infrastructure/icon-docker.svg" height="40" alt="Docker logo"/>
-</p>
+</div>
 
 ---
 
