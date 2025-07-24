@@ -22,7 +22,7 @@ Estou sempre em busca de novos desafios e oportunidades para colaborar e aprende
 
 Esta é a stack de tecnologias com as quais tenho trabalhado e estudado recentemente.
 
-<div align="center">
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start;">
   <!-- Operational system -->
   <img src="https://heviane.github.io/image-gallery/tech/so/icon-windows.svg" height="25" alt="windows logo" />
   <img src="https://heviane.github.io/image-gallery/tech/so/icon-linux.svg" height="25" alt="linux logo" />
