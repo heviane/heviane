@@ -22,38 +22,29 @@ Estou sempre em busca de novos desafios e oportunidades para colaborar e aprende
 
 Esta é a stack de tecnologias com as quais tenho trabalhado e estudado recentemente.
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start;">
-  <!-- Operational system -->
-  <img src="https://heviane.github.io/image-gallery/tech/so/icon-windows.svg" height="25" alt="windows logo" style="width: 30%; margin: 5px;"/>
-  <img src="https://heviane.github.io/image-gallery/tech/so/icon-linux.svg" height="25" alt="linux logo" style="width: 30%; margin: 5px;"/>
-  <img src="https://heviane.github.io/image-gallery/tech/so/icon-apple.svg" height="25" alt="macOS logo" style="width: 30%; margin: 5px;"/>
-  <!-- Tool -->
-  <img src="https://heviane.github.io/image-gallery/tech/tool/icon-vscode.svg" height="25" alt="vscode logo" style="width: 30%; margin: 5px;"/>
-  <img src="https://heviane.github.io/image-gallery/tech/tool/icon-git.svg" height="25" alt="git logo" style="width: 30%; margin: 5px;"/>
-  <img src="https://heviane.github.io/image-gallery/tech/tool/icon-github.svg" height="25" alt="github logo" style="width: 30%; margin: 5px;"/>
-  <!-- Low code -->
-  <img src="https://heviane.github.io/image-gallery/tech/low-code/icon-genexus.png" height="25" alt="Genexus logo" style="margin: 5px;"/>
-  <!-- Language -->
-  <img src="https://heviane.github.io/image-gallery/tech/language/icon-bash.svg" height="25" alt="bash logo" style="width: 30%; margin: 5px;"/>
-  <img src="https://heviane.github.io/image-gallery/tech/language/icon-javascript.svg" height="25" alt="javascript logo" style="width: 30%; margin: 5px;"/>
-  <img src="https://heviane.github.io/image-gallery/tech/language/icon-node.js.svg" height="25" alt="node.js logo" style="width: 30%; margin: 5px;"/>
-  <img src="https://heviane.github.io/image-gallery/tech/language/icon-typescript.svg" height="25" alt="typescript logo" style="width: 30%; margin: 5px;"/>
-  <img src="https://heviane.github.io/image-gallery/tech/language/icon-html5.svg" height="25" alt="html5 logo" style="width: 30%; margin: 5px;"/>
-  <img src="https://heviane.github.io/image-gallery/tech/language/icon-css3.svg" height="25" alt="css3 logo" style="width: 30%; margin: 5px;"/>
-  <!-- Framework -->
-  <img src="https://heviane.github.io/image-gallery/tech/framework/frontend/icon-bootstrap.svg" height="25" alt="bootstrap logo" style="width: 30%; margin: 5px;"/>
-  <!-- Pattern -->
-  <img src="https://heviane.github.io/image-gallery/tech/pattern/icon-regex.svg" height="25" alt="regex logo" style="width: 30%; margin: 5px;"/>
-  <!-- database SQL -->
-  <img src="https://heviane.github.io/image-gallery/tech/database/sql/icon-sqlserver.svg" height="25" alt="sqlserver logo" style="width: 30%; margin: 5px;"/>
-  <img src="https://heviane.github.io/image-gallery/tech/database/sql/icon-mysql.svg" height="25" alt="mysql logo" style="width: 30%; margin: 5px;"/>
-  <img src="https://heviane.github.io/image-gallery/tech/database/sql/icon-postgresSQL.svg" height="25" alt="postgresql logo" style="width: 30%; margin: 5px;"/>
-  <!-- Mobile -->
-  <img src="https://heviane.github.io/image-gallery/tech/mobile/icon-androidstudio.svg" height="25" alt="android studio logo" style="width: 30%; margin: 5px;"/>
-  <img src="https://heviane.github.io/image-gallery/tech/mobile/icon-xcode.svg" height="25" alt="xcode logo" style="width: 30%; margin: 5px;"/>
-  <!-- infrastructure: Conteinirazação -->
-  <img src="https://heviane.github.io/image-gallery/tech/infrastructure/icon-docker.svg" height="25" alt="docker logo" style="width: 30%; margin: 5px;"/>
-</div>
+<p align="center">
+  <img src="https://heviane.github.io/image-gallery/tech/so/icon-windows.svg" height="40" alt="Windows logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/so/icon-linux.svg" height="40" alt="Linux logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/so/icon-apple.svg" height="40" alt="macOS logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/tool/icon-vscode.svg" height="40" alt="VSCode logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/tool/icon-git.svg" height="40" alt="Git logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/tool/icon-github.svg" height="40" alt="GitHub logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/low-code/icon-genexus.png" height="40" alt="Genexus logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/language/icon-bash.svg" height="40" alt="Bash logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/language/icon-javascript.svg" height="40" alt="JavaScript logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/language/icon-node.js.svg" height="40" alt="Node.js logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/language/icon-typescript.svg" height="40" alt="TypeScript logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/language/icon-html5.svg" height="40" alt="HTML5 logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/language/icon-css3.svg" height="40" alt="CSS3 logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/framework/frontend/icon-bootstrap.svg" height="40" alt="Bootstrap logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/pattern/icon-regex.svg" height="40" alt="Regex logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/database/sql/icon-sqlserver.svg" height="40" alt="SQL Server logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/database/sql/icon-mysql.svg" height="40" alt="MySQL logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/database/sql/icon-postgresSQL.svg" height="40" alt="PostgreSQL logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/mobile/icon-androidstudio.svg" height="40" alt="Android Studio logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/mobile/icon-xcode.svg" height="40" alt="Xcode logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/infrastructure/icon-docker.svg" height="40" alt="Docker logo"/>
+</p>
 
 ---
 
