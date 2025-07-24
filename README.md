@@ -22,14 +22,14 @@ Estou sempre em busca de novos desafios e oportunidades para colaborar e aprende
 
 Esta é a stack de tecnologias com as quais tenho trabalhado e estudado recentemente.
 
-<div align="center">
+<div align="left">
   <img src="https://heviane.github.io/image-gallery/tech/so/icon-windows.svg" height="40" alt="Windows logo"/>
   <img src="https://heviane.github.io/image-gallery/tech/so/icon-linux.svg" height="40" alt="Linux logo"/>
   <img src="https://heviane.github.io/image-gallery/tech/so/icon-apple.svg" height="40" alt="macOS logo"/>
   <img src="https://heviane.github.io/image-gallery/tech/tool/icon-vscode.svg" height="40" alt="VSCode logo"/>
   <img src="https://heviane.github.io/image-gallery/tech/tool/icon-git.svg" height="40" alt="Git logo"/>
   <img src="https://heviane.github.io/image-gallery/tech/tool/icon-github.svg" height="40" alt="GitHub logo"/>
-  <img src="https://heviane.github.io/image-gallery/tech/low-code/icon-genexus.png" height="40" alt="Genexus logo"/>
+  <img src="https://heviane.github.io/image-gallery/tech/low-code/icon-genexus.svg" height="40" alt="Genexus logo"/>
   <img src="https://heviane.github.io/image-gallery/tech/language/icon-bash.svg" height="40" alt="Bash logo"/>
   <img src="https://heviane.github.io/image-gallery/tech/language/icon-javascript.svg" height="40" alt="JavaScript logo"/>
   <img src="https://heviane.github.io/image-gallery/tech/language/icon-node.js.svg" height="40" alt="Node.js logo"/>
