@@ -1,10 +1,14 @@
 # Heviane Bastos
 
-### Software Developer (Web, Desktop & Mobile)
+## Desenvolvedora de Software | .NET | GeneXus | Web | Mobile | Desktop
 
-Olá! 👋 Sou uma desenvolvedora de software apaixonada por transformar ideias em soluções eficientes e escaláveis. Com uma base sólida em desenvolvimento Web e Desktop, recentemente expandi minha atuação para o universo Mobile (Android e iOS), buscando sempre novos desafios e tecnologias para aprimorar minhas habilidades.
+Olá! 👋 Sou Desenvolvedora de Software com uma base sólida em projetos Web, Desktop, e mais recentemente em Mobile (Android/iOS) utilizando a plataforma Low-Code GeneXus.
 
-Meu objetivo é colaborar em projetos inovadores, aplicando minha experiência para criar produtos de alta qualidade que impactem positivamente os usuários.
+Atualmente, meu foco é aprofundar minha expertise no ecossistema .NET, desenvolvendo soluções com C#, ASP.NET Core e explorando as melhores práticas do mercado.
+
+Estou sempre em busca de novos desafios e oportunidades para colaborar, aprender, crescer com a equipe e construir tecnologia de impacto, seja em projetos .NET ou aproveitando minha experiência de uma década com GeneXus.
+
+Sinta-se à vontade para explorar meus projetos e entrar em contato! 🚀
 
 <div align="center">
   <a href="https://www.linkedin.com/in/hevianebastos" target="_blank">
