@@ -4,7 +4,7 @@
 
 Olá! 👋 Sou Desenvolvedora de Software com uma base sólida em projetos Web, Desktop, e mais recentemente em Mobile (Android/iOS) utilizando a plataforma Low-Code GeneXus.
 
-Atualmente, meu foco é aprofundar minha expertise no ecossistema .NET, desenvolvendo soluções com C#, ASP.NET Core e explorando as melhores práticas do mercado.
+Atualmente estou expandindo meus conhecimentos para a plataforma .NET com C# e explorando as melhores práticas do mercado.
 
 Estou sempre em busca de novos desafios e oportunidades para colaborar, aprender, crescer com a equipe e construir tecnologia de impacto, seja em projetos .NET ou aproveitando minha experiência de uma década com GeneXus.
 
