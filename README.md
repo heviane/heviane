@@ -1,10 +1,15 @@
-# Heviane Bastos
+## Olá!👋, Eu sou a Heviane Bastos
 
-## Desenvolvedora de Software | .NET | GeneXus | Web | Mobile | Desktop
+<h2>
+	<img align="right" alt="Stars" src="https://img.shields.io/github/stars/heviane">
+	<img align="right" alt="Followers" src="https://img.shields.io/github/followers/heviane?style=social">
+</h2>
 
-Olá! 👋 Sou Desenvolvedora de Software com uma base sólida em projetos Web, Desktop, e mais recentemente em Mobile (Android/iOS) utilizando a plataforma Low-Code GeneXus.
+### Desenvolvedora de Software | .NET | GeneXus | Web | Mobile | Desktop
 
-Atualmente estou expandindo meus conhecimentos para a plataforma .NET com C# e explorando as melhores práticas do mercado.
+Sou Desenvolvedora de Software com uma base sólida em projetos Web, Desktop, e mais recentemente em Mobile (Android/iOS) utilizando a plataforma Low-Code **GeneXus**.
+
+Atualmente estou expandindo meus conhecimentos para a plataforma **.NET** com **C#** e explorando as melhores práticas do mercado.
 
 Estou sempre em busca de novos desafios e oportunidades para colaborar, aprender, crescer com a equipe e construir tecnologia de impacto, seja em projetos .NET ou aproveitando minha experiência de uma década com GeneXus.
 
