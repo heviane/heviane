@@ -1,6 +1,5 @@
-## Olá!👋 Eu sou a Heviane Bastos
-
 <h2>
+  <span>Olá!👋 Eu sou a Heviane Bastos</span>
 	<img align="right" alt="Stars" src="https://img.shields.io/github/stars/heviane">
 	<img align="right" alt="Followers" src="https://img.shields.io/github/followers/heviane?style=social">
 </h2>
