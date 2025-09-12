@@ -1,4 +1,4 @@
-## Olá!👋, Eu sou a Heviane Bastos
+## Olá!👋 Eu sou a Heviane Bastos
 
 <h2>
 	<img align="right" alt="Stars" src="https://img.shields.io/github/stars/heviane">
