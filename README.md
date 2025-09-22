@@ -4,9 +4,9 @@
 	<img align="right" alt="Followers" src="https://img.shields.io/github/followers/heviane?style=social">
 </h2>
 
-### Desenvolvedora de Software | .NET | GeneXus | Web | Mobile | Desktop
+### Desenvolvedora de Software | .NET | GeneXus
 
-Sou Desenvolvedora de Software com uma base sólida em projetos Web, Desktop, e mais recentemente em Mobile (Android/iOS) utilizando a plataforma Low-Code **GeneXus**.
+Sou Desenvolvedora de Software com uma base sólida em projetos Web, Desktop, e mais recentemente em Mobile (Android/iOS) utilizando a plataforma **GeneXus**.
 
 Atualmente estou expandindo meus conhecimentos para a plataforma **.NET** com **C#** e explorando as melhores práticas do mercado.
 
@@ -17,9 +17,6 @@ Sinta-se à vontade para explorar meus projetos e entrar em contato! 🚀
 <div align="center">
   <a href="https://www.linkedin.com/in/hevianebastos" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://www.dio.me/users/byheviane" target="_blank">
-    <img src="https://img.shields.io/badge/DIO-8A2BE2?style=for-the-badge&logo=dio&logoColor=white" alt="DIO" />
   </a>
   <a href="mailto:heviane@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
