@@ -6,11 +6,11 @@
 
 ### Desenvolvedora de Software
 
-Sou Desenvolvedora de Software com uma base sólida em projetos Web, Desktop, e mais recentemente em Mobile (Android/iOS) utilizando a plataforma **GeneXus**.
+Sou Desenvolvedora de Software com uma base sólida em projetos Web, Desktop.
 
-Atualmente estou expandindo meus conhecimentos para a plataforma **.NET** com **C#** e explorando as melhores práticas do mercado.
+Atualmente estou expandindo meus conhecimentos e explorando as melhores práticas do mercado.
 
-Estou sempre em busca de novos desafios e oportunidades para colaborar, aprender, crescer com a equipe e construir tecnologia de impacto, seja em projetos .NET ou aproveitando minha experiência de uma década com GeneXus.
+Estou sempre em busca de novos desafios e oportunidades para colaborar, aprender, crescer com a equipe e construir tecnologia de impacto.
 
 Sinta-se à vontade para explorar meus projetos e entrar em contato! 🚀
 
