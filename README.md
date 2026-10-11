@@ -10,7 +10,7 @@ Atuo como desenvolvedora autônoma com foco em arquitetura de sistemas web, inte
 Sinta-se à vontade para entrar em contato! 🚀 <br/>
 
 📧 heviane@gmail.com <br/>
-📱 🇧🇷 +55 (51) 99855-1866 <br/>
+📱 [BR] +55 (51) 99855-1866 <br/>
 💼 <a href="https://www.linkedin.com/in/hevianebastos" target="_blank" rel="noopener noreferrer">Linkedin</a>
 
 <!--
