@@ -12,9 +12,9 @@ Sinta-se à vontade para entrar em contato! 🚀 <br/>
 📱 Telefone/WhatsApp: +55 (51) 99855-1866 <br/>
 
 <div>
-  <a href="https://www.linkedin.com/in/hevianebastos" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
+<a href="https://www.linkedin.com/in/hevianebastos" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
 </div>
 
 ## 📊 Estatísticas do GitHub
