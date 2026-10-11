@@ -30,7 +30,7 @@ Sinta-se à vontade para entrar em contato! 🚀 <br/>
 
 ### Backend & Arquitetura
 ![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat&logo=dotnet&logoColor=white)
-![GeneXus](https://img.shields.io/badge/GeneXus-0066CC?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiIHhtbG5zPSJodHRwOi8[...]
+![GeneXus](https://img.shields.io/badge/GeneXus-0066CC?style=flat&logo=gnuemacs&logoColor=white)
 
 ### Banco de Dados
 ![SQL](https://img.shields.io/badge/SQL-CC2927?style=flat&logo=microsoft-sql-server&logoColor=white)
