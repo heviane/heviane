@@ -5,7 +5,7 @@
 </h2>
 
 Profissional com mais de 10 anos de experiência em desenvolvimento de software.
-Atuo como desenvolvedora autônoma com foco em arquitetura de sistemas web, integração de APIs e automação de processos.
+Atuo como desenvolvedora autônoma com foco em arquitetura de sistemas web, integração e automação de processos.
 <br/><br/>
 Sinta-se à vontade para entrar em contato! 🚀 <br/>
 📧 heviane@gmail.com <br/>
