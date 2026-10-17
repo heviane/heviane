@@ -31,7 +31,7 @@ Stacks nas quais tenho experiência e que estou estudando.
 
 ## 📊 Estatísticas do GitHub
 
-<div align="center">
+<div align="left">
   <img height="180" src="https://github-readme-stats.vercel.app/api?username=heviane&show_icons=true&theme=dracula&include_all_commits=true" alt="Estatísticas do GitHub de Heviane"/>
   <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=heviane&layout=compact&langs_count=7&theme=dracula" alt="Linguagens mais usadas por Heviane"/>
 </div>
