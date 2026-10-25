@@ -1,7 +1,7 @@
 <h2>
   <span>Olá!👋 Eu sou a Heviane</span>
-	<img align="right" alt="Stars" src="https://img.shields.io/github/stars/heviane">
-	<img align="right" alt="Followers" src="https://img.shields.io/github/followers/heviane?style=social">
+ 	<img align="right" alt="Stars" src="https://img.shields.io/github/stars/heviane">
+ 	<img align="right" alt="Followers" src="https://img.shields.io/github/followers/heviane?style=social">
 </h2>
 
 Profissional com 10+ anos de experiência em desenvolvimento de software.
@@ -22,12 +22,24 @@ Sinta-se à vontade para entrar em contato! 🚀 <br/>
 
 ## 🛠️ Tecnologias e Ferramentas
 
-Stacks nas quais tenho experiência e que estou estudando.
+Metodologias, stacks e ferramentas nas quais tenho experiência e que estou estudando.
+
+### Metodologias
+
+![SDD](https://img.shields.io/badge/SDD-Spec%20Driven%20Development-2E86AB?style=flat&logo=gitbook&logoColor=white)
+![TDD](https://img.shields.io/badge/TDD-Test%20Driven%20Development-22C55E?style=flat&logo=githubactions&logoColor=white)
+![DDD](https://img.shields.io/badge/DDD-Domain%20Driven%20Design-8B5CF6?style=flat)
+
+### Tecnologias
 
 ![GeneXus](https://img.shields.io/badge/GeneXus-0066CC?style=flat&logo=gnuemacs&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white) ![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat&logo=dotnet&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=mysql&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) ![Cloud](https://img.shields.io/badge/Cloud-%2300AEEF?style=flat&logo=cloud&logoColor=white) <!-- ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=spring&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white)
-![GCP](https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat&logo=googlecloud&logoColor=white)-->![Vibecoding](https://img.shields.io/badge/Vibecoding-FBCA04?style=flat&logo=visual-studio-code&logoColor=white)
+![GCP](https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat&logo=googlecloud&logoColor=white) ![Vibecoding](https://img.shields.io/badge/Vibecoding-FBCA04?style=flat&logo=visual-studio-code&logoColor=black)
 
 ## 📊 Estatísticas do GitHub
 
