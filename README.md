@@ -38,7 +38,7 @@ Metodologias, stacks e ferramentas nas quais tenho experiência e que estou estu
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white) ![Microsoft SQL Server](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
-![Vibecoding](https://img.shields.io/badge/Vibecoding-FBCA04?style=flat&logo=visual-studio-code&logoColor=black)
+![AI-assisted development](https://img.shields.io/badge/AI-assisted%20development-8B5CF6?style=flat&logo=openai&logoColor=white)
 
 ## 📊 Estatísticas do GitHub
 
