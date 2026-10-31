@@ -42,6 +42,7 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | 🟢 | `GOV-03` | `P0` | **Criação de Docs no Meta-Hub** | Centralizar `backlog.md` e `vscode-extensions.md` exclusivamente no repositório de governança. |
 | ⚪ | `GOV-04` | `P1` | **Integração com Project 14** | Conectar e cadastrar as tarefas priorizadas no [AI Engineering Hub (Project 14)](https://github.com/users/heviane/projects/14). |
 | ⚪ | `GOV-05` | `P2` | **ADR-001: Adoção de SDD e IA no SDLC** | Criar registro formal de decisão arquitetural (ADR) sobre a metodologia de IA e governança Docs-as-Code. |
+| 🟢 | `GOV-06` | `P1` | **AGENTS.md Global do Workspace** | Criar diretrizes operacionais de IA na raiz do workspace para governança multi-repositório. |
 
 ---
 
@@ -49,11 +50,11 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 
 | Status | ID | Prioridade | Item | Descrição / Critérios de Aceite |
 | :---: | :---: | :---: | :--- | :--- |
-| 🟡 | `IA-01` | `P0` | **Modernização do `project-starter-kit`** | Atualizar repositório `heviane/project-starter-kit` transformando-o em base para IA e SDD. |
-| ⚪ | `IA-02` | `P0` | **Template `AGENTS.md`** | Criar diretrizes operacionais para IAs (regras de stack, restrições, convenções de código e commits). |
-| ⚪ | `IA-03` | `P1` | **Template `SPEC.md` (SDD)** | Criar modelo de especificação funcional e técnica para desenvolvimento guiado por requisitos. |
-| ⚪ | `IA-04` | `P1` | **Template `ADR.md`** | Criar modelo padrão de Architecture Decision Record para decisões de design nos projetos. |
-| ⚪ | `IA-05` | `P2` | **Instruções Copilot (`.github/copilot-instructions.md`)** | Configurar instruções automáticas nativas para VS Code e GitHub Copilot. |
+| 🟢 | `IA-01` | `P0` | **Modernização do `project-starter-kit`** | Atualizar repositório `heviane/project-starter-kit` transformando-o em base para IA e SDD. |
+| 🟢 | `IA-02` | `P0` | **Template `AGENTS.md`** | Criar diretrizes operacionais para IAs (regras de stack, restrições, convenções de código e commits). |
+| 🟢 | `IA-03` | `P1` | **Template `SPEC.md` (SDD)** | Criar modelo de especificação funcional e técnica para desenvolvimento guiado por requisitos. |
+| 🟢 | `IA-04` | `P1` | **Template `ADR.md`** | Criar modelo padrão de Architecture Decision Record para decisões de design nos projetos. |
+| 🟢 | `IA-05` | `P2` | **Instruções Copilot (`.github/copilot-instructions.md`)** | Configurar instruções automáticas nativas para VS Code e GitHub Copilot. |
 | ⚪ | `IA-06` | `P2` | **Configurar GitHub Template Repository** | Habilitar a flag "Template repository" no GitHub para permitir *"Use this template"* com 1 clique. |
 
 ---
