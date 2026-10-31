@@ -1,7 +1,7 @@
 # Backlog Mestre de Governança e Portfólio
 
 > **Docs-as-Code — AI Engineering Hub**  
-> Repositório Central: [`heviane/heviane/meta-hub`](file:///E:/Projects/GitHub/heviane/heviane/meta-hub)  
+> Repositório Central: [`heviane/heviane/meta-hub`](https://github.com/heviane/heviane/tree/main/meta-hub)  
 > Quadro Executivo: [AI Engineering Hub — Portfolio & Roadmap (Project 14)](https://github.com/users/heviane/projects/14)  
 > Última Atualização: 31/10/2026
 
@@ -29,7 +29,7 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | :---: | :---: | :---: | :--- | :--- |
 | 🟢 | `ENV-01` | `P0` | **Auditoria e Otimização de Extensões** | Mapear extensões ativas e desinstalar ferramentas não utilizadas (ecossistemas Jupyter/Data Science e Azure). |
 | 🟢 | `ENV-02` | `P1` | **Inventário Documentado & Backup** | Gerar documento [`vscode-extensions.md`](./vscode-extensions.md) com as 74 extensões ativas, propósitos individuais e script PowerShell de restauração. |
-| ⚪ | `ENV-03` | `P2` | **Workspace Multi-Root (`.code-workspace`)** | Criar arquivo `github.code-workspace` na raiz `E:\Projects\GitHub` para unificar navegação dos repositórios sem conflito de Git. |
+| ⚪ | `ENV-03` | `P2` | **Workspace Multi-Root (`.code-workspace`)** | Criar arquivo `github.code-workspace` na raiz do workspace para unificar navegação dos repositórios sem conflito de Git. |
 
 ---
 
@@ -38,8 +38,8 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | Status | ID | Prioridade | Item | Descrição / Critérios de Aceite |
 | :---: | :---: | :---: | :--- | :--- |
 | 🟢 | `GOV-01` | `P0` | **Definição de Arquitetura de Governança** | Definir `heviane/heviane/meta-hub` como diretório oficial para Docs-as-Code e artefatos centrais. |
-| 🟢 | `GOV-02` | `P1` | **Criação do Meta-Hub README** | Criar [README.md](file:///E:/Projects/GitHub/heviane/heviane/meta-hub/README.md) executivo com diagramas de Flight Levels e governança. |
-| 🟢 | `GOV-03` | `P0` | **Migração de Docs para o Meta-Hub** | Sincronizar `backlog.md` e `vscode-extensions.md` exclusivamente dentro de `heviane/heviane/meta-hub/`. |
+| 🟢 | `GOV-02` | `P1` | **Criação do Meta-Hub README** | Criar [`README.md`](./README.md) executivo com diagramas de Flight Levels e governança. |
+| 🟢 | `GOV-03` | `P0` | **Criação de Docs no Meta-Hub** | Centralizar `backlog.md` e `vscode-extensions.md` exclusivamente no repositório de governança. |
 | ⚪ | `GOV-04` | `P1` | **Integração com Project 14** | Conectar e cadastrar as tarefas priorizadas no [AI Engineering Hub (Project 14)](https://github.com/users/heviane/projects/14). |
 | ⚪ | `GOV-05` | `P2` | **ADR-001: Adoção de SDD e IA no SDLC** | Criar registro formal de decisão arquitetural (ADR) sobre a metodologia de IA e governança Docs-as-Code. |
 
