@@ -28,10 +28,8 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | Status | ID | Prioridade | Item | Descrição / Critérios de Aceite |
 | :---: | :---: | :---: | :--- | :--- |
 | 🟢 | `ENV-01` | `P0` | **Auditoria de Extensões** | Mapear e revisar as 88 extensões do VS Code. |
-| 🟢 | `ENV-02` | `P1` | **Remoção de Ferramentas de Data Science** | Desinstalar família Jupyter/Notebooks sem comprometer suporte central a Python. |
-| 🟢 | `ENV-03` | `P1` | **Remoção de Ferramentas Azure** | Desinstalar pacotes `ms-azuretools.*` e `azure-repos`. |
-| 🟢 | `ENV-04` | `P1` | **Inventário Documentado** | Gerar documento [`vscode-extensions.md`](./vscode-extensions.md) com tabela de 74 extensões, descrições individuais e script PowerShell de backup. |
-| ⚪ | `ENV-05` | `P2` | **Workspace Multi-Root (`.code-workspace`)** | Criar arquivo `github.code-workspace` na raiz `E:\Projects\GitHub` para unificar navegação sem conflito de repositórios Git aninhados. |
+| 🟢 | `ENV-02` | `P1` | **Inventário Documentado** | Gerar documento [`vscode-extensions.md`](./vscode-extensions.md) com tabela das extensões, descrições individuais e script PowerShell de backup. |
+| ⚪ | `ENV-04` | `P2` | **Workspace Multi-Root (`.code-workspace`)** | Criar arquivo `github.code-workspace` na raiz `E:\Projects\GitHub` para unificar navegação sem conflito de repositórios Git aninhados. |
 
 ---
 
