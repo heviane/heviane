@@ -1,7 +1,7 @@
 # Extensões Instaladas no VS Code
 
 > Documento gerado e sincronizado automaticamente com o inventário completo de extensões instaladas no VS Code.  
-> **Total de extensões ativas:** 74
+> **Total de extensões ativas:** 75
 
 ---
 
@@ -106,6 +106,7 @@
 | :--- | :--- | :--- | :--- |
 | **GitLens** | `eamodio.gitlens` | `19.5.0` | Visualização avançada de histórico do Git: autoria linha a linha (blame), inspeção de commits e branches. |
 | **GitHub Repositories** | `github.remotehub` | `0.65.0` | Navegação e edição de código em repositórios remotos do GitHub sem consumir armazenamento local. |
+| **GitHub Pull Requests and Issues** | `github.vscode-pull-request-github` | `0.174.0` | Gerenciamento, criação e revisão completa de Pull Requests e Issues diretamente no editor. |
 
 ---
 
@@ -209,57 +210,58 @@
 | 21 | **EditorConfig** | `editorconfig.editorconfig` | `0.18.2` | Padronização de indentação e espaçamento consistente via `.editorconfig`. |
 | 22 | **Prettier** | `esbenp.prettier-vscode` | `12.4.0` | Formatador opinativo automático para código web e documentações. |
 | 23 | **GitHub Repositories** | `github.remotehub` | `0.65.0` | Navega e edita repositórios do GitHub na nuvem sem precisar cloná-los. |
-| 24 | **Google Antigravity** | `google.google-antigravity` | `1.10.0` | Assistente avançado de IA para pair programming e automação no VS Code. |
-| 25 | **C# Extensions** | `kreativ-software.csharpextensions` | `1.7.3` | Atalhos de menu para gerar rapidamente classes e interfaces C#. |
-| 26 | **VS Color Picker** | `lihui.vs-color-picker` | `1.0.0` | Seletor de cores flutuante com suporte a formatos hex, RGB e HSL. |
-| 27 | **C# Dev Kit** | `ms-dotnettools.csdevkit` | `3.40.215` | Kit oficial da Microsoft para soluções, projetos e testes automatizados em .NET. |
-| 28 | **C#** | `ms-dotnettools.csharp` | `2.160.4` | Suporte principal à linguagem C# com IntelliSense via Roslyn e refatoração. |
-| 29 | **.NET Install Tool** | `ms-dotnettools.vscode-dotnet-runtime` | `3.2.0` | Gerenciador automático de runtimes .NET usados por extensões do editor. |
-| 30 | **Kubernetes** | `ms-kubernetes-tools.vscode-kubernetes-tools` | `1.4.1` | Gerenciamento e inspeção visual de clusters, pods e manifests do Kubernetes. |
-| 31 | **SQL Server (mssql)** | `ms-mssql.mssql` | `1.47.0` | Execução de consultas T-SQL e conexão com bancos SQL Server. |
-| 32 | **SQL Database Projects** | `ms-mssql.sql-bindings-vscode` | `0.4.1` | Projetos declarativos de banco de dados e bindings de dados. |
-| 33 | **Black Formatter** | `ms-python.black-formatter` | `2026.6.0` | Formatador oficial de código Python com as diretrizes do Black. |
-| 34 | **Python Debugger** | `ms-python.debugpy` | `2026.6.0` | Depurador oficial de Python com breakpoints e inspeção de variáveis. |
-| 35 | **Python** | `ms-python.python` | `2026.10.0` | Suporte central da linguagem Python: ambientes virtuais e execução. |
-| 36 | **Pylance** | `ms-python.vscode-pylance` | `2026.4.1` | Servidor de linguagem avançado para Python com tipagem estática e autocompletar. |
-| 37 | **Dev Containers** | `ms-vscode-remote.remote-containers` | `0.469.0` | Abre pastas e códigos dentro de um contêiner Docker isolado como ambiente de dev. |
-| 38 | **Remote - SSH** | `ms-vscode-remote.remote-ssh` | `0.128.0` | Conecta o VS Code a servidores remotos via conexão SSH. |
-| 39 | **Remote - SSH: Config** | `ms-vscode-remote.remote-ssh-edit` | `0.87.0` | Suporte de edição e sintaxe do arquivo de hosts `~/.ssh/config`. |
-| 40 | **WSL** | `ms-vscode-remote.remote-wsl` | `1.104.7` | Desenvolve no ambiente Linux do Windows Subsystem for Linux via VS Code. |
-| 41 | **Remote Development Pack** | `ms-vscode-remote.vscode-remote-extensionpack` | `0.26.0` | Pacote completo com WSL, SSH, Contêineres e Tunnels para trabalho remoto. |
-| 42 | **Live Preview (Microsoft)** | `ms-vscode.live-server` | `0.4.20` | Servidor web local com navegador embutido para testar HTML/CSS/JS ao vivo. |
-| 43 | **Notepad++ Keymap** | `ms-vscode.notepadplusplus-keybindings` | `1.0.7` | Configura os atalhos clássicos do teclado do Notepad++ no VS Code. |
-| 44 | **PowerShell** | `ms-vscode.powershell` | `2025.4.0` | Suporte oficial para desenvolvimento, depuração e execução de scripts PowerShell. |
-| 45 | **Remote Explorer** | `ms-vscode.remote-explorer` | `0.5.0` | Painel lateral para alternar entre conexões remotas (SSH, WSL, Contêineres). |
-| 46 | **Remote Repositories** | `ms-vscode.remote-repositories` | `0.42.0` | Abre e edita projetos remotos sem precisar cloná-los para a máquina local. |
-| 47 | **Remote Server** | `ms-vscode.remote-server` | `1.5.4` | Infraestrutura de comunicação para serviços remotos e túneis do VS Code. |
-| 48 | **VS Code Speech** | `ms-vscode.vscode-speech` | `0.16.0` | Habilita comandos de voz e ditado integrado ao editor e ferramentas de IA. |
-| 49 | **Live Share** | `ms-vsliveshare.vsliveshare` | `1.1.122` | Colaboração em tempo real para pair programming com compartilhamento de código. |
-| 50 | **Color Highlight** | `naumovs.color-highlight` | `2.8.0` | Colore o fundo de códigos de cores no próprio texto para facilitar visualização. |
-| 51 | **Jest** | `orta.vscode-jest` | `6.4.4` | Execução contínua e status visual de testes unitários com Jest em JS/TS. |
-| 52 | **Material Icon Theme** | `pkief.material-icon-theme` | `5.40.0` | Ícones modernos com visual Material Design para arquivos e pastas. |
-| 53 | **Inline HTML** | `pushqrdx.inline-html` | `0.3.10` | Destaque de sintaxe e autocompletar de HTML embutido em strings JavaScript. |
-| 54 | **Thunder Client** | `rangav.vscode-thunder-client` | `3.1.2` | Cliente HTTP/REST integrado para testes rápidos de APIs sem sair do editor. |
-| 55 | **YAML (Red Hat)** | `redhat.vscode-yaml` | `2.0.0` | Suporte e validação de schemas para arquivos de configuração YAML. |
-| 56 | **Live Server** | `ritwickdey.liveserver` | `5.7.10` | Servidor local com recarregamento automático (live reload) para páginas web. |
-| 57 | **Rocketseat ReactJS** | `rocketseat.rocketseatreactjs` | `3.0.2` | Snippets de componentes, hooks e padrões de código em React. |
-| 58 | **Rocketseat React Native** | `rocketseat.rocketseatreactnative` | `3.0.1` | Snippets aceleradores para componentes e navegação em React Native. |
-| 59 | **Code Spell Checker** | `streetsidesoftware.code-spell-checker` | `4.10.0` | Corretor ortográfico para código que detecta erros em variáveis e comentários. |
-| 60 | **vscode-styled-components** | `styled-components.vscode-styled-components` | `1.7.8` | Destaque e autocompletar CSS dentro de componentes do Styled Components. |
-| 61 | **tldraw** | `tldraw-org.tldraw-vscode` | `2.386.0` | Quadro branco interativo embutido para criar esboços e diagramas. |
-| 62 | **Nodemon Problem Matcher** | `trilean.vscode-nodemon-problem-matcher` | `0.0.1` | Integra logs e falhas do nodemon diretamente ao painel de problemas do editor. |
-| 63 | **Error Lens** | `usernamehw.errorlens` | `3.30.0` | Exibe mensagens de erros e alertas de linters inline na própria linha de código. |
-| 64 | **Gradle for Java** | `vscjava.vscode-gradle` | `3.18.1` | Visualização e execução de tarefas de compilação do Gradle para Java. |
-| 65 | **Debugger for Java** | `vscjava.vscode-java-debug` | `0.60.0` | Depurador passo a passo para aplicações Java no VS Code. |
-| 66 | **Project Manager for Java** | `vscjava.vscode-java-dependency` | `0.27.7` | Navegador e gerenciador de pacotes e dependências externas de projetos Java. |
-| 67 | **Extension Pack for Java** | `vscjava.vscode-java-pack` | `0.31.2` | Pacote com as principais extensões de produtividade para desenvolvimento em Java. |
-| 68 | **Maven for Java** | `vscjava.vscode-maven` | `0.46.0` | Gerenciamento e execução de builds em projetos baseados no Apache Maven. |
-| 69 | **vscode-icons** | `vscode-icons-team.vscode-icons` | `13.0.0` | Pacote clássico de ícones temáticos para arquivos e diretórios no explorador. |
-| 70 | **Quokka.js** | `wallabyjs.quokka-vscode` | `1.0.769` | Playground interativo que executa código JavaScript/TypeScript em tempo real. |
-| 71 | **TODO Highlight** | `wayou.vscode-todo-highlight` | `1.0.5` | Destaca visualmente tags de tarefas pendentes (`TODO:`, `FIXME:`) no código. |
-| 72 | **JavaScript (ES6) snippets** | `xabikos.javascriptsnippets` | `1.8.0` | Snippets e atalhos de código para funções e sintaxes do JavaScript ES6+. |
-| 73 | **Preview Server** | `yuichinukiyama.vscode-preview-server` | `1.3.0` | Servidor web local com navegador embutido para testar interfaces HTML/CSS. |
-| 74 | **Markdown PDF** | `yzane.markdown-pdf` | `2.2.0` | Converte e exporta documentos Markdown para arquivos PDF, HTML ou imagens. |
+| 24 | **GitHub Pull Requests and Issues** | `github.vscode-pull-request-github` | `0.174.0` | Gerenciamento, criação e revisão completa de Pull Requests e Issues diretamente no editor. |
+| 25 | **Google Antigravity** | `google.google-antigravity` | `1.10.0` | Assistente avançado de IA para pair programming e automação no VS Code. |
+| 26 | **C# Extensions** | `kreativ-software.csharpextensions` | `1.7.3` | Atalhos de menu para gerar rapidamente classes e interfaces C#. |
+| 27 | **VS Color Picker** | `lihui.vs-color-picker` | `1.0.0` | Seletor de cores flutuante com suporte a formatos hex, RGB e HSL. |
+| 28 | **C# Dev Kit** | `ms-dotnettools.csdevkit` | `3.40.215` | Kit oficial da Microsoft para soluções, projetos e testes automatizados em .NET. |
+| 29 | **C#** | `ms-dotnettools.csharp` | `2.160.4` | Suporte principal à linguagem C# com IntelliSense via Roslyn e refatoração. |
+| 30 | **.NET Install Tool** | `ms-dotnettools.vscode-dotnet-runtime` | `3.2.0` | Gerenciador automático de runtimes .NET usados por extensões do editor. |
+| 31 | **Kubernetes** | `ms-kubernetes-tools.vscode-kubernetes-tools` | `1.4.1` | Gerenciamento e inspeção visual de clusters, pods e manifests do Kubernetes. |
+| 32 | **SQL Server (mssql)** | `ms-mssql.mssql` | `1.47.0` | Execução de consultas T-SQL e conexão com bancos SQL Server. |
+| 33 | **SQL Database Projects** | `ms-mssql.sql-bindings-vscode` | `0.4.1` | Projetos declarativos de banco de dados e bindings de dados. |
+| 34 | **Black Formatter** | `ms-python.black-formatter` | `2026.6.0` | Formatador oficial de código Python com as diretrizes do Black. |
+| 35 | **Python Debugger** | `ms-python.debugpy` | `2026.6.0` | Depurador oficial de Python com breakpoints e inspeção de variáveis. |
+| 36 | **Python** | `ms-python.python` | `2026.10.0` | Suporte central da linguagem Python: ambientes virtuais e execução. |
+| 37 | **Pylance** | `ms-python.vscode-pylance` | `2026.4.1` | Servidor de linguagem avançado para Python com tipagem estática e autocompletar. |
+| 38 | **Dev Containers** | `ms-vscode-remote.remote-containers` | `0.469.0` | Abre pastas e códigos dentro de um contêiner Docker isolado como ambiente de dev. |
+| 39 | **Remote - SSH** | `ms-vscode-remote.remote-ssh` | `0.128.0` | Conecta o VS Code a servidores remotos via conexão SSH. |
+| 40 | **Remote - SSH: Config** | `ms-vscode-remote.remote-ssh-edit` | `0.87.0` | Suporte de edição e sintaxe do arquivo de hosts `~/.ssh/config`. |
+| 41 | **WSL** | `ms-vscode-remote.remote-wsl` | `1.104.7` | Desenvolve no ambiente Linux do Windows Subsystem for Linux via VS Code. |
+| 42 | **Remote Development Pack** | `ms-vscode-remote.vscode-remote-extensionpack` | `0.26.0` | Pacote completo com WSL, SSH, Contêineres e Tunnels para trabalho remoto. |
+| 43 | **Live Preview (Microsoft)** | `ms-vscode.live-server` | `0.4.20` | Servidor web local com navegador embutido para testar HTML/CSS/JS ao vivo. |
+| 44 | **Notepad++ Keymap** | `ms-vscode.notepadplusplus-keybindings` | `1.0.7` | Configura os atalhos clássicos do teclado do Notepad++ no VS Code. |
+| 45 | **PowerShell** | `ms-vscode.powershell` | `2025.4.0` | Suporte oficial para desenvolvimento, depuração e execução de scripts PowerShell. |
+| 46 | **Remote Explorer** | `ms-vscode.remote-explorer` | `0.5.0` | Painel lateral para alternar entre conexões remotas (SSH, WSL, Contêineres). |
+| 47 | **Remote Repositories** | `ms-vscode.remote-repositories` | `0.42.0` | Abre e edita projetos remotos sem precisar cloná-los para a máquina local. |
+| 48 | **Remote Server** | `ms-vscode.remote-server` | `1.5.4` | Infraestrutura de comunicação para serviços remotos e túneis do VS Code. |
+| 49 | **VS Code Speech** | `ms-vscode.vscode-speech` | `0.16.0` | Habilita comandos de voz e ditado integrado ao editor e ferramentas de IA. |
+| 50 | **Live Share** | `ms-vsliveshare.vsliveshare` | `1.1.122` | Colaboração em tempo real para pair programming com compartilhamento de código. |
+| 51 | **Color Highlight** | `naumovs.color-highlight` | `2.8.0` | Colore o fundo de códigos de cores no próprio texto para facilitar visualização. |
+| 52 | **Jest** | `orta.vscode-jest` | `6.4.4` | Execução contínua e status visual de testes unitários com Jest em JS/TS. |
+| 53 | **Material Icon Theme** | `pkief.material-icon-theme` | `5.40.0` | Ícones modernos com visual Material Design para arquivos e pastas. |
+| 54 | **Inline HTML** | `pushqrdx.inline-html` | `0.3.10` | Destaque de sintaxe e autocompletar de HTML embutido em strings JavaScript. |
+| 55 | **Thunder Client** | `rangav.vscode-thunder-client` | `3.1.2` | Cliente HTTP/REST integrado para testes rápidos de APIs sem sair do editor. |
+| 56 | **YAML (Red Hat)** | `redhat.vscode-yaml` | `2.0.0` | Suporte e validação de schemas para arquivos de configuração YAML. |
+| 57 | **Live Server** | `ritwickdey.liveserver` | `5.7.10` | Servidor local com recarregamento automático (live reload) para páginas web. |
+| 58 | **Rocketseat ReactJS** | `rocketseat.rocketseatreactjs` | `3.0.2` | Snippets de componentes, hooks e padrões de código em React. |
+| 59 | **Rocketseat React Native** | `rocketseat.rocketseatreactnative` | `3.0.1` | Snippets aceleradores para componentes e navegação em React Native. |
+| 60 | **Code Spell Checker** | `streetsidesoftware.code-spell-checker` | `4.10.0` | Corretor ortográfico para código que detecta erros em variáveis e comentários. |
+| 61 | **vscode-styled-components** | `styled-components.vscode-styled-components` | `1.7.8` | Destaque e autocompletar CSS dentro de componentes do Styled Components. |
+| 62 | **tldraw** | `tldraw-org.tldraw-vscode` | `2.386.0` | Quadro branco interativo embutido para criar esboços e diagramas. |
+| 63 | **Nodemon Problem Matcher** | `trilean.vscode-nodemon-problem-matcher` | `0.0.1` | Integra logs e falhas do nodemon diretamente ao painel de problemas do editor. |
+| 64 | **Error Lens** | `usernamehw.errorlens` | `3.30.0` | Exibe mensagens de erros e alertas de linters inline na própria linha de código. |
+| 65 | **Gradle for Java** | `vscjava.vscode-gradle` | `3.18.1` | Visualização e execução de tarefas de compilação do Gradle para Java. |
+| 66 | **Debugger for Java** | `vscjava.vscode-java-debug` | `0.60.0` | Depurador passo a passo para aplicações Java no VS Code. |
+| 67 | **Project Manager for Java** | `vscjava.vscode-java-dependency` | `0.27.7` | Navegador e gerenciador de pacotes e dependências externas de projetos Java. |
+| 68 | **Extension Pack for Java** | `vscjava.vscode-java-pack` | `0.31.2` | Pacote com as principais extensões de produtividade para desenvolvimento em Java. |
+| 69 | **Maven for Java** | `vscjava.vscode-maven` | `0.46.0` | Gerenciamento e execução de builds em projetos baseados no Apache Maven. |
+| 70 | **vscode-icons** | `vscode-icons-team.vscode-icons` | `13.0.0` | Pacote clássico de ícones temáticos para arquivos e diretórios no explorador. |
+| 71 | **Quokka.js** | `wallabyjs.quokka-vscode` | `1.0.769` | Playground interativo que executa código JavaScript/TypeScript em tempo real. |
+| 72 | **TODO Highlight** | `wayou.vscode-todo-highlight` | `1.0.5` | Destaca visualmente tags de tarefas pendentes (`TODO:`, `FIXME:`) no código. |
+| 73 | **JavaScript (ES6) snippets** | `xabikos.javascriptsnippets` | `1.8.0` | Snippets e atalhos de código para funções e sintaxes do JavaScript ES6+. |
+| 74 | **Preview Server** | `yuichinukiyama.vscode-preview-server` | `1.3.0` | Servidor web local com navegador embutido para testar interfaces HTML/CSS. |
+| 75 | **Markdown PDF** | `yzane.markdown-pdf` | `2.2.0` | Converte e exporta documentos Markdown para arquivos PDF, HTML ou imagens. |
 
 ---
 
@@ -292,6 +294,7 @@ $extensions = @(
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
     "github.remotehub",
+    "github.vscode-pull-request-github",
     "google.google-antigravity",
     "kreativ-software.csharpextensions",
     "lihui.vs-color-picker",
