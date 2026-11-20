@@ -12,12 +12,14 @@
 O avanço de ferramentas de Inteligência Artificial Generativa e agentes de pair programming (Google Antigravity, GitHub Copilot, Claude Code) transformou a dinâmica de engenharia de software, aumentando drasticamente a velocidade de prototipação e escrita de código.
 
 No entanto, em um ecossistema multi-repositório distribuído em três organizações (`@heviane`, `@heviane-labs` e `@heviane-learning`), a utilização não estruturada de assistentes de IA introduz desafios críticos:
+
 * **Entropia e Falta de Padronização:** Modelos de IA tendem a gerar arquiteturas concorrentes ou padrões incompatíveis quando não recebem contexto arquitetural unificado.
 * **Mutações Destrutivas ou Não Autorizadas:** Agentes autônomos podem apagar dados, alterar dependências ou aplicar refatorações sem consentimento humano prévio.
 * **Código Órfão / Sem Rastreabilidade:** A geração direta de código sem especificação prévia impede a validação de regras de negócio e dificulta a manutenção futura.
 * **Degradação de Documentação:** Sistemas desenvolvidos sem rastreamento de decisões acumulam débito técnico invisível.
 
 ### Forças Determinantes:
+
 * **Força 1 (Escala do Ecossistema):** Dezenas de repositórios independentes precisam compartilhar regras de governança e interoperabilidade sem silos.
 * **Força 2 (Human-in-the-Loop Obrigatório):** A desenvolvedora deve manter o controle estratégico e a palavra final sobre qualquer alteração no ambiente ou no código.
 * **Força 3 (Docs-as-Code):** Decisões e especificações devem viver no repositório Git, integradas às ferramentas de desenvolvimento, e não em sistemas proprietários desconectados.
@@ -47,16 +49,19 @@ Decidimos adotar formalmente a metodologia de **Spec-Driven Development (SDD)** 
 ## 3. ⚖️ Consequências
 
 ### Consequências Positivas (Ganhos):
+
 * **Previsibilidade e Qualidade:** Código gerado por IA alinhado a especificações claras e validado por humanos.
 * **Eliminação de Ações Silenciosas:** Zero risco de deleções inadvertidas ou alterações no ambiente sem consentimento prévio.
 * **Onboarding Instantâneo de Agentes:** Qualquer assistente de IA ganha consciência imediata do contexto do projeto ao ler `AGENTS.md` e a especificação.
 * **Rastreabilidade Histórica:** O porquê e o como de cada decisão ficam permanentemente documentados no Git.
 
 ### Consequências Negativas (Custos / Desafios):
+
 * **Atrito Inicial de Especificação:** Exige a disciplina de redigir o `SPEC.md` antes de iniciar a implementação do código.
 * **Manutenção Contínua:** Demanda atualização rigorosa dos documentos de governança à medida que decisões e requisitos evoluem.
 
 ### Riscos Mitigados:
+
 * **Alucinação Operacional de IA:** Mitigado pelo contrato `AGENTS.md` e aprovação humana obrigatória.
 * **Débito Técnico Oculto:** Mitigado pela exigência de critérios de aceite e especificações técnicas prévias.
 
@@ -69,4 +74,3 @@ Decidimos adotar formalmente a metodologia de **Spec-Driven Development (SDD)** 
 | **Prompting Ad-hoc (Sem SDD)** | Velocidade imediata no início; zero atrito de documentação. | Código desorganizado, alucinações frequentes, retrabalho alto e ausência de rastreabilidade. | Não escala para múltiplos repositórios e compromete a qualidade arquitetural. |
 | **Governança Ágil Tradicional (Jira / Confluence externo)** | Ferramental maduro corporativo. | Desconectado do repositório Git; excesso de burocracia e custos de manutenção. | Viola o princípio de Docs-as-Code e dificulta o consumo de contexto por agentes de IA locais. |
 | **SDD + Human-in-the-Loop + Docs-as-Code (Escolhida)** | Alta velocidade da IA com controle humano absoluto, rastreabilidade no Git e baixo atrito. | Exige disciplina documental antes do início da implementação de código. | **Opção selecionada** por equilibrar velocidade, segurança e robustez técnica. |
-
