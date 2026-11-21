@@ -6,17 +6,27 @@
     - Estado do Git (árvore limpa, commits não enviados ou não baixados)
     - Conformidade de Governança (AGENTS.md, README.md, .gitignore)
     - Verificação de Segurança (detecção de arquivos sensíveis como .env, .pem, .pfx)
+    - Geração opcional de relatório executivo em Markdown para histórico de governança
 .PARAMETER BasePath
     Caminho raiz do metadiretório. Padrão: E:\Projects\GitHub
+.PARAMETER Detailed
+    Exibe a tabela detalhada de todos os repositórios no console, mesmo os limpos.
+.PARAMETER ExportReport
+    Exporta o relatório consolidado em formato Markdown com timestamp.
+.PARAMETER ReportPath
+    Diretório de destino do relatório em Markdown. Padrão: H:\My Drive\Workspace Root Local\Governança Local & Prompts\auditorias
 .EXAMPLE
     .\audit-workspace.ps1
     .\audit-workspace.ps1 -Detailed
+    .\audit-workspace.ps1 -Detailed -ExportReport
 #>
 
 [CmdletBinding()]
 param (
     [string]$BasePath = "E:\Projects\GitHub",
-    [switch]$Detailed
+    [switch]$Detailed,
+    [switch]$ExportReport,
+    [string]$ReportPath = "H:\My Drive\Workspace Root Local\Governança Local & Prompts\auditorias"
 )
 
 Write-Host "=================================================================" -ForegroundColor Cyan
@@ -87,7 +97,7 @@ foreach ($gitDir in $gitDirs) {
     })
 }
 
-# Exibição
+# Exibição no Console
 if ($Detailed) {
     $results | Format-Table -AutoSize
 } else {
@@ -110,4 +120,67 @@ Write-Host " - Repositórios sem AGENTS/CLAUDE  : $missingAgents"
 Write-Host " - Repositórios sem README         : $missingReadme"
 Write-Host " - Alertas de Arquivos Sensíveis   : $securityAlerts" $(if ($securityAlerts -gt 0) { "🚨" } else { "✅" })
 Write-Host ""
-Write-Host "Dica: Execute com o parâmetro -Detailed para ver a tabela completa de todos os repositórios." -ForegroundColor DarkGray
+
+# 4. Exportação Opcional de Relatório em Markdown
+if ($ExportReport) {
+    if (-not (Test-Path $ReportPath)) {
+        try {
+            New-Item -ItemType Directory -Path $ReportPath -Force | Out-Null
+        } catch {
+            $ReportPath = Join-Path $BasePath "auditorias"
+            New-Item -ItemType Directory -Path $ReportPath -Force | Out-Null
+        }
+    }
+    
+    $timestampDate = Get-Date -Format "yyyy-MM-dd"
+    $timestampFull = Get-Date -Format "dd/MM/yyyy HH:mm:ss"
+    $reportFile = Join-Path $ReportPath "audit-$timestampDate.md"
+    
+    $statusDirtyDesc = if ($dirtyRepos -gt 0) { "⚠️ Alerta" } else { "✅ OK" }
+    $statusAheadDesc = if ($unpushedRepos -gt 0) { "⬆️ Ahead" } else { "✅ OK" }
+    $statusAgentsDesc = if ($missingAgents -gt 0) { "⚠️ Ausente" } else { "✅ OK" }
+    $statusReadmeDesc = if ($missingReadme -gt 0) { "⚠️ Ausente" } else { "✅ OK" }
+    $statusSecDesc = if ($securityAlerts -gt 0) { "🚨 Risco Crítico" } else { "✅ Seguro" }
+
+    $lines = [System.Collections.Generic.List[string]]::new()
+    $lines.Add("# 🔍 Relatório de Auditoria do Workspace")
+    $lines.Add("")
+    $lines.Add("> **Data da Execução:** " + $timestampFull + "  ")
+    $lines.Add("> **Caminho Base Auditado:** " + '`' + $BasePath + '`' + "  ")
+    $lines.Add("> **Destino do Relatório:** " + '`' + $reportFile + '`')
+    $lines.Add("")
+    $lines.Add("---")
+    $lines.Add("")
+    $lines.Add("## 📊 Resumo Executivo")
+    $lines.Add("")
+    $lines.Add("| Métrica | Total | Situação |")
+    $lines.Add("| :--- | :---: | :---: |")
+    $lines.Add("| **Total de Repositórios Auditados** | $totalRepos | ℹ️ |")
+    $lines.Add("| **Repositórios com Modificações Pendentes** | $dirtyRepos | $statusDirtyDesc |")
+    $lines.Add("| **Repositórios com Push Pendente** | $unpushedRepos | $statusAheadDesc |")
+    $lines.Add("| **Repositórios sem AGENTS.md / CLAUDE.md** | $missingAgents | $statusAgentsDesc |")
+    $lines.Add("| **Repositórios sem README.md** | $missingReadme | $statusReadmeDesc |")
+    $lines.Add("| **Alertas de Arquivos Sensíveis (.env, .pfx, etc.)** | $securityAlerts | $statusSecDesc |")
+    $lines.Add("")
+    $lines.Add("---")
+    $lines.Add("")
+    $lines.Add("## 📦 Detalhamento por Repositório")
+    $lines.Add("")
+    $lines.Add("| Repositório | Status Git | Ahead | AGENTS.md | README.md | .gitignore | Alerta de Segurança |")
+    $lines.Add("| :--- | :---: | :---: | :---: | :---: | :---: | :--- |")
+    
+    foreach ($r in $results) {
+        $lines.Add("| " + '`' + $r.Repositorio + '`' + " | " + $r.Status + " | " + $r.Ahead + " | " + $r.AGENTS + " | " + $r.README + " | " + $r.Gitignore + " | " + $r.AlertaSeguranca + " |")
+    }
+    
+    $lines.Add("")
+    $lines.Add("---")
+    $lines.Add("*Relatório gerado automaticamente por " + '`audit-workspace.ps1`' + " via Docs-as-Code.*")
+
+    $lines | Set-Content -Path $reportFile -Encoding UTF8
+    Write-Host "📄 Relatório de auditoria exportado com sucesso para:" -ForegroundColor Green
+    Write-Host "   $reportFile" -ForegroundColor Cyan
+    Write-Host ""
+} else {
+    Write-Host "Dica: Execute com -Detailed para ver todos os repositórios ou -ExportReport para gerar relatório em Markdown." -ForegroundColor DarkGray
+}
