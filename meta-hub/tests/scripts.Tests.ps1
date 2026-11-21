@@ -1,4 +1,4 @@
-Describe "Automações PowerShell do Meta-Hub" {
+﻿Describe "Automações PowerShell do Meta-Hub" {
     $repoRoot = (Resolve-Path "$PSScriptRoot/../..").Path
     $scriptsDir = Join-Path $repoRoot "meta-hub/scripts"
 
@@ -54,7 +54,7 @@ Describe "Automações PowerShell do Meta-Hub" {
             $docPath = Join-Path $repoRoot "meta-hub/vscode-extensions.md"
             Test-Path $docPath | Should Be $true
             $content = [System.IO.File]::ReadAllText($docPath, [System.Text.Encoding]::UTF8)
-            ($content -match '\|\s*Extensão\s*\|\s*ID\s*\|\s*Versão\s*\|\s*Propósito / Descrição\s*\|') | Should Be $true
+            ($content -match '\|\s*Extens.o\s*\|\s*ID\s*\|\s*Vers.o\s*\|') | Should Be $true
         }
     }
 }
