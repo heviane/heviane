@@ -38,7 +38,7 @@ flowchart TD
     subgraph FL1 ["Flight Level 1: Entrega Operacional / Repositórios"]
         ReposMain["Repositórios Core (ex: nfse-nacional-api, institutional-website-template)"]
         ReposLabs["Repositórios Labs (ex: dotnet-lab, genai-lab)"]
-        ReposLearn["Repositórios Estudos (ex: dio-prompts, alura-devops)"]
+        ReposLearn["Repositórios Estudos (ex: dio-prompts, alura-imersao-devops)"]
         StarterKit["project-starter-kit (Templates, SDD, AGENTS.md)"]
     end
 
@@ -72,13 +72,13 @@ flowchart LR
 
     subgraph CLOUD ["☁️ Bastidores & Nuvem Privada (Google Drive)"]
         direction TB
-        RootLocal["🌐 H:\My Drive\Workspace Root Local\n(Prompts IA, Personas, Diretrizes da Máquina)"]
-        ClientsFolder["🔒 H:\My Drive\Clients\n(Certificados A1, Credenciais, Contratos)"]
-        PersonalFolder["🔒 I:\My Drive\Heviane\n(Estratégia de Carreira, Finanças, Estudos)"]
+        RootLocal["🌐 H:\My Drive\Workspace Root Local<br/>(Prompts IA, Personas, Diretrizes da Máquina)"]
+        ClientsFolder["🔒 H:\My Drive\Clients<br/>(Certificados A1, Credenciais, Contratos)"]
+        PersonalFolder["🔒 I:\My Drive\Heviane<br/>(Estratégia de Carreira, Finanças, Estudos)"]
     end
 
     subgraph WORKSPACE ["💻 Multi-Root Workspace (github.code-workspace)"]
-        UnifiedExplorer["Explorer Integrado no VS Code\n(Zero Risco no Git & Backup Automático em Nuvem)"]
+        UnifiedExplorer["Explorer Integrado no VS Code<br/>(Segregação Física & Backup em Nuvem)"]
     end
 
     GIT --> WORKSPACE

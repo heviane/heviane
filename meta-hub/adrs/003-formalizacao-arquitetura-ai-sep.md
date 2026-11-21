@@ -62,7 +62,7 @@ flowchart TD
         DocsCI["Pipeline GitHub Actions (Docs & Linters CI)"]
     end
 
-    subgraph L6 ["6. Camada de Portfólio & Soluções (51 Repositórios)"]
+    subgraph L6 ["6. Camada de Portfólio & Soluções (23 Públicos / 51 Totais)"]
         Core["Core @heviane (Produtos & NFS-e Nacional)"]
         Labs["Labs @heviane-labs (PoCs & IA Generativa)"]
         Learning["Learning @heviane-learning (Bootcamps & Estudos)"]

@@ -3,7 +3,7 @@
 > **Docs-as-Code — AI Engineering Hub**  
 > Repositório Central: [`heviane/heviane/meta-hub`](https://github.com/heviane/heviane/tree/main/meta-hub)  
 > Quadro Executivo: [AI Engineering Hub — Portfolio & Roadmap (Project 14)](https://github.com/users/heviane/projects/14)  
-> Última Atualização: 20/11/2026
+> Última Atualização: 21/11/2026
 
 ---
 
@@ -28,7 +28,7 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | Status | ID | Prioridade | Item | Descrição / Critérios de Aceite |
 | :---: | :---: | :---: | :--- | :--- |
 | 🟢 | `ENV-01` | `P0` | **Auditoria e Otimização de Extensões** | Mapear extensões ativas e desinstalar ferramentas não utilizadas (ecossistemas Jupyter/Data Science e Azure). |
-| 🟢 | `ENV-02` | `P1` | **Inventário Documentado & Backup** | Gerar documento [`vscode-extensions.md`](./vscode-extensions.md) com as 75 extensões ativas, propósitos individuais e script PowerShell de restauração. |
+| 🟢 | `ENV-02` | `P1` | **Inventário Documentado & Backup** | Gerar documento [`vscode-extensions.md`](./vscode-extensions.md) com as 76 extensões ativas, propósitos individuais e script PowerShell de restauração. |
 | 🟢 | `ENV-03` | `P2` | **Workspace Multi-Root (`.code-workspace`)** | Criar arquivo `github.code-workspace` na raiz do workspace para unificar navegação dos repositórios sem conflito de Git. |
 
 ---
@@ -59,7 +59,7 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 
 ---
 
-### Épico 4: Organizações e Repositórios no GitHub — ⚪ Em Andamento
+### Épico 4: Organizações e Repositórios no GitHub — ⚪ A Fazer
 
 | Status | ID | Prioridade | Item | Descrição / Critérios de Aceite |
 | :---: | :---: | :---: | :--- | :--- |
@@ -105,17 +105,17 @@ Propostas técnicas e oportunidades mapeadas para avaliação nas próximas iter
 
 1. **`ai-dev-journey` (Repositório / Série de Artigos Técnicos):**  
    Repositório e série de publicações documentando a jornada de transição de *Desenvolvedor Tradicional (10+ anos)* para *AI-Assisted Software Engineer*. Conteúdo de alta autoridade técnica para LinkedIn e portfólio.
-2. **Catálogo Unificado de Repositórios (`meta-hub/repository-catalog.md`):** *(Concluído)*  
-   Documento implementado em `meta-hub/repository-catalog.md` mapeando os 23 repositórios públicos, com inventário completo (51 repositórios) mantido no Google Drive corporativo conforme ADR-002.
-3. **Automação do Inventário de Extensões (`sync-extensions.ps1`):** *(Concluído)*  
-   Script implementado em `meta-hub/scripts/sync-extensions.ps1` para atualizar e validar automaticamente o inventário `vscode-extensions.md` via `code --list-extensions --show-versions`, com suporte a flag `-CheckOnly` para CI/linter.
-4. **Formalização da Arquitetura AI-SEP (*AI-Assisted Software Engineering Platform*):** *(Concluído)*  
+2. **Catálogo Unificado de Repositórios (`meta-hub/repository-catalog.md`):** 🟢 `[Concluído]`  
+   Documento implementado em [`repository-catalog.md`](./repository-catalog.md) mapeando os 23 repositórios públicos, com inventário completo (51 repositórios) mantido no Google Drive corporativo conforme ADR-002.
+3. **Automação do Inventário de Extensões (`sync-extensions.ps1`):** 🟢 `[Concluído]`  
+   Script implementado em [`scripts/sync-extensions.ps1`](./scripts/sync-extensions.ps1) para atualizar e validar automaticamente o inventário `vscode-extensions.md` via `code --list-extensions --show-versions`, com suporte a flag `-CheckOnly` para CI/linter.
+4. **Formalização da Arquitetura AI-SEP (*AI-Assisted Software Engineering Platform*):** 🟢 `[Concluído]`  
    Documentada no Meta-Hub através do [ADR-003](./adrs/003-formalizacao-arquitetura-ai-sep.md), integrando Governança (Meta-Hub), Templates (Starter Kit), Metodologia (SDD) e Contratos de IA em uma plataforma coesa.
 5. **Automação Docs-as-Code com GitHub CLI (`gh`):**  
    Criar workflow ou script para refletir automaticamente itens marcados no backlog no GitHub Project 14.
 6. **Extração de `CHANGELOG.md` no Meta-Hub:**  
    Migrar épicos antigos totalmente concluídos (1 a 3) para um histórico formal de mudanças, mantendo o `backlog.md` enxuto.
-7. **Diferenciação de Stacks Consolidadas vs. Tecnologias em Estudo no `README.md`:**  
+7. **Diferenciação de Stacks Consolidadas vs. Tecnologias em Estudo no `README.md`:** 🟡 `[Em Andamento]`  
    Segmentar a seção de tecnologias e ferramentas no perfil principal entre *Competências Consolidadas em Produção* (GeneXus, JS/TS, React, Node.js, C#, SQL Server, MySQL, PostgreSQL) e *Em Especialização / Aprofundamento* (Next.js, Arquitetura Assistida por IA, DDD, TDD), aumentando a credibilidade técnica e precisão curricular.
-8. **Enriquecimento Estratégico da Bio e Headline Profissional:**  
+8. **Enriquecimento Estratégico da Bio e Headline Profissional:** 🟡 `[Em Andamento]`  
    Refinar a apresentação do perfil com uma headline de alto impacto (*Software Developer | Backend & Web Architecture | AI-Assisted Engineering*), proposta de valor explícita e objetivos profissionais claros, destacando a senioridade e a metodologia de engenharia assistida por IA.
