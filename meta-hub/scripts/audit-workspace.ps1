@@ -1,11 +1,11 @@
-﻿<#
+<#
 .SYNOPSIS
     Script de Auditoria de Conformidade e Saúde do Workspace (Docs-as-Code).
 .DESCRIPTION
     Varre os repositórios sob E:\Projects\GitHub para auditar:
-    - Estado do Git (árvore limpa, commits não enviados ou não baixados)
+    - Estado do Git (árvore limpa, commits não enviados ou desatualizados em relação ao remoto)
     - Conformidade de Governança (AGENTS.md, README.md, .gitignore)
-    - Verificação de Segurança (detecção de arquivos sensíveis como .env, .pem, .pfx)
+    - Verificação de Segurança (detecção de arquivos sensíveis como .env.*, .pem, .pfx, chaves)
     - Geração opcional de relatório executivo em Markdown para histórico de governança
 .PARAMETER BasePath
     Caminho raiz do metadiretório. Padrão: E:\Projects\GitHub
@@ -15,10 +15,13 @@
     Exporta o relatório consolidado em formato Markdown com timestamp.
 .PARAMETER ReportPath
     Diretório de destino do relatório em Markdown. Padrão: H:\My Drive\Workspace Root Local\Governança Local & Prompts\auditorias
+.PARAMETER Fetch
+    Executa git fetch silencioso em cada repositório antes de inspecionar status para sincronização real de ahead/behind.
 .EXAMPLE
     .\audit-workspace.ps1
     .\audit-workspace.ps1 -Detailed
     .\audit-workspace.ps1 -Detailed -ExportReport
+    .\audit-workspace.ps1 -Fetch -Detailed
 #>
 
 [CmdletBinding()]
@@ -26,7 +29,8 @@ param (
     [string]$BasePath = "E:\Projects\GitHub",
     [switch]$Detailed,
     [switch]$ExportReport,
-    [string]$ReportPath = "H:\My Drive\Workspace Root Local\Governança Local & Prompts\auditorias"
+    [string]$ReportPath = "H:\My Drive\Workspace Root Local\Governança Local & Prompts\auditorias",
+    [switch]$Fetch
 )
 
 Write-Host "=================================================================" -ForegroundColor Cyan
@@ -39,30 +43,53 @@ if (-not (Test-Path $BasePath)) {
     exit 1
 }
 
-$gitDirs = Get-ChildItem -Path $BasePath -Directory -Depth 3 -Filter ".git" -Hidden -Force
-$totalRepos = $gitDirs.Count
+if ($Fetch) {
+    Write-Host "🔄 Parâmetro -Fetch ativado: sincronizando referências remotas do Git..." -ForegroundColor Yellow
+}
+
+# 1. Varredura de repositórios (inclui .git como diretório ou arquivo de worktree/submódulo)
+$gitEntries = @(Get-ChildItem -Path $BasePath -Depth 3 -Filter ".git" -Hidden -Force | Where-Object {
+    $_.FullName -notmatch '[\\/](node_modules|\.venv|bin|obj|target)[\\/]'
+})
+
+$totalRepos = $gitEntries.Count
 $dirtyRepos = 0
 $unpushedRepos = 0
+$behindRepos = 0
 $missingAgents = 0
 $missingReadme = 0
 $securityAlerts = 0
 
 $results = [System.Collections.Generic.List[PSCustomObject]]::new()
 
-foreach ($gitDir in $gitDirs) {
-    $repoPath = $gitDir.Parent.FullName
-    $relPath = $repoPath.Replace("$BasePath\", "")
+foreach ($gitEntry in $gitEntries) {
+    $repoPath = if ($gitEntry.PSIsContainer) { $gitEntry.Parent.FullName } else { $gitEntry.Directory.FullName }
+    $baseTrim = $BasePath.TrimEnd('\', '/')
+    $relPath = if ($repoPath.StartsWith($baseTrim, [System.StringComparison]::OrdinalIgnoreCase)) {
+        $repoPath.Substring($baseTrim.Length).TrimStart('\', '/')
+    } else {
+        $repoPath
+    }
     
-    # 1. Checagem do Git
-    $statusShort = git -C $repoPath status -s 2>$null
+    # Sincronização remota opcional
+    if ($Fetch) {
+        git -C $repoPath fetch --prune --quiet 2>$null
+    }
+
+    # 1. Checagem do Git (usando status com branch)
+    $statusShort = git -C $repoPath status --porcelain 2>$null
     $branchInfo = git -C $repoPath status -s -b 2>$null | Select-Object -First 1
     
     $isDirty = [bool]$statusShort
     $isAhead = $branchInfo -match '\[ahead \d+\]'
     $isBehind = $branchInfo -match '\[behind \d+\]'
     
+    $aheadCount = if ($branchInfo -match '\[ahead (\d+)\]') { "+$($Matches[1])" } elseif ($isAhead) { "Sim" } else { "-" }
+    $behindCount = if ($branchInfo -match '\[behind (\d+)\]') { "-$($Matches[1])" } elseif ($isBehind) { "Sim" } else { "-" }
+
     if ($isDirty) { $dirtyRepos++ }
     if ($isAhead) { $unpushedRepos++ }
+    if ($isBehind) { $behindRepos++ }
 
     # 2. Governança
     $hasAgents = (Test-Path (Join-Path $repoPath "AGENTS.md")) -or (Test-Path (Join-Path $repoPath "CLAUDE.md"))
@@ -72,24 +99,35 @@ foreach ($gitDir in $gitDirs) {
     if (-not $hasAgents) { $missingAgents++ }
     if (-not $hasReadme) { $missingReadme++ }
 
-    # 3. Segurança (arquivos com potenciais credenciais)
+    # 3. Segurança (arquivos com potenciais credenciais/segredos)
     $sensitiveFiles = Get-ChildItem -Path $repoPath -File -Recurse -Depth 4 -ErrorAction SilentlyContinue | Where-Object {
-        $_.FullName -notmatch '\\\.git\\' -and (
-            ($_.Name -match '^\.env$' -and $_.Name -ne '.env.example') -or
-            ($_.Extension -in @('.pem', '.pfx', '.key', '.pkcs12')) -or
-            ($_.Name -match '^id_rsa')
+        $_.FullName -notmatch '[\\/](\.git|node_modules|\.venv|bin|obj|target)[\\/]' -and (
+            ($_.Name -match '^\.env(\..+)?$' -and $_.Name -notmatch '\.(example|sample|template)$') -or
+            ($_.Extension -in @('.pem', '.pfx', '.key', '.pkcs12', '.p12')) -or
+            ($_.Name -match '^(id_rsa|credentials\.json|secrets\.)')
         )
     }
     $hasSecurityAlert = [bool]$sensitiveFiles
     if ($hasSecurityAlert) { $securityAlerts++ }
 
     # Determinar status visual
-    $statusIcon = if ($isDirty) { "⚠️ Modificado" } elseif ($isAhead) { "⬆️ Ahead" } else { "✅ Limpo" }
+    $statusIcon = if ($isDirty) { 
+        "⚠️ Modificado" 
+    } elseif ($isAhead -and $isBehind) { 
+        "🔄 Divergente"
+    } elseif ($isAhead) { 
+        "⬆️ Ahead" 
+    } elseif ($isBehind) {
+        "⬇️ Behind"
+    } else { 
+        "✅ Limpo" 
+    }
 
     $results.Add([PSCustomObject]@{
         Repositorio     = $relPath
         Status          = $statusIcon
-        Ahead           = if ($isAhead) { "Sim" } else { "-" }
+        Ahead           = $aheadCount
+        Behind          = $behindCount
         AGENTS          = if ($hasAgents) { "OK" } else { "Ausente" }
         README          = if ($hasReadme) { "OK" } else { "Ausente" }
         Gitignore       = if ($hasGitignore) { "OK" } else { "Ausente" }
@@ -102,7 +140,12 @@ if ($Detailed) {
     $results | Format-Table -AutoSize
 } else {
     # Exibe repositórios com pendências ou status relevante
-    $attention = $results | Where-Object { $_.Status -ne "✅ Limpo" -or $_.Ahead -ne "-" -or $_.AlertaSeguranca -ne "Nenhum" }
+    $attention = $results | Where-Object { 
+        $_.Status -ne "✅ Limpo" -or 
+        $_.Ahead -ne "-" -or 
+        $_.Behind -ne "-" -or 
+        $_.AlertaSeguranca -ne "Nenhum" 
+    }
     if ($attention) {
         Write-Host "📦 Repositórios que demandam atenção:" -ForegroundColor Yellow
         $attention | Format-Table -AutoSize
@@ -116,6 +159,7 @@ Write-Host "📊 RESUMO DA AUDITORIA:" -ForegroundColor Cyan
 Write-Host " - Total de Repositórios Auditados : $totalRepos"
 Write-Host " - Repositórios com Modificações   : $dirtyRepos" $(if ($dirtyRepos -gt 0) { "⚠️" } else { "✅" })
 Write-Host " - Repositórios com Push Pendente  : $unpushedRepos" $(if ($unpushedRepos -gt 0) { "⬆️" } else { "✅" })
+Write-Host " - Repositórios Desatualizados     : $behindRepos" $(if ($behindRepos -gt 0) { "⬇️" } else { "✅" })
 Write-Host " - Repositórios sem AGENTS/CLAUDE  : $missingAgents"
 Write-Host " - Repositórios sem README         : $missingReadme"
 Write-Host " - Alertas de Arquivos Sensíveis   : $securityAlerts" $(if ($securityAlerts -gt 0) { "🚨" } else { "✅" })
@@ -138,6 +182,7 @@ if ($ExportReport) {
     
     $statusDirtyDesc = if ($dirtyRepos -gt 0) { "⚠️ Alerta" } else { "✅ OK" }
     $statusAheadDesc = if ($unpushedRepos -gt 0) { "⬆️ Ahead" } else { "✅ OK" }
+    $statusBehindDesc = if ($behindRepos -gt 0) { "⬇️ Behind" } else { "✅ OK" }
     $statusAgentsDesc = if ($missingAgents -gt 0) { "⚠️ Ausente" } else { "✅ OK" }
     $statusReadmeDesc = if ($missingReadme -gt 0) { "⚠️ Ausente" } else { "✅ OK" }
     $statusSecDesc = if ($securityAlerts -gt 0) { "🚨 Risco Crítico" } else { "✅ Seguro" }
@@ -158,6 +203,7 @@ if ($ExportReport) {
     $lines.Add("| **Total de Repositórios Auditados** | $totalRepos | ℹ️ |")
     $lines.Add("| **Repositórios com Modificações Pendentes** | $dirtyRepos | $statusDirtyDesc |")
     $lines.Add("| **Repositórios com Push Pendente** | $unpushedRepos | $statusAheadDesc |")
+    $lines.Add("| **Repositórios Desatualizados (Behind)** | $behindRepos | $statusBehindDesc |")
     $lines.Add("| **Repositórios sem AGENTS.md / CLAUDE.md** | $missingAgents | $statusAgentsDesc |")
     $lines.Add("| **Repositórios sem README.md** | $missingReadme | $statusReadmeDesc |")
     $lines.Add("| **Alertas de Arquivos Sensíveis (.env, .pfx, etc.)** | $securityAlerts | $statusSecDesc |")
@@ -166,11 +212,11 @@ if ($ExportReport) {
     $lines.Add("")
     $lines.Add("## 📦 Detalhamento por Repositório")
     $lines.Add("")
-    $lines.Add("| Repositório | Status Git | Ahead | AGENTS.md | README.md | .gitignore | Alerta de Segurança |")
-    $lines.Add("| :--- | :---: | :---: | :---: | :---: | :---: | :--- |")
+    $lines.Add("| Repositório | Status Git | Ahead | Behind | AGENTS.md | README.md | .gitignore | Alerta de Segurança |")
+    $lines.Add("| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |")
     
     foreach ($r in $results) {
-        $lines.Add("| " + '`' + $r.Repositorio + '`' + " | " + $r.Status + " | " + $r.Ahead + " | " + $r.AGENTS + " | " + $r.README + " | " + $r.Gitignore + " | " + $r.AlertaSeguranca + " |")
+        $lines.Add("| " + '`' + $r.Repositorio + '`' + " | " + $r.Status + " | " + $r.Ahead + " | " + $r.Behind + " | " + $r.AGENTS + " | " + $r.README + " | " + $r.Gitignore + " | " + $r.AlertaSeguranca + " |")
     }
     
     $lines.Add("")
