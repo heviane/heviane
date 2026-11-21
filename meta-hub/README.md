@@ -116,7 +116,7 @@ flowchart LR
    - Novos projetos utilizam como base o template oficial:
      👉 **[`heviane/project-starter-kit`](https://github.com/heviane/project-starter-kit)**
 4. **Execução Assistida por IA (Spec-Driven Development):**
-   - Cada repositório contém seu arquivo `AGENTS.md` e a pasta `.specs/`, garantindo que assistentes de IA (Copilot, Antigravity, Claude, etc.) sigam padrões estritos de arquitetura, testes e commits antes de submeter código.
+   - Cada repositório contém seu arquivo `AGENTS.md` e a pasta `docs/specs/`, garantindo que assistentes de IA (Copilot, Antigravity, Claude, etc.) sigam padrões estritos de arquitetura, testes e commits antes de submeter código.
 
 ---
 
