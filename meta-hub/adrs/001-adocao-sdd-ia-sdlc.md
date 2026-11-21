@@ -51,7 +51,7 @@ Decidimos adotar formalmente a metodologia de **Spec-Driven Development (SDD)** 
 ### Consequências Positivas (Ganhos):
 
 * **Previsibilidade e Qualidade:** Código gerado por IA alinhado a especificações claras e validado por humanos.
-* **Eliminação de Ações Silenciosas:** Zero risco de deleções inadvertidas ou alterações no ambiente sem consentimento prévio.
+* **Eliminação de Ações Silenciosas:** Mitigação e redução substancial de riscos de deleções inadvertidas ou alterações no ambiente sem consentimento prévio.
 * **Onboarding Instantâneo de Agentes:** Qualquer assistente de IA ganha consciência imediata do contexto do projeto ao ler `AGENTS.md` e a especificação.
 * **Rastreabilidade Histórica:** O porquê e o como de cada decisão ficam permanentemente documentados no Git.
 

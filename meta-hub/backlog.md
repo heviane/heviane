@@ -115,3 +115,7 @@ Propostas técnicas e oportunidades mapeadas para avaliação nas próximas iter
    Criar workflow ou script para refletir automaticamente itens marcados no backlog no GitHub Project 14.
 6. **Extração de `CHANGELOG.md` no Meta-Hub:**  
    Migrar épicos antigos totalmente concluídos (1 a 3) para um histórico formal de mudanças, mantendo o `backlog.md` enxuto.
+7. **Diferenciação de Stacks Consolidadas vs. Tecnologias em Estudo no `README.md`:**  
+   Segmentar a seção de tecnologias e ferramentas no perfil principal entre *Competências Consolidadas em Produção* (GeneXus, JS/TS, React, Node.js, C#, SQL Server, MySQL, PostgreSQL) e *Em Especialização / Aprofundamento* (Next.js, Arquitetura Assistida por IA, DDD, TDD), aumentando a credibilidade técnica e precisão curricular.
+8. **Enriquecimento Estratégico da Bio e Headline Profissional:**  
+   Refinar a apresentação do perfil com uma headline de alto impacto (*Software Developer | Backend & Web Architecture | AI-Assisted Engineering*), proposta de valor explícita e objetivos profissionais claros, destacando a senioridade e a metodologia de engenharia assistida por IA.
