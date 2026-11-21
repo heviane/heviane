@@ -18,7 +18,7 @@ Sinta-se à vontade para entrar em contato! 🚀
 
 Todo o meu ecossistema adota práticas corporativas de **Docs-as-Code**, **Spec-Driven Development (SDD)** com IA e governança ágil em **Flight Levels**:
 
-👉 **[Acesse o Meta-Hub (`meta-hub`)](./meta-hub)** — Central de governança com Backlog Mestre, Decisões Arquiteturais ([ADR-001](./meta-hub/adrs/0001-adocao-sdd-ia-sdlc.md), [ADR-002](./meta-hub/adrs/0002-segregacao-dados-sensiveis-multi-root-workspaces.md)), catálogo de extensões auditado e pipeline de CI/CD.
+👉 **[Acesse o Meta-Hub (`meta-hub`)](./meta-hub)** — Central de governança com Backlog Mestre, Decisões Arquiteturais ([ADR-001](./meta-hub/adrs/001-adocao-sdd-ia-sdlc.md), [ADR-002](./meta-hub/adrs/002-segregacao-dados-sensiveis-multi-root-workspaces.md)), catálogo de extensões auditado e pipeline de CI/CD.
 
 ---
 

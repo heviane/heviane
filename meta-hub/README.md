@@ -58,7 +58,7 @@ flowchart TD
 
 ## 🌐 Topologia do Ecossistema: Git Público vs. Nuvem Privada (ADR-002)
 
-Para aliar **código aberto de alto impacto** com **segurança fiscal e confidencialidade estrita**, o ecossistema opera em uma topologia híbrida de dois pilares complementares, unificados via Multi-Root Workspaces do VS Code ([`ADR-002`](./adrs/0002-segregacao-dados-sensiveis-multi-root-workspaces.md)):
+Para aliar **código aberto de alto impacto** com **segurança fiscal e confidencialidade estrita**, o ecossistema opera em uma topologia híbrida de dois pilares complementares, unificados via Multi-Root Workspaces do VS Code ([`ADR-002`](./adrs/002-segregacao-dados-sensiveis-multi-root-workspaces.md)):
 
 ```mermaid
 flowchart LR

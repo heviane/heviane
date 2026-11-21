@@ -41,7 +41,7 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | 🟢 | `GOV-02` | `P1` | **Criação do Meta-Hub README** | Criar [`README.md`](./README.md) executivo com diagramas de Flight Levels e governança. |
 | 🟢 | `GOV-03` | `P0` | **Criação de Docs no Meta-Hub** | Centralizar `backlog.md` e `vscode-extensions.md` exclusivamente no repositório de governança. |
 | 🟢 | `GOV-04` | `P1` | **Integração com Project 14** | Conectar e cadastrar as tarefas priorizadas no [AI Engineering Hub (Project 14)](https://github.com/users/heviane/projects/14). |
-| 🟢 | `GOV-05` | `P2` | **ADR-001: Adoção de SDD e IA no SDLC** | Criar registro formal de decisão arquitetural (ADR) sobre a metodologia de IA e governança Docs-as-Code ([`ADR-001`](./adrs/0001-adocao-sdd-ia-sdlc.md)). |
+| 🟢 | `GOV-05` | `P2` | **ADR-001: Adoção de SDD e IA no SDLC** | Criar registro formal de decisão arquitetural (ADR) sobre a metodologia de IA e governança Docs-as-Code ([`ADR-001`](./adrs/001-adocao-sdd-ia-sdlc.md)). |
 | 🟢 | `GOV-06` | `P1` | **AGENTS.md Global do Workspace** | Criar diretrizes operacionais de IA na raiz do workspace para governança multi-repositório. |
 
 ---
@@ -101,17 +101,17 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 
 ## 💡 Banco de Ideias & Sugestões de Melhorias
 
-Propostas técnicas para avaliação nas próximas iterações:
+Propostas técnicas e oportunidades mapeadas para avaliação nas próximas iterações:
 
-1. **`ADR-002: Segregação Física de Dados Sensíveis e Governança Local em Nuvem (Google Drive)`:**  
-   Formalizar a decisão de isolamento físico de certificados `.pfx`, credenciais de clientes e prompts locais fora da árvore Git via Multi-Root Workspaces.
-2. **Exportação de Relatórios de Auditoria em Markdown (`audit-workspace.ps1 -ExportReport`):**  
-   Adicionar flag no script para gerar relatórios com timestamp em `H:\My Drive\Workspace Root Local\auditorias\audit-YYYY-MM-DD.md`.
-3. **Documentação da Simbiose Git Público vs Nuvem Privada no `meta-hub/README.md`:**  
-   Explicar com clareza o papel do `meta-hub` (governança pública versionada) versus `Workspace Root Local` (bastidores privados em nuvem).
-4. **Workflow de CI/CD para Lint de Markdown e Link Checker no Meta-Hub:**  
-   Implementar ação no GitHub Actions para verificar integridade de links e formatação dos documentos de governança.
-5. **`ai-dev-journey` (Repositório / Série de Artigos):**  
-   Repositório documentando a jornada de transição de *Desenvolvedor Tradicional (10+ anos)* para *AI-Assisted Software Engineer*. Conteúdo de autoridade técnica para LinkedIn e portfólio.
-6. **Automação GitHub Actions com GitHub CLI (`gh`):**  
-   Criar um workflow que lê seções deste `backlog.md` e sincroniza automaticamente com o Project 14.
+1. **`ai-dev-journey` (Repositório / Série de Artigos Técnicos):**  
+   Repositório e série de publicações documentando a jornada de transição de *Desenvolvedor Tradicional (10+ anos)* para *AI-Assisted Software Engineer*. Conteúdo de alta autoridade técnica para LinkedIn e portfólio.
+2. **Catálogo Unificado de Repositórios (`meta-hub/repository-catalog.md`):**  
+   Mapear e categorizar os 51 repositórios do ecossistema por Categoria (Core / Labs / Learning), Linguagens, Status e Nível de Governança (SDD, CI/CD, AGENTS).
+3. **Automação do Inventário de Extensões (`sync-extensions.ps1`):**  
+   Criar script para atualizar automaticamente o documento `vscode-extensions.md` via `code --list-extensions --show-versions`, eliminando divergências de contagem manual.
+4. **Formalização da Arquitetura AI-SEP (*AI-Assisted Software Engineering Platform*):**  
+   Documentar no Meta-Hub a plataforma proprietária integrando Meta-Hub (Governança), Starter Kit (Templates), SDD e Contratos de IA.
+5. **Automação Docs-as-Code com GitHub CLI (`gh`):**  
+   Criar workflow ou script para refletir automaticamente itens marcados no backlog no GitHub Project 14.
+6. **Extração de `CHANGELOG.md` no Meta-Hub:**  
+   Migrar épicos antigos totalmente concluídos (1 a 3) para um histórico formal de mudanças, mantendo o `backlog.md` enxuto.
