@@ -1,0 +1,96 @@
+# 📚 Catálogo Unificado de Repositórios Públicos
+
+> **Inventário Oficial de Repositórios Públicos do Ecossistema (Docs-as-Code)**  
+> **Data de Atualização:** 21/11/2026 | **Total de Repositórios Públicos:** 23  
+> **Central de Governança:** [Meta-Hub (`meta-hub`)](./README.md) | **Segregação:** [ADR-002](./adrs/002-segregacao-dados-sensiveis-multi-root-workspaces.md)  
+> *Nota: Este catálogo documenta exclusivamente os repositórios públicos e de código aberto mantidos no GitHub. Repositórios privados corporativos e laboratoriais seguem diretrizes de segregação física e são auditados internamente.*
+
+---
+
+## 📑 Sumário
+
+- [Visão Geral & Matriz de Maturidade](#-visão-geral--matriz-de-maturidade)
+- [🏛️ Repositórios Core (`@heviane`)](#️-repositórios-core-heviane)
+- [🧪 Labs & Engenharia (`@heviane-labs`)](#-labs--engenharia-heviane-labs)
+- [🎓 Estudos & Aprendizado (`@heviane-learning`)](#-estudos--aprendizado-heviane-learning)
+- [📈 Plano de Evolução de Governança](#-plano-de-evolução-de-governança)
+
+---
+
+## 📊 Visão Geral & Matriz de Maturidade
+
+Os repositórios públicos estão distribuídos entre as três organizações oficiais do GitHub:
+
+| Organização | Escopo & Proposta de Valor | Repositórios Públicos |
+| :--- | :--- | :---: |
+| **[`@heviane`](https://github.com/heviane)** | **Soluções Core:** Produtos corporativos, integrações fiscais, templates reutilizáveis e governança. | 5 |
+| **[`@heviane-labs`](https://github.com/heviane-labs)** | **Laboratórios Técnicos:** Engenharia reversa, protótipos de IA, testes arquiteturais e PoCs. | 9 |
+| **[`@heviane-learning`](https://github.com/heviane-learning)** | **Estudos & Certificações:** Bootcamps, trilhas acadêmicas (DIO, Alura), tutoriais e desafios práticos. | 9 |
+| **Total Público** | **Portfólio de Código Aberto & Vitrine Técnica** | **23** |
+
+### Níveis de Governança Adotados
+
+- **🟢 Nível 3 (Alta Maturidade / SDD Completo):** Adota rigorosamente *Spec-Driven Development*, contratos de IA (`AGENTS.md`), pipeline automatizado de CI/CD (`GitHub Actions`), documentação de especificações (`docs/specs/`) e decisões de arquitetura (`ADRs`).
+- **🟡 Nível 2 (Maturidade Intermediária / CI Ativo):** Contém automações de CI/CD, testes ou documentação técnica estruturada, em transição para o modelo SDD completo.
+- **⚪ Nível 1 (Maturidade Base / Docs Essenciais):** Repositórios laboratoriais, acadêmicos ou históricos protegidos por `.gitignore` e `README.md` descritivo.
+
+---
+
+## 🏛️ Repositórios Core (`@heviane`)
+
+Soluções de produção, produtos corporativos, templates oficiais e central de governança:
+
+| Repositório | Escopo & Descrição Arquitetural | Stack Tecnológica | Status | Governança |
+| :--- | :--- | :--- | :---: | :---: |
+| **[`nfse-nacional-api`](https://github.com/heviane/nfse-nacional-api)** | Middleware de alta disponibilidade para emissão e consulta da NFS-e Nacional. Core fiscal com validação estrita XSD v1.00, assinatura digital RSA-SHA256, mTLS e Camada Anticorrupção (ACL) GeneXus 18 SOAP. | `Java 17` `Spring Boot` `mTLS` `RSA-SHA256` `GeneXus` | `Produção` | `🟢 Nível 3` |
+| **[`institutional-website-template`](https://github.com/heviane/institutional-website-template)** | Boilerplate corporativo moderno para acelerar entregas web institucionais de alta conversão, com foco em performance, SEO e conformidade visual para clientes. | `Next.js` `React` `TypeScript` `Tailwind CSS` | `Ativo` | `🟢 Nível 3` |
+| **[`project-starter-kit`](https://github.com/heviane/project-starter-kit)** | Template base oficial do ecossistema para bootstrap de novos repositórios com governança Spec-Driven Development (SDD), contratos de IA (`AGENTS.md`) e pipeline de CI. | `Shell` `GitHub Actions` `Docs-as-Code` | `Ativo` | `🟢 Nível 3` |
+| **[`heviane`](https://github.com/heviane/heviane)** | Repositório central do perfil no GitHub e sede do Meta-Hub: Central de Governança, Backlog Mestre, ADRs e scripts de auditoria do workspace multi-repositórios. | `PowerShell` `Markdown` `Docs-as-Code` | `Ativo` | `🟡 Nível 2` |
+| **[`keynotes`](https://github.com/heviane/keynotes)** | Apresentações executivas, palestras técnicas e materiais de arquitetura de software formatados em slides web interativos. | `HTML5` `CSS3` `JavaScript` | `Ativo` | `⚪ Nível 1` |
+
+---
+
+## 🧪 Labs & Engenharia (`@heviane-labs`)
+
+Provas de conceito públicas, laboratórios de experimentação de linguagens e testes de automação:
+
+| Repositório | Escopo & Descrição Técnica | Stack Tecnológica | Status | Governança |
+| :--- | :--- | :--- | :---: | :---: |
+| **[`shell-script-lab`](https://github.com/heviane-labs/shell-script-lab)** | Laboratório de automação CLI e scripts em Shell/Bash com pipeline de testes de sintaxe e especificações técnicas de infraestrutura. | `Bash` `Shell Script` `Linux` | `Ativo` | `🟢 Nível 3` |
+| **[`dotnet-lab`](https://github.com/heviane-labs/dotnet-lab)** | Laboratório de experimentação com C#, Entity Framework Core, LINQ avançado e padrões de design arquiteturais em .NET. | `.NET 8/9` `C#` `EF Core` | `Ativo` | `🟡 Nível 2` |
+| **[`python-lab`](https://github.com/heviane-labs/python-lab)** | Laboratório de scripts de processamento de dados, automações de tarefas operacionais e utilitários em Python 3. | `Python` | `Ativo` | `⚪ Nível 1` |
+| **[`javascript-lab`](https://github.com/heviane-labs/javascript-lab)** | Experimentos com JavaScript moderno (ES6+), programação assíncrona (Promises, async/await) e integração com Node.js. | `JavaScript` `Node.js` | `Ativo` | `⚪ Nível 1` |
+| **[`typescript-lab`](https://github.com/heviane-labs/typescript-lab)** | Laboratório de tipagem estática avançada em TypeScript: generics, type guards, utility types e decorators. | `TypeScript` `Node.js` | `Ativo` | `⚪ Nível 1` |
+| **[`devops-lab`](https://github.com/heviane-labs/devops-lab)** | Laboratório de contêineres Docker, Docker Compose, pipelines de automação e orquestração de serviços locais. | `Docker` `YAML` `DevOps` | `Ativo` | `⚪ Nível 1` |
+| **[`git-and-github-lab`](https://github.com/heviane-labs/git-and-github-lab)** | Simulações práticas de fluxos Git corporativos: branching strategies (GitFlow, Trunk-Based), merge conflicts e rebase. | `Git` `Bash` | `Ativo` | `⚪ Nível 1` |
+| **[`database-lab`](https://github.com/heviane-labs/database-lab)** | Laboratório de modelagem relacional, otimização de consultas SQL, criação de índices e transações ACID. | `SQL` `PostgreSQL` `MySQL` | `Ativo` | `⚪ Nível 1` |
+| **[`backscan`](https://github.com/heviane-labs/backscan)** | Guia e scripts para configuração e execução da ferramenta de segurança e auditoria BackScan em ambiente Linux. | `Linux` `Shell` `Segurança` | `Referência` | `⚪ Nível 1` |
+
+---
+
+## 🎓 Estudos & Aprendizado (`@heviane-learning`)
+
+Repositórios públicos de bootcamps, trilhas acadêmicas, certificações e desafios práticos de código:
+
+| Repositório | Escopo & Descrição do Curso / Trilha | Stack Tecnológica | Status | Governança |
+| :--- | :--- | :--- | :---: | :---: |
+| **[`natty-or-not-lab`](https://github.com/heviane-learning/natty-or-not-lab)** | Projeto prático de engenharia assistida por IA: curadoria de conteúdo sintético, detecção de padrões e SDD estruturado. | `IA Generativa` `Docs-as-Code` | `Concluído` | `🟢 Nível 3` |
+| **[`trilha-net-fundamentos-desafio`](https://github.com/heviane-learning/trilha-net-fundamentos-desafio)** | Solução do desafio prático de fundamentos da Trilha .NET da DIO (sistema de estacionamento orientado a objetos). | `.NET` `C#` `POO` | `Concluído` | `🟡 Nível 2` |
+| **[`alura-imersao-devops`](https://github.com/heviane-learning/alura-imersao-devops)** | Projeto desenvolvido na Imersão DevOps da Alura: automação de deploy e provisionamento de infraestrutura no Google Cloud (GCP). | `Python` `Google Cloud` `DevOps` | `Concluído` | `🟡 Nível 2` |
+| **[`api-url-shortener`](https://github.com/heviane-learning/api-url-shortener)** | Microsserviço de encurtamento e redirecionamento de URLs com geração de hashes únicos e contagem de acessos. | `Node.js` `TypeScript` `Express` | `Concluído` | `⚪ Nível 1` |
+| **[`clone-chatGPT`](https://github.com/heviane-learning/clone-chatGPT)** | Interface conversacional web integrando a API da OpenAI com renderização em streaming de respostas e histórico de chat. | `React` `TypeScript` `OpenAI API` | `Concluído` | `⚪ Nível 1` |
+| **[`dio-github-copilot`](https://github.com/heviane-learning/dio-github-copilot)** | Exercícios e testes práticos de codificação assistida por IA utilizando o GitHub Copilot na Trilha DIO. | `TypeScript` `GitHub Copilot` | `Concluído` | `⚪ Nível 1` |
+| **[`dio-desafio-github`](https://github.com/heviane-learning/dio-desafio-github)** | Projeto prático do módulo de controle de versão da DIO abordando branches, pull requests e Markdown. | `Git` `Markdown` | `Concluído` | `⚪ Nível 1` |
+| **[`dio-prompts-for-article-generate-by-ia`](https://github.com/heviane-learning/dio-prompts-for-article-generate-by-ia)** | Coleção de prompts estruturados para ideação, roteirização e redação de artigos técnicos com auxílio de LLMs. | `Prompt Engineering` `Markdown` | `Concluído` | `⚪ Nível 1` |
+| **[`ui-profile-github`](https://github.com/heviane-learning/ui-profile-github)** | Aplicação front-end para consulta dinâmica e exibição enriquecida de perfis e repositórios da API pública do GitHub. | `React` `JavaScript` `GitHub API` | `Concluído` | `⚪ Nível 1` |
+
+---
+
+## 📈 Plano de Evolução de Governança
+
+1. **Promoção Progressiva de Maturidade:**
+   - Repositórios de Labs ou Learning com relevância de portfólio são elevados para **Nível 2** (CI/CD ativo) ou **Nível 3** (adoção do template oficial `project-starter-kit` e SDD).
+2. **Auditoria Automatizada Periódica:**
+   - Execução rotineira do script [`audit-workspace.ps1`](./scripts/audit-workspace.ps1) com a flag `-StrictGovernance` para identificar desvios de governança antes de novos releases.
+3. **Sincronização Contínua de Ferramental:**
+   - Manutenção do inventário de extensões via [`sync-extensions.ps1`](./scripts/sync-extensions.ps1).

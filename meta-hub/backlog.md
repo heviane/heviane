@@ -105,8 +105,8 @@ Propostas técnicas e oportunidades mapeadas para avaliação nas próximas iter
 
 1. **`ai-dev-journey` (Repositório / Série de Artigos Técnicos):**  
    Repositório e série de publicações documentando a jornada de transição de *Desenvolvedor Tradicional (10+ anos)* para *AI-Assisted Software Engineer*. Conteúdo de alta autoridade técnica para LinkedIn e portfólio.
-2. **Catálogo Unificado de Repositórios (`meta-hub/repository-catalog.md`):**  
-   Mapear e categorizar os 51 repositórios do ecossistema por Categoria (Core / Labs / Learning), Linguagens, Status e Nível de Governança (SDD, CI/CD, AGENTS).
+2. **Catálogo Unificado de Repositórios (`meta-hub/repository-catalog.md`):** *(Concluído)*  
+   Documento implementado em `meta-hub/repository-catalog.md` mapeando os 23 repositórios públicos, com inventário completo (51 repositórios) mantido no Google Drive corporativo conforme ADR-002.
 3. **Automação do Inventário de Extensões (`sync-extensions.ps1`):** *(Concluído)*  
    Script implementado em `meta-hub/scripts/sync-extensions.ps1` para atualizar e validar automaticamente o inventário `vscode-extensions.md` via `code --list-extensions --show-versions`, com suporte a flag `-CheckOnly` para CI/linter.
 4. **Formalização da Arquitetura AI-SEP (*AI-Assisted Software Engineering Platform*):**  
