@@ -85,11 +85,13 @@ foreach ($gitEntry in $gitEntries) {
     $branchInfo = git -C $repoPath status -s -b 2>$null | Select-Object -First 1
     
     $isDirty = [bool]$statusShort
-    $isAhead = $branchInfo -match '\[ahead \d+\]'
-    $isBehind = $branchInfo -match '\[behind \d+\]'
+    $aheadN = if ($branchInfo -match 'ahead (\d+)') { [int]$Matches[1] } else { 0 }
+    $behindN = if ($branchInfo -match 'behind (\d+)') { [int]$Matches[1] } else { 0 }
+    $isAhead = $aheadN -gt 0
+    $isBehind = $behindN -gt 0
     
-    $aheadCount = if ($branchInfo -match '\[ahead (\d+)\]') { "+$($Matches[1])" } elseif ($isAhead) { "Sim" } else { "-" }
-    $behindCount = if ($branchInfo -match '\[behind (\d+)\]') { "-$($Matches[1])" } elseif ($isBehind) { "Sim" } else { "-" }
+    $aheadCount = if ($isAhead) { "+$aheadN" } else { "-" }
+    $behindCount = if ($isBehind) { "-$behindN" } else { "-" }
 
     if ($isDirty) { $dirtyRepos++ }
     if ($isAhead) { $unpushedRepos++ }
@@ -104,7 +106,7 @@ foreach ($gitEntry in $gitEntries) {
     if (-not $hasReadme) { $missingReadme++ }
 
     # 3. Segurança (arquivos com potenciais credenciais/segredos)
-    $sensitiveFiles = Get-ChildItem -Path $repoPath -File -Recurse -Depth 4 -ErrorAction SilentlyContinue | Where-Object {
+    $sensitiveFiles = Get-ChildItem -Path $repoPath -File -Recurse -Force -Depth 4 -ErrorAction SilentlyContinue | Where-Object {
         $_.FullName -notmatch '[\\/](\.git|node_modules|\.venv|bin|obj|target)[\\/]' -and (
             ($_.Name -match '^\.env(\..+)?$' -and $_.Name -notmatch '\.(example|sample|template)$') -or
             ($_.Extension -in @('.pem', '.pfx', '.key', '.pkcs12', '.p12')) -or
@@ -245,4 +247,9 @@ if ($ExportReport) {
     Write-Host ""
 } else {
     Write-Host "Dica: Execute com -Detailed para ver todos os repositórios ou -ExportReport para gerar relatório em Markdown." -ForegroundColor DarkGray
+}
+
+if ($securityAlerts -gt 0) {
+    Write-Host "🚨 ATENÇÃO: Foram encontrados $securityAlerts alerta(s) de arquivo(s) potencialmente sensível(is)!" -ForegroundColor Red
+    exit 1
 }

@@ -53,7 +53,7 @@ flowchart TD
 
     subgraph L4 ["4. Camada de Contratos de IA & Guardrails"]
         AgentsContract["Contrato Operacional (AGENTS.md)"]
-        HITL["Human-in-the-Loop Obrigatorio (Zero Ações Silenciosas)"]
+        HITL["Human-in-the-Loop Obrigatório (Zero Ações Silenciosas)"]
     end
 
     subgraph L5 ["5. Camada de Automação & Conformidade"]
@@ -90,7 +90,7 @@ flowchart TD
 6. **Automação & Auditoria Contínua:**
    - Ferramental proprietário em PowerShell ([`audit-workspace.ps1`](../scripts/audit-workspace.ps1) com `-StrictGovernance` e [`sync-extensions.ps1`](../scripts/sync-extensions.ps1)), acompanhado por pipelines em GitHub Actions para validação contínua de links e linting.
 7. **Ecossistema Tripartite de Soluções:**
-   - 51 repositórios auditados e categorizados em três níveis de maturidade no [Catálogo de Repositórios](../repository-catalog.md).
+   - 23 repositórios públicos (de 51 repositórios no ecossistema total) auditados e categorizados em três níveis de maturidade no [Catálogo de Repositórios](../repository-catalog.md).
 
 ---
 
@@ -98,7 +98,7 @@ flowchart TD
 
 ### Consequências Positivas (Ganhos)
 
-- **Mudança de Posicionamento:** O ecossistema passa a ser comunicado não como projetos avulsos, mas como uma **plataforma proprietária de engenharia de software**, elevando o valor percebido de autoridade técnica e senioridade no mercado.
+- **Mudança de Posicionamento:** O ecossistema passa a ser comunicado não como projetos avulsos, mas como uma **plataforma autoral / própria de engenharia de software**, elevando o valor percebido de autoridade técnica e senioridade no mercado.
 - **Reusabilidade Absoluta:** Qualquer novo repositório herda imediatamente toda a fundação de segurança, automação, CI/CD e governança de IA com esforço zero.
 - **Rastreabilidade Ponta a Ponta:** Todo commit responde a uma issue ou specification, todo agente de IA obedece a um contrato e toda decisão possui um ADR associado.
 - **Confiabilidade Operacional:** Eliminação de riscos de vazamento acidental de segredos no Git e mitigação drástica de alucinações de IA via SDD.

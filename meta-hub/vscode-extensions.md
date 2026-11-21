@@ -142,10 +142,8 @@
 ## 🔍 Qualidade de Código, Linters & Formatadores
 
 | Extensão | ID | Versão | Propósito / Descrição |
-| :
+| :--- | :--- | :--- | :--- |
 | **XML (Red Hat)** | `redhat.vscode-xml` | `0.29.3` | Suporte à linguagem XML com validação de schemas XSD/DTD, formatação e autocompletar. |
-
---- | :--- | :--- | :--- |
 | **Prettier** | `esbenp.prettier-vscode` | `12.4.0` | Formatador de código padrão do mercado para JavaScript, TypeScript, CSS, HTML, JSON e Markdown. |
 | **Error Lens** | `usernamehw.errorlens` | `3.30.0` | Destaca erros, avisos e mensagens de linters diretamente inline no final de cada linha de código. |
 | **Code Spell Checker** | `streetsidesoftware.code-spell-checker` | `4.10.0` | Corretor ortográfico para código-fonte que previne erros de digitação em nomes de variáveis e comentários. |
@@ -165,9 +163,9 @@
 | **Live Preview (Microsoft)** | `ms-vscode.live-server` | `0.4.20` | Servidor de desenvolvimento web oficial da Microsoft com navegador embutido diretamente em uma aba do editor. |
 | **Preview Server** | `yuichinukiyama.vscode-preview-server` | `1.3.0` | Servidor web local com navegador embutido para testar interfaces web rapidamente. |
 | **Path Intellisense** | `christian-kohler.path-intellisense` | `2.10.0` | Autocompleta caminhos de arquivos e pastas automaticamente dentro de `imports`, `require` e tags. |
-| **Turbo Console Log** | `chakrounanas.turbo-console-log` | `3.30.0` | Insere linhas de `console.log` com mensagens detalhadas e nome da variável através de um atalho de teclado. |
+| **Turbo Console Log** | `chakrounanas.turbo-console-log` | `3.30.1` | Insere linhas de `console.log` com mensagens detalhadas e nome da variável através de um atalho de teclado. |
 | **TODO Highlight** | `wayou.vscode-todo-highlight` | `1.0.5` | Destaca visualmente comentários como `TODO:`, `FIXME:` e tags de tarefas pendentes no código. |
-| **tldraw** | `tldraw-org.tldraw-vscode` | `2.391.0` | Quadro branco colaborativo (whiteboard) integrado no VS Code para esboçar diagramas e notas visuais. |
+| **tldraw** | `tldraw-org.tldraw-vscode` | `2.407.0` | Quadro branco colaborativo (whiteboard) integrado no VS Code para esboçar diagramas e notas visuais. |
 | **PowerShell** | `ms-vscode.powershell` | `2025.4.0` | Suporte oficial para desenvolvimento, execução e depuração de scripts do PowerShell no Windows e Linux. |
 | **Notepad++ Keymap** | `ms-vscode.notepadplusplus-keybindings` | `1.0.7` | Aplica o mapa de atalhos clássicos do teclado do Notepad++ às funções do VS Code. |
 | **VS Code Speech** | `ms-vscode.vscode-speech` | `0.16.0` | Habilita comandos de voz e ditado de código e texto integrado ao editor. |
@@ -256,9 +254,9 @@
 | 64 | **SQL Server (mssql)** | `ms-mssql.mssql` | `1.48.0` | Conexão, autocompletar e execução de consultas T-SQL para Microsoft SQL Server. |
 | 65 | **Tailwind CSS IntelliSense** | `bradlc.vscode-tailwindcss` | `0.16.0` | Autocompletar inteligente de classes utilitárias, prévia de cores e linting para Tailwind CSS. |
 | 66 | **Thunder Client** | `rangav.vscode-thunder-client` | `3.2.6` | Cliente HTTP/REST leve integrado para testar, debugar e documentar requisições a APIs (alternativa ao Postman). |
-| 67 | **tldraw** | `tldraw-org.tldraw-vscode` | `2.391.0` | Quadro branco colaborativo (whiteboard) integrado no VS Code para esboçar diagramas e notas visuais. |
+| 67 | **tldraw** | `tldraw-org.tldraw-vscode` | `2.407.0` | Quadro branco colaborativo (whiteboard) integrado no VS Code para esboçar diagramas e notas visuais. |
 | 68 | **TODO Highlight** | `wayou.vscode-todo-highlight` | `1.0.5` | Destaca visualmente comentários como `TODO:`, `FIXME:` e tags de tarefas pendentes no código. |
-| 69 | **Turbo Console Log** | `chakrounanas.turbo-console-log` | `3.30.0` | Insere linhas de `console.log` com mensagens detalhadas e nome da variável através de um atalho de teclado. |
+| 69 | **Turbo Console Log** | `chakrounanas.turbo-console-log` | `3.30.1` | Insere linhas de `console.log` com mensagens detalhadas e nome da variável através de um atalho de teclado. |
 | 70 | **VS Code Speech** | `ms-vscode.vscode-speech` | `0.16.0` | Habilita comandos de voz e ditado de código e texto integrado ao editor. |
 | 71 | **VS Color Picker** | `lihui.vs-color-picker` | `1.0.0` | Seletor de cores flutuante com paleta visual para escolher e converter tons de cores diretamente no código. |
 | 72 | **vscode-icons** | `vscode-icons-team.vscode-icons` | `13.0.0` | Coleção clássica de ícones temáticos para identificação visual de dezenas de extensões de arquivos. |

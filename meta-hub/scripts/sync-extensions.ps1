@@ -81,7 +81,7 @@ $knownMetadata = @{
 
 # 3. Analisar divergências de IDs documentados
 $docIds = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::OrdinalIgnoreCase)
-$idMatches = [regex]::Matches($docRaw, '\|\s*`([a-zA-Z0-9_\-\.]+)`\s*\|')
+$idMatches = [regex]::Matches($docRaw, '\|\s*`([A-Za-z][A-Za-z0-9_\-]*\.[A-Za-z0-9_\-\.]+)`\s*\|')
 foreach ($m in $idMatches) {
     [void]$docIds.Add($m.Groups[1].Value)
 }
@@ -219,7 +219,7 @@ if ($missingInDoc.Count -gt 0) {
             
             $catIndex = $currentText.IndexOf($categoryHeader)
             if ($catIndex -ge 0) {
-                $dividerIndex = $currentText.IndexOf("---", $catIndex)
+                $dividerIndex = $currentText.IndexOf("`n---", $catIndex)
                 if ($dividerIndex -ge 0) {
                     $sub = $currentText.Substring(0, $dividerIndex).TrimEnd()
                     $currentText = $sub + "`n" + $targetRow + "`n`n" + $currentText.Substring($dividerIndex)
@@ -227,7 +227,17 @@ if ($missingInDoc.Count -gt 0) {
                 }
             }
         } else {
-            Write-Host "⚠️ Extensão sem metadados automáticos: $extId. Adicionando com metadados padrão." -ForegroundColor Yellow
+            $defaultCategoryHeader = "## 🚀 Produtividade, Execução & Utilitários"
+            $targetRow = "| **$extId** | $bt$extId$bt | $bt$extVersion$bt | Extensão instalada no ambiente de desenvolvimento. |"
+            $catIndex = $currentText.IndexOf($defaultCategoryHeader)
+            if ($catIndex -ge 0) {
+                $dividerIndex = $currentText.IndexOf("`n---", $catIndex)
+                if ($dividerIndex -ge 0) {
+                    $sub = $currentText.Substring(0, $dividerIndex).TrimEnd()
+                    $currentText = $sub + "`n" + $targetRow + "`n`n" + $currentText.Substring($dividerIndex)
+                    Write-Host "➕ Extensão sem metadados adicionada a Produtividade: $extId" -ForegroundColor Yellow
+                }
+            }
         }
     }
 }
