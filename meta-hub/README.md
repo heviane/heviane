@@ -34,7 +34,7 @@ flowchart TD
     end
 
     subgraph FL1 ["Flight Level 1: Entrega Operacional / Repositórios"]
-        ReposMain["Repositórios Core (ex: dotnet-minimal-api, image-gallery)"]
+        ReposMain["Repositórios Core (ex: nfse-nacional-api, institutional-website-template)"]
         ReposLabs["Repositórios Labs (ex: dotnet-lab, genai-lab)"]
         ReposLearn["Repositórios Estudos (ex: dio-prompts, alura-devops)"]
         StarterKit["project-starter-kit (Templates, SDD, AGENTS.md)"]
