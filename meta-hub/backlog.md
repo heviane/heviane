@@ -33,7 +33,7 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 
 ---
 
-### Épico 2: Governança Ágil & Estrutura de Portfólio (Flight Levels) — 🟡 Em Andamento
+### Épico 2: Governança Ágil & Estrutura de Portfólio (Flight Levels) — 🟢 100% Concluído
 
 | Status | ID | Prioridade | Item | Descrição / Critérios de Aceite |
 | :---: | :---: | :---: | :--- | :--- |
@@ -43,7 +43,7 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | 🟢 | `GOV-04` | `P1` | **Integração com Project 14** | Conectar e cadastrar as tarefas priorizadas no [AI Engineering Hub (Project 14)](https://github.com/users/heviane/projects/14). |
 | 🟢 | `GOV-05` | `P2` | **ADR-001: Adoção de SDD e IA no SDLC** | Criar registro formal de decisão arquitetural (ADR) sobre a metodologia de IA e governança Docs-as-Code ([`ADR-001`](./adrs/001-adocao-sdd-ia-sdlc.md)). |
 | 🟢 | `GOV-06` | `P1` | **AGENTS.md Global do Workspace** | Criar diretrizes operacionais de IA na raiz do workspace para governança multi-repositório. |
-| ⚪ | `GOV-07` | `P1` | **Multi-Agent Review Framework (MARF)** | Padronizar processo operacional de auditoria multi-modelo (SOP), taxonomia em inglês (`active/`, `archive/`, `templates/`), lotes dinâmicos (`Lote 1..N`) e templates no starter kit ([#10](https://github.com/heviane/heviane/issues/10)). |
+| 🟢 | `GOV-07` | `P1` | **Multi-Agent Review Framework (MARF)** | Padronizar processo operacional de auditoria multi-modelo (SOP), taxonomia em inglês (`active/`, `archive/`, `templates/`), lotes dinâmicos (`Lote 1..N`) e templates no starter kit ([#10](https://github.com/heviane/heviane/issues/10)). |
 
 ---
 
