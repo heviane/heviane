@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     Script de Auditoria de Conformidade e Saúde do Workspace (Docs-as-Code).
 .DESCRIPTION

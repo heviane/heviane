@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     Sincroniza o inventário de extensões do VS Code com a documentação de governança (Docs-as-Code).
 .DESCRIPTION

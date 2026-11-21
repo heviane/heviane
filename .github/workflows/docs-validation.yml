@@ -7,22 +7,40 @@ on:
       - '**.md'
       - '.markdownlint-cli2.jsonc'
       - '.lycheeignore'
+      - '.gitattributes'
       - '.github/workflows/docs-validation.yml'
       - 'meta-hub/scripts/**'
+      - 'meta-hub/tests/**'
   pull_request:
     branches: [ main ]
     paths:
       - '**.md'
       - '.markdownlint-cli2.jsonc'
       - '.lycheeignore'
+      - '.gitattributes'
       - '.github/workflows/docs-validation.yml'
       - 'meta-hub/scripts/**'
+      - 'meta-hub/tests/**'
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
+  secret-scan:
+    name: Gitleaks Secret Scanner
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   markdown-lint:
     name: Markdown Linting
     runs-on: ubuntu-latest
@@ -47,9 +65,11 @@ jobs:
         with:
           args: --verbose --no-progress --exclude-file .lycheeignore './**/*.md'
           fail: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  script-validation:
-    name: PowerShell Scripts Syntax
+  powershell-tests:
+    name: PowerShell Scripts & Pester Tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -78,3 +98,8 @@ jobs:
             }
           }
           if ($hasError) { exit 1 }
+
+      - name: Run Pester Tests
+        shell: pwsh
+        run: |
+          Invoke-Pester -Path "meta-hub/tests"
