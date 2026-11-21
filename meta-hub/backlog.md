@@ -109,8 +109,8 @@ Propostas técnicas e oportunidades mapeadas para avaliação nas próximas iter
    Documento implementado em `meta-hub/repository-catalog.md` mapeando os 23 repositórios públicos, com inventário completo (51 repositórios) mantido no Google Drive corporativo conforme ADR-002.
 3. **Automação do Inventário de Extensões (`sync-extensions.ps1`):** *(Concluído)*  
    Script implementado em `meta-hub/scripts/sync-extensions.ps1` para atualizar e validar automaticamente o inventário `vscode-extensions.md` via `code --list-extensions --show-versions`, com suporte a flag `-CheckOnly` para CI/linter.
-4. **Formalização da Arquitetura AI-SEP (*AI-Assisted Software Engineering Platform*):**  
-   Documentar no Meta-Hub a plataforma proprietária integrando Meta-Hub (Governança), Starter Kit (Templates), SDD e Contratos de IA.
+4. **Formalização da Arquitetura AI-SEP (*AI-Assisted Software Engineering Platform*):** *(Concluído)*  
+   Documentada no Meta-Hub através do [ADR-003](./adrs/003-formalizacao-arquitetura-ai-sep.md), integrando Governança (Meta-Hub), Templates (Starter Kit), Metodologia (SDD) e Contratos de IA em uma plataforma coesa.
 5. **Automação Docs-as-Code com GitHub CLI (`gh`):**  
    Criar workflow ou script para refletir automaticamente itens marcados no backlog no GitHub Project 14.
 6. **Extração de `CHANGELOG.md` no Meta-Hub:**  
