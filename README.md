@@ -4,21 +4,23 @@
   <img align="right" alt="Followers" src="https://img.shields.io/github/followers/heviane?style=social">
 </h2>
 
-Profissional com 10+ anos de experiência em desenvolvimento de software.
+Profissional com 10+ anos de experiência em desenvolvimento de software.  
 Atuo como desenvolvedora autônoma com foco em arquitetura web, integração e automação.
-<br/><br/>
-Sinta-se à vontade para entrar em contato! 🚀 <br/>
+
+Sinta-se à vontade para entrar em contato! 🚀  
 
 📧 heviane@gmail.com <br/>
 💼 <a href="https://www.linkedin.com/in/hevianebastos" target="_blank" rel="noopener noreferrer">Linkedin</a>
 
-<!--
-<div>
-<a href="https://www.linkedin.com/in/hevianebastos" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-</div>
--->
+---
+
+## 🏛️ Governança & Arquitetura de Portfólio
+
+Todo o meu ecossistema adota práticas corporativas de **Docs-as-Code**, **Spec-Driven Development (SDD)** com IA e governança ágil em **Flight Levels**:
+
+👉 **[Acesse o Meta-Hub (`meta-hub`)](./meta-hub)** — Central de governança com Backlog Mestre, Decisões Arquiteturais ([ADR-001](./meta-hub/adrs/0001-adocao-sdd-ia-sdlc.md), [ADR-002](./meta-hub/adrs/0002-segregacao-dados-sensiveis-multi-root-workspaces.md)), catálogo de extensões auditado e pipeline de CI/CD.
+
+---
 
 ## 🛠️ Tecnologias e Ferramentas
 
@@ -32,7 +34,7 @@ Metodologias, stacks e ferramentas nas quais tenho experiência e que estou estu
 
 ### Tecnologias
 
-![GeneXus](https://img.shields.io/badge/GeneXus-0066CC?style=flat&logo=gnuemacs&logoColor=white)
+![GeneXus](https://img.shields.io/badge/GeneXus-0066CC?style=flat)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
@@ -44,6 +46,8 @@ Metodologias, stacks e ferramentas nas quais tenho experiência e que estou estu
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
 ![Microsoft SQL Server](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
 ![AI-assisted development](https://img.shields.io/badge/AI-assisted%20development-8B5CF6?style=flat&logo=openai&logoColor=white)
+
+---
 
 ## 📊 Estatísticas do GitHub
 
