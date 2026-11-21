@@ -94,10 +94,10 @@ flowchart LR
 
 ## 📂 Artefatos do Meta-Hub
 
-| Artefato                                                | Finalidade                                                            | Status                    |
-| :------------------------------------------------------ | :-------------------------------------------------------------------- | :------------------------ |
-| **[`backlog.md`](./backlog.md)**                        | Backlog mestre de ideação e governança de tarefas (Docs-as-Code).     | `Ativo`                   |
-| **[`vscode-extensions.md`](./vscode-extensions.md)**    | Inventário padronizado das extensões do ambiente de desenvolvimento.  | `Auditado (75 extensões)` |
+| Artefato                                                | Finalidade                                                            | Status                     |
+| :------------------------------------------------------ | :-------------------------------------------------------------------- | :------------------------- |
+| **[`backlog.md`](./backlog.md)**                        | Backlog mestre de ideação e governança de tarefas (Docs-as-Code).     | `Ativo`                    |
+| **[`vscode-extensions.md`](./vscode-extensions.md)**    | Inventário padronizado das extensões do ambiente de desenvolvimento.  | `Auditado (75 extensões)`  |
 | **[ADRs (`adrs/`)](./adrs/)**                           | Registros formais de decisões de arquitetura e metodologias adotadas. | `Ativo (ADR-001, ADR-002)` |
 
 ---

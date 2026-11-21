@@ -76,6 +76,7 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | 🟢 | `WS-01` | `P0` | **Segregação de Governança Local em Nuvem** | Migrar `E:\Projects\GitHub\docs` para `H:\My Drive\Workspace Root Local`, garantindo backup em tempo real e proteção contra perda de dados locais. |
 | 🟢 | `WS-02` | `P1` | **Unificação do Multi-Root Workspace (`github.code-workspace`)** | Consolidar a navegação em um único arquivo de workspace mestre, eliminando redundâncias (`github-all` e `github-local`) e duplicidades no Explorer. |
 | 🟢 | `WS-03` | `P1` | **Promoção do `meta-hub` a Raiz de Primeiro Nível** | Integrar `heviane/heviane/meta-hub` diretamente no topo do workspace para acesso instantâneo a backlogs, ADRs e scripts de auditoria. |
+| 🟢 | `WS-04` | `P1` | **Pipeline de CI/CD para Governança Docs-as-Code** | GitHub Actions com `markdownlint-cli2`, Lychee link checker e validação de sintaxe de scripts PowerShell. |
 
 ---
 

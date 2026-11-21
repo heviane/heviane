@@ -1,0 +1,80 @@
+name: Docs & Governance CI
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**.md'
+      - '.markdownlint-cli2.jsonc'
+      - '.lycheeignore'
+      - '.github/workflows/docs-validation.yml'
+      - 'meta-hub/scripts/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - '**.md'
+      - '.markdownlint-cli2.jsonc'
+      - '.lycheeignore'
+      - '.github/workflows/docs-validation.yml'
+      - 'meta-hub/scripts/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  markdown-lint:
+    name: Markdown Linting
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run markdownlint-cli2
+        uses: DavidAnson/markdownlint-cli2-action@v19
+        with:
+          globs: '**/*.md'
+
+  links-check:
+    name: Check Markdown Links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Lychee Link Checker
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --verbose --no-progress --exclude-file .lycheeignore './**/*.md'
+          fail: false
+
+  script-validation:
+    name: PowerShell Scripts Syntax
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate PowerShell Scripts AST Syntax
+        shell: pwsh
+        run: |
+          $scripts = Get-ChildItem -Path "meta-hub/scripts" -Filter "*.ps1" -ErrorAction SilentlyContinue
+          if (-not $scripts) {
+            Write-Host "Nenhum script encontrado em meta-hub/scripts."
+            exit 0
+          }
+          $hasError = $false
+          foreach ($script in $scripts) {
+            Write-Host "Analisando $($script.Name)..."
+            $errors = $null
+            $tokens = $null
+            $null = [System.Management.Automation.Language.Parser]::ParseFile($script.FullName, [ref]$tokens, [ref]$errors)
+            if ($errors.Count -gt 0) {
+              Write-Error "Erro de sintaxe em $($script.Name):"
+              $errors | ForEach-Object { Write-Error $_ }
+              $hasError = $true
+            } else {
+              Write-Host "✅ $($script.Name) sintaxe válida!" -ForegroundColor Green
+            }
+          }
+          if ($hasError) { exit 1 }

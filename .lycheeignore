@@ -1,0 +1,7 @@
+# Local Windows file paths and drive letters
+^[A-Za-z]:\\
+^file:\/\/
+mailto:.*
+
+# Private or external rate-limited URLs
+https://github.com/users/heviane/projects/.*
