@@ -60,7 +60,7 @@ flowchart TD
 | :------------------------------------------------------ | :-------------------------------------------------------------------- | :------------------------ |
 | **[`backlog.md`](./backlog.md)**                        | Backlog mestre de ideação e governança de tarefas (Docs-as-Code).     | `Ativo`                   |
 | **[`vscode-extensions.md`](./vscode-extensions.md)**    | Inventário padronizado das extensões do ambiente de desenvolvimento.  | `Auditado (75 extensões)` |
-| **[ADRs (`adrs/`)](./adrs/0001-adocao-sdd-ia-sdlc.md)** | Registros formais de decisões de arquitetura e metodologias adotadas. | `Ativo (ADR-001)`         |
+| **[ADRs (`adrs/`)](./adrs/)**                           | Registros formais de decisões de arquitetura e metodologias adotadas. | `Ativo (ADR-001, ADR-002)` |
 
 ---
 
