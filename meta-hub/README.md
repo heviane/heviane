@@ -54,6 +54,44 @@ flowchart TD
 
 ---
 
+## 🌐 Topologia do Ecossistema: Git Público vs. Nuvem Privada (ADR-002)
+
+Para aliar **código aberto de alto impacto** com **segurança fiscal e confidencialidade estrita**, o ecossistema opera em uma topologia híbrida de dois pilares complementares, unificados via Multi-Root Workspaces do VS Code ([`ADR-002`](./adrs/0002-segregacao-dados-sensiveis-multi-root-workspaces.md)):
+
+```mermaid
+flowchart LR
+    subgraph GIT ["🐙 Ecossistema Git Público (E:\Projects\GitHub)"]
+        direction TB
+        MetaHub["🏛️ meta-hub (Governança, Backlog, ADRs)"]
+        ReposMain["👤 @heviane (Soluções Core & Portfólio)"]
+        ReposLabs["🧪 @heviane-labs (Labs, Inovação, PoCs)"]
+        ReposLearn["📚 @heviane-learning (Estudos, Bootcamps)"]
+    end
+
+    subgraph CLOUD ["☁️ Bastidores & Nuvem Privada (Google Drive)"]
+        direction TB
+        RootLocal["🌐 H:\My Drive\Workspace Root Local\n(Prompts IA, Personas, Diretrizes da Máquina)"]
+        ClientsFolder["🔒 H:\My Drive\Clients\n(Certificados A1, Credenciais, Contratos)"]
+        PersonalFolder["🔒 I:\My Drive\Heviane\n(Estratégia de Carreira, Finanças, Estudos)"]
+    end
+
+    subgraph WORKSPACE ["💻 Multi-Root Workspace (github.code-workspace)"]
+        UnifiedExplorer["Explorer Integrado no VS Code\n(Zero Risco no Git & Backup Automático em Nuvem)"]
+    end
+
+    GIT --> WORKSPACE
+    CLOUD --> WORKSPACE
+```
+
+| Camada | Armazenamento & Protocolo | Finalidade | Regra de Versionamento |
+| :--- | :--- | :--- | :--- |
+| **Governança Oficial & Código** | `E:\Projects\GitHub\` (Git / GitHub) | Soluções de software, templates reutilizáveis, backlog oficial, ADRs e especificações técnicas (SDD). | **100% Versionado no Git.** Proibido qualquer dado sensível ou certificado real (Regra 9 do `AGENTS.md`). |
+| **Diretrizes Locais & Prompts** | `H:\My Drive\Workspace Root Local\` (Nuvem) | Prompts de assistentes de IA, personas, notas de análise preliminares e auditorias locais. | **Fora do Git.** Sincronização contínua e histórico de revisões via Google Drive corporativo. |
+| **Cofre de Clientes & Segredos** | `H:\My Drive\Clients\` (Nuvem) | Certificados A1 (`.pfx`), senhas, acessos a servidores (BrasilCloud, Tomcat), contratos e payloads reais. | **Estritamente Fora do Git.** Segregação física por design contra vazamentos acidentais. |
+| **Bastidores & Carreira** | `I:\My Drive\Heviane\` (Nuvem) | Planejamento de carreira, rascunhos de artigos antes de publicar e estudos estratégicos. | **Estritamente Privado.** Ambiente pessoal sincronizado. |
+
+---
+
 ## 📂 Artefatos do Meta-Hub
 
 | Artefato                                                | Finalidade                                                            | Status                    |
