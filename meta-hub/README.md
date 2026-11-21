@@ -1,7 +1,9 @@
 # Meta-Hub — Governança & Portfólio de Engenharia de Software
 
-> **Central de Governança Ágil, Docs-as-Code e Coordenação de Portfólio**
-> Repositório: [`heviane/heviane`](https://github.com/heviane/heviane) &bull; Diretório: `meta-hub`
+[![Docs & Governance CI](https://github.com/heviane/heviane/actions/workflows/docs-validation.yml/badge.svg)](https://github.com/heviane/heviane/actions/workflows/docs-validation.yml)
+
+> **Central de Governança Ágil, Docs-as-Code e Coordenação de Portfólio**  
+> Repositório: [`heviane/heviane`](https://github.com/heviane/heviane) &bull; Diretório: `meta-hub`  
 > Responsável: [Heviane Bastos](https://github.com/heviane)
 
 ---
@@ -99,6 +101,7 @@ flowchart LR
 | **[`backlog.md`](./backlog.md)**                        | Backlog mestre de ideação e governança de tarefas (Docs-as-Code).     | `Ativo`                    |
 | **[`vscode-extensions.md`](./vscode-extensions.md)**    | Inventário padronizado das extensões do ambiente de desenvolvimento.  | `Auditado (75 extensões)`  |
 | **[ADRs (`adrs/`)](./adrs/)**                           | Registros formais de decisões de arquitetura e metodologias adotadas. | `Ativo (ADR-001, ADR-002)` |
+| **[CI/CD Workflow (`.github/`)](../.github/workflows/)** | Pipeline de validação Markdown, links e sintaxe de scripts em CI.    | `Ativo (Docs CI)`          |
 
 ---
 
