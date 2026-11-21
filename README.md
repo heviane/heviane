@@ -22,6 +22,18 @@ Todo o meu ecossistema adota práticas corporativas de **Docs-as-Code**, **Spec-
 
 ---
 
+## 🚀 Soluções Core em Destaque
+
+Projetos recentes desenvolvidos com rigor arquitetural, foco em integração de sistemas e engenharia assistida por IA:
+
+| Solução / Repositório | Escopo & Arquitetura | Tecnologias Chave |
+| :--- | :--- | :--- |
+| **[`nfse-nacional-api`](https://github.com/heviane/nfse-nacional-api)** | Middleware de alta disponibilidade para emissão e consulta da NFS-e Nacional. Core fiscal com validação estrita XSD v1.00, assinatura digital RSA-SHA256, mTLS e Camada Anticorrupção (ACL) GeneXus 18 SOAP. | `Java 17` `Spring Boot` `mTLS` `RSA-SHA256` `GeneXus` |
+| **[`institutional-website-template`](https://github.com/heviane/institutional-website-template)** | Boilerplate corporativo moderno para acelerar entregas web institucionais de alta conversão, com foco em performance, SEO e conformidade visual para clientes. | `Next.js` `React` `TypeScript` `Tailwind CSS` |
+| **[`project-starter-kit`](https://github.com/heviane/project-starter-kit)** | Template base e acelerador de novos projetos do ecossistema, pré-configurado com governança Spec-Driven Development (SDD), contratos de IA (`AGENTS.md`) e pipeline de CI. | `Docs-as-Code` `SDD` `GitHub Actions` `IA Agents` |
+
+---
+
 ## 🛠️ Tecnologias e Ferramentas
 
 Metodologias, stacks e ferramentas nas quais tenho experiência e que estou estudando.
