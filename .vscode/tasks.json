@@ -1,0 +1,53 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "📄 Auditar Workspace & Exportar Relatório Markdown",
+      "type": "shell",
+      "command": "powershell -ExecutionPolicy Bypass -File \"${workspaceFolder}/meta-hub/scripts/audit-workspace.ps1\" -ExportReport",
+      "problemMatcher": [],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "🔍 Auditar Workspace (Console Resumido)",
+      "type": "shell",
+      "command": "powershell -ExecutionPolicy Bypass -File \"${workspaceFolder}/meta-hub/scripts/audit-workspace.ps1\"",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "📋 Auditar Workspace (Console Detalhado)",
+      "type": "shell",
+      "command": "powershell -ExecutionPolicy Bypass -File \"${workspaceFolder}/meta-hub/scripts/audit-workspace.ps1\" -Detailed",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "✨ Validar Documentação (markdownlint)",
+      "type": "shell",
+      "command": "npx markdownlint-cli2 \"**/*.md\"",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    }
+  ]
+}
