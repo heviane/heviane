@@ -17,11 +17,14 @@
     Diretório de destino do relatório em Markdown. Padrão: H:\My Drive\Workspace Root Local\Governança Local & Prompts\auditorias
 .PARAMETER Fetch
     Executa git fetch silencioso em cada repositório antes de inspecionar status para sincronização real de ahead/behind.
+.PARAMETER StrictGovernance
+    Considera ausência de arquivos de governança (AGENTS.md, README.md, .gitignore) como critério para listar repositórios no modo resumido.
 .EXAMPLE
     .\audit-workspace.ps1
     .\audit-workspace.ps1 -Detailed
     .\audit-workspace.ps1 -Detailed -ExportReport
     .\audit-workspace.ps1 -Fetch -Detailed
+    .\audit-workspace.ps1 -StrictGovernance
 #>
 
 [CmdletBinding()]
@@ -30,7 +33,8 @@ param (
     [switch]$Detailed,
     [switch]$ExportReport,
     [string]$ReportPath = "H:\My Drive\Workspace Root Local\Governança Local & Prompts\auditorias",
-    [switch]$Fetch
+    [switch]$Fetch,
+    [switch]$StrictGovernance
 )
 
 Write-Host "=================================================================" -ForegroundColor Cyan
@@ -144,13 +148,25 @@ if ($Detailed) {
         $_.Status -ne "✅ Limpo" -or 
         $_.Ahead -ne "-" -or 
         $_.Behind -ne "-" -or 
-        $_.AlertaSeguranca -ne "Nenhum" 
+        $_.AlertaSeguranca -ne "Nenhum" -or
+        ($StrictGovernance -and ($_.AGENTS -eq "Ausente" -or $_.README -eq "Ausente" -or $_.Gitignore -eq "Ausente"))
     }
     if ($attention) {
-        Write-Host "📦 Repositórios que demandam atenção:" -ForegroundColor Yellow
+        $alertTitle = if ($StrictGovernance) {
+            "📦 Repositórios que demandam atenção (incluindo conformidade estrita de governança):"
+        } else {
+            "📦 Repositórios que demandam atenção:"
+        }
+        Write-Host $alertTitle -ForegroundColor Yellow
         $attention | Format-Table -AutoSize
     } else {
-        Write-Host "✨ Todos os repositórios estão sincronizados e com árvores limpas!" -ForegroundColor Green
+        if (-not $StrictGovernance -and ($missingAgents -gt 0 -or $missingReadme -gt 0)) {
+            Write-Host "✨ Todos os repositórios estão sincronizados e com árvores limpas!" -ForegroundColor Green
+            Write-Host "💡 Nota: Existem $missingAgents repositório(s) sem AGENTS.md e $missingReadme sem README.md." -ForegroundColor DarkYellow
+            Write-Host "   Execute com -StrictGovernance para listar todas as pendências de governança." -ForegroundColor DarkGray
+        } else {
+            Write-Host "✨ Todos os repositórios estão sincronizados, com árvores limpas e 100% em conformidade com as regras de governança!" -ForegroundColor Green
+        }
     }
 }
 
@@ -160,8 +176,8 @@ Write-Host " - Total de Repositórios Auditados : $totalRepos"
 Write-Host " - Repositórios com Modificações   : $dirtyRepos" $(if ($dirtyRepos -gt 0) { "⚠️" } else { "✅" })
 Write-Host " - Repositórios com Push Pendente  : $unpushedRepos" $(if ($unpushedRepos -gt 0) { "⬆️" } else { "✅" })
 Write-Host " - Repositórios Desatualizados     : $behindRepos" $(if ($behindRepos -gt 0) { "⬇️" } else { "✅" })
-Write-Host " - Repositórios sem AGENTS/CLAUDE  : $missingAgents"
-Write-Host " - Repositórios sem README         : $missingReadme"
+Write-Host " - Repositórios sem AGENTS/CLAUDE  : $missingAgents" $(if ($missingAgents -gt 0) { "⚠️" } else { "✅" })
+Write-Host " - Repositórios sem README         : $missingReadme" $(if ($missingReadme -gt 0) { "⚠️" } else { "✅" })
 Write-Host " - Alertas de Arquivos Sensíveis   : $securityAlerts" $(if ($securityAlerts -gt 0) { "🚨" } else { "✅" })
 Write-Host ""
 

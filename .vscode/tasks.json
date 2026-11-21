@@ -39,6 +39,28 @@
       }
     },
     {
+      "label": "🛡️ Auditar Workspace (Governança Estrita)",
+      "type": "shell",
+      "command": "powershell -ExecutionPolicy Bypass -File \"${workspaceFolder}/meta-hub/scripts/audit-workspace.ps1\" -StrictGovernance",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "🔄 Sincronizar Inventário de Extensões (VS Code)",
+      "type": "shell",
+      "command": "powershell -ExecutionPolicy Bypass -File \"${workspaceFolder}/meta-hub/scripts/sync-extensions.ps1\"",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
       "label": "✨ Validar Documentação (markdownlint)",
       "type": "shell",
       "command": "npx markdownlint-cli2 \"**/*.md\"",
