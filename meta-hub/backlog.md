@@ -3,7 +3,7 @@
 > **Docs-as-Code — AI Engineering Hub**  
 > Repositório Central: [`heviane/heviane/meta-hub`](https://github.com/heviane/heviane/tree/main/meta-hub)  
 > Quadro Executivo: [AI Engineering Hub — Portfolio & Roadmap (Project 14)](https://github.com/users/heviane/projects/14)  
-> Última Atualização: 21/11/2026
+> Versão Atual: `v1.2.0` &bull; **Última Atualização:** 22/11/2026
 
 ---
 
@@ -30,6 +30,7 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | 🟢 | `ENV-01` | `P0` | **Auditoria e Otimização de Extensões** | Mapear extensões ativas e desinstalar ferramentas não utilizadas (ecossistemas Jupyter/Data Science e Azure). |
 | 🟢 | `ENV-02` | `P1` | **Inventário Documentado & Backup** | Gerar documento [`vscode-extensions.md`](./vscode-extensions.md) com as 76 extensões ativas, propósitos individuais e script PowerShell de restauração. |
 | 🟢 | `ENV-03` | `P2` | **Workspace Multi-Root (`.code-workspace`)** | Criar arquivo `github.code-workspace` na raiz do workspace para unificar navegação dos repositórios sem conflito de Git. |
+| 🟢 | `ENV-04` | `P1` | **Automação do Inventário de Extensões (`sync-extensions.ps1`)** | Script implementado em [`scripts/sync-extensions.ps1`](./scripts/sync-extensions.ps1) para sincronizar e auditar automaticamente o inventário `vscode-extensions.md` via VS Code CLI, com suporte à flag `-CheckOnly` para CI. |
 
 ---
 
@@ -43,7 +44,10 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | 🟢 | `GOV-04` | `P1` | **Integração com Project 14** | Conectar e cadastrar as tarefas priorizadas no [AI Engineering Hub (Project 14)](https://github.com/users/heviane/projects/14). |
 | 🟢 | `GOV-05` | `P2` | **ADR-001: Adoção de SDD e IA no SDLC** | Criar registro formal de decisão arquitetural (ADR) sobre a metodologia de IA e governança Docs-as-Code ([`ADR-001`](./adrs/001-adocao-sdd-ia-sdlc.md)). |
 | 🟢 | `GOV-06` | `P1` | **AGENTS.md Global do Workspace** | Criar diretrizes operacionais de IA na raiz do workspace para governança multi-repositório. |
-| 🟢 | `GOV-07` | `P1` | **Multi-Agent Review Framework (MARF)** | Padronizar processo operacional de auditoria multi-modelo (SOP), taxonomia em inglês (`active/`, `archive/`, `templates/`), lotes dinâmicos (`Lote 1..N`) e templates no starter kit ([#10](https://github.com/heviane/heviane/issues/10)). |
+| 🟢 | `GOV-07` | `P1` | **Multi-Agent Review Framework (MARF)** | Padronizar processo operacional de auditoria multi-modelo (SOP), taxonomia em inglês (`active/`, `archive/`), lotes dinâmicos (`Lote 1..N`) e modelos canônicos no starter kit ([#10](https://github.com/heviane/heviane/issues/10)). |
+| 🟢 | `GOV-08` | `P1` | **Catálogo Unificado de Repositórios (`repository-catalog.md`)** | Inventário consolidado dos 24 repositórios públicos em [`repository-catalog.md`](./repository-catalog.md), com inventário completo (51 repositórios) mantido no cofre em nuvem conforme ADR-002. |
+| 🟢 | `GOV-09` | `P0` | **Formalização da Arquitetura AI-SEP (ADR-003)** | Formalização arquitetural da plataforma integrando Governança (Meta-Hub), Templates (Starter Kit), Metodologia (SDD) e Contratos de IA ([`ADR-003`](./adrs/003-formalizacao-arquitetura-ai-sep.md)). |
+| 🟢 | `GOV-10` | `P1` | **Engenharia de Testes Pester & Validação AST (`meta-hub/tests`)** | Formalização da arquitetura da suíte com 15 testes em 6 contextos, padrão de compatibilidade universal Pester 3/5 e isolamento em sandbox temporário ([`meta-hub/tests/README.md`](./tests/README.md)). |
 
 ---
 
@@ -57,6 +61,8 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | 🟢 | `IA-04` | `P1` | **Template `ADR.md`** | Criar modelo padrão de Architecture Decision Record para decisões de design nos projetos. |
 | 🟢 | `IA-05` | `P2` | **Instruções Copilot (`.github/copilot-instructions.md`)** | Configurar instruções automáticas nativas para VS Code e GitHub Copilot. |
 | 🟢 | `IA-06` | `P2` | **Configurar GitHub Template Repository** | Habilitar a flag "Template repository" no GitHub para permitir *"Use this template"* com 1 clique. |
+| 🟢 | `IA-07` | `P1` | **Catálogo Canônico de Templates SDD/AI-SEP** | Criação do guia oficial dos 7 templates em [`docs/templates/README.md`](https://github.com/heviane/project-starter-kit/tree/main/docs/templates), com ciclo de vida em 4 fases e paridade com scripts de bootstrap. |
+| 🟢 | `IA-08` | `P0` | **Institucionalização das Regras de Ouro nos AGENTS.md** | Formalização das Regras 10 a 14 (Heurística de README, Dossiê Vivo Monotemático, Sandbox Hygiene, Safe CLI e Doc Linking) em todos os contratos de IA. |
 
 ---
 
@@ -100,23 +106,22 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 
 ---
 
+### Épico 8: Perfil Principal & Apresentação no GitHub (`heviane/heviane`) — 🟢 100% Concluído
+
+| Status | ID | Prioridade | Item | Descrição / Critérios de Aceite |
+| :---: | :---: | :---: | :--- | :--- |
+| 🟢 | `PRF-01` | `P1` | **Diferenciação de Stacks Consolidadas vs. Tecnologias em Estudo** | Segmentar a seção de competências no perfil principal entre *Competências Consolidadas em Produção* e *Em Especialização / Aprofundamento*, aumentando a credibilidade técnica e precisão curricular. |
+| 🟢 | `PRF-02` | `P1` | **Enriquecimento Estratégico da Bio e Headline Profissional** | Refinar a apresentação do perfil com headline de alto impacto (*Software Developer \| Backend & Web Architecture \| AI-Assisted Engineering*), proposta de valor explícita e objetivos profissionais claros. |
+
+---
+
 ## 💡 Banco de Ideias & Sugestões de Melhorias
 
 Propostas técnicas e oportunidades mapeadas para avaliação nas próximas iterações:
 
 1. **`ai-dev-journey` (Repositório / Série de Artigos Técnicos):**  
    Repositório e série de publicações documentando a jornada de transição de *Desenvolvedor Tradicional (10+ anos)* para *AI-Assisted Software Engineer*. Conteúdo de alta autoridade técnica para LinkedIn e portfólio.
-2. **Catálogo Unificado de Repositórios (`meta-hub/repository-catalog.md`):** 🟢 `[Concluído]`  
-   Documento implementado em [`repository-catalog.md`](./repository-catalog.md) mapeando os 24 repositórios públicos, com inventário completo (51 repositórios) mantido no Google Drive corporativo conforme ADR-002.
-3. **Automação do Inventário de Extensões (`sync-extensions.ps1`):** 🟢 `[Concluído]`  
-   Script implementado em [`scripts/sync-extensions.ps1`](./scripts/sync-extensions.ps1) para atualizar e validar automaticamente o inventário `vscode-extensions.md` via `code --list-extensions --show-versions`, com suporte a flag `-CheckOnly` para CI/linter.
-4. **Formalização da Arquitetura AI-SEP (*AI-Assisted Software Engineering Platform*):** 🟢 `[Concluído]`  
-   Documentada no Meta-Hub através do [ADR-003](./adrs/003-formalizacao-arquitetura-ai-sep.md), integrando Governança (Meta-Hub), Templates (Starter Kit), Metodologia (SDD) e Contratos de IA em uma plataforma coesa.
-5. **Automação Docs-as-Code com GitHub CLI (`gh`):**  
+2. **Automação Docs-as-Code com GitHub CLI (`gh`):**  
    Criar workflow ou script para refletir automaticamente itens marcados no backlog no GitHub Project 14.
-6. **Extração de `CHANGELOG.md` no Meta-Hub:**  
-   Migrar épicos antigos totalmente concluídos (1 a 3) para um histórico formal de mudanças, mantendo o `backlog.md` enxuto.
-7. **Diferenciação de Stacks Consolidadas vs. Tecnologias em Estudo no `README.md`:** 🟢 `[Concluído]`  
-   Segmentar a seção de tecnologias e ferramentas no perfil principal entre *Competências Consolidadas em Produção* (GeneXus, JS/TS, Node.js, SQL Server, MySQL, PostgreSQL) e *Em Especialização / Aprofundamento* (Next.js, React, Arquitetura Assistida por IA, DDD, TDD), aumentando a credibilidade técnica e precisão curricular.
-8. **Enriquecimento Estratégico da Bio e Headline Profissional:** 🟢 `[Concluído]`  
-   Refinar a apresentação do perfil com uma headline de alto impacto (*Software Developer | Backend & Web Architecture | AI-Assisted Engineering*), proposta de valor explícita e objetivos profissionais claros, destacando a senioridade e a metodologia de engenharia assistida por IA.
+3. **Extração de `CHANGELOG.md` no Meta-Hub:**  
+   Migrar épicos antigos totalmente concluídos para um histórico formal de mudanças, mantendo o `backlog.md` enxuto.
