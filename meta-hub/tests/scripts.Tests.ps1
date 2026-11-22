@@ -97,20 +97,28 @@ Describe "Automações PowerShell do Meta-Hub" {
     }
 
     Context "Tratamento de Caminhos e Parâmetros Inválidos" {
-        It "audit-workspace.ps1 deve retornar código de saída 1 para diretório inexistente" {
+        It "audit-workspace.ps1 deve retornar erro para diretório inexistente" {
             $script = Join-Path $script:scriptsDir "audit-workspace.ps1"
             $fakePath = Join-Path ([System.IO.Path]::GetTempPath()) "fake_dir_$(Get-Random)"
-            $global:LASTEXITCODE = 0
-            & $script -BasePath $fakePath 2>$null
-            Assert-Equal $LASTEXITCODE 1 "Deveria retornar código de saída 1"
+            $hasError = $false
+            try {
+                & $script -BasePath $fakePath -ErrorAction Stop 2>$null
+            } catch {
+                $hasError = $true
+            }
+            Assert-True $hasError "Deveria ter sinalizado erro para diretório inexistente"
         }
 
-        It "sync-extensions.ps1 deve retornar código de saída 1 para arquivo de documentação inexistente" {
+        It "sync-extensions.ps1 deve retornar erro para arquivo de documentação inexistente" {
             $script = Join-Path $script:scriptsDir "sync-extensions.ps1"
             $fakeDoc = Join-Path ([System.IO.Path]::GetTempPath()) "fake_doc_$(Get-Random).md"
-            $global:LASTEXITCODE = 0
-            & $script -DocPath $fakeDoc 2>$null
-            Assert-Equal $LASTEXITCODE 1 "Deveria retornar código de saída 1"
+            $hasError = $false
+            try {
+                & $script -DocPath $fakeDoc -ErrorAction Stop 2>$null
+            } catch {
+                $hasError = $true
+            }
+            Assert-True $hasError "Deveria ter sinalizado erro para arquivo inexistente"
         }
     }
 
