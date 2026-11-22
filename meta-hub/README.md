@@ -4,7 +4,7 @@
 ![Markdown Lint](https://img.shields.io/badge/markdownlint-passing-brightgreen?style=flat&logo=markdown)
 ![Links Lychee](https://img.shields.io/badge/links-verified-brightgreen?style=flat&logo=link)
 ![Gitleaks Clean](https://img.shields.io/badge/gitleaks-clean-brightgreen?style=flat&logo=shield)
-![Pester Tests](https://img.shields.io/badge/pester-7%20passed-brightgreen?style=flat&logo=powershell)
+![Pester Tests](https://img.shields.io/badge/pester-15%20passed-brightgreen?style=flat&logo=powershell)
 ![Dependabot](https://img.shields.io/badge/dependabot-active-brightgreen?style=flat&logo=dependabot)
 
 > **Central de Governança Ágil, Docs-as-Code e Coordenação de Portfólio**  
@@ -34,7 +34,7 @@ Painel executivo de conformidade contínua dos artefatos e automações do ecoss
 | **Padronização Markdown** | `markdownlint-cli2` (sem erros em arquivos `.md`) | Push / PR / Semanal | `🟢 100% Conforme` |
 | **Integridade de Links** | `Lychee Link Checker` (links internos e externos) | Push / PR / Semanal | `🟢 Verificado` |
 | **Scanner de Segredos** | `Gitleaks Scanner` (detecção de chaves/tokens) | Push / PR / Semanal | `🟢 Zero Leaks` |
-| **Automações PowerShell** | Testes Pester 3.4+ (`meta-hub/tests/scripts.Tests.ps1`) | Push / PR / Local | `🟢 7/7 Aprovados` |
+| **Automações PowerShell** | Testes Pester 3.4+ (`meta-hub/tests/scripts.Tests.ps1`) | Push / PR / Local | `🟢 15/15 Aprovados` |
 | **Backlog & Roadmap** | Sincronização Docs-as-Code vs. GitHub Project 14 | Contínuo / HITL | `🟢 Sincronizado` |
 | **Decisões Arquiteturais** | Rastreabilidade Formal de ADRs (001, 002 e 003) | Contínuo | `🟢 3 ADRs Vigentes` |
 | **Catálogo de Repositórios** | Inventário & Matriz de Maturidade (SDD) dos 23 repositórios | Auditoria Periódica | `🟢 23 Repositórios Auditados` |

@@ -268,3 +268,5 @@ if ($securityAlerts -gt 0) {
     Write-Host "🚨 ATENÇÃO: Foram encontrados $securityAlerts alerta(s) de arquivo(s) potencialmente sensível(is)!" -ForegroundColor Red
     exit 1
 }
+
+exit 0

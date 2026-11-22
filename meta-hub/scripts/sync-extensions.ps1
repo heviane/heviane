@@ -349,3 +349,5 @@ Write-Host " - Versões atualizadas no arquivo : $updatedVersionsCount" -Foregro
 Write-Host " - Novas extensões adicionadas    : $($missingInDoc.Count)" -ForegroundColor Cyan
 Write-Host " - Arquivo atualizado             : $docFullPath" -ForegroundColor DarkGray
 Write-Host ""
+
+exit 0
