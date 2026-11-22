@@ -1,8 +1,4 @@
-<h1>
-  <span>Olá! 👋 Eu sou a Heviane Bastos</span>
-  <img align="right" alt="Stars" src="https://img.shields.io/github/stars/heviane">
-  <img align="right" alt="Followers" src="https://img.shields.io/github/followers/heviane?style=social">
-</h1>
+<h1>Olá! 👋 Eu sou a Heviane Bastos</h1>
 
 > **Software Engineer | AI-Assisted Software Engineering | Systems Integration & Architecture**
 
