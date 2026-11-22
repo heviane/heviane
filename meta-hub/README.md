@@ -34,7 +34,7 @@ Painel executivo de conformidade contínua dos artefatos e automações do ecoss
 | **Padronização Markdown** | `markdownlint-cli2` (sem erros em arquivos `.md`) | Push / PR / Semanal | `🟢 100% Conforme` |
 | **Integridade de Links** | `Lychee Link Checker` (links internos e externos) | Push / PR / Semanal | `🟢 Verificado` |
 | **Scanner de Segredos** | `Gitleaks Scanner` (detecção de chaves/tokens) | Push / PR / Semanal | `🟢 Zero Leaks` |
-| **Automações PowerShell** | Testes Pester 3.4+ (`meta-hub/tests/scripts.Tests.ps1`) | Push / PR / Local | `🟢 15/15 Aprovados` |
+| **Automações PowerShell** | Testes Pester 3.4+ ([`meta-hub/tests`](./tests/README.md)) | Push / PR / Local | `🟢 15/15 Aprovados` |
 | **Backlog & Roadmap** | Sincronização Docs-as-Code vs. GitHub Project 14 | Contínuo / HITL | `🟢 Sincronizado` |
 | **Decisões Arquiteturais** | Rastreabilidade Formal de ADRs (001, 002 e 003) | Contínuo | `🟢 3 ADRs Vigentes` |
 | **Catálogo de Repositórios** | Inventário & Matriz de Maturidade (SDD) dos 24 repositórios | Auditoria Periódica | `🟢 24 Repositórios Auditados` |

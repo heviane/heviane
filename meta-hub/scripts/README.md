@@ -16,7 +16,7 @@ Os scripts seguem as boas práticas de engenharia de automação:
 - Bloqueio e documentação via **Comment-Based Help** padronizado (`Get-Help`).
 - Suporte a modo somente leitura / dry-run (`-CheckOnly`, comportamento read-only por padrão).
 - Códigos de saída semânticos (`Exit 0` para conformidade e `Exit 1` para desvios/erros), viabilizando pipelines de CI/CD.
-- Testes automatizados via **Pester 3.4+ / 5+** localizados em [`meta-hub/tests/scripts.Tests.ps1`](../tests/scripts.Tests.ps1).
+- Testes automatizados via **Pester 3.4+ / 5+** documentados em [`meta-hub/tests`](../tests/README.md) e implementados em [`scripts.Tests.ps1`](../tests/scripts.Tests.ps1).
 
 ---
 
@@ -111,7 +111,7 @@ Ambos os scripts utilizam códigos de saída semânticos para facilitar a orques
 
 ## 🧪 6. Testes Automatizados (Pester)
 
-A integridade dos scripts, a validação de sintaxe via AST Parser e as assinaturas de parâmetros são validadas pela suíte de testes Pester:
+A integridade dos scripts, a validação de sintaxe via AST Parser e as assinaturas de parâmetros são validadas pela suíte de testes Pester (consulte a documentação completa da suíte em [`meta-hub/tests/README.md`](../tests/README.md)):
 
 ```powershell
 # Execução da suíte de testes Pester localmente
