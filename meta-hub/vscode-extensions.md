@@ -1,7 +1,7 @@
 # Extensões Instaladas no VS Code
 
 > Documento gerado e sincronizado automaticamente com o inventário completo de extensões instaladas no VS Code.  
-> **Total de extensões ativas:** 76
+> **Total de extensões ativas:** 67
 
 ---
 
@@ -64,7 +64,6 @@
 | :--- | :--- | :--- | :--- |
 | **ESLint** | `dbaeumer.vscode-eslint` | `3.0.34` | Identifica problemas de sintaxe, regras de estilo e aplica correções automáticas em JS/TS. |
 | **Jest** | `orta.vscode-jest` | `6.4.4` | Execução contínua, status visual e depuração de testes automatizados com o framework Jest. |
-| **Deno** | `denoland.vscode-deno` | `3.53.1` | Suporte oficial ao runtime Deno com autocompletar e execução para TypeScript e JavaScript modernos. |
 | **Tailwind CSS IntelliSense** | `bradlc.vscode-tailwindcss` | `0.16.0` | Autocompletar inteligente de classes utilitárias, prévia de cores e linting para Tailwind CSS. |
 | **PostCSS Language Support** | `csstools.postcss` | `1.0.9` | Suporte de sintaxe, coloração e prevenção de falsos erros para CSS moderno e diretivas PostCSS/Tailwind. |
 | **vscode-styled-components** | `styled-components.vscode-styled-components` | `1.8.0` | Destaque de sintaxe CSS e autocompletar dentro de blocos de template literal do Styled Components. |
@@ -72,7 +71,6 @@
 | **JavaScript (ES6) snippets** | `xabikos.javascriptsnippets` | `1.8.0` | Coleção de atalhos e trechos de código prontos para padrões modernos de ES6+. |
 | **Node.js Code Snippets** | `abdoseadaa.node-js-snippet` | `1.1.3` | Snippets e atalhos rápidos para APIs nativas e métodos comuns do ecossistema Node.js. |
 | **Rocketseat ReactJS** | `rocketseat.rocketseatreactjs` | `3.0.2` | Snippets aceleradores para criação de componentes, hooks e interfaces funcionais em React. |
-| **Rocketseat React Native** | `rocketseat.rocketseatreactnative` | `3.0.1` | Snippets aceleradores para componentes móveis, estilos e navegação em React Native. |
 
 ---
 
@@ -81,7 +79,6 @@
 | Extensão | ID | Versão | Propósito / Descrição |
 | :--- | :--- | :--- | :--- |
 | **Docker** | `docker.docker` | `0.19.1` | Suporte oficial da Docker Inc. com sintaxe de Dockerfiles, build e gerenciamento de contêineres. |
-| **Kubernetes** | `ms-kubernetes-tools.vscode-kubernetes-tools` | `1.4.1` | Visualização, depuração e gerenciamento de clusters, pods e manifestos YAML do Kubernetes. |
 
 ---
 
@@ -104,7 +101,7 @@
 
 | Extensão | ID | Versão | Propósito / Descrição |
 | :--- | :--- | :--- | :--- |
-| **GitLens** | `eamodio.gitlens` | `19.6.0` | Visualização avançada de histórico do Git: autoria linha a linha (blame), inspeção de commits e branches. |
+| **GitLens** | `eamodio.gitlens` | `19.6.1` | Visualização avançada de histórico do Git: autoria linha a linha (blame), inspeção de commits e branches. |
 | **GitHub Repositories** | `github.remotehub` | `0.66.0` | Navegação e edição de código em repositórios remotos do GitHub sem consumir armazenamento local. |
 | **GitHub Pull Requests and Issues** | `github.vscode-pull-request-github` | `0.180.0` | Gerenciamento, criação e revisão completa de Pull Requests e Issues diretamente no editor. |
 
@@ -115,8 +112,6 @@
 | Extensão | ID | Versão | Propósito / Descrição |
 | :--- | :--- | :--- | :--- |
 | **SQL Server (mssql)** | `ms-mssql.mssql` | `1.48.0` | Conexão, autocompletar e execução de consultas T-SQL para Microsoft SQL Server. |
-| **SQL Database Projects** | `ms-mssql.sql-bindings-vscode` | `0.4.1` | Criação e publicação declarativa de projetos de banco de dados e bindings de dados. |
-| **Database Client** | `bajdzis.vscode-database` | `2.2.3` | Interface gráfica para conectar e inspecionar bancos MySQL, PostgreSQL, SQLite e outros. |
 | **Thunder Client** | `rangav.vscode-thunder-client` | `3.2.6` | Cliente HTTP/REST leve integrado para testar, debugar e documentar requisições a APIs (alternativa ao Postman). |
 
 ---
@@ -135,7 +130,6 @@
 | **Markdown Footnotes** | `bierner.markdown-footnotes` | `0.1.1` | Adiciona suporte para notas de rodapé `[^1]` na pré-visualização de Markdown. |
 | **Markdown YAML Preamble** | `bierner.markdown-yaml-preamble` | `0.1.1` | Renderiza metadados YAML (frontmatter) no topo de arquivos Markdown de forma elegante. |
 | **:emojisense:** | `bierner.emojisense` | `0.10.0` | Autocompletar inteligente com pop-up de emojis enquanto você digita em Markdown e código. |
-| **Jekyll Run** | `dedsec727.jekyll-run` | `1.7.0` | Inicia e pré-visualiza localmente sites estáticos construídos com o gerador Jekyll. |
 
 ---
 
@@ -159,9 +153,7 @@
 | **Google Antigravity** | `google.google-antigravity` | `1.13.0` | Agente avançado de IA para pair programming, resolução de problemas, criação e edição de código. |
 | **Live Share** | `ms-vsliveshare.vsliveshare` | `1.1.122` | Programação em par em tempo real com compartilhamento colaborativo de código, terminais e portas locais. |
 | **Quokka.js** | `wallabyjs.quokka-vscode` | `1.0.770` | Rascunho interativo para JavaScript e TypeScript que executa o código e mostra saídas ao vivo ao digitar. |
-| **Live Server** | `ritwickdey.liveserver` | `5.7.10` | Servidor local com recarregamento automático (live reload) para páginas HTML, CSS e scripts estáticos. |
 | **Live Preview (Microsoft)** | `ms-vscode.live-server` | `0.4.20` | Servidor de desenvolvimento web oficial da Microsoft com navegador embutido diretamente em uma aba do editor. |
-| **Preview Server** | `yuichinukiyama.vscode-preview-server` | `1.3.0` | Servidor web local com navegador embutido para testar interfaces web rapidamente. |
 | **Path Intellisense** | `christian-kohler.path-intellisense` | `2.10.0` | Autocompleta caminhos de arquivos e pastas automaticamente dentro de `imports`, `require` e tags. |
 | **Turbo Console Log** | `chakrounanas.turbo-console-log` | `3.30.1` | Insere linhas de `console.log` com mensagens detalhadas e nome da variável através de um atalho de teclado. |
 | **TODO Highlight** | `wayou.vscode-todo-highlight` | `1.0.5` | Destaca visualmente comentários como `TODO:`, `FIXME:` e tags de tarefas pendentes no código. |
@@ -177,7 +169,6 @@
 
 | Extensão | ID | Versão | Propósito / Descrição |
 | :--- | :--- | :--- | :--- |
-| **Material Icon Theme** | `pkief.material-icon-theme` | `5.40.0` | Pacote visual que adiciona ícones modernos baseados em Material Design para arquivos e pastas. |
 | **vscode-icons** | `vscode-icons-team.vscode-icons` | `13.0.0` | Coleção clássica de ícones temáticos para identificação visual de dezenas de extensões de arquivos. |
 | **Color Highlight** | `naumovs.color-highlight` | `2.8.0` | Mostra a cor correspondente como cor de fundo de códigos hexadecimais, RGB e HSL no editor. |
 | **VS Color Picker** | `lihui.vs-color-picker` | `1.0.0` | Seletor de cores flutuante com paleta visual para escolher e converter tons de cores diretamente no código. |
@@ -196,74 +187,65 @@
 | 6 | **C# Extensions** | `kreativ-software.csharpextensions` | `1.7.3` | Atalhos de menu de contexto para gerar rapidamente classes, interfaces e enums com namespaces corretos. |
 | 7 | **Code Spell Checker** | `streetsidesoftware.code-spell-checker` | `4.10.0` | Corretor ortográfico para código-fonte que previne erros de digitação em nomes de variáveis e comentários. |
 | 8 | **Color Highlight** | `naumovs.color-highlight` | `2.8.0` | Mostra a cor correspondente como cor de fundo de códigos hexadecimais, RGB e HSL no editor. |
-| 9 | **Database Client** | `bajdzis.vscode-database` | `2.2.3` | Interface gráfica para conectar e inspecionar bancos MySQL, PostgreSQL, SQLite e outros. |
-| 10 | **Debugger for Java** | `vscjava.vscode-java-debug` | `0.60.0` | Depurador baseado no Java Debug Server para executar e pausar código Java passo a passo. |
-| 11 | **Deno** | `denoland.vscode-deno` | `3.53.1` | Suporte oficial ao runtime Deno com autocompletar e execução para TypeScript e JavaScript modernos. |
-| 12 | **Dev Containers** | `ms-vscode-remote.remote-containers` | `0.475.0` | Abre qualquer projeto dentro de um contêiner Docker configurado com todo o ambiente de desenvolvimento. |
-| 13 | **Docker** | `docker.docker` | `0.19.1` | Suporte oficial da Docker Inc. com sintaxe de Dockerfiles, build e gerenciamento de contêineres. |
-| 14 | **EditorConfig** | `editorconfig.editorconfig` | `0.18.2` | Padroniza configurações de formatação (espaçamento, indentação e quebra de linha) via arquivo `.editorconfig`. |
-| 15 | **Error Lens** | `usernamehw.errorlens` | `3.30.0` | Destaca erros, avisos e mensagens de linters diretamente inline no final de cada linha de código. |
-| 16 | **ESLint** | `dbaeumer.vscode-eslint` | `3.0.34` | Identifica problemas de sintaxe, regras de estilo e aplica correções automáticas em JS/TS. |
-| 17 | **Extension Pack for Java** | `vscjava.vscode-java-pack` | `0.31.2` | Pacote oficial da Microsoft que agrupa as principais ferramentas para desenvolvimento Java no VS Code. |
-| 18 | **GitHub Markdown Preview** | `bierner.github-markdown-preview` | `0.4.0` | Ajusta o visualizador de Markdown para reproduzir a renderização exata do site do GitHub. |
-| 19 | **GitHub Pull Requests and Issues** | `github.vscode-pull-request-github` | `0.180.0` | Gerenciamento, criação e revisão completa de Pull Requests e Issues diretamente no editor. |
-| 20 | **GitHub Repositories** | `github.remotehub` | `0.66.0` | Navegação e edição de código em repositórios remotos do GitHub sem consumir armazenamento local. |
-| 21 | **GitLens** | `eamodio.gitlens` | `19.6.0` | Visualização avançada de histórico do Git: autoria linha a linha (blame), inspeção de commits e branches. |
-| 22 | **Google Antigravity** | `google.google-antigravity` | `1.13.0` | Agente avançado de IA para pair programming, resolução de problemas, criação e edição de código. |
-| 23 | **Gradle for Java** | `vscjava.vscode-gradle` | `3.19.0` | Suporte para visualização, compilação e execução de scripts e dependências do Gradle. |
-| 24 | **Inline HTML** | `pushqrdx.inline-html` | `0.3.10` | Destaque de sintaxe e autocompletar para trechos de código HTML embutidos dentro de strings JavaScript. |
-| 25 | **JavaScript (ES6) snippets** | `xabikos.javascriptsnippets` | `1.8.0` | Coleção de atalhos e trechos de código prontos para padrões modernos de ES6+. |
-| 26 | **Jekyll Run** | `dedsec727.jekyll-run` | `1.7.0` | Inicia e pré-visualiza localmente sites estáticos construídos com o gerador Jekyll. |
-| 27 | **Jest** | `orta.vscode-jest` | `6.4.4` | Execução contínua, status visual e depuração de testes automatizados com o framework Jest. |
-| 28 | **Kubernetes** | `ms-kubernetes-tools.vscode-kubernetes-tools` | `1.4.1` | Visualização, depuração e gerenciamento de clusters, pods e manifestos YAML do Kubernetes. |
-| 29 | **Live Preview (Microsoft)** | `ms-vscode.live-server` | `0.4.20` | Servidor de desenvolvimento web oficial da Microsoft com navegador embutido diretamente em uma aba do editor. |
-| 30 | **Live Server** | `ritwickdey.liveserver` | `5.7.10` | Servidor local com recarregamento automático (live reload) para páginas HTML, CSS e scripts estáticos. |
-| 31 | **Live Share** | `ms-vsliveshare.vsliveshare` | `1.1.122` | Programação em par em tempo real com compartilhamento colaborativo de código, terminais e portas locais. |
-| 32 | **Markdown Checkbox** | `bierner.markdown-checkbox` | `0.4.0` | Adiciona suporte a caixas de tarefas marcáveis `[ ]` e `[x]` no preview de Markdown. |
-| 33 | **Markdown Emoji** | `bierner.markdown-emoji` | `0.3.1` | Converte códigos como `:smile:` em emojis visuais na pré-visualização de Markdown. |
-| 34 | **Markdown Footnotes** | `bierner.markdown-footnotes` | `0.1.1` | Adiciona suporte para notas de rodapé `[^1]` na pré-visualização de Markdown. |
-| 35 | **Markdown Mermaid** | `bierner.markdown-mermaid` | `1.32.1` | Renderiza diagramas de fluxo, arquitetura e sequência escritos em sintaxe Mermaid no Markdown. |
-| 36 | **Markdown PDF** | `yzane.markdown-pdf` | `2.2.0` | Converte e exporta documentos Markdown para formatos PDF, HTML, PNG ou JPEG. |
-| 37 | **Markdown Preview GitHub Styles** | `bierner.markdown-preview-github-styles` | `2.2.0` | Adiciona o tema visual oficial do GitHub (modo claro e escuro) à pré-visualização de Markdown. |
-| 38 | **Markdown YAML Preamble** | `bierner.markdown-yaml-preamble` | `0.1.1` | Renderiza metadados YAML (frontmatter) no topo de arquivos Markdown de forma elegante. |
-| 39 | **markdownlint** | `davidanson.vscode-markdownlint` | `0.62.1` | Analisador estático (linter) para manter padrões, consistência e boas práticas em arquivos Markdown. |
-| 40 | **Material Icon Theme** | `pkief.material-icon-theme` | `5.40.0` | Pacote visual que adiciona ícones modernos baseados em Material Design para arquivos e pastas. |
-| 41 | **Maven for Java** | `vscjava.vscode-maven` | `0.46.0` | Gerenciador do ciclo de vida e execução de comandos/plugins em projetos baseados no Apache Maven. |
-| 42 | **Node.js Code Snippets** | `abdoseadaa.node-js-snippet` | `1.1.3` | Snippets e atalhos rápidos para APIs nativas e métodos comuns do ecossistema Node.js. |
-| 43 | **Nodemon Problem Matcher** | `trilean.vscode-nodemon-problem-matcher` | `0.0.1` | Captura saídas de erro do Nodemon e as integra à aba de problemas nativa do VS Code. |
-| 44 | **Notepad++ Keymap** | `ms-vscode.notepadplusplus-keybindings` | `1.0.7` | Aplica o mapa de atalhos clássicos do teclado do Notepad++ às funções do VS Code. |
-| 45 | **Path Intellisense** | `christian-kohler.path-intellisense` | `2.10.0` | Autocompleta caminhos de arquivos e pastas automaticamente dentro de `imports`, `require` e tags. |
-| 46 | **PostCSS Language Support** | `csstools.postcss` | `1.0.9` | Suporte de sintaxe, coloração e prevenção de falsos erros para CSS moderno e diretivas PostCSS/Tailwind. |
-| 47 | **PowerShell** | `ms-vscode.powershell` | `2025.4.0` | Suporte oficial para desenvolvimento, execução e depuração de scripts do PowerShell no Windows e Linux. |
-| 48 | **Prettier** | `esbenp.prettier-vscode` | `12.4.0` | Formatador de código padrão do mercado para JavaScript, TypeScript, CSS, HTML, JSON e Markdown. |
-| 49 | **Preview Server** | `yuichinukiyama.vscode-preview-server` | `1.3.0` | Servidor web local com navegador embutido para testar interfaces web rapidamente. |
-| 50 | **Project Manager for Java** | `vscjava.vscode-java-dependency` | `0.27.7` | Painel visual para gerenciar pacotes, bibliotecas externas e dependências em projetos Java. |
-| 51 | **Pylance** | `ms-python.vscode-pylance` | `2026.4.1` | Servidor de linguagem de alto desempenho com autocompletar inteligente e checagem de tipos estática. |
-| 52 | **Python** | `ms-python.python` | `2026.10.0` | Suporte central à linguagem Python: detecção de ambientes virtuais, execução e testes. |
-| 53 | **Python Debugger** | `ms-python.debugpy` | `2026.6.0` | Depurador oficial com suporte a pontos de interrupção (breakpoints) e inspeção de variáveis. |
-| 54 | **Quokka.js** | `wallabyjs.quokka-vscode` | `1.0.770` | Rascunho interativo para JavaScript e TypeScript que executa o código e mostra saídas ao vivo ao digitar. |
-| 55 | **Remote - SSH** | `ms-vscode-remote.remote-ssh` | `0.128.0` | Conecta o VS Code a qualquer máquina ou servidor remoto via SSH para editar código diretamente lá. |
-| 56 | **Remote - SSH: Config** | `ms-vscode-remote.remote-ssh-edit` | `0.87.0` | Facilita a edição e configuração do arquivo de hosts `~/.ssh/config`. |
-| 57 | **Remote Development Pack** | `ms-vscode-remote.vscode-remote-extensionpack` | `0.26.0` | Pacote consolidado que instala o suporte completo a WSL, SSH, Contêineres e Tunnels. |
-| 58 | **Remote Explorer** | `ms-vscode.remote-explorer` | `0.5.0` | Painel lateral dedicado para visualizar e alternar entre conexões SSH, WSL, contêineres e túneis. |
-| 59 | **Remote Repositories** | `ms-vscode.remote-repositories` | `0.44.0` | Abre repositórios remotos diretamente da nuvem sem a necessidade de cloná-los para a máquina local. |
-| 60 | **Remote Server** | `ms-vscode.remote-server` | `1.5.4` | Módulo de infraestrutura e túneis de conexão para o servidor do VS Code. |
-| 61 | **Rocketseat React Native** | `rocketseat.rocketseatreactnative` | `3.0.1` | Snippets aceleradores para componentes móveis, estilos e navegação em React Native. |
-| 62 | **Rocketseat ReactJS** | `rocketseat.rocketseatreactjs` | `3.0.2` | Snippets aceleradores para criação de componentes, hooks e interfaces funcionais em React. |
-| 63 | **SQL Database Projects** | `ms-mssql.sql-bindings-vscode` | `0.4.1` | Criação e publicação declarativa de projetos de banco de dados e bindings de dados. |
-| 64 | **SQL Server (mssql)** | `ms-mssql.mssql` | `1.48.0` | Conexão, autocompletar e execução de consultas T-SQL para Microsoft SQL Server. |
-| 65 | **Tailwind CSS IntelliSense** | `bradlc.vscode-tailwindcss` | `0.16.0` | Autocompletar inteligente de classes utilitárias, prévia de cores e linting para Tailwind CSS. |
-| 66 | **Thunder Client** | `rangav.vscode-thunder-client` | `3.2.6` | Cliente HTTP/REST leve integrado para testar, debugar e documentar requisições a APIs (alternativa ao Postman). |
-| 67 | **tldraw** | `tldraw-org.tldraw-vscode` | `2.407.0` | Quadro branco colaborativo (whiteboard) integrado no VS Code para esboçar diagramas e notas visuais. |
-| 68 | **TODO Highlight** | `wayou.vscode-todo-highlight` | `1.0.5` | Destaca visualmente comentários como `TODO:`, `FIXME:` e tags de tarefas pendentes no código. |
-| 69 | **Turbo Console Log** | `chakrounanas.turbo-console-log` | `3.30.1` | Insere linhas de `console.log` com mensagens detalhadas e nome da variável através de um atalho de teclado. |
-| 70 | **VS Code Speech** | `ms-vscode.vscode-speech` | `0.16.0` | Habilita comandos de voz e ditado de código e texto integrado ao editor. |
-| 71 | **VS Color Picker** | `lihui.vs-color-picker` | `1.0.0` | Seletor de cores flutuante com paleta visual para escolher e converter tons de cores diretamente no código. |
-| 72 | **vscode-icons** | `vscode-icons-team.vscode-icons` | `13.0.0` | Coleção clássica de ícones temáticos para identificação visual de dezenas de extensões de arquivos. |
-| 73 | **vscode-styled-components** | `styled-components.vscode-styled-components` | `1.8.0` | Destaque de sintaxe CSS e autocompletar dentro de blocos de template literal do Styled Components. |
-| 74 | **WSL** | `ms-vscode-remote.remote-wsl` | `1.104.7` | Permite usar o VS Code no Windows desenvolvendo diretamente dentro do ambiente Linux do WSL. |
-| 75 | **XML (Red Hat)** | `redhat.vscode-xml` | `0.29.3` | Suporte à linguagem XML com validação de schemas XSD/DTD, formatação e autocompletar. |
-| 76 | **YAML (Red Hat)** | `redhat.vscode-yaml` | `2.0.0` | Validação de sintaxe, schemas JSON e autocompletar avançado para arquivos de configuração YAML. |
+| 9 | **Debugger for Java** | `vscjava.vscode-java-debug` | `0.60.0` | Depurador baseado no Java Debug Server para executar e pausar código Java passo a passo. |
+| 10 | **Dev Containers** | `ms-vscode-remote.remote-containers` | `0.475.0` | Abre qualquer projeto dentro de um contêiner Docker configurado com todo o ambiente de desenvolvimento. |
+| 11 | **Docker** | `docker.docker` | `0.19.1` | Suporte oficial da Docker Inc. com sintaxe de Dockerfiles, build e gerenciamento de contêineres. |
+| 12 | **EditorConfig** | `editorconfig.editorconfig` | `0.18.2` | Padroniza configurações de formatação (espaçamento, indentação e quebra de linha) via arquivo `.editorconfig`. |
+| 13 | **Error Lens** | `usernamehw.errorlens` | `3.30.0` | Destaca erros, avisos e mensagens de linters diretamente inline no final de cada linha de código. |
+| 14 | **ESLint** | `dbaeumer.vscode-eslint` | `3.0.34` | Identifica problemas de sintaxe, regras de estilo e aplica correções automáticas em JS/TS. |
+| 15 | **Extension Pack for Java** | `vscjava.vscode-java-pack` | `0.31.2` | Pacote oficial da Microsoft que agrupa as principais ferramentas para desenvolvimento Java no VS Code. |
+| 16 | **GitHub Markdown Preview** | `bierner.github-markdown-preview` | `0.4.0` | Ajusta o visualizador de Markdown para reproduzir a renderização exata do site do GitHub. |
+| 17 | **GitHub Pull Requests and Issues** | `github.vscode-pull-request-github` | `0.180.0` | Gerenciamento, criação e revisão completa de Pull Requests e Issues diretamente no editor. |
+| 18 | **GitHub Repositories** | `github.remotehub` | `0.66.0` | Navegação e edição de código em repositórios remotos do GitHub sem consumir armazenamento local. |
+| 19 | **GitLens** | `eamodio.gitlens` | `19.6.1` | Visualização avançada de histórico do Git: autoria linha a linha (blame), inspeção de commits e branches. |
+| 20 | **Google Antigravity** | `google.google-antigravity` | `1.13.0` | Agente avançado de IA para pair programming, resolução de problemas, criação e edição de código. |
+| 21 | **Gradle for Java** | `vscjava.vscode-gradle` | `3.19.0` | Suporte para visualização, compilação e execução de scripts e dependências do Gradle. |
+| 22 | **Inline HTML** | `pushqrdx.inline-html` | `0.3.10` | Destaque de sintaxe e autocompletar para trechos de código HTML embutidos dentro de strings JavaScript. |
+| 23 | **JavaScript (ES6) snippets** | `xabikos.javascriptsnippets` | `1.8.0` | Coleção de atalhos e trechos de código prontos para padrões modernos de ES6+. |
+| 24 | **Jest** | `orta.vscode-jest` | `6.4.4` | Execução contínua, status visual e depuração de testes automatizados com o framework Jest. |
+| 25 | **Live Preview (Microsoft)** | `ms-vscode.live-server` | `0.4.20` | Servidor de desenvolvimento web oficial da Microsoft com navegador embutido diretamente em uma aba do editor. |
+| 26 | **Live Share** | `ms-vsliveshare.vsliveshare` | `1.1.122` | Programação em par em tempo real com compartilhamento colaborativo de código, terminais e portas locais. |
+| 27 | **Markdown Checkbox** | `bierner.markdown-checkbox` | `0.4.0` | Adiciona suporte a caixas de tarefas marcáveis `[ ]` e `[x]` no preview de Markdown. |
+| 28 | **Markdown Emoji** | `bierner.markdown-emoji` | `0.3.1` | Converte códigos como `:smile:` em emojis visuais na pré-visualização de Markdown. |
+| 29 | **Markdown Footnotes** | `bierner.markdown-footnotes` | `0.1.1` | Adiciona suporte para notas de rodapé `[^1]` na pré-visualização de Markdown. |
+| 30 | **Markdown Mermaid** | `bierner.markdown-mermaid` | `1.32.1` | Renderiza diagramas de fluxo, arquitetura e sequência escritos em sintaxe Mermaid no Markdown. |
+| 31 | **Markdown PDF** | `yzane.markdown-pdf` | `2.2.0` | Converte e exporta documentos Markdown para formatos PDF, HTML, PNG ou JPEG. |
+| 32 | **Markdown Preview GitHub Styles** | `bierner.markdown-preview-github-styles` | `2.2.0` | Adiciona o tema visual oficial do GitHub (modo claro e escuro) à pré-visualização de Markdown. |
+| 33 | **Markdown YAML Preamble** | `bierner.markdown-yaml-preamble` | `0.1.1` | Renderiza metadados YAML (frontmatter) no topo de arquivos Markdown de forma elegante. |
+| 34 | **markdownlint** | `davidanson.vscode-markdownlint` | `0.62.1` | Analisador estático (linter) para manter padrões, consistência e boas práticas em arquivos Markdown. |
+| 35 | **Maven for Java** | `vscjava.vscode-maven` | `0.46.0` | Gerenciador do ciclo de vida e execução de comandos/plugins em projetos baseados no Apache Maven. |
+| 36 | **Node.js Code Snippets** | `abdoseadaa.node-js-snippet` | `1.1.3` | Snippets e atalhos rápidos para APIs nativas e métodos comuns do ecossistema Node.js. |
+| 37 | **Nodemon Problem Matcher** | `trilean.vscode-nodemon-problem-matcher` | `0.0.1` | Captura saídas de erro do Nodemon e as integra à aba de problemas nativa do VS Code. |
+| 38 | **Notepad++ Keymap** | `ms-vscode.notepadplusplus-keybindings` | `1.0.7` | Aplica o mapa de atalhos clássicos do teclado do Notepad++ às funções do VS Code. |
+| 39 | **Path Intellisense** | `christian-kohler.path-intellisense` | `2.10.0` | Autocompleta caminhos de arquivos e pastas automaticamente dentro de `imports`, `require` e tags. |
+| 40 | **PostCSS Language Support** | `csstools.postcss` | `1.0.9` | Suporte de sintaxe, coloração e prevenção de falsos erros para CSS moderno e diretivas PostCSS/Tailwind. |
+| 41 | **PowerShell** | `ms-vscode.powershell` | `2025.4.0` | Suporte oficial para desenvolvimento, execução e depuração de scripts do PowerShell no Windows e Linux. |
+| 42 | **Prettier** | `esbenp.prettier-vscode` | `12.4.0` | Formatador de código padrão do mercado para JavaScript, TypeScript, CSS, HTML, JSON e Markdown. |
+| 43 | **Project Manager for Java** | `vscjava.vscode-java-dependency` | `0.27.7` | Painel visual para gerenciar pacotes, bibliotecas externas e dependências em projetos Java. |
+| 44 | **Pylance** | `ms-python.vscode-pylance` | `2026.4.1` | Servidor de linguagem de alto desempenho com autocompletar inteligente e checagem de tipos estática. |
+| 45 | **Python** | `ms-python.python` | `2026.10.0` | Suporte central à linguagem Python: detecção de ambientes virtuais, execução e testes. |
+| 46 | **Python Debugger** | `ms-python.debugpy` | `2026.6.0` | Depurador oficial com suporte a pontos de interrupção (breakpoints) e inspeção de variáveis. |
+| 47 | **Quokka.js** | `wallabyjs.quokka-vscode` | `1.0.770` | Rascunho interativo para JavaScript e TypeScript que executa o código e mostra saídas ao vivo ao digitar. |
+| 48 | **Remote - SSH** | `ms-vscode-remote.remote-ssh` | `0.128.0` | Conecta o VS Code a qualquer máquina ou servidor remoto via SSH para editar código diretamente lá. |
+| 49 | **Remote - SSH: Config** | `ms-vscode-remote.remote-ssh-edit` | `0.87.0` | Facilita a edição e configuração do arquivo de hosts `~/.ssh/config`. |
+| 50 | **Remote Development Pack** | `ms-vscode-remote.vscode-remote-extensionpack` | `0.26.0` | Pacote consolidado que instala o suporte completo a WSL, SSH, Contêineres e Tunnels. |
+| 51 | **Remote Explorer** | `ms-vscode.remote-explorer` | `0.5.0` | Painel lateral dedicado para visualizar e alternar entre conexões SSH, WSL, contêineres e túneis. |
+| 52 | **Remote Repositories** | `ms-vscode.remote-repositories` | `0.44.0` | Abre repositórios remotos diretamente da nuvem sem a necessidade de cloná-los para a máquina local. |
+| 53 | **Remote Server** | `ms-vscode.remote-server` | `1.5.4` | Módulo de infraestrutura e túneis de conexão para o servidor do VS Code. |
+| 54 | **Rocketseat ReactJS** | `rocketseat.rocketseatreactjs` | `3.0.2` | Snippets aceleradores para criação de componentes, hooks e interfaces funcionais em React. |
+| 55 | **SQL Server (mssql)** | `ms-mssql.mssql` | `1.48.0` | Conexão, autocompletar e execução de consultas T-SQL para Microsoft SQL Server. |
+| 56 | **Tailwind CSS IntelliSense** | `bradlc.vscode-tailwindcss` | `0.16.0` | Autocompletar inteligente de classes utilitárias, prévia de cores e linting para Tailwind CSS. |
+| 57 | **Thunder Client** | `rangav.vscode-thunder-client` | `3.2.6` | Cliente HTTP/REST leve integrado para testar, debugar e documentar requisições a APIs (alternativa ao Postman). |
+| 58 | **tldraw** | `tldraw-org.tldraw-vscode` | `2.407.0` | Quadro branco colaborativo (whiteboard) integrado no VS Code para esboçar diagramas e notas visuais. |
+| 59 | **TODO Highlight** | `wayou.vscode-todo-highlight` | `1.0.5` | Destaca visualmente comentários como `TODO:`, `FIXME:` e tags de tarefas pendentes no código. |
+| 60 | **Turbo Console Log** | `chakrounanas.turbo-console-log` | `3.30.1` | Insere linhas de `console.log` com mensagens detalhadas e nome da variável através de um atalho de teclado. |
+| 61 | **VS Code Speech** | `ms-vscode.vscode-speech` | `0.16.0` | Habilita comandos de voz e ditado de código e texto integrado ao editor. |
+| 62 | **VS Color Picker** | `lihui.vs-color-picker` | `1.0.0` | Seletor de cores flutuante com paleta visual para escolher e converter tons de cores diretamente no código. |
+| 63 | **vscode-icons** | `vscode-icons-team.vscode-icons` | `13.0.0` | Coleção clássica de ícones temáticos para identificação visual de dezenas de extensões de arquivos. |
+| 64 | **vscode-styled-components** | `styled-components.vscode-styled-components` | `1.8.0` | Destaque de sintaxe CSS e autocompletar dentro de blocos de template literal do Styled Components. |
+| 65 | **WSL** | `ms-vscode-remote.remote-wsl` | `1.104.7` | Permite usar o VS Code no Windows desenvolvendo diretamente dentro do ambiente Linux do WSL. |
+| 66 | **XML (Red Hat)** | `redhat.vscode-xml` | `0.29.3` | Suporte à linguagem XML com validação de schemas XSD/DTD, formatação e autocompletar. |
+| 67 | **YAML (Red Hat)** | `redhat.vscode-yaml` | `2.0.0` | Validação de sintaxe, schemas JSON e autocompletar avançado para arquivos de configuração YAML. |
 
 ---
 
@@ -274,7 +256,6 @@ Caso precise reinstalar ou replicar o ambiente atual em outra máquina, copie e 
 ```powershell
 $extensions = @(
     "abdoseadaa.node-js-snippet",
-    "bajdzis.vscode-database",
     "bierner.emojisense",
     "bierner.github-markdown-preview",
     "bierner.markdown-checkbox",
@@ -289,8 +270,6 @@ $extensions = @(
     "csstools.postcss",
     "davidanson.vscode-markdownlint",
     "dbaeumer.vscode-eslint",
-    "dedsec727.jekyll-run",
-    "denoland.vscode-deno",
     "docker.docker",
     "eamodio.gitlens",
     "editorconfig.editorconfig",
@@ -303,9 +282,7 @@ $extensions = @(
     "ms-dotnettools.csdevkit",
     "ms-dotnettools.csharp",
     "ms-dotnettools.vscode-dotnet-runtime",
-    "ms-kubernetes-tools.vscode-kubernetes-tools",
     "ms-mssql.mssql",
-    "ms-mssql.sql-bindings-vscode",
     "ms-python.black-formatter",
     "ms-python.debugpy",
     "ms-python.python",
@@ -325,14 +302,11 @@ $extensions = @(
     "ms-vsliveshare.vsliveshare",
     "naumovs.color-highlight",
     "orta.vscode-jest",
-    "pkief.material-icon-theme",
     "pushqrdx.inline-html",
     "rangav.vscode-thunder-client",
     "redhat.vscode-xml",
     "redhat.vscode-yaml",
-    "ritwickdey.liveserver",
     "rocketseat.rocketseatreactjs",
-    "rocketseat.rocketseatreactnative",
     "streetsidesoftware.code-spell-checker",
     "styled-components.vscode-styled-components",
     "tldraw-org.tldraw-vscode",
@@ -347,7 +321,6 @@ $extensions = @(
     "wallabyjs.quokka-vscode",
     "wayou.vscode-todo-highlight",
     "xabikos.javascriptsnippets",
-    "yuichinukiyama.vscode-preview-server",
     "yzane.markdown-pdf"
 )
 

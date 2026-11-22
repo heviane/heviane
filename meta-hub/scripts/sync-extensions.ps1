@@ -173,11 +173,16 @@ foreach ($line in $lines) {
                     $updatedVersionsCount++
                     $line = "| **$name** | $bt$id$bt | $bt$realVersion$bt | $desc |"
                 }
+                $newLines.Add($line)
+            } else {
+                Write-Host "🗑️ Removendo da categoria a extensão desinstalada: $id" -ForegroundColor Yellow
             }
+        } else {
+            $newLines.Add($line)
         }
+    } else {
+        $newLines.Add($line)
     }
-
-    $newLines.Add($line)
 }
 
 # 4. Modo CheckOnly
