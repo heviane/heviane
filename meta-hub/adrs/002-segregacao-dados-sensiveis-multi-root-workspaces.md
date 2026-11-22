@@ -15,7 +15,7 @@ Essa convivência expõe desafios críticos de segurança da informação, priva
 
 * **Manipulação de Segredos Fiscais e Credenciais:** Aplicações de integração fiscal demandam o uso de Certificados Digitais ICP-Brasil A1 (`.pfx` / `.p12`), senhas em texto puro, acessos a servidores de nuvem (servidores de aplicação e bancos de dados em nuvem), credenciais SSH/SFTP e amostras de payloads com dados reais de empresas e tomadores.
 * **Fragilidade do `.gitignore` como Única Linha de Defesa:** Em projetos com repositórios públicos, confiar exclusivamente no arquivo `.gitignore` para barrar segredos locais cria um risco residual inaceitável de erro humano (ex: `git add -f`, comutação para branches sem regras atualizadas ou scripts desatentos). Um único commit acidental de um certificado A1 vaza a identidade jurídica do cliente permanentemente.
-* **Vulnerabilidade de Documentos Locais sem Nuvem:** Diretrizes locais, prompts de assistentes de IA, personas e históricos de análise armazenados exclusivamente no disco físico da máquina (ex: `E:\Projects\GitHub\docs`) corriam risco de perda total e irreversível em caso de pane no hardware local.
+* **Vulnerabilidade de Documentos Locais sem Nuvem:** Diretrizes locais, prompts de assistentes de IA, personas e históricos de análise armazenados exclusivamente no disco físico da máquina (ex: `<workspace-root>/docs`) corriam risco de perda total e irreversível em caso de pane no hardware local.
 * **Ergonomia e Produtividade:** A desenvolvedora precisa de acesso rápido aos certificados e amostras para testes locais no terminal, sem precisar alternar entre múltiplos navegadores ou pastas desconectadas.
 
 ---
@@ -27,12 +27,13 @@ Decidimos adotar a **Segregação Física Total de Segredos e Governança Local*
 ### Pilares da Arquitetura:
 
 1. **Segregação Física por Design (Redução Substancial de Riscos de Exposição):**
-   * Nenhum certificado digital (`*.pfx`), credencial real de cliente ou anotação confidencial reside dentro da árvore de trabalho de qualquer repositório Git sob `E:\Projects\GitHub`.
+   * Nenhum certificado digital (`*.pfx`), credencial real de cliente ou anotação confidencial reside dentro da árvore de trabalho de qualquer repositório Git sob `<workspace-root>/GitHub`.
    * Para o motor do Git, esses arquivos **fisicamente não existem na árvore de versionamento**, mitigando por design o risco de vazamento acidental via `git add` ou `git push`.
-2. **Topologia de Unidades Sincronizadas em Nuvem (Google Drive):**
-   * **`H:\My Drive\Clients\`:** Cofre corporativo contendo pastas dedicadas por cliente (`Cliente-Alfa`, `Cliente-Beta`, `Cliente-Gama`) com certificados, credenciais de acesso, contratos e históricos de deploy.
-   * **`H:\My Drive\Workspace Root Local\`:** Central de governança da máquina de trabalho, abrigando prompts de IA, personas, notas de análise e diretrizes locais com backup e versionamento em nuvem contínuos.
-   * **`I:\My Drive\Heviane\...`:** Espaço privado dedicado ao planejamento de carreira, estudos e dados pessoais.
+2. **Topologia de Unidades Sincronizadas em Nuvem (Cloud Storage):**
+   * **`<secure-vault>/clients/`:** Cofre corporativo contendo pastas dedicadas por cliente (`Cliente-Alfa`, `Cliente-Beta`, `Cliente-Gama`) com certificados, credenciais de acesso, contratos e históricos de deploy.
+   * **`<governance-cloud>/workspace-local/`:** Central de governança da máquina de trabalho, abrigando prompts de IA, personas, notas de análise e diretrizes locais com backup e versionamento em nuvem contínuos.
+   * **`<personal-vault>/career/`:** Espaço privado dedicado ao planejamento de carreira, estudos e dados pessoais.
+   * *Nota de Portabilidade: As designações acima (`<workspace-root>`, `<secure-vault>`, etc.) representam papéis arquiteturais mapeados em unidades locais (ex: Windows drive letters ou montagens Unix).*
 3. **Integração via Multi-Root Workspaces do VS Code:**
    * Utilização de arquivos `.code-workspace` na raiz do ambiente (como `github.code-workspace` e `nfse-nacional.code-workspace`), agrupando lado a lado as pastas de repositórios Git com as pastas do Google Drive no mesmo painel lateral do editor.
    * Configuração de filtros de busca (`search.exclude`) para excluir binários pesados (`*.pfx`, `*.zip`, `*.war`, `*.pdf`) da indexação global, preservando a performance do VS Code.

@@ -66,7 +66,7 @@ Varre todos os repositórios Git presentes sob a raiz de projetos:
 
 #### Parâmetros de `audit-workspace.ps1`
 
-- `-BasePath <String>`: Caminho da raiz dos repositórios (Padrão: `E:\Projects\GitHub`).
+- `-BasePath <String>`: Caminho da raiz dos repositórios (Padrão: `<workspace-root>/GitHub` ou diretório local configurado).
 - `-Detailed`: Exibe a tabela completa no console, mesmo de repositórios sem alterações.
 - `-Fetch`: Sincroniza as referências remotas do Git antes de calcular `ahead`/`behind`.
 - `-StrictGovernance`: Sinaliza repositórios que não contêm `AGENTS.md`, `README.md` ou `.gitignore`.
@@ -88,7 +88,7 @@ Audita as extensões instaladas no VS Code contra a documentação oficial:
 .\sync-extensions.ps1
 
 # Especificando um caminho customizado para o documento
-.\sync-extensions.ps1 -DocPath "E:\caminho\personalizado\vscode-extensions.md"
+.\sync-extensions.ps1 -DocPath "<caminho-customizado>\vscode-extensions.md"
 ```
 
 #### Parâmetros de `sync-extensions.ps1`

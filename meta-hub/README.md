@@ -84,7 +84,7 @@ Para aliar **código aberto de alto impacto** com **segurança fiscal e confiden
 
 ```mermaid
 flowchart LR
-    subgraph GIT ["🐙 Ecossistema Git Público (E:\Projects\GitHub)"]
+    subgraph GIT ["🐙 Ecossistema Git Público (<workspace-root>/GitHub)"]
         direction TB
         MetaHub["🏛️ meta-hub (Governança, Backlog, ADRs)"]
         ReposMain["👤 @heviane (Soluções Core & Portfólio)"]
@@ -92,14 +92,14 @@ flowchart LR
         ReposLearn["📚 @heviane-learning (Estudos, Bootcamps)"]
     end
 
-    subgraph CLOUD ["☁️ Bastidores & Nuvem Privada (Google Drive)"]
+    subgraph CLOUD ["☁️ Bastidores & Nuvem Privada (Cloud Storage)"]
         direction TB
-        RootLocal["🌐 H:\My Drive\Workspace Root Local<br/>(Prompts IA, Personas, Diretrizes da Máquina)"]
-        ClientsFolder["🔒 H:\My Drive\Clients<br/>(Certificados A1, Credenciais, Contratos)"]
-        PersonalFolder["🔒 I:\My Drive\Heviane<br/>(Estratégia de Carreira, Finanças, Estudos)"]
+        RootLocal["🌐 <governance-cloud>/workspace-local<br/>(Prompts IA, Personas, Diretrizes da Máquina)"]
+        ClientsFolder["🔒 <secure-vault>/clients<br/>(Certificados A1, Credenciais, Contratos)"]
+        PersonalFolder["🔒 <personal-vault>/career<br/>(Estratégia de Carreira, Finanças, Estudos)"]
     end
 
-    subgraph WORKSPACE ["💻 Multi-Root Workspace (github.code-workspace)"]
+    subgraph WORKSPACE ["💻 Multi-Root Workspace (.code-workspace)"]
         UnifiedExplorer["Explorer Integrado no VS Code<br/>(Segregação Física & Backup em Nuvem)"]
     end
 
@@ -109,10 +109,12 @@ flowchart LR
 
 | Camada | Armazenamento & Protocolo | Finalidade | Regra de Versionamento |
 | :--- | :--- | :--- | :--- |
-| **Governança Oficial & Código** | `E:\Projects\GitHub\` (Git / GitHub) | Soluções de software, templates reutilizáveis, backlog oficial, ADRs e especificações técnicas (SDD). | **100% Versionado no Git.** Proibido qualquer dado sensível ou certificado real (Regra 9 do `AGENTS.md`). |
-| **Diretrizes Locais & Prompts** | `H:\My Drive\Workspace Root Local\` (Nuvem) | Prompts de assistentes de IA, personas, notas de análise preliminares e auditorias locais. | **Fora do Git.** Sincronização contínua e histórico de revisões via Google Drive corporativo. |
-| **Cofre de Clientes & Segredos** | `H:\My Drive\Clients\` (Nuvem) | Certificados A1 (`.pfx`), senhas, acessos a servidores (servidores de aplicação e bancos de dados em nuvem), contratos e payloads reais. | **Estritamente Fora do Git.** Segregação física por design contra vazamentos acidentais. |
-| **Bastidores & Carreira** | `I:\My Drive\Heviane\` (Nuvem) | Planejamento de carreira, rascunhos de artigos antes de publicar e estudos estratégicos. | **Estritamente Privado.** Ambiente pessoal sincronizado. |
+| **Governança Oficial & Código** | `<workspace-root>/GitHub/` (Git / GitHub) | Soluções de software, templates reutilizáveis, backlog oficial, ADRs e especificações técnicas (SDD). | **100% Versionado no Git.** Proibido qualquer dado sensível ou certificado real (Regra 9 do `AGENTS.md`). |
+| **Diretrizes Locais & Prompts** | `<governance-cloud>/workspace-local/` (Nuvem) | Prompts de assistentes de IA, personas, notas de análise preliminares e auditorias locais. | **Fora do Git.** Sincronização contínua e histórico de revisões via nuvem corporativa (Google Drive). |
+| **Cofre de Clientes & Segredos** | `<secure-vault>/clients/` (Nuvem) | Certificados A1 (`.pfx`), senhas, acessos a servidores (servidores de aplicação e bancos de dados em nuvem), contratos e payloads reais. | **Estritamente Fora do Git.** Segregação física por design contra vazamentos acidentais. |
+| **Bastidores & Carreira** | `<personal-vault>/career/` (Nuvem) | Planejamento de carreira, rascunhos de artigos antes de publicar e estudos estratégicos. | **Estritamente Privado.** Ambiente pessoal sincronizado. |
+
+> 💡 *Nota de Portabilidade: Os caminhos acima utilizam referências conceituais (`<workspace-root>`, `<governance-cloud>`, `<secure-vault>`). Em cada estação de trabalho, eles são mapeados para seus respectivos pontos de montagem locais ou unidades de nuvem sincronizadas.*
 
 ---
 

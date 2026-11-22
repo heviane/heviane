@@ -74,7 +74,7 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 
 | Status | ID | Prioridade | Item | Descrição / Critérios de Aceite |
 | :---: | :---: | :---: | :--- | :--- |
-| 🟢 | `WS-01` | `P0` | **Segregação de Governança Local em Nuvem** | Migrar `E:\Projects\GitHub\docs` para `H:\My Drive\Workspace Root Local`, garantindo backup em tempo real e proteção contra perda de dados locais. |
+| 🟢 | `WS-01` | `P0` | **Segregação de Governança Local em Nuvem** | Migrar governança local privada para unidade em nuvem dedicada (`<governance-cloud>/workspace-local`), garantindo backup em tempo real e proteção contra perda de dados locais. |
 | 🟢 | `WS-02` | `P1` | **Unificação do Multi-Root Workspace (`github.code-workspace`)** | Consolidar a navegação em um único arquivo de workspace mestre, eliminando redundâncias (`github-all` e `github-local`) e duplicidades no Explorer. |
 | 🟢 | `WS-03` | `P1` | **Promoção do `meta-hub` a Raiz de Primeiro Nível** | Integrar `heviane/heviane/meta-hub` diretamente no topo do workspace para acesso instantâneo a backlogs, ADRs e scripts de auditoria. |
 | 🟢 | `WS-04` | `P1` | **Pipeline de CI/CD para Governança Docs-as-Code** | GitHub Actions com `markdownlint-cli2`, Lychee link checker e validação de sintaxe de scripts PowerShell. |
@@ -95,7 +95,7 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | Status | ID | Prioridade | Item | Descrição / Critérios de Aceite |
 | :---: | :---: | :---: | :--- | :--- |
 | 🟡 | `CAR-01` | `P0` | **Especificação do Workspace Profissional** | Planejar arquitetura de workspace dedicado à carreira, portfólio, blog técnico e autoridade no mercado. |
-| ⚪ | `CAR-02` | `P1` | **Repositório Privado de Bastidores no Google Drive** | Estruturar pasta segura em `I:\My Drive\Heviane\...` para rascunhos, estudos, estratégias comerciais e dados sensíveis. |
+| ⚪ | `CAR-02` | `P1` | **Repositório Privado de Bastidores no Google Drive** | Estruturar pasta segura em `<personal-vault>/career/` para rascunhos, estudos, estratégias comerciais e dados sensíveis. |
 | ⚪ | `CAR-03` | `P1` | **Ativos Públicos de Autoridade Técnica** | Criar os repositórios públicos `blog`, `portfolio` e `news-letter` a partir de templates de produtos. |
 
 ---

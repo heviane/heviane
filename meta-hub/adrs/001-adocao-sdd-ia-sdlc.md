@@ -35,7 +35,7 @@ Decidimos adotar formalmente a metodologia de **Spec-Driven Development (SDD)** 
 1. **Metadiretório de Governança (`meta-hub`):**
    * Centralização de toda a estratégia em `heviane/heviane/meta-hub/`, incluindo o backlog unificado ([`backlog.md`](../backlog.md)), inventários técnicos ([`vscode-extensions.md`](../vscode-extensions.md)) e registros de decisão arquitetural (`adrs/`).
 2. **Contratos Operacionais de IA (`AGENTS.md`):**
-   * Definição de diretrizes operacionais obrigatórias para agentes na raiz do workspace (`E:\Projects\GitHub\AGENTS.md`) e em cada repositório individual.
+   * Definição de diretrizes operacionais obrigatórias para agentes na raiz do workspace (`<workspace-root>/AGENTS.md`) e em cada repositório individual.
    * **Regra Fundamental 0 (Human-in-the-Loop):** O agente **DEVE SEMPRE** apresentar o plano de ação e obter a aprovação explícita da desenvolvedora antes de criar, editar, excluir arquivos ou executar commits.
 3. **Spec-Driven Development (SDD):**
    * Todo desenvolvimento de escopo relevante deve ser precedido por um documento de especificação (`docs/templates/SPEC.md`), detalhando requisitos funcionais, não-funcionais, regras de negócio e critérios de aceite antes da codificação.
