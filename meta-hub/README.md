@@ -1,6 +1,11 @@
 # Meta-Hub — Governança & Portfólio de Engenharia de Software
 
 [![Docs & Governance CI](https://github.com/heviane/heviane/actions/workflows/docs-validation.yml/badge.svg)](https://github.com/heviane/heviane/actions/workflows/docs-validation.yml)
+![Markdown Lint](https://img.shields.io/badge/markdownlint-passing-brightgreen?style=flat&logo=markdown)
+![Links Lychee](https://img.shields.io/badge/links-verified-brightgreen?style=flat&logo=link)
+![Gitleaks Clean](https://img.shields.io/badge/gitleaks-clean-brightgreen?style=flat&logo=shield)
+![Pester Tests](https://img.shields.io/badge/pester-7%20passed-brightgreen?style=flat&logo=powershell)
+![Dependabot](https://img.shields.io/badge/dependabot-active-brightgreen?style=flat&logo=dependabot)
 
 > **Central de Governança Ágil, Docs-as-Code e Coordenação de Portfólio**  
 > Repositório: [`heviane/heviane`](https://github.com/heviane/heviane) &bull; Diretório: `meta-hub`  
@@ -17,6 +22,23 @@ Ele adota os pilares da moderna engenharia de software:
 - **Docs-as-Code:** Toda a estratégia, backlogs, inventários técnicos e decisões arquiteturais são versionados no Git.
 - **Flight Levels & Gestão Ágil:** Separação clara entre visão estratégica de portfólio, coordenação operacional e entrega técnica nos repositórios.
 - **AI-Assisted Software Engineering Platform (AI-SEP):** Ecossistema estruturado em camadas integrando governança, starter kit, Spec-Driven Development (SDD), contratos de IA (`AGENTS.md`) e automação contínua ([ADR-003](./adrs/003-formalizacao-arquitetura-ai-sep.md)).
+
+---
+
+## 🩺 Matriz de Saúde e Integridade de Governança
+
+Painel executivo de conformidade contínua dos artefatos e automações do ecossistema:
+
+| Dimensão de Governança | Mecanismo de Verificação | Frequência / Gatilho | Status / Indicador |
+| :--- | :--- | :--- | :---: |
+| **Padronização Markdown** | `markdownlint-cli2` (sem erros em arquivos `.md`) | Push / PR / Semanal | `🟢 100% Conforme` |
+| **Integridade de Links** | `Lychee Link Checker` (links internos e externos) | Push / PR / Semanal | `🟢 Verificado` |
+| **Scanner de Segredos** | `Gitleaks Scanner` (detecção de chaves/tokens) | Push / PR / Semanal | `🟢 Zero Leaks` |
+| **Automações PowerShell** | Testes Pester 3.4+ (`meta-hub/tests/scripts.Tests.ps1`) | Push / PR / Local | `🟢 7/7 Aprovados` |
+| **Backlog & Roadmap** | Sincronização Docs-as-Code vs. GitHub Project 14 | Contínuo / HITL | `🟢 Sincronizado` |
+| **Decisões Arquiteturais** | Rastreabilidade Formal de ADRs (001, 002 e 003) | Contínuo | `🟢 3 ADRs Vigentes` |
+| **Catálogo de Repositórios** | Inventário & Matriz de Maturidade (SDD) dos 23 repositórios | Auditoria Periódica | `🟢 23 Repositórios Auditados` |
+| **Dependências de CI** | GitHub Dependabot (`.github/dependabot.yml`) | Semanal | `🟢 Monitoramento Ativo` |
 
 ---
 
