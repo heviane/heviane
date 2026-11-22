@@ -1,17 +1,12 @@
-<h2>
-  <span>Olá!👋 Eu sou a Heviane</span>
+<h1>
+  <span>Olá! 👋 Eu sou a Heviane Bastos</span>
   <img align="right" alt="Stars" src="https://img.shields.io/github/stars/heviane">
   <img align="right" alt="Followers" src="https://img.shields.io/github/followers/heviane?style=social">
-</h2>
+</h1>
 
 > **Software Engineer | AI-Assisted Software Engineering | Systems Integration & Architecture**
 
 Engenheira de Software com mais de 10 anos de experiência em arquitetura de sistemas, modernização de aplicações e integração em ambientes corporativos. Atuo com foco em práticas avançadas de **Engenharia de Software Assistida por IA (AI-SEP)**, combinando rigor técnico, governança (*Docs-as-Code* e *Spec-Driven Development*) e automação contínua para entregar soluções seguras, auditáveis e de alto valor.
-
-Sinta-se à vontade para entrar em contato! 🚀  
-
-📧 [heviane@gmail.com](mailto:heviane@gmail.com) <br/>
-💼 <a href="https://www.linkedin.com/in/hevianebastos" target="_blank" rel="noopener noreferrer">LinkedIn</a>
 
 ---
 
@@ -49,3 +44,12 @@ Competências práticas e arquiteturais aplicadas na engenharia de software e no
   ![Microsoft SQL Server](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
   ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
   ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+
+---
+
+## 📬 Vamos Conversar?
+
+Aberta a trocas sobre Arquitetura de Sistemas, Engenharia com IA e novas oportunidades técnicas:
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Heviane%20Bastos-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hevianebastos)
+[![Gmail](https://img.shields.io/badge/Gmail-heviane@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:heviane@gmail.com)
