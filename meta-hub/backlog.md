@@ -125,3 +125,12 @@ Propostas técnicas e oportunidades mapeadas para avaliação nas próximas iter
    Criar workflow ou script para refletir automaticamente itens marcados no backlog no GitHub Project 14.
 3. **Extração de `CHANGELOG.md` no Meta-Hub:**  
    Migrar épicos antigos totalmente concluídos para um histórico formal de mudanças, mantendo o `backlog.md` enxuto.
+
+### 📦 Propostas Técnicas Pós-MVP do Starter Kit (`project-starter-kit`)
+
+Propostas técnicas para avaliação após teste de uso real do kit de aceleração:
+
+1. **Catálogo de Guias e Configurações por Stack:**  
+   Avaliar a externalização de configurações de stacks em arquivos JSON (`config/stacks/`) e guias detalhados de arquitetura para Java, .NET, Python e Node.
+2. **Mecanismo de Atualização:**  
+   Estudar estratégia para permitir que projetos derivados recebam melhorias futuras de templates e regras de IA sem sobrescrever decisões locais.
