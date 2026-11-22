@@ -20,7 +20,7 @@ Sinta-se à vontade para entrar em contato! 🚀
 Todo o meu ecossistema adota práticas corporativas de **Docs-as-Code**, **Spec-Driven Development (SDD)** com contratos de IA (`AGENTS.md`) e governança ágil em **Flight Levels**:
 
 - 🏛️ **[Acesse o Meta-Hub (`meta-hub`)](./meta-hub)** — Central de governança com Backlog Mestre, Decisões Arquiteturais ([ADR-001](./meta-hub/adrs/001-adocao-sdd-ia-sdlc.md), [ADR-002](./meta-hub/adrs/002-segregacao-dados-sensiveis-multi-root-workspaces.md), [ADR-003](./meta-hub/adrs/003-formalizacao-arquitetura-ai-sep.md)), catálogo de extensões auditado e pipeline de CI/CD.
-- 📚 **[Catálogo Unificado de Repositórios (`repository-catalog.md`)](./meta-hub/repository-catalog.md)** — Matriz de maturidade dos 23 repositórios públicos distribuídos pelas organizações [`@heviane`](https://github.com/heviane), [`@heviane-labs`](https://github.com/heviane-labs) e [`@heviane-learning`](https://github.com/heviane-learning).
+- 📚 **[Catálogo Unificado de Repositórios (`repository-catalog.md`)](./meta-hub/repository-catalog.md)** — Matriz de maturidade dos 24 repositórios públicos distribuídos pelas organizações [`@heviane`](https://github.com/heviane), [`@heviane-labs`](https://github.com/heviane-labs) e [`@heviane-learning`](https://github.com/heviane-learning).
 - 📦 **[`project-starter-kit`](https://github.com/heviane/project-starter-kit)** — Template base e acelerador de novos projetos, padronizado com SDD, contratos de IA (`AGENTS.md`) e pipelines de CI.
 
 ---

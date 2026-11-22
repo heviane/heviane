@@ -37,7 +37,7 @@ Painel executivo de conformidade contínua dos artefatos e automações do ecoss
 | **Automações PowerShell** | Testes Pester 3.4+ (`meta-hub/tests/scripts.Tests.ps1`) | Push / PR / Local | `🟢 15/15 Aprovados` |
 | **Backlog & Roadmap** | Sincronização Docs-as-Code vs. GitHub Project 14 | Contínuo / HITL | `🟢 Sincronizado` |
 | **Decisões Arquiteturais** | Rastreabilidade Formal de ADRs (001, 002 e 003) | Contínuo | `🟢 3 ADRs Vigentes` |
-| **Catálogo de Repositórios** | Inventário & Matriz de Maturidade (SDD) dos 23 repositórios | Auditoria Periódica | `🟢 23 Repositórios Auditados` |
+| **Catálogo de Repositórios** | Inventário & Matriz de Maturidade (SDD) dos 24 repositórios | Auditoria Periódica | `🟢 24 Repositórios Auditados` |
 | **Dependências de CI** | GitHub Dependabot (`.github/dependabot.yml`) | Semanal | `🟢 Monitoramento Ativo` |
 
 ---
@@ -123,7 +123,7 @@ flowchart LR
 | Artefato                                                | Finalidade                                                            | Status                     |
 | :------------------------------------------------------ | :-------------------------------------------------------------------- | :------------------------- |
 | **[`backlog.md`](./backlog.md)**                        | Backlog mestre de ideação e governança de tarefas (Docs-as-Code).     | `Ativo`                    |
-| **[`repository-catalog.md`](./repository-catalog.md)**  | Catálogo unificado e matriz de maturidade dos 23 repositórios públicos. | `Ativo (23 repos)`         |
+| **[`repository-catalog.md`](./repository-catalog.md)**  | Catálogo unificado e matriz de maturidade dos 24 repositórios públicos. | `Ativo (24 repos)`         |
 | **[`vscode-extensions.md`](./vscode-extensions.md)**    | Inventário padronizado das extensões do ambiente de desenvolvimento.  | `Auditado (76 extensões)`  |
 | **[ADRs (`adrs/`)](./adrs/)**                           | Registros formais de decisões de arquitetura e metodologias adotadas. | `Ativo (ADR-001, ADR-002, ADR-003)` |
 | **[Scripts (`scripts/`)](./scripts/)**                  | Automações de auditoria (`audit-workspace.ps1`) e sincronização (`sync-extensions.ps1`). | `Ativo` |
