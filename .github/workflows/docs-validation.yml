@@ -9,6 +9,7 @@ on:
       - '.lycheeignore'
       - '.gitattributes'
       - '.github/workflows/docs-validation.yml'
+      - '.github/dependabot.yml'
       - 'meta-hub/scripts/**'
       - 'meta-hub/tests/**'
   pull_request:
@@ -19,9 +20,13 @@ on:
       - '.lycheeignore'
       - '.gitattributes'
       - '.github/workflows/docs-validation.yml'
+      - '.github/dependabot.yml'
       - 'meta-hub/scripts/**'
       - 'meta-hub/tests/**'
   workflow_dispatch:
+  schedule:
+    # Executa toda segunda-feira às 08:00 UTC (auditoria recorrente de links e governança)
+    - cron: '0 8 * * 1'
 
 permissions:
   contents: read
