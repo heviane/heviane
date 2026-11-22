@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     Script de Auditoria de Conformidade e Saúde do Workspace (Docs-as-Code).
 .DESCRIPTION
@@ -25,6 +25,21 @@
     .\audit-workspace.ps1 -Detailed -ExportReport
     .\audit-workspace.ps1 -Fetch -Detailed
     .\audit-workspace.ps1 -StrictGovernance
+.INPUTS
+    Nenhum. Este script não consome entrada por pipeline.
+.OUTPUTS
+    System.Management.Automation.PSCustomObject[] contendo o diagnóstico de cada repositório.
+.NOTES
+    Versão Mínima: Windows PowerShell 5.1 ou PowerShell 7.0+ (pwsh cross-platform).
+    Sistemas Operacionais Suportados: Windows 10/11, Linux (Ubuntu/Debian), macOS.
+    Dependências de CLI: Git CLI ('git') deve estar acessível no PATH do sistema operacional.
+    Permissões: Requer permissão para execução de scripts (ex: Set-ExecutionPolicy -Scope Process RemoteSigned).
+    Comportamento de Escrita / Dry-Run:
+        - Somente leitura por padrão. Não altera estado do Git nem modifica arquivos.
+        - Gera arquivo em disco apenas quando o parâmetro -ExportReport é explicitamente fornecido.
+    Tratamento de Erros & Códigos de Saída (Exit Codes):
+        0 - Execução concluída com sucesso.
+        1 - Erro fatal (caminho base inexistente ou falha crítica de execução).
 #>
 
 [CmdletBinding()]

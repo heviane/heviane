@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     Sincroniza o inventário de extensões do VS Code com a documentação de governança (Docs-as-Code).
 .DESCRIPTION
@@ -13,6 +13,21 @@
 .EXAMPLE
     .\sync-extensions.ps1
     .\sync-extensions.ps1 -CheckOnly
+.INPUTS
+    Nenhum. Este script não consome entrada por pipeline.
+.OUTPUTS
+    System.Management.Automation.PSCustomObject contendo a contagem e detalhes das extensões.
+.NOTES
+    Versão Mínima: Windows PowerShell 5.1 ou PowerShell 7.0+ (pwsh cross-platform).
+    Sistemas Operacionais Suportados: Windows 10/11, Linux, macOS (com VS Code instalado).
+    Dependências de CLI: Visual Studio Code CLI ('code') deve estar acessível no PATH do sistema.
+    Permissões: Requer permissão para execução de scripts (ex: Set-ExecutionPolicy -Scope Process RemoteSigned).
+    Comportamento Dry-Run:
+        - Modo somente leitura quando -CheckOnly é fornecido (ideal para CI/CD e linters, sem alterar o arquivo).
+        - Sem -CheckOnly, sobrescreve o arquivo de inventário (DocPath) com os dados sincronizados.
+    Tratamento de Erros & Códigos de Saída (Exit Codes):
+        0 - Inventário sincronizado com sucesso (ou sem divergências em modo -CheckOnly).
+        1 - Erro fatal ('code' não encontrado no PATH, caminho inexistente ou divergências detectadas em -CheckOnly).
 #>
 
 [CmdletBinding()]
