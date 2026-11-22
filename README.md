@@ -49,12 +49,3 @@ Competências práticas e arquiteturais aplicadas na engenharia de software e no
   ![Microsoft SQL Server](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
   ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
   ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
-
----
-
-## 📊 Estatísticas do GitHub
-
-<div align="left">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=heviane&show_icons=true&theme=dracula&include_all_commits=true" alt="Estatísticas do GitHub"/>
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=heviane&layout=compact&langs_count=7&theme=dracula" alt="Linguagens mais usadas"/>
-</div>
