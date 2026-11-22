@@ -1,7 +1,7 @@
 # 📚 Catálogo Unificado de Repositórios Públicos
 
 > **Inventário Oficial de Repositórios Públicos do Ecossistema (Docs-as-Code)**  
-> **Data de Atualização:** 21/11/2026 | **Total de Repositórios Públicos:** 23  
+> **Data de Atualização:** 22/11/2026 | **Total de Repositórios Públicos:** 23  
 > **Central de Governança:** [Meta-Hub (`meta-hub`)](./README.md) | **Segregação:** [ADR-002](./adrs/002-segregacao-dados-sensiveis-multi-root-workspaces.md)  
 > *Nota: Este catálogo documenta exclusivamente os repositórios públicos e de código aberto mantidos no GitHub. Repositórios privados corporativos e laboratoriais seguem diretrizes de segregação física e são auditados internamente.*
 
@@ -40,13 +40,13 @@ Os repositórios públicos estão distribuídos entre as três organizações of
 
 Soluções de produção, produtos corporativos, templates oficiais e central de governança:
 
-| Repositório | Escopo & Descrição Arquitetural | Stack Tecnológica | Status | Governança |
-| :--- | :--- | :--- | :---: | :---: |
-| **[`nfse-nacional-api`](https://github.com/heviane/nfse-nacional-api)** | Middleware de alta disponibilidade para emissão e consulta da NFS-e Nacional. Core fiscal com validação estrita XSD v1.00, assinatura digital RSA-SHA256, mTLS e Camada Anticorrupção (ACL) GeneXus 18 SOAP. | `Java 17` `Spring Boot` `mTLS` `RSA-SHA256` `GeneXus` | `Produção` | `🟢 Nível 3` |
-| **[`institutional-website-template`](https://github.com/heviane/institutional-website-template)** | Boilerplate corporativo moderno para acelerar entregas web institucionais de alta conversão, com foco em performance, SEO e conformidade visual para clientes. | `Next.js` `React` `TypeScript` `Tailwind CSS` | `Ativo` | `🟢 Nível 3` |
-| **[`project-starter-kit`](https://github.com/heviane/project-starter-kit)** | Template base oficial do ecossistema para bootstrap de novos repositórios com governança Spec-Driven Development (SDD), contratos de IA (`AGENTS.md`) e pipeline de CI. | `Shell` `GitHub Actions` `Docs-as-Code` | `Ativo` | `🟢 Nível 3` |
-| **[`heviane`](https://github.com/heviane/heviane)** | Repositório central do perfil no GitHub e sede do Meta-Hub: Central de Governança, Backlog Mestre, ADRs e scripts de auditoria do workspace multi-repositórios. | `PowerShell` `Markdown` `Docs-as-Code` | `Ativo` | `🟡 Nível 2` |
-| **[`keynotes`](https://github.com/heviane/keynotes)** | Apresentações executivas, palestras técnicas e materiais de arquitetura de software formatados em slides web interativos. | `HTML5` `CSS3` `JavaScript` | `Ativo` | `⚪ Nível 1` |
+| Repositório | Escopo & Descrição Arquitetural | Diferenciais & Métricas de Engenharia | Stack Tecnológica | Status & Licença | Governança |
+| :--- | :--- | :--- | :--- | :---: | :---: |
+| **[`nfse-nacional-api`](https://github.com/heviane/nfse-nacional-api)** | Middleware corporativo para emissão e consulta da NFS-e Nacional. Ponte intermediária desacoplada para ERPs legados. | • Conformidade 100% com Schemas XSD v1.00 SEFIN<br/>• Criptografia XML RSA-SHA256 & mTLS nativo (RFC 5246)<br/>• ACL SOAP para emissão via GeneXus 18 sem certificados locais | `Java 17` `Spring Boot` `mTLS` `RSA-SHA256` `GeneXus` | `Produção`<br/>`MIT` | `🟢 Nível 3` |
+| **[`institutional-website-template`](https://github.com/heviane/institutional-website-template)** | Boilerplate corporativo moderno para acelerar entregas web institucionais de alta conversão para clientes. | • Metas de Web Vitals (LCP < 2.5s, CLS < 0.1)<br/>• Setup de novo cliente planejado em < 2 horas<br/>• Conformidade WCAG 2.1 AA & LGPD by design | `Next.js 16` `React 19` `TypeScript` `Tailwind v4` | `Ativo`<br/>`MIT` | `🟢 Nível 3` |
+| **[`project-starter-kit`](https://github.com/heviane/project-starter-kit)** | Template base oficial do ecossistema para bootstrap de novos repositórios com governança SDD e contratos de IA. | • Setup de governança SDD completa em < 5 min<br/>• Pipeline CI com 4 quality gates automatizados<br/>• Contratos de agentes padronizados (`AGENTS.md`) | `Shell` `GitHub Actions` `Docs-as-Code` | `Ativo`<br/>`MIT` | `🟢 Nível 3` |
+| **[`heviane`](https://github.com/heviane/heviane)** | Repositório central do perfil e sede do Meta-Hub: Central de Governança, Backlog Mestre, ADRs e automações. | • 15 testes funcionais Pester em sandbox no CI<br/>• Auditoria semanal recorrente de links e segredos<br/>• Inventário de 23 repositórios em 3 organizações | `PowerShell` `GitHub Actions` `Docs-as-Code` | `Ativo`<br/>`MIT` | `🟢 Nível 3` |
+| **[`keynotes`](https://github.com/heviane/keynotes)** | Apresentações executivas, palestras técnicas e materiais de arquitetura de software formatados em slides web interativos. | • Apresentações em formato web leve e responsivo<br/>• Zero dependência de softwares proprietários | `HTML5` `CSS3` `JavaScript` | `Ativo`<br/>`MIT` | `⚪ Nível 1` |
 
 ---
 
