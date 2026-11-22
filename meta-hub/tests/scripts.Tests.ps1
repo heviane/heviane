@@ -2,31 +2,44 @@ Describe "Automações PowerShell do Meta-Hub" {
     BeforeAll {
         $script:repoRoot = (Resolve-Path "$PSScriptRoot/../..").Path
         $script:scriptsDir = Join-Path $script:repoRoot "meta-hub/scripts"
+
+        function Assert-True([bool]$condition, [string]$message = "Asserção falhou") {
+            if (-not $condition) { throw $message }
+        }
+        function Assert-Equal($actual, $expected, [string]$message = "Valores divergentes") {
+            if ($actual -ne $expected) { throw "$message (Esperado: '$expected', Obtido: '$actual')" }
+        }
+        function Assert-Zero([int]$actual, [string]$message = "Valor deveria ser zero") {
+            if ($actual -ne 0) { throw "$message (Obtido: $actual)" }
+        }
+        function Assert-NotEmpty([string]$text, [string]$message = "Texto não deveria ser vazio") {
+            if ([string]::IsNullOrWhiteSpace($text)) { throw $message }
+        }
     }
 
     Context "Integridade dos Arquivos de Script" {
         It "sync-extensions.ps1 deve existir" {
             $path = Join-Path $script:scriptsDir "sync-extensions.ps1"
-            Test-Path $path | Should Be $true
+            Assert-True (Test-Path $path) "Arquivo sync-extensions.ps1 não encontrado em $path"
         }
 
         It "audit-workspace.ps1 deve existir" {
             $path = Join-Path $script:scriptsDir "audit-workspace.ps1"
-            Test-Path $path | Should Be $true
+            Assert-True (Test-Path $path) "Arquivo audit-workspace.ps1 não encontrado em $path"
         }
 
         It "sync-extensions.ps1 deve ter sintaxe PowerShell válida (AST Parser)" {
             $path = Join-Path $script:scriptsDir "sync-extensions.ps1"
             $parseErrors = @()
             [System.Management.Automation.Language.Parser]::ParseFile($path, [ref]$null, [ref]$parseErrors) | Out-Null
-            $parseErrors.Count | Should Be 0
+            Assert-Zero $parseErrors.Count "Erros de sintaxe encontrados em sync-extensions.ps1"
         }
 
         It "audit-workspace.ps1 deve ter sintaxe PowerShell válida (AST Parser)" {
             $path = Join-Path $script:scriptsDir "audit-workspace.ps1"
             $parseErrors = @()
             [System.Management.Automation.Language.Parser]::ParseFile($path, [ref]$null, [ref]$parseErrors) | Out-Null
-            $parseErrors.Count | Should Be 0
+            Assert-Zero $parseErrors.Count "Erros de sintaxe encontrados em audit-workspace.ps1"
         }
     }
 
@@ -35,30 +48,30 @@ Describe "Automações PowerShell do Meta-Hub" {
             $path = Join-Path $script:scriptsDir "audit-workspace.ps1"
             $ast = [System.Management.Automation.Language.Parser]::ParseFile($path, [ref]$null, [ref]$null)
             $help = $ast.GetHelpContent()
-            ([string]::IsNullOrWhiteSpace($help.Synopsis)) | Should Be $false
-            ([string]::IsNullOrWhiteSpace($help.Description)) | Should Be $false
+            Assert-NotEmpty $help.Synopsis "Synopsis não preenchida em audit-workspace.ps1"
+            Assert-NotEmpty $help.Description "Description não preenchida em audit-workspace.ps1"
         }
 
         It "audit-workspace.ps1 deve conter notas de runtime e pré-requisitos na ajuda nativa" {
             $path = Join-Path $script:scriptsDir "audit-workspace.ps1"
             $ast = [System.Management.Automation.Language.Parser]::ParseFile($path, [ref]$null, [ref]$null)
             $help = $ast.GetHelpContent()
-            ($help.Notes -match "PowerShell") | Should Be $true
+            Assert-True ($help.Notes -match "PowerShell") "Notas de runtime de audit-workspace.ps1 devem citar PowerShell"
         }
 
         It "sync-extensions.ps1 deve conter Synopsis e Description na ajuda nativa" {
             $path = Join-Path $script:scriptsDir "sync-extensions.ps1"
             $ast = [System.Management.Automation.Language.Parser]::ParseFile($path, [ref]$null, [ref]$null)
             $help = $ast.GetHelpContent()
-            ([string]::IsNullOrWhiteSpace($help.Synopsis)) | Should Be $false
-            ([string]::IsNullOrWhiteSpace($help.Description)) | Should Be $false
+            Assert-NotEmpty $help.Synopsis "Synopsis não preenchida em sync-extensions.ps1"
+            Assert-NotEmpty $help.Description "Description não preenchida em sync-extensions.ps1"
         }
 
         It "sync-extensions.ps1 deve conter notas de runtime e pré-requisitos na ajuda nativa" {
             $path = Join-Path $script:scriptsDir "sync-extensions.ps1"
             $ast = [System.Management.Automation.Language.Parser]::ParseFile($path, [ref]$null, [ref]$null)
             $help = $ast.GetHelpContent()
-            ($help.Notes -match "PowerShell") | Should Be $true
+            Assert-True ($help.Notes -match "PowerShell") "Notas de runtime de sync-extensions.ps1 devem citar PowerShell"
         }
     }
 
@@ -68,8 +81,8 @@ Describe "Automações PowerShell do Meta-Hub" {
             $parseErrors = @()
             $ast = [System.Management.Automation.Language.Parser]::ParseFile($path, [ref]$null, [ref]$parseErrors)
             $paramNames = $ast.ParamBlock.Parameters.Name.VariablePath.UserPath
-            ($paramNames -contains "DocPath") | Should Be $true
-            ($paramNames -contains "CheckOnly") | Should Be $true
+            Assert-True ($paramNames -contains "DocPath") "Parâmetro DocPath não encontrado"
+            Assert-True ($paramNames -contains "CheckOnly") "Parâmetro CheckOnly não encontrado"
         }
 
         It "audit-workspace.ps1 deve conter parâmetros BasePath, StrictGovernance e ExportReport" {
@@ -77,9 +90,9 @@ Describe "Automações PowerShell do Meta-Hub" {
             $parseErrors = @()
             $ast = [System.Management.Automation.Language.Parser]::ParseFile($path, [ref]$null, [ref]$parseErrors)
             $paramNames = $ast.ParamBlock.Parameters.Name.VariablePath.UserPath
-            ($paramNames -contains "BasePath") | Should Be $true
-            ($paramNames -contains "StrictGovernance") | Should Be $true
-            ($paramNames -contains "ExportReport") | Should Be $true
+            Assert-True ($paramNames -contains "BasePath") "Parâmetro BasePath não encontrado"
+            Assert-True ($paramNames -contains "StrictGovernance") "Parâmetro StrictGovernance não encontrado"
+            Assert-True ($paramNames -contains "ExportReport") "Parâmetro ExportReport não encontrado"
         }
     }
 
@@ -89,7 +102,7 @@ Describe "Automações PowerShell do Meta-Hub" {
             $fakePath = Join-Path ([System.IO.Path]::GetTempPath()) "fake_dir_$(Get-Random)"
             $global:LASTEXITCODE = 0
             & $script -BasePath $fakePath 2>$null
-            $LASTEXITCODE | Should Be 1
+            Assert-Equal $LASTEXITCODE 1 "Deveria retornar código de saída 1"
         }
 
         It "sync-extensions.ps1 deve retornar código de saída 1 para arquivo de documentação inexistente" {
@@ -97,7 +110,7 @@ Describe "Automações PowerShell do Meta-Hub" {
             $fakeDoc = Join-Path ([System.IO.Path]::GetTempPath()) "fake_doc_$(Get-Random).md"
             $global:LASTEXITCODE = 0
             & $script -DocPath $fakeDoc 2>$null
-            $LASTEXITCODE | Should Be 1
+            Assert-Equal $LASTEXITCODE 1 "Deveria retornar código de saída 1"
         }
     }
 
@@ -124,23 +137,23 @@ Describe "Automações PowerShell do Meta-Hub" {
             $script = Join-Path $script:scriptsDir "audit-workspace.ps1"
             $global:LASTEXITCODE = 0
             & $script -BasePath $script:sandbox 2>$null
-            $LASTEXITCODE | Should Be 0
+            Assert-Equal $LASTEXITCODE 0 "Deveria retornar código de saída 0"
         }
 
         It "audit-workspace.ps1 deve executar em modo estrito com sucesso" {
             $script = Join-Path $script:scriptsDir "audit-workspace.ps1"
             $global:LASTEXITCODE = 0
             & $script -BasePath $script:sandbox -StrictGovernance 2>$null
-            $LASTEXITCODE | Should Be 0
+            Assert-Equal $LASTEXITCODE 0 "Deveria retornar código de saída 0"
         }
     }
 
     Context "Conformidade do Inventário de Extensões" {
         It "vscode-extensions.md deve conter tabela de extensões válida" {
             $docPath = Join-Path $script:repoRoot "meta-hub/vscode-extensions.md"
-            Test-Path $docPath | Should Be $true
+            Assert-True (Test-Path $docPath) "Arquivo vscode-extensions.md não encontrado"
             $content = [System.IO.File]::ReadAllText($docPath, [System.Text.Encoding]::UTF8)
-            ($content -match '\|\s*Extens.o\s*\|\s*ID\s*\|\s*Vers.o\s*\|') | Should Be $true
+            Assert-True ($content -match '\|\s*Extens.o\s*\|\s*ID\s*\|\s*Vers.o\s*\|') "Tabela de extensões não possui cabeçalho esperado"
         }
     }
 }
