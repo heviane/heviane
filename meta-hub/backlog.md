@@ -62,7 +62,7 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | 🟢 | `IA-05` | `P2` | **Instruções Copilot (`.github/copilot-instructions.md`)** | Configurar instruções automáticas nativas para VS Code e GitHub Copilot. |
 | 🟢 | `IA-06` | `P2` | **Configurar GitHub Template Repository** | Habilitar a flag "Template repository" no GitHub para permitir *"Use this template"* com 1 clique. |
 | 🟢 | `IA-07` | `P1` | **Catálogo Canônico de Templates SDD/AI-SEP** | Criação do guia oficial dos 7 templates em [`docs/templates/README.md`](https://github.com/heviane/project-starter-kit/tree/main/docs/templates), com ciclo de vida em 4 fases e paridade com scripts de bootstrap. |
-| 🟢 | `IA-08` | `P0` | **Institucionalização das Regras de Ouro nos AGENTS.md** | Formalização das Regras 10 a 14 (Heurística de README, Dossiê Vivo Monotemático, Sandbox Hygiene, Safe CLI e Doc Linking) em todos os contratos de IA. |
+| 🟢 | `IA-08` | `P0` | **Institucionalização das Regras de Ouro nos AGENTS.md** | Formalização das Regras 10 a 15 (Heurística de README, Dossiê Vivo Monotemático, Sandbox Hygiene, Safe CLI, Doc Linking e Marcadores Canônicos) em todos os contratos de IA. |
 
 ---
 
