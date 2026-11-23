@@ -123,7 +123,7 @@ Propostas técnicas e oportunidades mapeadas para avaliação nas próximas iter
 1. **`ai-dev-journey` (Blog Técnico de Engenharia & Plataforma Editorial):**  
    Criação de blog técnico Docs-as-Code (baseado em Astro ou Next.js) e série editorial documentando a jornada de transição de *Desenvolvedor Tradicional (10+ anos)* para *AI-Assisted Software Engineer*. Canal de autoridade técnica proprietário integrado com publicações no LinkedIn e vitrine de portfólio.
 2. **Extração de `CHANGELOG.md` no Meta-Hub:**  
-   Migrar épicos antigos totalmente concluídos para um histórico formal de mudanças, mantendo o `backlog.md` enxuto.
+   Migrar épicos antigos totalmente concluídos para um histórico formal de mudanças seguindo o padrão internacional *[Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/)* (com versionamento SemVer). A extração será realizada no momento oportuno de consolidação de uma versão/release formal do repositório (ex.: transição para a `v2.0.0` ou quando o backlog ultrapassar 300+ linhas), mantendo até lá o `backlog.md` com autoridade técnica completa, evidência de entrega e sem gerar fragmentação prematura.
 
 ### 📦 Propostas Técnicas Pós-MVP do Starter Kit (`project-starter-kit`)
 
