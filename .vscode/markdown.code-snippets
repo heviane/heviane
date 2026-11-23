@@ -1,0 +1,62 @@
+{
+  "GitHub Note Callout": {
+    "prefix": "gh-note",
+    "body": [
+      "> [!NOTE]",
+      "> ${1:Contexto ou observação importante...}"
+    ],
+    "description": "Insere um alerta do GitHub do tipo NOTE"
+  },
+  "GitHub Tip Callout": {
+    "prefix": "gh-tip",
+    "body": [
+      "> [!TIP]",
+      "> ${1:Dica de produtividade ou sugestão técnica...}"
+    ],
+    "description": "Insere um alerta do GitHub do tipo TIP"
+  },
+  "GitHub Important Callout": {
+    "prefix": "gh-important",
+    "body": [
+      "> [!IMPORTANT]",
+      "> ${1:Requisito crítico ou diretriz mandatória...}"
+    ],
+    "description": "Insere um alerta do GitHub do tipo IMPORTANT"
+  },
+  "GitHub Warning Callout": {
+    "prefix": "gh-warning",
+    "body": [
+      "> [!WARNING]",
+      "> ${1:Alerta de risco, breaking change ou incompatibilidade...}"
+    ],
+    "description": "Insere um alerta do GitHub do tipo WARNING"
+  },
+  "GitHub Caution Callout": {
+    "prefix": "gh-caution",
+    "body": [
+      "> [!CAUTION]",
+      "> ${1:Ação de alto risco ou potencial perda de dados...}"
+    ],
+    "description": "Insere um alerta do GitHub do tipo CAUTION"
+  },
+  "Markdown Table (3 Columns)": {
+    "prefix": "gh-table3",
+    "body": [
+      "| ${1:Coluna 1} | ${2:Coluna 2} | ${3:Coluna 3} |",
+      "| :--- | :---: | ---: |",
+      "| ${4:Item} | ${5:Status} | ${6:Valor} |"
+    ],
+    "description": "Insere uma tabela Markdown alinhada com 3 colunas"
+  },
+  "Mermaid Flowchart": {
+    "prefix": "gh-mermaid",
+    "body": [
+      "```mermaid",
+      "flowchart TD",
+      "    A[${1:Início}] --> B[${2:Processamento}]",
+      "    B --> C[${3:Fim}]",
+      "```"
+    ],
+    "description": "Insere um diagrama Mermaid básico em bloco de código"
+  }
+}
