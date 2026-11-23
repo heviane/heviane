@@ -84,6 +84,7 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | 🟢 | `WS-02` | `P1` | **Unificação do Multi-Root Workspace (`github.code-workspace`)** | Consolidar a navegação em um único arquivo de workspace mestre, eliminando redundâncias (`github-all` e `github-local`) e duplicidades no Explorer. |
 | 🟢 | `WS-03` | `P1` | **Promoção do `meta-hub` a Raiz de Primeiro Nível** | Integrar `heviane/heviane/meta-hub` diretamente no topo do workspace para acesso instantâneo a backlogs, ADRs e scripts de auditoria. |
 | 🟢 | `WS-04` | `P1` | **Pipeline de CI/CD para Governança Docs-as-Code** | GitHub Actions com `markdownlint-cli2`, Lychee link checker e validação de sintaxe de scripts PowerShell. |
+| 🟢 | `WS-05` | `P1` | **Automação Docs-as-Code com GitHub CLI (`sync-project-backlog.ps1`)** | Criar script PowerShell para auditar e reconciliar automaticamente os itens do `backlog.md` no GitHub Project 14 via `gh` CLI. |
 
 ---
 
@@ -122,7 +123,7 @@ Propostas técnicas e oportunidades mapeadas para avaliação nas próximas iter
 1. **`ai-dev-journey` (Blog Técnico de Engenharia & Plataforma Editorial):**  
    Criação de blog técnico Docs-as-Code (baseado em Astro ou Next.js) e série editorial documentando a jornada de transição de *Desenvolvedor Tradicional (10+ anos)* para *AI-Assisted Software Engineer*. Canal de autoridade técnica proprietário integrado com publicações no LinkedIn e vitrine de portfólio.
 2. **Automação Docs-as-Code com GitHub CLI (`gh`):**  
-   Criar workflow ou script para refletir automaticamente itens marcados no backlog no GitHub Project 14.
+   Promovido para o Épico 5 como item **`WS-05`** (`sync-project-backlog.ps1`) para reconciliação automatizada com o GitHub Project 14.
 3. **Extração de `CHANGELOG.md` no Meta-Hub:**  
    Migrar épicos antigos totalmente concluídos para um histórico formal de mudanças, mantendo o `backlog.md` enxuto.
 

@@ -2,7 +2,7 @@
 
 > **Engenharia de Qualidade, Validação de AST e Testes de Integridade**  
 > Repositório: [`heviane/heviane`](https://github.com/heviane/heviane) &bull; Diretório: `meta-hub/tests`  
-> Framework: [Pester](https://pester.dev/) &bull; Status: `15/15 Aprovados` 🟢
+> Framework: [Pester](https://pester.dev/) &bull; Status: `22/22 Aprovados` 🟢
 
 ---
 
@@ -10,22 +10,23 @@
 
 Este diretório contém a suíte de testes automatizados das automações PowerShell do **Meta-Hub** ([`meta-hub/scripts`](../scripts/README.md)).
 
-O objetivo primário da suíte é assegurar a integridade contínua do ecossistema de **Docs-as-Code**, garantindo que modificações nos scripts de auditoria de workspace e sincronização de inventário não introduzam regressões sintáticas, quebras de assinatura de CLI ou desvios documentais.
+O objetivo primário da suíte é assegurar a integridade contínua do ecossistema de **Docs-as-Code**, garantindo que modificações nos scripts de auditoria de workspace, sincronização de inventário de extensões e sincronização de backlog com o GitHub Project 14 não introduzam regressões sintáticas, quebras de assinatura de CLI ou desvios documentais.
 
 ---
 
 ## 🧭 2. Matriz de Cobertura de Testes
 
-A suíte principal está implementada em [`scripts.Tests.ps1`](./scripts.Tests.ps1) e cobre **15 cenários de verificação** divididos em 6 contextos arquiteturais:
+A suíte principal está implementada em [`scripts.Tests.ps1`](./scripts.Tests.ps1) e cobre **22 cenários de verificação** divididos em 7 contextos arquiteturais:
 
 | Contexto de Teste | Cenários | Alvo de Validação | Mecanismo de Verificação |
 | :--- | :---: | :--- | :--- |
-| **Integridade dos Arquivos** | 2 | `audit-workspace.ps1`<br>`sync-extensions.ps1` | `Test-Path` físico na árvore de código do repositório. |
-| **Validação de Sintaxe (AST)** | 2 | Parser de Linguagem PowerShell | `[System.Management.Automation.Language.Parser]::ParseFile` garantindo zero erros de tokenização e parse. |
-| **Documentação Nativa** | 4 | Comment-Based Help (`Get-Help`) | Extração da AST de `.Synopsis`, `.Description` e `.Notes` citando pré-requisitos de runtime. |
-| **Assinatura de Parâmetros** | 2 | Assinatura de Comandos / CLI | Inspeção de `ParamBlock.Parameters` para flags críticas (`DocPath`, `CheckOnly`, `BasePath`, `StrictGovernance`, `ExportReport`). |
-| **Tratamento de Exceções** | 2 | Robustez de Entrada | Validação de captura de erros com `-ErrorAction Stop` para caminhos ou arquivos inexistentes. |
+| **Integridade dos Arquivos** | 3 | `audit-workspace.ps1`<br>`sync-extensions.ps1`<br>`sync-project-backlog.ps1` | `Test-Path` físico na árvore de código do repositório. |
+| **Validação de Sintaxe (AST)** | 3 | Parser de Linguagem PowerShell | `[System.Management.Automation.Language.Parser]::ParseFile` garantindo zero erros de tokenização e parse. |
+| **Documentação Nativa** | 6 | Comment-Based Help (`Get-Help`) | Extração da AST de `.Synopsis`, `.Description` e `.Notes` citando pré-requisitos de runtime. |
+| **Assinatura de Parâmetros** | 3 | Assinatura de Comandos / CLI | Inspeção de `ParamBlock.Parameters` para flags críticas de controle e escopo. |
+| **Tratamento de Exceções** | 3 | Robustez de Entrada | Validação de captura de erros com `-ErrorAction Stop` para caminhos ou arquivos inexistentes. |
 | **Detecção Funcional em Sandbox** | 2 | Execução Controlada | Criação de sandbox temporário isolado em `$env:TEMP` com repositórios simulados para testar execução normal e estrita. |
+| **Execução em Modo CheckOnly** | 1 | `sync-project-backlog.ps1` | Execução controlada de auditoria com saída limpa e sem efeitos colaterais. |
 | **Conformidade Documental** | 1 | `meta-hub/vscode-extensions.md` | Verificação regex da presença da tabela padronizada de extensões. |
 
 ---

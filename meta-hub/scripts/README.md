@@ -26,6 +26,7 @@ Os scripts seguem as boas práticas de engenharia de automação:
 | :--- | :--- | :--- | :---: | :--- |
 | **[`audit-workspace.ps1`](./audit-workspace.ps1)** | Varredura de integridade Git (dirty, unpushed), conformidade documental (`AGENTS.md`, `README.md`) e detecção de arquivos sensíveis. | Somente Leitura | ✅ Nativo (read-only) | `git` |
 | **[`sync-extensions.ps1`](./sync-extensions.ps1)** | Sincronização do inventário de extensões do VS Code com o documento de governança [`vscode-extensions.md`](../vscode-extensions.md). | Escrita (atualização) | ✅ Flag `-CheckOnly` | `code` (VS Code CLI) |
+| **[`sync-project-backlog.ps1`](./sync-project-backlog.ps1)** | Reconciliação e sincronização automatizada dos itens do `backlog.md` com o GitHub Project 14 via `gh` CLI. | Escrita / Sync | ✅ Flag `-CheckOnly` | `gh` (GitHub CLI) |
 
 ---
 
@@ -36,6 +37,7 @@ Os scripts seguem as boas práticas de engenharia de automação:
 | **Runtime PowerShell** | PowerShell 5.1 (Windows) ou PowerShell 7.0+ (`pwsh`) | Suporta execução nativa em Windows, macOS e Linux (Ubuntu). |
 | **Git CLI** | Git 2.30+ | Obrigatório para o `audit-workspace.ps1` (necessário estar no `PATH`). |
 | **VS Code CLI** | Visual Studio Code 1.80+ | Obrigatório para o `sync-extensions.ps1` (`code` no `PATH`). |
+| **GitHub CLI** | GitHub CLI 2.20+ (`gh`) | Obrigatório para o `sync-project-backlog.ps1` com escopo `project` habilitado (`gh` no `PATH`). |
 | **Execution Policy** | `RemoteSigned` ou `Bypass` no escopo do processo | `Set-ExecutionPolicy -Scope Process RemoteSigned` para executar scripts locais sem alterar o sistema. |
 | **Codificação de Arquivo** | UTF-8 com BOM (Byte Order Mark) | Garante compatibilidade estrita com o parser AST do Windows PowerShell 5.1 e com o Linux `pwsh`. |
 
@@ -95,6 +97,35 @@ Audita as extensões instaladas no VS Code contra a documentação oficial:
 
 - `-DocPath <String>`: Caminho para o arquivo Markdown do inventário (Padrão: `..\vscode-extensions.md`).
 - `-CheckOnly`: Modo de auditoria sem modificação em disco. Ideal para verificação em pipelines de CI.
+
+### 4.3. Sincronização com o GitHub Project 14 (`sync-project-backlog.ps1`)
+
+Audita e reconcilia as tarefas documentadas no `backlog.md` com o quadro Kanban do GitHub Projects:
+
+```powershell
+# Modo auditoria / dry-run (apenas diagnostica divergências sem alterar o Project 14)
+.\sync-project-backlog.ps1 -CheckOnly
+
+# Sincroniza status de cards existentes que divergiram do Markdown
+.\sync-project-backlog.ps1 -SyncStatus
+
+# Sincroniza status e prioridades (P0, P1, P2) de cards existentes
+.\sync-project-backlog.ps1 -SyncStatus -SyncPriority
+
+# Reconciliação total: cria itens ausentes como Draft Issues e sincroniza status/prioridades
+.\sync-project-backlog.ps1 -CreateMissing -SyncStatus -SyncPriority
+```
+
+#### Parâmetros de `sync-project-backlog.ps1`
+
+- `-BacklogPath <String>`: Caminho para o arquivo Markdown do backlog (Padrão: `meta-hub/backlog.md`).
+- `-ProjectNumber <Int>`: Número do projeto GitHub Projects v2 (Padrão: `14`).
+- `-Owner <String>`: Usuário ou organização dona do projeto (Padrão: `heviane`).
+- `-CheckOnly`: Executa em modo somente leitura comparando o Markdown com o GitHub Projects.
+- `-CreateMissing`: Cria itens ausentes do Markdown no GitHub Projects como Draft Issues.
+- `-SyncStatus`: Atualiza o campo Status dos cards existentes para refletir o Markdown.
+- `-SyncPriority`: Atualiza o campo Priority dos cards existentes para refletir o Markdown.
+- `-NonInteractive`: Suprime confirmações para execução em pipelines automatizados.
 
 ---
 

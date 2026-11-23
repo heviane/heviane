@@ -1,4 +1,4 @@
-Describe "Automações PowerShell do Meta-Hub" {
+﻿Describe "Automações PowerShell do Meta-Hub" {
     BeforeAll {
         $script:repoRoot = (Resolve-Path "$PSScriptRoot/../..").Path
         $script:scriptsDir = Join-Path $script:repoRoot "meta-hub/scripts"
@@ -28,6 +28,11 @@ Describe "Automações PowerShell do Meta-Hub" {
             Assert-True (Test-Path $path) "Arquivo audit-workspace.ps1 não encontrado em $path"
         }
 
+        It "sync-project-backlog.ps1 deve existir" {
+            $path = Join-Path $script:scriptsDir "sync-project-backlog.ps1"
+            Assert-True (Test-Path $path) "Arquivo sync-project-backlog.ps1 não encontrado em $path"
+        }
+
         It "sync-extensions.ps1 deve ter sintaxe PowerShell válida (AST Parser)" {
             $path = Join-Path $script:scriptsDir "sync-extensions.ps1"
             $parseErrors = @()
@@ -40,6 +45,13 @@ Describe "Automações PowerShell do Meta-Hub" {
             $parseErrors = @()
             [System.Management.Automation.Language.Parser]::ParseFile($path, [ref]$null, [ref]$parseErrors) | Out-Null
             Assert-Zero $parseErrors.Count "Erros de sintaxe encontrados em audit-workspace.ps1"
+        }
+
+        It "sync-project-backlog.ps1 deve ter sintaxe PowerShell válida (AST Parser)" {
+            $path = Join-Path $script:scriptsDir "sync-project-backlog.ps1"
+            $parseErrors = @()
+            [System.Management.Automation.Language.Parser]::ParseFile($path, [ref]$null, [ref]$parseErrors) | Out-Null
+            Assert-Zero $parseErrors.Count "Erros de sintaxe encontrados em sync-project-backlog.ps1"
         }
     }
 
@@ -73,6 +85,21 @@ Describe "Automações PowerShell do Meta-Hub" {
             $help = $ast.GetHelpContent()
             Assert-True ($help.Notes -match "PowerShell") "Notas de runtime de sync-extensions.ps1 devem citar PowerShell"
         }
+
+        It "sync-project-backlog.ps1 deve conter Synopsis e Description na ajuda nativa" {
+            $path = Join-Path $script:scriptsDir "sync-project-backlog.ps1"
+            $ast = [System.Management.Automation.Language.Parser]::ParseFile($path, [ref]$null, [ref]$null)
+            $help = $ast.GetHelpContent()
+            Assert-NotEmpty $help.Synopsis "Synopsis não preenchida em sync-project-backlog.ps1"
+            Assert-NotEmpty $help.Description "Description não preenchida em sync-project-backlog.ps1"
+        }
+
+        It "sync-project-backlog.ps1 deve conter notas de runtime e pré-requisitos na ajuda nativa" {
+            $path = Join-Path $script:scriptsDir "sync-project-backlog.ps1"
+            $ast = [System.Management.Automation.Language.Parser]::ParseFile($path, [ref]$null, [ref]$null)
+            $help = $ast.GetHelpContent()
+            Assert-True ($help.Notes -match "PowerShell") "Notas de runtime de sync-project-backlog.ps1 devem citar PowerShell"
+        }
     }
 
     Context "Parâmetros e Assinatura de Comandos" {
@@ -93,6 +120,20 @@ Describe "Automações PowerShell do Meta-Hub" {
             Assert-True ($paramNames -contains "BasePath") "Parâmetro BasePath não encontrado"
             Assert-True ($paramNames -contains "StrictGovernance") "Parâmetro StrictGovernance não encontrado"
             Assert-True ($paramNames -contains "ExportReport") "Parâmetro ExportReport não encontrado"
+        }
+
+        It "sync-project-backlog.ps1 deve conter parâmetros de controle e escopo" {
+            $path = Join-Path $script:scriptsDir "sync-project-backlog.ps1"
+            $parseErrors = @()
+            $ast = [System.Management.Automation.Language.Parser]::ParseFile($path, [ref]$null, [ref]$parseErrors)
+            $paramNames = $ast.ParamBlock.Parameters.Name.VariablePath.UserPath
+            Assert-True ($paramNames -contains "BacklogPath") "Parâmetro BacklogPath não encontrado"
+            Assert-True ($paramNames -contains "ProjectNumber") "Parâmetro ProjectNumber não encontrado"
+            Assert-True ($paramNames -contains "Owner") "Parâmetro Owner não encontrado"
+            Assert-True ($paramNames -contains "CheckOnly") "Parâmetro CheckOnly não encontrado"
+            Assert-True ($paramNames -contains "CreateMissing") "Parâmetro CreateMissing não encontrado"
+            Assert-True ($paramNames -contains "SyncStatus") "Parâmetro SyncStatus não encontrado"
+            Assert-True ($paramNames -contains "SyncPriority") "Parâmetro SyncPriority não encontrado"
         }
     }
 
@@ -119,6 +160,18 @@ Describe "Automações PowerShell do Meta-Hub" {
                 $hasError = $true
             }
             Assert-True $hasError "Deveria ter sinalizado erro para arquivo inexistente"
+        }
+
+        It "sync-project-backlog.ps1 deve retornar erro para arquivo de backlog inexistente" {
+            $script = Join-Path $script:scriptsDir "sync-project-backlog.ps1"
+            $fakeBacklog = Join-Path ([System.IO.Path]::GetTempPath()) "fake_backlog_$(Get-Random).md"
+            $hasError = $false
+            try {
+                & $script -BacklogPath $fakeBacklog -ErrorAction Stop 2>$null
+            } catch {
+                $hasError = $true
+            }
+            Assert-True $hasError "Deveria ter sinalizado erro para backlog inexistente"
         }
     }
 
@@ -162,6 +215,20 @@ Describe "Automações PowerShell do Meta-Hub" {
             Assert-True (Test-Path $docPath) "Arquivo vscode-extensions.md não encontrado"
             $content = [System.IO.File]::ReadAllText($docPath, [System.Text.Encoding]::UTF8)
             Assert-True ($content -match '\|\s*Extens.o\s*\|\s*ID\s*\|\s*Vers.o\s*\|') "Tabela de extensões não possui cabeçalho esperado"
+        }
+    }
+
+    Context "Execução de Auditoria do Backlog em Modo CheckOnly" {
+        It "sync-project-backlog.ps1 deve executar em modo CheckOnly com sucesso" {
+            $script = Join-Path $script:scriptsDir "sync-project-backlog.ps1"
+            $backlog = Join-Path $script:repoRoot "meta-hub/backlog.md"
+            $hasError = $false
+            try {
+                & $script -BacklogPath $backlog -CheckOnly -NonInteractive 2>$null | Out-Null
+            } catch {
+                $hasError = $true
+            }
+            Assert-True (-not $hasError) "Execução de sync-project-backlog.ps1 -CheckOnly não deveria falhar"
         }
     }
 }

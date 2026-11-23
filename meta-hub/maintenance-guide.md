@@ -78,6 +78,17 @@ O ecossistema adota a governança em **Flight Levels**:
 2. **Priorização Estratégica (Flight Level 3):**  
    Demandas que entram em execução são sincronizadas como Issues vinculadas ao projeto:  
    👉 **[GitHub Project #14 (AI Engineering Hub)](https://github.com/users/heviane/projects/14)**.
+
+   Para manter a paridade automatizada entre o `backlog.md` e o Project 14:
+
+   ```powershell
+   # Auditar divergências entre o Markdown e o GitHub Projects
+   powershell -ExecutionPolicy Bypass -File meta-hub/scripts/sync-project-backlog.ps1 -CheckOnly
+
+   # Sincronizar status e prioridades
+   powershell -ExecutionPolicy Bypass -File meta-hub/scripts/sync-project-backlog.ps1 -SyncStatus -SyncPriority
+   ```
+
 3. **Conclusão:**  
    Ao concluir a demanda, atualiza-se o status no GitHub Projects para `Done` e o item no `backlog.md` para `🟢 [Concluído]`, acompanhado do hash do commit de entrega.
 
