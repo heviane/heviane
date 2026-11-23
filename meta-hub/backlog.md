@@ -124,6 +124,10 @@ Propostas técnicas e oportunidades mapeadas para avaliação nas próximas iter
    Criação de blog técnico Docs-as-Code (baseado em Astro ou Next.js) e série editorial documentando a jornada de transição de *Desenvolvedor Tradicional (10+ anos)* para *AI-Assisted Software Engineer*. Canal de autoridade técnica proprietário integrado com publicações no LinkedIn e vitrine de portfólio.
 2. **Extração de `CHANGELOG.md` no Meta-Hub:**  
    Migrar épicos antigos totalmente concluídos para um histórico formal de mudanças seguindo o padrão internacional *[Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/)* (com versionamento SemVer). A extração será realizada no momento oportuno de consolidação de uma versão/release formal do repositório (ex.: transição para a `v2.0.0` ou quando o backlog ultrapassar 300+ linhas), mantendo até lá o `backlog.md` com autoridade técnica completa, evidência de entrega e sem gerar fragmentação prematura.
+3. **Linter de Commits e Validação Semântica no CI (`commitlint`):**  
+   Implementar verificação automatizada de mensagens de commits e títulos de Pull Requests no GitHub Actions utilizando `commitlint` (ou workflow com script de verificação regex), garantindo a aplicação estrita do padrão *Conventional Commits*, catálogo canônico de escopos e prevenção de desvios semânticos.
+4. **Automação de Geração de Changelog e Releases Semânticas (`Release Please`):**  
+   Integrar automação de release via GitHub Actions (ex.: Google `release-please-action` ou `standard-version`) acoplada ao padrão *Keep a Changelog*, permitindo que cada ciclo de entrega atômico calcule automaticamente incrementos SemVer (`patch`, `minor`, `major`), crie/atualize o `CHANGELOG.md` e publique GitHub Releases formais sem esforço manual.
 
 ### 📦 Propostas Técnicas Pós-MVP do Starter Kit (`project-starter-kit`)
 
