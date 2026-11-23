@@ -122,9 +122,7 @@ Propostas técnicas e oportunidades mapeadas para avaliação nas próximas iter
 
 1. **`ai-dev-journey` (Blog Técnico de Engenharia & Plataforma Editorial):**  
    Criação de blog técnico Docs-as-Code (baseado em Astro ou Next.js) e série editorial documentando a jornada de transição de *Desenvolvedor Tradicional (10+ anos)* para *AI-Assisted Software Engineer*. Canal de autoridade técnica proprietário integrado com publicações no LinkedIn e vitrine de portfólio.
-2. **Automação Docs-as-Code com GitHub CLI (`gh`):**  
-   Promovido para o Épico 5 como item **`WS-05`** (`sync-project-backlog.ps1`) para reconciliação automatizada com o GitHub Project 14.
-3. **Extração de `CHANGELOG.md` no Meta-Hub:**  
+2. **Extração de `CHANGELOG.md` no Meta-Hub:**  
    Migrar épicos antigos totalmente concluídos para um histórico formal de mudanças, mantendo o `backlog.md` enxuto.
 
 ### 📦 Propostas Técnicas Pós-MVP do Starter Kit (`project-starter-kit`)
