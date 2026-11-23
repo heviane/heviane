@@ -119,8 +119,8 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 
 Propostas técnicas e oportunidades mapeadas para avaliação nas próximas iterações:
 
-1. **`ai-dev-journey` (Repositório / Série de Artigos Técnicos):**  
-   Repositório e série de publicações documentando a jornada de transição de *Desenvolvedor Tradicional (10+ anos)* para *AI-Assisted Software Engineer*. Conteúdo de alta autoridade técnica para LinkedIn e portfólio.
+1. **`ai-dev-journey` (Blog Técnico de Engenharia & Plataforma Editorial):**  
+   Criação de blog técnico Docs-as-Code (baseado em Astro ou Next.js) e série editorial documentando a jornada de transição de *Desenvolvedor Tradicional (10+ anos)* para *AI-Assisted Software Engineer*. Canal de autoridade técnica proprietário integrado com publicações no LinkedIn e vitrine de portfólio.
 2. **Automação Docs-as-Code com GitHub CLI (`gh`):**  
    Criar workflow ou script para refletir automaticamente itens marcados no backlog no GitHub Project 14.
 3. **Extração de `CHANGELOG.md` no Meta-Hub:**  
