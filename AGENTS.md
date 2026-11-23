@@ -28,7 +28,7 @@
 4. **Conclusão Baseada em Evidências:** Valide sua entrega executando as suítes de validação (markdownlint, testes Pester, AST parsers) antes de considerar o trabalho finalizado. Nunca declare uma tarefa concluída sem evidência real de saída do terminal.
 5. **Parcimônia de Dependências & Segurança:** Não instale ferramentas, pacotes globais ou bibliotecas de terceiros sem aprovação prévia e sem checar compatibilidade.
 6. **Segurança Primeiro (Zero Secrets):** Nunca exponha credenciais, chaves de API, certificados ou dados pessoais sensíveis.
-7. **Documentação Viva no Ciclo do Commit:** Ao concluir qualquer alteração no ecossistema, mantenha os artefatos de governança (`meta-hub/backlog.md`, `meta-hub/repository-catalog.md`, `meta-hub/vscode-extensions.md`) perfeitamente sincronizados no mesmo ciclo de commit.
+7. **Documentação Viva no Ciclo do Commit:** Ao concluir qualquer alteração no ecossistema, mantenha os artefatos de governança (`meta-hub/backlog.md`, `meta-hub/repository-catalog.md`, `meta-hub/vscode-extensions.md`) perfeitamente sincronizados no mesmo ciclo de commit. Havendo alterações no backlog, sincronize obrigatoriamente com o GitHub Project 14 via script de automação.
 8. **Preservação Defensiva de Ativos:** Nunca sobrescreva ou delete arquivos de configuração, inventários ou scripts de governança sem consentimento explícito.
 9. **Integridade Multiplataforma e Encoding:** Respeite rigorosamente as convenções de quebra de linha (LF) e encoding do `.editorconfig`. Scripts PowerShell (`.ps1`) com acentos ou emojis DEVEM ser salvos com UTF-8 BOM (`0xEF, 0xBB, 0xBF`) para compatibilidade nativa com o Windows PowerShell 5.1.
 10. **Gatilho de Documentação em Novos Diretórios (Heurística de README):** Ao criar qualquer novo diretório significativo (módulos, templates, suítes de testes ou automações), o agente DEVE SEMPRE avaliar a necessidade de criar um `README.md` explicativo. Evite pastas mudas no repositório.
@@ -43,7 +43,8 @@
 ## 🔒 4. Regras Específicas do Domínio (Perfil & Meta-Hub)
 
 * **Higiene e Ergonomia Visual do Perfil:** O arquivo `README.md` na raiz deste repositório é a vitrine pública de apresentação da engenheira no GitHub. NUNCA introduza seções poluídas, listas desnecessariamente longas de ADRs ou badges com links quebrados. Mantenha o design limpo, focado em autoridade técnica e fácil escaneabilidade.
-* **Integridade das Automações em PowerShell:** Qualquer alteração nos scripts `meta-hub/scripts/*.ps1` deve obrigatoriamente manter a suíte de testes Pester (`meta-hub/tests/scripts.Tests.ps1`) com 100% de aprovação (15/15 cenários verdes).
+* **Integridade das Automações em PowerShell:** Qualquer alteração nos scripts `meta-hub/scripts/*.ps1` deve obrigatoriamente manter a suíte de testes Pester (`meta-hub/tests/scripts.Tests.ps1`) com 100% de aprovação (22/22 cenários verdes).
+* **Sincronização Contínua com GitHub Projects (Docs-as-Code to Cloud):** Sempre que o agente alterar, concluir (`🟢`) ou adicionar itens no `meta-hub/backlog.md`, ele DEVE OBRIGATORIAMENTE executar `powershell -ExecutionPolicy Bypass -File meta-hub/scripts/sync-project-backlog.ps1 -SyncStatus -SyncPriority` (acrescentando `-CreateMissing` para novos itens) antes de concluir o ciclo de entrega. Isso garante paridade em tempo real entre o repositório Git e o Project 14, prevenindo *drift* de governança.
 * **Conformidade de Linting Markdown:** Todos os arquivos `.md` devem aderir estritamente às configurações do `.markdownlint-cli2.jsonc`.
 * **Privacidade & LGPD:** NUNCA incluir dados pessoais sensíveis, números de telefone, e-mails privados não mascarados ou caminhos absolutos locais de terceiros na documentação pública.
 
@@ -76,3 +77,4 @@ Todas as mensagens de commit sugeridas ou criadas pelo agente devem seguir o pad
 * **Execução da Suíte de Testes Pester:** `Invoke-Pester meta-hub/tests/scripts.Tests.ps1`
 * **Auditoria de Workspace:** `powershell -ExecutionPolicy Bypass -File meta-hub/scripts/audit-workspace.ps1`
 * **Sincronização de Extensões do VS Code:** `powershell -ExecutionPolicy Bypass -File meta-hub/scripts/sync-extensions.ps1`
+* **Sincronização com GitHub Project 14:** `powershell -ExecutionPolicy Bypass -File meta-hub/scripts/sync-project-backlog.ps1 -SyncStatus -SyncPriority`
