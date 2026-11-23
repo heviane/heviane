@@ -52,10 +52,10 @@
 
 ## 📝 5. Convenção de Commits (Conventional Commits)
 
-Todas as mensagens de commit sugeridas ou criadas pelo agente devem seguir o padrão:
+Todas as mensagens de commit sugeridas ou criadas pelo agente devem seguir a especificação formal do **Conventional Commits**:
 
 ```text
-<tipo>(<escopo>): <descrição curta no imperativo>
+<tipo>(<escopo>): <descrição curta no imperativo em inglês>
 
 [corpo opcional explicando a motivação]
 ```
@@ -68,6 +68,23 @@ Todas as mensagens de commit sugeridas ou criadas pelo agente devem seguir o pad
 * `test`: Adição ou ajuste de testes Pester.
 * `refactor`: Refatoração estrutural em scripts ou organização de arquivos.
 * `chore`: Manutenção de dependências, linters ou tarefas de apoio.
+
+### Escopos Canônicos Recomendados:
+
+* `ci`: Workflows de GitHub Actions e automações de pipeline.
+* `scripts`: Scripts PowerShell de automação e utilitários em `meta-hub/scripts/`.
+* `backlog`: Atualizações de backlog, novas iniciativas ou refinamento do banco de ideias.
+* `agents`: Diretrizes contratuais, regras de ouro e governança de IA em `AGENTS.md`.
+* `profile`: Melhorias visuais, bio e seções do perfil principal (`README.md`).
+* `meta-hub`: Governança geral, catálogos, ADRs e configurações do meta-hub.
+* `deps`: Atualizações de dependências, módulos ou pacotes.
+
+### Regras Mandatórias de Atomicidade e Idioma:
+
+1. **Commit Atômico & Responsabilidade Única (Single-Purpose Commits):** Cada commit DEVE conter estritamente um único propósito lógico. É proibido criar "commits combo" misturando refatoração com documentação, ou novas features com atualização de dependências.
+2. **Reversibilidade Limpa (Clean Revert):** Todo commit deve ser isolado e autocontido, permitindo `git revert <hash>` sem introduzir efeitos colaterais em arquivos não correlacionados.
+3. **Garantia de Pipeline Verde Contínuo (Always Green / Bisect-Safe):** Nenhum commit intermediário pode deixar o repositório quebrado. A cada commit individual, todos os testes (Pester) e validações estáticas (markdownlint) devem ser executados e aprovados com 100% verde.
+4. **Idioma Canônico & Modo Imperativo:** Todas as mensagens de commit DEVEM ser escritas em **inglês**, utilizando verbos no modo imperativo (`add`, `fix`, `sync`, `enforce`, `bump`, `polish`, `remove`), assegurando conformidade com padrões internacionais de engenharia e ferramentas de release automatizado.
 
 ---
 
