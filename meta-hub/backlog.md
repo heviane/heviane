@@ -48,6 +48,7 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | 🟢 | `GOV-08` | `P1` | **Catálogo Unificado de Repositórios (`repository-catalog.md`)** | Inventário consolidado dos 24 repositórios públicos em [`repository-catalog.md`](./repository-catalog.md), com inventário completo (51 repositórios) mantido no cofre em nuvem conforme ADR-002. |
 | 🟢 | `GOV-09` | `P0` | **Formalização da Arquitetura AI-SEP (ADR-003)** | Formalização arquitetural da plataforma integrando Governança (Meta-Hub), Templates (Starter Kit), Metodologia (SDD) e Contratos de IA ([`ADR-003`](./adrs/003-formalizacao-arquitetura-ai-sep.md)). |
 | 🟢 | `GOV-10` | `P1` | **Engenharia de Testes Pester & Validação AST (`meta-hub/tests`)** | Formalização da arquitetura da suíte com 15 testes em 6 contextos, padrão de compatibilidade universal Pester 3/5 e isolamento em sandbox temporário ([`meta-hub/tests/README.md`](./tests/README.md)). |
+| 🟢 | `GOV-11` | `P1` | **Catálogo Canônico de Contratos de IA (`agents-catalog.md`)** | Criação do inventário centralizado de todos os `AGENTS.md` do ecossistema, com taxonomia em 4 níveis, descrição de escopos, especificidades de domínio e matriz de paridade das 15 Regras de Ouro. |
 
 ---
 
