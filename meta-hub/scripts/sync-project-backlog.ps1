@@ -156,7 +156,7 @@ try {
         }
     }
 
-    $itemsJson = gh project item-list $ProjectNumber --owner $Owner --format json | ConvertFrom-Json
+    $itemsJson = gh project item-list $ProjectNumber --owner $Owner --limit 300 --format json | ConvertFrom-Json
     $existingItems = $itemsJson.items
     Write-Host "  ✓ Projeto localizado: '$($targetProject.title)' (ID: $projectId)" -ForegroundColor Cyan
     Write-Host "  ✓ $($existingItems.Count) cards/itens encontrados no GitHub Project." -ForegroundColor Cyan
