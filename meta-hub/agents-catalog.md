@@ -199,21 +199,19 @@ Esta matriz cruza cada contrato com as **15 Regras de Ouro Universais** consolid
 | **R4: Conclusão por Evidências** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **R5: Parcimônia de Dependências** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **R6: Zero Secrets (Segurança)** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| **R7: Docs no Ciclo do Commit** | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ⚠️ | ⚠️ | ⚠️ |
-| **R8: Preservação Defensiva** | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ⚠️ | ⚠️ | ⚠️ |
-| **R9: Integridade & UTF-8 BOM** | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ⚠️ | ⚠️ | ⚠️ |
-| **R10: Heurística de README** | ✅ | ✅ | ✅ | ✅ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
-| **R11: Living Dossier Monotemático** | ✅ | ✅ | ✅ | ✅ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
-| **R12: Sandbox Hygiene** | ✅ | ✅ | ✅ | ✅ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
-| **R13: Safe CLI Chaining (No `&&`)** | ✅ | ✅ | ✅ | ✅ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
-| **R14: Graph Interconnection** | ✅ | ✅ | ✅ | ✅ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
-| **R15: Marcadores Canônicos** | ✅ | ✅ | ✅ | ✅ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
+| **R7: Docs no Ciclo do Commit** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **R8: Preservação Defensiva** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **R9: Integridade & UTF-8 BOM** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **R10: Heurística de README** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **R11: Living Dossier Monotemático** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **R12: Sandbox Hygiene** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **R13: Safe CLI Chaining (No `&&`)** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **R14: Graph Interconnection** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **R15: Marcadores Canônicos** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 ### Legenda da Matriz:
 
-- ✅ **Conformidade Total:** Regra explicitamente formalizada e auditada no contrato.
-- ⚠️ **Parcial / Implícito:** Princípio adotado informalmente ou com redação anterior (versão pré-MVP).
-- ⚪ **Específica de Governança / A Integrar:** Regras 10 a 15 consolidadas no Meta-Hub e Starter Kit que podem ser propagadas para os repositórios satélites conforme necessidade de manutenção.
+- ✅ **Conformidade Total (100% dos Contratos Alinhados):** Regra explicitamente formalizada, versionada e auditada no contrato. Todos os 9 contratos vigentes possuem paridade contratual integral.
 
 ---
 
