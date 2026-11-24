@@ -1,4 +1,4 @@
-# ADR-003: Formalização da Plataforma de Engenharia de Software Assistida por IA (AI-SEP)
+# ADR-0003: Formalização da Plataforma de Engenharia de Software Assistida por IA (AI-SEP)
 
 > **Status:** `Aprovado`  
 > **Data:** 2026-11-21  
@@ -21,7 +21,7 @@ No entanto, a atuação isolada de modelos de linguagem e agentes autônomos sem
 
 - **Força 1 (Plataforma vs. Conjunto de Projetos):** O ecossistema necessita de uma plataforma de engenharia coesa e reproduzível, e não apenas de repositórios desconectados.
 - **Força 2 (Docs-as-Code & Rastreabilidade):** Toda a governança, decisões arquiteturais (ADRs), especificações (SDD) e auditorias devem residir no Git ou no Google Drive corporativo sob controle de versão.
-- **Força 3 (Segurança e Human-in-the-Loop):** Controle estrito sobre ações destrutivas, isolamento de credenciais (ADR-002) e aprovação humana contínua.
+- **Força 3 (Segurança e Human-in-the-Loop):** Controle estrito sobre ações destrutivas, isolamento de credenciais (ADR-0002) e aprovação humana contínua.
 
 ---
 
@@ -41,7 +41,7 @@ flowchart TD
         FlightLevels["Gestão em Flight Levels (Project 14)"]
     end
 
-    subgraph L2 ["2. Camada de Segurança & Segregação (ADR-002)"]
+    subgraph L2 ["2. Camada de Segurança & Segregação (ADR-0002)"]
         GDrive["Google Drive Corporativo (Cofre & Bastidores)"]
         MultiRoot["Multi-Root Workspaces (.code-workspace)"]
     end
@@ -79,13 +79,13 @@ flowchart TD
 
 1. **Governança & Planejamento Centralizado ([`meta-hub`](../README.md)):**
    - Atua como a torre de controle do ecossistema, abrigando o backlog mestre em Docs-as-Code, o catálogo de repositórios e os registros de decisão técnica.
-2. **Segurança por Segregação Física ([ADR-002](./002-segregacao-dados-sensiveis-multi-root-workspaces.md)):**
+2. **Segurança por Segregação Física ([ADR-0002](./0002-segregacao-dados-sensiveis-multi-root-workspaces.md)):**
    - Certificados A1 (`*.pfx`), credenciais de clientes e rascunhos estratégicos residem fisicamente fora da árvore do Git, no Google Drive corporativo integrado via Multi-Root Workspaces.
 3. **Padrão Base de Repositórios ([`project-starter-kit`](https://github.com/heviane/project-starter-kit)):**
    - Template oficial para bootstrap acelerado de novos projetos já configurados com linting, CI/CD, pastas de especificação e guardrails de IA.
 4. **Contratos Operacionais de IA ([`AGENTS.md`](https://github.com/heviane/project-starter-kit/blob/main/AGENTS.md)):**
    - Protocolo universal que rege o comportamento de assistentes e agentes autônomos (Google Antigravity, Claude Code, GitHub Copilot). Impõe aprovação humana explícita (*Human-in-the-Loop*) antes de qualquer mutação no ambiente.
-5. **Spec-Driven Development ([ADR-001](./001-adocao-sdd-ia-sdlc.md)):**
+5. **Spec-Driven Development ([ADR-0001](./0001-adocao-sdd-ia-sdlc.md)):**
    - Exigência de documento de especificação funcional e técnica (`SPEC.md`) antes da escrita de código, reduzindo alucinações e garantindo rastreabilidade.
 6. **Automação & Auditoria Contínua:**
    - Ferramental proprietário em PowerShell ([`audit-workspace.ps1`](../scripts/audit-workspace.ps1) com `-StrictGovernance` e [`sync-extensions.ps1`](../scripts/sync-extensions.ps1)), acompanhado por pipelines em GitHub Actions para validação contínua de links e linting.

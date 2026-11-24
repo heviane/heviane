@@ -1,4 +1,4 @@
-# ADR-002: Segregação Física de Dados Sensíveis e Governança Local em Nuvem via Multi-Root Workspaces
+# ADR-0002: Segregação Física de Dados Sensíveis e Governança Local em Nuvem via Multi-Root Workspaces
 
 > **Status:** `Aprovado`  
 > **Data:** 2026-11-20  

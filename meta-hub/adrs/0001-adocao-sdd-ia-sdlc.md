@@ -1,4 +1,4 @@
-# ADR-001: Adoção de Spec-Driven Development (SDD) e Governança de IA no SDLC
+# ADR-0001: Adoção de Spec-Driven Development (SDD) e Governança de IA no SDLC
 
 > **Status:** `Aprovado`  
 > **Data:** 2026-10-31  
