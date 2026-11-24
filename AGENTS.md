@@ -59,6 +59,8 @@ Todas as mensagens de commit sugeridas ou criadas pelo agente devem seguir a esp
 <tipo>(<escopo>): <descrição curta no imperativo em inglês>
 
 [corpo opcional explicando a motivação]
+
+[rodapé opcional com co-autoria: Co-authored-by: Nome do Agente <email-do-agente>]
 ```
 
 ### Tipos Permitidos:
@@ -86,6 +88,7 @@ Todas as mensagens de commit sugeridas ou criadas pelo agente devem seguir a esp
 2. **Reversibilidade Limpa (Clean Revert):** Todo commit deve ser isolado e autocontido, permitindo `git revert <hash>` sem introduzir efeitos colaterais em arquivos não correlacionados.
 3. **Garantia de Pipeline Verde Contínuo (Always Green / Bisect-Safe):** Nenhum commit intermediário pode deixar o repositório quebrado. A cada commit individual, todos os testes (Pester) e validações estáticas (markdownlint) devem ser executados e aprovados com 100% verde.
 4. **Idioma Canônico & Modo Imperativo:** Todas as mensagens de commit DEVEM ser escritas em **inglês**, utilizando verbos no modo imperativo (`add`, `fix`, `sync`, `enforce`, `bump`, `polish`, `remove`), assegurando conformidade com padrões internacionais de engenharia e ferramentas de release automatizado.
+5. **Rastreabilidade de IA & Co-Autoria (Git Co-Authorship):** Todo commit sugerido ou gerado com o auxílio de um agente de IA DEVE incluir no rodapé da mensagem o trailer canônico do Git: `Co-authored-by: Google Antigravity <antigravity[bot]@google.com>` (ou do respectivo modelo/agente), assegurando transparência, proveniência de código e visibilidade nativa de co-autoria no GitHub.
 
 ---
 

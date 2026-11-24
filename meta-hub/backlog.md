@@ -97,6 +97,7 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | 🟢 | `SOL-01` | `P0` | **Middleware NFS-e Nacional API (`nfse-nacional-api`)** | Desenvolvimento completo de middleware em Java 17 com core fiscal (validação XSD v1.00, RSA-SHA256, mTLS) e Camada Anticorrupção (ACL SOAP GeneXus 18). |
 | 🟢 | `SOL-02` | `P1` | **Template Institucional Web (`institutional-website-template`)** | Criação de template corporativo moderno, reutilizável para clientes e alinhado a práticas de desenvolvimento assistido por IA. |
 | 💡 | `SOL-03` | `P1` | **Branch Protection & Rulesets para Clientes em Produção** | Definição de regras estritas de proteção de branch (`main`) e GitHub Repository Rulesets exclusivamente para projetos de clientes reais em produção: exigência de branch isolada (`feat/`), Pull Request obrigatório, bloqueio de force-push e Quality Gate com CI/Gitleaks verde antes do merge. |
+| 💡 | `SOL-04` | `P2` | **Identidade de Agente & Machine User via GitHub App (Produção)** | Arquitetura de autenticação segregada e geração de tokens efêmeros via GitHub App dedicada exclusivamente para ambientes de clientes reais em produção, exibindo selo oficial de bot (`[bot]`) e isolando credenciais pessoais. |
 
 ---
 
@@ -133,6 +134,8 @@ Propostas técnicas e oportunidades mapeadas para avaliação nas próximas iter
    Integrar automação de release via GitHub Actions (ex.: Google `release-please-action` ou `standard-version`) acoplada ao padrão *Keep a Changelog*, permitindo que cada ciclo de entrega atômico calcule automaticamente incrementos SemVer (`patch`, `minor`, `major`), crie/atualize o `CHANGELOG.md` e publique GitHub Releases formais sem esforço manual.
 5. **Governança de Branch Protection & Repository Rulesets para Clientes em Produção (`SOL-03`):**  
    Estabelecer playbook e modelo de configuração de *GitHub Repository Rulesets* estritos (`Settings -> Rules -> Rulesets`) exclusivamente para repositórios de clientes reais em ambiente produtivo, impondo bloqueio de commits diretos na `main`, fluxo obrigatório via branch de feature (`feat/*`), abertura de PR, bloqueio de force-push e aprovação vinculada a status checks de CI verdes (testes, lint e varredura de segredos via Gitleaks).
+6. **Segregação de Credenciais & Identidade de Bot via GitHub App (`SOL-04`):**  
+   Estruturação de GitHub App corporativa para projetos de clientes em produção, eliminando o uso de Personal Access Tokens (PATs) pessoais nas esteiras automatizadas, garantindo geração automática de tokens efêmeros com permissões mínimas e rastreabilidade visual nativa no GitHub sob identidade oficial de máquina (ex.: `heviane-agent[bot]`).
 
 ### 📦 Propostas Técnicas Pós-MVP do Starter Kit (`project-starter-kit`)
 
