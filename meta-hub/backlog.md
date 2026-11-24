@@ -138,6 +138,8 @@ Propostas técnicas e oportunidades mapeadas para avaliação nas próximas iter
    Estruturação de GitHub App corporativa para projetos de clientes em produção, eliminando o uso de Personal Access Tokens (PATs) pessoais nas esteiras automatizadas, garantindo geração automática de tokens efêmeros com permissões mínimas e rastreabilidade visual nativa no GitHub sob identidade oficial de máquina (ex.: `heviane-agent[bot]`).
 7. **Portfólio Internacional & Repositórios Estratégicos 100% em Inglês:**  
    Avaliar e estruturar a internacionalização completa (código, documentação interna, especificações e READMEs 100% em inglês) de repositórios públicos estratégicos com potencial de atração global (ex.: `project-starter-kit`, utilitários CLI e labs técnicos de IA), posicionando o ecossistema para contratações remotas internacionais e tração na comunidade global de código aberto.
+8. **Varredura Comportamental de Dependências & Análise de Supply Chain para Clientes em Produção (`SOL-05`):**  
+   Estruturação de pipeline avançado de segurança de cadeia de suprimentos (*Software Supply Chain Security*) para ambientes corporativos de clientes reais em produção, integrando ferramentas de análise comportamental de pacotes (ex.: Socket.dev, OpenSSF Scorecard ou Trivy) que inspecionam dependências em busca de scripts de instalação maliciosos (`postinstall`), exfiltração de dados e mitigações ativas contra alucinação de pacotes (*Package Hallucination / Squatting*).
 
 ### 📦 Propostas Técnicas Pós-MVP do Starter Kit (`project-starter-kit`)
 
