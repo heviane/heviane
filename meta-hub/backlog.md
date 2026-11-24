@@ -63,7 +63,7 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | 🟢 | `IA-06` | `P2` | **Configurar GitHub Template Repository** | Habilitar a flag "Template repository" no GitHub para permitir *"Use this template"* com 1 clique. |
 | 🟢 | `IA-07` | `P1` | **Catálogo Canônico de Templates SDD/AI-SEP** | Criação do guia oficial dos 7 templates em [`docs/templates/README.md`](https://github.com/heviane/project-starter-kit/tree/main/docs/templates), com ciclo de vida em 4 fases e paridade com scripts de bootstrap. |
 | 🟢 | `IA-08` | `P0` | **Institucionalização das Regras de Ouro nos AGENTS.md** | Formalização das Regras 10 a 15 (Heurística de README, Dossiê Vivo Monotemático, Sandbox Hygiene, Safe CLI, Doc Linking e Marcadores Canônicos) em todos os contratos de IA. |
-| 🟡 | `IA-09` | `P1` | **Guia de Segurança & Guardrails para Agentes de IA (`guia-seguranca-agentes-ia.md`)** | Elaboração do guia canônico em `docs/guia-seguranca-agentes-ia.md` no `project-starter-kit`, cobrindo as 4 camadas de proteção (Zero Secrets com Gitleaks, Branch Protection, Allowlist de Comandos e Segregação/Dev Containers) com checklist de 5 minutos e links bidirecionais. |
+| 🟢 | `IA-09` | `P1` | **Guia de Segurança & Guardrails para Agentes de IA (`guia-seguranca-agentes-ia.md`)** | Elaboração do guia canônico em `docs/guia-seguranca-agentes-ia.md` no `project-starter-kit`, cobrindo as 4 camadas de proteção (Zero Secrets com Gitleaks, Branch Protection, Allowlist de Comandos e Segregação/Dev Containers) com checklist de 5 minutos e links bidirecionais. |
 
 ---
 
