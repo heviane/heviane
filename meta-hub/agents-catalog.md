@@ -31,8 +31,8 @@ Para garantir escalabilidade e impedir o ***drift* metodológico** (divergência
 ```mermaid
 flowchart TD
     subgraph L0 ["Nível 0: Guardiões de Workspace"]
-        HostGlobal["E:\Projects\GitHub\AGENTS.md<br/>(Higiene Multi-Repo & Host Local)"]
-        CloudVault["H:\My Drive\Workspace Root Local\AGENTS.md<br/>(Privacidade Estrita & Cofre ADR-0002)"]
+        HostGlobal["&lt;workspace-root&gt;/AGENTS.md<br/>(Higiene Multi-Repo & Host Local)"]
+        CloudVault["&lt;cloud-vault&gt;/AGENTS.md<br/>(Privacidade Estrita & Cofre ADR-0002)"]
     end
 
     subgraph L1 ["Nível 1: Governança Central"]
@@ -64,10 +64,10 @@ Checklist operacional consolidado de todos os 9 contratos vigentes no ecossistem
 
 ### Nível 0: Guardiões de Workspace Global
 
-#### 1. Guardião Global do Host Local (`E:\Projects\GitHub\AGENTS.md`)
+#### 1. Guardião Global do Host Local (`<workspace-root>/AGENTS.md`)
 
 - [x] **Status:** Ativo & Operacional
-- **Localização:** [`E:\Projects\GitHub\AGENTS.md`](file:///E:/Projects/GitHub/AGENTS.md)
+- **Localização:** `<workspace-root>/AGENTS.md` *(Guardião transversal do host local)*
 - **Escopo / Papel:** Guardião transversal do ambiente de desenvolvimento local cobrindo todos os repositórios públicos clonados no host Windows.
 - **Stack / Ambiente:** Multi-stack (Java, .NET, Node, Python, PowerShell, Shell Script).
 - **Propósito & Especificidades:**
@@ -76,10 +76,10 @@ Checklist operacional consolidado de todos os 9 contratos vigentes no ecossistem
   - Proibir absolutamente a criação de commits ou pushes a partir da raiz agregadora do workspace.
   - Blindagem de segredos locais (`.env*`, certificados `.pfx`/`.p12`).
 
-#### 2. Guardião do Cofre em Nuvem (`H:\My Drive\Workspace Root Local\AGENTS.md`)
+#### 2. Guardião do Cofre em Nuvem (`<cloud-vault>/AGENTS.md`)
 
 - [x] **Status:** Ativo & Operacional
-- **Localização:** [`H:\My Drive\Workspace Root Local\AGENTS.md`](file:///H:/My%20Drive/Workspace%20Root%20Local/AGENTS.md)
+- **Localização:** `<cloud-vault>/AGENTS.md` *(Cofre privado segregado em nuvem conforme ADR-0002)*
 - **Escopo / Papel:** Guardião de privacidade e integridade do cofre em nuvem privado corporativo, em total conformidade com a [ADR-0002](./adrs/0002-segregacao-dados-sensiveis-multi-root-workspaces.md).
 - **Stack / Ambiente:** Markdown, Obsidian, Google Drive, Arquivos de Carreira & Auditoria.
 - **Propósito & Especificidades:**
@@ -94,7 +94,7 @@ Checklist operacional consolidado de todos os 9 contratos vigentes no ecossistem
 #### 3. Meta-Hub Central & Perfil Executivo (`heviane/heviane/AGENTS.md`)
 
 - [x] **Status:** Ativo & Operacional
-- **Localização:** [`heviane/heviane/AGENTS.md`](file:///E:/Projects/GitHub/heviane/heviane/AGENTS.md)
+- **Localização:** [`AGENTS.md`](../AGENTS.md) *(Raiz deste repositório)*
 - **Escopo / Papel:** Repositório central de governança Docs-as-Code e vitrine pública curricular da engenheira no GitHub.
 - **Stack / Ambiente:** PowerShell 5.1/7+, GitHub Actions, GitHub CLI (`gh`), Pester 3/5, markdownlint.
 - **Propósito & Especificidades:**
@@ -112,7 +112,7 @@ Checklist operacional consolidado de todos os 9 contratos vigentes no ecossistem
 #### 4. Repositório-Matriz do Starter Kit (`project-starter-kit/AGENTS.md`)
 
 - [x] **Status:** Ativo & Operacional
-- **Localização:** [`project-starter-kit/AGENTS.md`](file:///E:/Projects/GitHub/heviane/project-starter-kit/AGENTS.md)
+- **Localização:** [`project-starter-kit/AGENTS.md`](https://github.com/heviane/project-starter-kit/blob/main/AGENTS.md)
 - **Escopo / Papel:** Governança do repositório-fábrica oficial do ecossistema, responsável por fornecer o boilerplate para todos os novos projetos.
 - **Stack / Ambiente:** Shell Script (Bash/PowerShell), GitHub Actions, Gitleaks, markdownlint, Templates SDD.
 - **Propósito & Especificidades:**
@@ -125,7 +125,7 @@ Checklist operacional consolidado de todos os 9 contratos vigentes no ecossistem
 #### 5. Template Canônico Padrão-Ouro (`project-starter-kit/docs/templates/AGENTS.md`)
 
 - [x] **Status:** Ativo & Operacional
-- **Localização:** [`project-starter-kit/docs/templates/AGENTS.md`](file:///E:/Projects/GitHub/heviane/project-starter-kit/docs/templates/AGENTS.md)
+- **Localização:** [`project-starter-kit/docs/templates/AGENTS.md`](https://github.com/heviane/project-starter-kit/blob/main/docs/templates/AGENTS.md)
 - **Escopo / Papel:** Modelo semente canônico em duas camadas copiado e hidratado automaticamente ao instanciar novos repositórios.
 - **Stack / Ambiente:** Multi-stack desacoplada (seção de domínio plugável).
 - **Propósito & Especificidades:**
@@ -140,7 +140,7 @@ Checklist operacional consolidado de todos os 9 contratos vigentes no ecossistem
 #### 6. Middleware Fiscal NFS-e Nacional (`nfse-nacional-api/AGENTS.md`)
 
 - [x] **Status:** Ativo & Operacional
-- **Localização:** [`nfse-nacional-api/AGENTS.md`](file:///E:/Projects/GitHub/heviane/nfse-nacional-api/AGENTS.md)
+- **Localização:** [`nfse-nacional-api/AGENTS.md`](https://github.com/heviane/nfse-nacional-api/blob/main/AGENTS.md)
 - **Escopo / Papel:** Middleware corporativo de missão crítica para emissão, consulta e cancelamento de Notas Fiscais de Serviço eletrônicas (NFS-e Nacional).
 - **Stack / Ambiente:** Java 17, Spring Boot 3, Apache CXF (SOAP), GeneXus 18 ACL, mTLS (RFC 5246), XML RSA-SHA256, Maven.
 - **Propósito & Especificidades:**
@@ -152,7 +152,7 @@ Checklist operacional consolidado de todos os 9 contratos vigentes no ecossistem
 #### 7. Boilerplate Corporativo Web Institucional (`institutional-website-template/AGENTS.md`)
 
 - [x] **Status:** Ativo & Operacional
-- **Localização:** [`institutional-website-template/AGENTS.md`](file:///E:/Projects/GitHub/heviane/institutional-website-template/AGENTS.md)
+- **Localização:** [`institutional-website-template/AGENTS.md`](https://github.com/heviane/institutional-website-template/blob/main/AGENTS.md)
 - **Escopo / Papel:** Boilerplate web corporativo de alta performance e acessibilidade para entregas rápidas de sites institucionais para clientes.
 - **Stack / Ambiente:** Next.js 16 (App Router), React 19, TypeScript 5, Tailwind CSS v4, Vitest, Playwright.
 - **Propósito & Especificidades:**
@@ -168,7 +168,7 @@ Checklist operacional consolidado de todos os 9 contratos vigentes no ecossistem
 #### 8. Laboratório de Infraestrutura CLI & Shell (`heviane-labs/shell-script-lab/AGENTS.md`)
 
 - [x] **Status:** Ativo & Operacional
-- **Localização:** [`heviane-labs/shell-script-lab/AGENTS.md`](file:///E:/Projects/GitHub/heviane-labs/shell-script-lab/AGENTS.md)
+- **Localização:** [`heviane-labs/shell-script-lab/AGENTS.md`](https://github.com/heviane-labs/shell-script-lab/blob/main/AGENTS.md)
 - **Escopo / Papel:** Laboratório de automações de linha de comando, utilitários Linux e engenharia de scripts portáveis.
 - **Stack / Ambiente:** Bash 5+, POSIX Shell, ShellCheck, BATS (Bash Automated Testing System).
 - **Propósito & Especificidades:**
@@ -179,7 +179,7 @@ Checklist operacional consolidado de todos os 9 contratos vigentes no ecossistem
 #### 9. Laboratório de IA Generativa & SDD (`heviane-learning/natty-or-not-lab/AGENTS.md`)
 
 - [x] **Status:** Ativo & Operacional
-- **Localização:** [`heviane-learning/natty-or-not-lab/AGENTS.md`](file:///E:/Projects/GitHub/heviane-learning/natty-or-not-lab/AGENTS.md)
+- **Localização:** [`heviane-learning/natty-or-not-lab/AGENTS.md`](https://github.com/heviane-learning/natty-or-not-lab/blob/main/AGENTS.md)
 - **Escopo / Papel:** Laboratório prático da trilha DIO focado em experimentação de IA generativa, curadoria de mídia sintética e aplicação de Spec-Driven Development na calibração de prompts.
 - **Stack / Ambiente:** Markdown, Engenharia de Prompts, LLMs, Spec-Driven Development.
 - **Propósito & Especificidades:**
