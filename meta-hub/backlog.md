@@ -136,6 +136,8 @@ Propostas técnicas e oportunidades mapeadas para avaliação nas próximas iter
    Estabelecer playbook e modelo de configuração de *GitHub Repository Rulesets* estritos (`Settings -> Rules -> Rulesets`) exclusivamente para repositórios de clientes reais em ambiente produtivo, impondo bloqueio de commits diretos na `main`, fluxo obrigatório via branch de feature (`feat/*`), abertura de PR, bloqueio de force-push e aprovação vinculada a status checks de CI verdes (testes, lint e varredura de segredos via Gitleaks).
 6. **Segregação de Credenciais & Identidade de Bot via GitHub App (`SOL-04`):**  
    Estruturação de GitHub App corporativa para projetos de clientes em produção, eliminando o uso de Personal Access Tokens (PATs) pessoais nas esteiras automatizadas, garantindo geração automática de tokens efêmeros com permissões mínimas e rastreabilidade visual nativa no GitHub sob identidade oficial de máquina (ex.: `heviane-agent[bot]`).
+7. **Portfólio Internacional & Repositórios Estratégicos 100% em Inglês:**  
+   Avaliar e estruturar a internacionalização completa (código, documentação interna, especificações e READMEs 100% em inglês) de repositórios públicos estratégicos com potencial de atração global (ex.: `project-starter-kit`, utilitários CLI e labs técnicos de IA), posicionando o ecossistema para contratações remotas internacionais e tração na comunidade global de código aberto.
 
 ### 📦 Propostas Técnicas Pós-MVP do Starter Kit (`project-starter-kit`)
 

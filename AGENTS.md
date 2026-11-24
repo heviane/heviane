@@ -48,6 +48,7 @@
 * **Conformidade de Linting Markdown:** Todos os arquivos `.md` devem aderir estritamente às configurações do `.markdownlint-cli2.jsonc`.
 * **Privacidade & LGPD:** NUNCA incluir dados pessoais sensíveis, números de telefone, e-mails privados não mascarados ou caminhos absolutos locais (tanto da pessoa desenvolvedora quanto de terceiros) na documentação pública.
 * **Auditoria Contínua de Pull Requests e Dependências Seguras:** Sempre que concluir um ciclo de trabalho ou identificar notificações/PRs remotos via `gh pr list`, audite os Pull Requests pendentes. Se houver PRs de bots ou dependências (ex.: Dependabot, Gitleaks, GitHub Actions) com CI 100% verde e sem quebra de invariantes (atualizações minor/patch), proponha ou realize a incorporação via **Squash Merge** e sincronize o working tree local via `git pull`. Caso haja falhas de CI ou quebra de contratos, feche o PR com justificativa técnica explícita.
+* **Nomenclatura Canônica em Inglês:** Nomes de pastas, diretórios e arquivos (`.md`, `.ps1`, `.json`, `.yaml`) DEVEM ser SEMPRE escritos em **inglês** em formato `kebab-case` (ex.: `repository-catalog.md`, `agents-catalog.md`, `maintenance-guide.md`, `audit-workspace.ps1`). Os conteúdos textuais das documentações permanecem em Português (pt-BR), preservando o rigor técnico dos termos padrão da indústria.
 
 ---
 

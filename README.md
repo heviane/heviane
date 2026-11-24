@@ -1,3 +1,7 @@
+<p align="right">
+  <b>Português</b> | <a href="README.en.md">English</a>
+</p>
+
 <h1>Olá! 👋 Eu sou a Heviane Bastos</h1>
 
 > **Software Engineer | AI-Assisted Software Engineering | Systems Integration & Architecture**
