@@ -101,6 +101,7 @@ Checklist operacional consolidado de todos os 9 contratos vigentes no ecossistem
   - **Higiene e Ergonomia do Perfil:** Manutenção visual clean do `README.md` público, sem poluição de badges ou seções prolixas.
   - **Automações PowerShell:** Garantia contínua de 100% de aprovação na suíte de testes Pester (`meta-hub/tests/scripts.Tests.ps1` — 22/22 cenários verdes).
   - **Sincronização Cloud Contínua:** Reconciliação mandatória do `backlog.md` com o GitHub Project 14 via `sync-project-backlog.ps1`.
+  - **Auditoria Contínua de PRs & Dependências:** Monitoramento ativo via `gh pr list` e incorporação via Squash Merge de atualizações automatizadas seguras com CI verde.
   - **Multi-Shell Interoperability:** Proibição do operador `&&` no terminal Windows em favor do padrão seguro `; if ($?) { ... }`.
   - **Encoding Rigoroso:** Scripts `.ps1` com acentos/emojis obrigatoriamente salvos com UTF-8 BOM (`0xEF, 0xBB, 0xBF`).
 
@@ -118,6 +119,7 @@ Checklist operacional consolidado de todos os 9 contratos vigentes no ecossistem
   - Garantia de qualidade do ecossistema de templates (`docs/templates/`).
   - Preservação da integridade dos scripts de bootstrap interativo (`bootstrap.ps1`, `bootstrap.sh`) e autolimpeza pós-hidratação.
   - Rigor extremo contra regressões em pipelines de CI (Gitleaks, lint de Markdown e verificação de licença).
+  - **Auditoria de PRs & Dependências Seguras:** Governança de PRs automatizados via `gh pr list` e integração via Squash Merge mantendo a integridade dos templates e do CI.
   - Referência para o Playbook de Engenharia de IA e Guia de Segurança & Guardrails (`docs/guia-seguranca-agentes-ia.md`).
 
 #### 5. Template Canônico Padrão-Ouro (`project-starter-kit/docs/templates/AGENTS.md`)

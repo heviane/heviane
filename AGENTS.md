@@ -47,6 +47,7 @@
 * **Sincronização Contínua com GitHub Projects (Docs-as-Code to Cloud):** Sempre que o agente alterar, concluir (`🟢`) ou adicionar itens no `meta-hub/backlog.md`, ele DEVE OBRIGATORIAMENTE executar `powershell -ExecutionPolicy Bypass -File meta-hub/scripts/sync-project-backlog.ps1 -SyncStatus -SyncPriority` (acrescentando `-CreateMissing` para novos itens) antes de concluir o ciclo de entrega. Isso garante paridade em tempo real entre o repositório Git e o Project 14, prevenindo *drift* de governança.
 * **Conformidade de Linting Markdown:** Todos os arquivos `.md` devem aderir estritamente às configurações do `.markdownlint-cli2.jsonc`.
 * **Privacidade & LGPD:** NUNCA incluir dados pessoais sensíveis, números de telefone, e-mails privados não mascarados ou caminhos absolutos locais de terceiros na documentação pública.
+* **Auditoria Contínua de Pull Requests e Dependências Seguras:** Sempre que concluir um ciclo de trabalho ou identificar notificações/PRs remotos via `gh pr list`, audite os Pull Requests pendentes. Se houver PRs de bots ou dependências (ex.: Dependabot, Gitleaks, GitHub Actions) com CI 100% verde e sem quebra de invariantes (atualizações minor/patch), proponha ou realize a incorporação via **Squash Merge** e sincronize o working tree local via `git pull`. Caso haja falhas de CI ou quebra de contratos, feche o PR com justificativa técnica explícita.
 
 ---
 
@@ -90,6 +91,7 @@ Todas as mensagens de commit sugeridas ou criadas pelo agente devem seguir a esp
 
 ## 🚀 6. Comandos Rápidos do Repositório
 
+* **Auditoria de PRs Remotos:** `gh pr list`
 * **Validação de Markdown:** `npx markdownlint-cli2 "**/*.md"`
 * **Execução da Suíte de Testes Pester:** `Invoke-Pester meta-hub/tests/scripts.Tests.ps1`
 * **Auditoria de Workspace:** `powershell -ExecutionPolicy Bypass -File meta-hub/scripts/audit-workspace.ps1`
