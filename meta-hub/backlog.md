@@ -3,7 +3,7 @@
 > **Docs-as-Code — AI Engineering Hub**  
 > Repositório Central: [`heviane/heviane/meta-hub`](https://github.com/heviane/heviane/tree/main/meta-hub)  
 > Quadro Executivo: [AI Engineering Hub — Portfolio & Roadmap (Project 14)](https://github.com/users/heviane/projects/14)  
-> Versão Atual: `v1.2.0` &bull; **Última Atualização:** 22/11/2026
+> Versão Atual: `v1.3.0` &bull; **Última Atualização:** 24/11/2026
 
 ---
 
@@ -90,12 +90,13 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 
 ---
 
-### Épico 6: Soluções Core em Produção & Portfólio Ativo — 🟢 100% Concluído
+### Épico 6: Soluções Core em Produção & Portfólio Ativo — 🟢 Concluído / 💡 Em Expansão
 
 | Status | ID | Prioridade | Item | Descrição / Critérios de Aceite |
 | :---: | :---: | :---: | :--- | :--- |
 | 🟢 | `SOL-01` | `P0` | **Middleware NFS-e Nacional API (`nfse-nacional-api`)** | Desenvolvimento completo de middleware em Java 17 com core fiscal (validação XSD v1.00, RSA-SHA256, mTLS) e Camada Anticorrupção (ACL SOAP GeneXus 18). |
 | 🟢 | `SOL-02` | `P1` | **Template Institucional Web (`institutional-website-template`)** | Criação de template corporativo moderno, reutilizável para clientes e alinhado a práticas de desenvolvimento assistido por IA. |
+| 💡 | `SOL-03` | `P1` | **Branch Protection & Rulesets para Clientes em Produção** | Definição de regras estritas de proteção de branch (`main`) e GitHub Repository Rulesets exclusivamente para projetos de clientes reais em produção: exigência de branch isolada (`feat/`), Pull Request obrigatório, bloqueio de force-push e Quality Gate com CI/Gitleaks verde antes do merge. |
 
 ---
 
@@ -130,6 +131,8 @@ Propostas técnicas e oportunidades mapeadas para avaliação nas próximas iter
    Implementar verificação automatizada de mensagens de commits e títulos de Pull Requests no GitHub Actions utilizando `commitlint` (ou workflow com script de verificação regex), garantindo a aplicação estrita do padrão *Conventional Commits*, catálogo canônico de escopos e prevenção de desvios semânticos.
 4. **Automação de Geração de Changelog e Releases Semânticas (`Release Please`):**  
    Integrar automação de release via GitHub Actions (ex.: Google `release-please-action` ou `standard-version`) acoplada ao padrão *Keep a Changelog*, permitindo que cada ciclo de entrega atômico calcule automaticamente incrementos SemVer (`patch`, `minor`, `major`), crie/atualize o `CHANGELOG.md` e publique GitHub Releases formais sem esforço manual.
+5. **Governança de Branch Protection & Repository Rulesets para Clientes em Produção (`SOL-03`):**  
+   Estabelecer playbook e modelo de configuração de *GitHub Repository Rulesets* estritos (`Settings -> Rules -> Rulesets`) exclusivamente para repositórios de clientes reais em ambiente produtivo, impondo bloqueio de commits diretos na `main`, fluxo obrigatório via branch de feature (`feat/*`), abertura de PR, bloqueio de force-push e aprovação vinculada a status checks de CI verdes (testes, lint e varredura de segredos via Gitleaks).
 
 ### 📦 Propostas Técnicas Pós-MVP do Starter Kit (`project-starter-kit`)
 
