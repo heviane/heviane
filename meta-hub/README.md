@@ -125,6 +125,7 @@ flowchart LR
 | **[`backlog.md`](./backlog.md)**                        | Backlog mestre de ideação e governança de tarefas (Docs-as-Code).     | `Ativo`                    |
 | **[`repository-catalog.md`](./repository-catalog.md)**  | Catálogo unificado e matriz de maturidade dos 24 repositórios públicos. | `Ativo (24 repos)`         |
 | **[`vscode-extensions.md`](./vscode-extensions.md)**    | Inventário padronizado das extensões do ambiente de desenvolvimento.  | `Auditado (76 extensões)`  |
+| **[`agents-catalog.md`](./agents-catalog.md)**          | Catálogo canônico e matriz de paridade de contratos de IA (`AGENTS.md`). | `Ativo (9 contratos)`      |
 | **[ADRs (`adrs/`)](./adrs/)**                           | Registros formais de decisões de arquitetura e metodologias adotadas. | `Ativo (ADR-001, ADR-002, ADR-003)` |
 | **[`maintenance-guide.md`](./maintenance-guide.md)**    | Guia de convenções de manutenção, commits semânticos e quality gates. | `Ativo`                    |
 | **[Scripts (`scripts/`)](./scripts/)**                  | Automações de auditoria (`audit-workspace.ps1`) e sincronização (`sync-extensions.ps1`). | `Ativo` |

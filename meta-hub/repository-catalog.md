@@ -41,6 +41,8 @@ Os repositórios públicos estão distribuídos entre as três organizações of
 | **Contrato de IA (`AGENTS.md`)** | Opcional | Opcional | Sim ✅ |
 | **Docs-as-Code & Arquitetura (`docs/specs/`, `ADRs`)** | Opcional | Opcional | Sim ✅ |
 
+> 💡 **Contratos de IA:** O inventário descritivo e a matriz de paridade das diretrizes de inteligência artificial de cada repositório são mantidos centralizadamente em [`agents-catalog.md`](./agents-catalog.md).
+
 ---
 
 ## 🏛️ Repositórios Core (`@heviane`)
