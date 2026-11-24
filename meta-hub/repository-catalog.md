@@ -2,7 +2,7 @@
 
 > **Inventário Oficial de Repositórios Públicos do Ecossistema (Docs-as-Code)**  
 > **Data de Atualização:** 22/11/2026 | **Total de Repositórios Públicos:** 24 *(mais 2 repositórios administrativos de perfil `.github`)*  
-> **Central de Governança:** [Meta-Hub (`meta-hub`)](./README.md) | **Segregação:** [ADR-0002](./adrs/0002-segregacao-dados-sensiveis-multi-root-workspaces.md)  
+> **Central de Governança:** [Meta-Hub (`meta-hub`)](./README.md) | **Segregação:** [ADR-0002](./adrs/0002-sensitive-data-segregation-multi-root-workspaces.md)  
 > *Nota: Este catálogo documenta exclusivamente os repositórios públicos e de código aberto mantidos no GitHub. Repositórios privados corporativos e laboratoriais seguem diretrizes de segregação física e são auditados internamente.*
 
 ---

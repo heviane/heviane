@@ -2,7 +2,7 @@
 
 > **Inventário Oficial de Diretrizes de Agentes de IA do Ecossistema (Docs-as-Code)**  
 > **Data de Atualização:** 24/11/2026 | **Total de Contratos Auditados:** 9 ativos  
-> **Central de Governança:** [Meta-Hub (`meta-hub`)](./README.md) | **Segregação:** [ADR-0002](./adrs/0002-segregacao-dados-sensiveis-multi-root-workspaces.md) | **Arquitetura AI-SEP:** [ADR-0003](./adrs/0003-formalizacao-arquitetura-ai-sep.md)  
+> **Central de Governança:** [Meta-Hub (`meta-hub`)](./README.md) | **Segregação:** [ADR-0002](./adrs/0002-sensitive-data-segregation-multi-root-workspaces.md) | **Arquitetura AI-SEP:** [ADR-0003](./adrs/0003-ai-sep-platform-architecture.md)  
 > *Nota: Este documento cataloga todos os arquivos `AGENTS.md` existentes no ecossistema, descrevendo suas especificidades de domínio, stacks tecnológicas e matriz comparativa de paridade com as 15 Regras de Ouro Universais.*
 
 ---
@@ -80,7 +80,7 @@ Checklist operacional consolidado de todos os 9 contratos vigentes no ecossistem
 
 - [x] **Status:** Ativo & Operacional
 - **Localização:** `<cloud-vault>/AGENTS.md` *(Cofre privado segregado em nuvem conforme ADR-0002)*
-- **Escopo / Papel:** Guardião de privacidade e integridade do cofre em nuvem privado corporativo, em total conformidade com a [ADR-0002](./adrs/0002-segregacao-dados-sensiveis-multi-root-workspaces.md).
+- **Escopo / Papel:** Guardião de privacidade e integridade do cofre em nuvem privado corporativo, em total conformidade com a [ADR-0002](./adrs/0002-sensitive-data-segregation-multi-root-workspaces.md).
 - **Stack / Ambiente:** Markdown, Obsidian, Google Drive, Arquivos de Carreira & Auditoria.
 - **Propósito & Especificidades:**
   - Segregação física rígida: proíbe agentes em projetos públicos de acessarem ou referenciarem dados desta unidade.

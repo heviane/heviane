@@ -79,13 +79,13 @@ flowchart TD
 
 1. **Governança & Planejamento Centralizado ([`meta-hub`](../README.md)):**
    - Atua como a torre de controle do ecossistema, abrigando o backlog mestre em Docs-as-Code, o catálogo de repositórios e os registros de decisão técnica.
-2. **Segurança por Segregação Física ([ADR-0002](./0002-segregacao-dados-sensiveis-multi-root-workspaces.md)):**
+2. **Segurança por Segregação Física ([ADR-0002](./0002-sensitive-data-segregation-multi-root-workspaces.md)):**
    - Certificados A1 (`*.pfx`), credenciais de clientes e rascunhos estratégicos residem fisicamente fora da árvore do Git, no Google Drive corporativo integrado via Multi-Root Workspaces.
 3. **Padrão Base de Repositórios ([`project-starter-kit`](https://github.com/heviane/project-starter-kit)):**
    - Template oficial para bootstrap acelerado de novos projetos já configurados com linting, CI/CD, pastas de especificação e guardrails de IA.
 4. **Contratos Operacionais de IA ([`AGENTS.md`](https://github.com/heviane/project-starter-kit/blob/main/AGENTS.md)):**
    - Protocolo universal que rege o comportamento de assistentes e agentes autônomos (Google Antigravity, Claude Code, GitHub Copilot). Impõe aprovação humana explícita (*Human-in-the-Loop*) antes de qualquer mutação no ambiente.
-5. **Spec-Driven Development ([ADR-0001](./0001-adocao-sdd-ia-sdlc.md)):**
+5. **Spec-Driven Development ([ADR-0001](./0001-sdd-and-ai-governance-adoption.md)):**
    - Exigência de documento de especificação funcional e técnica (`SPEC.md`) antes da escrita de código, reduzindo alucinações e garantindo rastreabilidade.
 6. **Automação & Auditoria Contínua:**
    - Ferramental proprietário em PowerShell ([`audit-workspace.ps1`](../scripts/audit-workspace.ps1) com `-StrictGovernance` e [`sync-extensions.ps1`](../scripts/sync-extensions.ps1)), acompanhado por pipelines em GitHub Actions para validação contínua de links e linting.

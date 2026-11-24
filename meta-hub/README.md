@@ -21,7 +21,7 @@ Ele adota os pilares da moderna engenharia de software:
 
 - **Docs-as-Code:** Toda a estratégia, backlogs, inventários técnicos e decisões arquiteturais são versionados no Git.
 - **Flight Levels & Gestão Ágil:** Separação clara entre visão estratégica de portfólio, coordenação operacional e entrega técnica nos repositórios.
-- **AI-Assisted Software Engineering Platform (AI-SEP):** Ecossistema estruturado em camadas integrando governança, starter kit, Spec-Driven Development (SDD), contratos de IA (`AGENTS.md`) e automação contínua ([ADR-0003](./adrs/0003-formalizacao-arquitetura-ai-sep.md)).
+- **AI-Assisted Software Engineering Platform (AI-SEP):** Ecossistema estruturado em camadas integrando governança, starter kit, Spec-Driven Development (SDD), contratos de IA (`AGENTS.md`) e automação contínua ([ADR-0003](./adrs/0003-ai-sep-platform-architecture.md)).
 
 ---
 
@@ -80,7 +80,7 @@ flowchart TD
 
 ## 🌐 Topologia do Ecossistema: Git Público vs. Nuvem Privada (ADR-0002)
 
-Para aliar **código aberto de alto impacto** com **segurança fiscal e confidencialidade estrita**, o ecossistema opera em uma topologia híbrida de dois pilares complementares, unificados via Multi-Root Workspaces do VS Code ([`ADR-0002`](./adrs/0002-segregacao-dados-sensiveis-multi-root-workspaces.md)):
+Para aliar **código aberto de alto impacto** com **segurança fiscal e confidencialidade estrita**, o ecossistema opera em uma topologia híbrida de dois pilares complementares, unificados via Multi-Root Workspaces do VS Code ([`ADR-0002`](./adrs/0002-sensitive-data-segregation-multi-root-workspaces.md)):
 
 ```mermaid
 flowchart LR
