@@ -232,6 +232,7 @@ Além das 15 Regras de Ouro, o ecossistema consolida diretrizes de excelência o
 | **Prevenção de Deterioração Documental (*Anti-Doc Rot*)** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Eliminação de Código Zumbi (*Zero Zombie Code*)** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Auditoria Ativa de Pull Requests (`gh pr list`)** | N/A | N/A | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Checklist Pós-Implementação / DoD Operacional** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Isolamento de Produção (Mocks / Homologação)** | N/A | N/A | N/A | ✅ | ✅ | ✅ | ✅ | N/A | N/A |
 
 ### Legenda da Matriz:
@@ -263,6 +264,7 @@ Sempre que a engenharia decidir formalizar ou aprimorar uma diretriz operacional
 
 - 🏛️ **Central de Governança:** [`meta-hub/README.md`](./README.md)
 - 📚 **Catálogo de Repositórios:** [`meta-hub/repository-catalog.md`](./repository-catalog.md)
-- 📌 **Backlog Mestre:** [`meta-hub/backlog.md`](./backlog.md) (Item `GOV-11`)
+- 📌 **Backlog Mestre:** [`meta-hub/backlog.md`](./backlog.md) (Itens `GOV-11` e `GOV-12`)
 - 🏛️ **Quadro Executivo:** [Project 14 (GitHub Projects)](https://github.com/users/heviane/projects/14)
 - 🛡️ **Guia de Segurança de Agentes:** [`docs/guia-seguranca-agentes-ia.md`](https://github.com/heviane/project-starter-kit/blob/main/docs/guia-seguranca-agentes-ia.md)
+- ✅ **Protocolo de Conclusão & DoD:** [`docs/post-implementation-checklist.md`](https://github.com/heviane/project-starter-kit/blob/main/docs/post-implementation-checklist.md)

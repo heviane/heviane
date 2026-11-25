@@ -96,7 +96,18 @@ Todas as mensagens de commit sugeridas ou criadas pelo agente devem seguir a esp
 
 ---
 
-## 🚀 6. Comandos Rápidos do Repositório
+## ✅ 6. Checklist Pós-Implementação (Definition of Done)
+
+Antes de considerar qualquer tarefa finalizada no Meta-Hub ou perfil, o agente DEVE seguir e evidenciar o Protocolo de 4 Fases:
+
+1. **Fase 1 (Quality Gates):** Validação de linters (`npx markdownlint-cli2 "**/*.md"`), execução da suíte de testes Pester com 100% de aprovação (22/22 cenários verdes), *Anti-Test Tampering* e *Zero Secrets*.
+2. **Fase 2 (Documentação Viva):** Atualizar `meta-hub/backlog.md` (marcando `🟢` e evidências), sincronizar catálogos (`meta-hub/repository-catalog.md`, `meta-hub/agents-catalog.md`), aplicar *Anti-Doc Rot* e *Zero Zombie Code*.
+3. **Fase 3 (Governança & PRs):** Executar obrigatoriamente a reconciliação com o GitHub Project 14 (`sync-project-backlog.ps1 -SyncStatus -SyncPriority`) e auditar PRs remotos (`gh pr list`).
+4. **Fase 4 (Entrega Git):** Validação com a pessoa desenvolvedora (*Human-in-the-Loop*), commits atômicos em Conventional Commits (em inglês) e trailer compulsório `Co-authored-by`.
+
+---
+
+## 🚀 7. Comandos Rápidos do Repositório
 
 * **Auditoria de PRs Remotos:** `gh pr list`
 * **Validação de Markdown:** `npx markdownlint-cli2 "**/*.md"`
