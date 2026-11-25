@@ -3,7 +3,7 @@
 > **Docs-as-Code — AI Engineering Hub**  
 > Repositório Central: [`heviane/heviane/meta-hub`](https://github.com/heviane/heviane/tree/main/meta-hub)  
 > Quadro Executivo: [AI Engineering Hub — Portfolio & Roadmap (Project 14)](https://github.com/users/heviane/projects/14)  
-> Versão Atual: `v1.3.0` &bull; **Última Atualização:** 24/11/2026
+> Versão Atual: `v1.4.0` &bull; **Última Atualização:** 25/11/2026
 
 ---
 
@@ -47,10 +47,12 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | 🟢 | `GOV-07` | `P1` | **Multi-Agent Review Framework (MARF)** | Padronizar processo operacional de auditoria multi-modelo (SOP), taxonomia em inglês (`active/`, `archive/`), lotes dinâmicos (`Lote 1..N`) e modelos canônicos no starter kit ([#10](https://github.com/heviane/heviane/issues/10)). |
 | 🟢 | `GOV-08` | `P1` | **Catálogo Unificado de Repositórios (`repository-catalog.md`)** | Inventário consolidado dos 24 repositórios públicos em [`repository-catalog.md`](./repository-catalog.md), com inventário completo (51 repositórios) mantido no cofre em nuvem conforme ADR-0002. |
 | 🟢 | `GOV-09` | `P0` | **Formalização da Arquitetura AI-SEP (ADR-0003)** | Formalização arquitetural da plataforma integrando Governança (Meta-Hub), Templates (Starter Kit), Metodologia (SDD) e Contratos de IA ([`ADR-0003`](./adrs/0003-ai-sep-platform-architecture.md)). |
-| 🟢 | `GOV-10` | `P1` | **Engenharia de Testes Pester & Validação AST (`meta-hub/tests`)** | Formalização da arquitetura da suíte com 15 testes em 6 contextos, padrão de compatibilidade universal Pester 3/5 e isolamento em sandbox temporário ([`meta-hub/tests/README.md`](./tests/README.md)). |
+| 🟢 | `GOV-10` | `P1` | **Engenharia de Testes Pester & Validação AST (`meta-hub/tests`)** | Formalização da arquitetura da suíte com 22 testes em 7 contextos, padrão de compatibilidade universal Pester 3/5 e isolamento em sandbox temporário ([`meta-hub/tests/README.md`](./tests/README.md)). |
 | 🟢 | `GOV-11` | `P1` | **Catálogo Canônico de Contratos de IA (`agents-catalog.md`)** | Criação do inventário centralizado de todos os `AGENTS.md` do ecossistema, com taxonomia em 4 níveis, descrição de escopos, especificidades de domínio e matriz de paridade das 15 Regras de Ouro. |
 | 🟢 | `GOV-12` | `P1` | **Post-Implementation Checklist & Protocolo de Conclusão de Tarefas (DoD)** | Formalização do protocolo compulsório pós-implementação em 4 fases (Quality Gates, Documentação Viva, Governança em Nuvem e Entrega Git/Rastreabilidade) como Definition of Done do Agente no starter kit e contratos de IA. |
 | ⚪ | `GOV-13` | `P1` | **Auditoria Diagnóstica de Maturidade dos Repositórios Legados (Scorecard DoD)** | Aplicação da régua de maturidade em 4 níveis (formalizada em `docs/post-implementation-checklist.md`) nos 24 repositórios públicos pré-starter kit para mapeamento de gaps de governança, testes, CI e contratos de IA. |
+| 🟢 | `GOV-14` | `P0` | **Blindagem & Confiabilidade de Automações PowerShell** | Implementação de `-WhatIf` / `ShouldProcess` nativo, tratamento de `$LASTEXITCODE` após comandos `gh`, detecção de IDs duplicados e guarda de paginação em `sync-project-backlog.ps1`, resolução dinâmica de caminhos em `audit-workspace.ps1` e substituição de `exit 1` por `throw`. |
+| 🟢 | `GOV-15` | `P1` | **Catálogo Canônico de ADRs & Erradicação de Doc Drift** | Criação de [`adrs/README.md`](./adrs/README.md) com ciclo de vida e indexação dos 3 ADRs, higienização de letras físicas no `ADR-0002` (`<secure-vault>` / `<governance-cloud>`), sincronização de versões no `vscode-extensions.md` e alinhamento do painel de governança (22 testes Pester). |
 
 ---
 
