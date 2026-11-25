@@ -112,7 +112,7 @@
 | Extensão | ID | Versão | Propósito / Descrição |
 | :--- | :--- | :--- | :--- |
 | **SQL Server (mssql)** | `ms-mssql.mssql` | `1.48.0` | Conexão, autocompletar e execução de consultas T-SQL para Microsoft SQL Server. |
-| **Thunder Client** | `rangav.vscode-thunder-client` | `3.2.6` | Cliente HTTP/REST leve integrado para testar, debugar e documentar requisições a APIs (alternativa ao Postman). |
+| **Thunder Client** | `rangav.vscode-thunder-client` | `3.2.7` | Cliente HTTP/REST leve integrado para testar, debugar e documentar requisições a APIs (alternativa ao Postman). |
 
 ---
 
@@ -120,7 +120,7 @@
 
 | Extensão | ID | Versão | Propósito / Descrição |
 | :--- | :--- | :--- | :--- |
-| **markdownlint** | `davidanson.vscode-markdownlint` | `0.62.1` | Analisador estático (linter) para manter padrões, consistência e boas práticas em arquivos Markdown. |
+| **markdownlint** | `davidanson.vscode-markdownlint` | `0.63.0` | Analisador estático (linter) para manter padrões, consistência e boas práticas em arquivos Markdown. |
 | **Markdown PDF** | `yzane.markdown-pdf` | `2.2.0` | Converte e exporta documentos Markdown para formatos PDF, HTML, PNG ou JPEG. |
 | **Markdown Mermaid** | `bierner.markdown-mermaid` | `1.32.1` | Renderiza diagramas de fluxo, arquitetura e sequência escritos em sintaxe Mermaid no Markdown. |
 | **GitHub Markdown Preview** | `bierner.github-markdown-preview` | `0.4.0` | Ajusta o visualizador de Markdown para reproduzir a renderização exata do site do GitHub. |
@@ -212,7 +212,7 @@
 | 31 | **Markdown PDF** | `yzane.markdown-pdf` | `2.2.0` | Converte e exporta documentos Markdown para formatos PDF, HTML, PNG ou JPEG. |
 | 32 | **Markdown Preview GitHub Styles** | `bierner.markdown-preview-github-styles` | `2.2.0` | Adiciona o tema visual oficial do GitHub (modo claro e escuro) à pré-visualização de Markdown. |
 | 33 | **Markdown YAML Preamble** | `bierner.markdown-yaml-preamble` | `0.1.1` | Renderiza metadados YAML (frontmatter) no topo de arquivos Markdown de forma elegante. |
-| 34 | **markdownlint** | `davidanson.vscode-markdownlint` | `0.62.1` | Analisador estático (linter) para manter padrões, consistência e boas práticas em arquivos Markdown. |
+| 34 | **markdownlint** | `davidanson.vscode-markdownlint` | `0.63.0` | Analisador estático (linter) para manter padrões, consistência e boas práticas em arquivos Markdown. |
 | 35 | **Maven for Java** | `vscjava.vscode-maven` | `0.46.0` | Gerenciador do ciclo de vida e execução de comandos/plugins em projetos baseados no Apache Maven. |
 | 36 | **Node.js Code Snippets** | `abdoseadaa.node-js-snippet` | `1.1.3` | Snippets e atalhos rápidos para APIs nativas e métodos comuns do ecossistema Node.js. |
 | 37 | **Nodemon Problem Matcher** | `trilean.vscode-nodemon-problem-matcher` | `0.0.1` | Captura saídas de erro do Nodemon e as integra à aba de problemas nativa do VS Code. |
@@ -235,7 +235,7 @@
 | 54 | **Rocketseat ReactJS** | `rocketseat.rocketseatreactjs` | `3.0.2` | Snippets aceleradores para criação de componentes, hooks e interfaces funcionais em React. |
 | 55 | **SQL Server (mssql)** | `ms-mssql.mssql` | `1.48.0` | Conexão, autocompletar e execução de consultas T-SQL para Microsoft SQL Server. |
 | 56 | **Tailwind CSS IntelliSense** | `bradlc.vscode-tailwindcss` | `0.16.0` | Autocompletar inteligente de classes utilitárias, prévia de cores e linting para Tailwind CSS. |
-| 57 | **Thunder Client** | `rangav.vscode-thunder-client` | `3.2.6` | Cliente HTTP/REST leve integrado para testar, debugar e documentar requisições a APIs (alternativa ao Postman). |
+| 57 | **Thunder Client** | `rangav.vscode-thunder-client` | `3.2.7` | Cliente HTTP/REST leve integrado para testar, debugar e documentar requisições a APIs (alternativa ao Postman). |
 | 58 | **tldraw** | `tldraw-org.tldraw-vscode` | `2.407.0` | Quadro branco colaborativo (whiteboard) integrado no VS Code para esboçar diagramas e notas visuais. |
 | 59 | **TODO Highlight** | `wayou.vscode-todo-highlight` | `1.0.5` | Destaca visualmente comentários como `TODO:`, `FIXME:` e tags de tarefas pendentes no código. |
 | 60 | **Turbo Console Log** | `chakrounanas.turbo-console-log` | `3.30.1` | Insere linhas de `console.log` com mensagens detalhadas e nome da variável através de um atalho de teclado. |

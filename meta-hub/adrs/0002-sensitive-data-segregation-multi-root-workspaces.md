@@ -44,14 +44,14 @@ Decidimos adotar a **Segregação Física Total de Segredos e Governança Local*
 
 ### Consequências Positivas (Ganhos):
 
-* **Proteção Robusta Contra Vazamentos no GitHub:** Mesmo operando com repositórios públicos, os dados confidenciais estão fisicamente segregados em outro disco (`H:` / `I:`), protegidos pela arquitetura.
+* **Proteção Robusta Contra Vazamentos no GitHub:** Mesmo operando com repositórios públicos, os dados confidenciais estão fisicamente segregados em volumes dedicados fora da árvore do repositório (`<secure-vault>` e `<governance-cloud>`), protegidos pela arquitetura.
 * **Conformidade Estrita com LGPD e Sigilo Fiscal:** Certificados A1 de clientes ficam restritos a ambientes com controle de acesso corporativo e criptografia de nuvem.
 * **Backup e Versionamento Automáticos em Nuvem:** Cada alteração em prompts, análises ou configurações locais é sincronizada em tempo real com o Google Drive, sobrevivendo a qualquer falha física da estação de trabalho.
 * **Experiência Unificada de Desenvolvimento:** O editor exibe o código do projeto e a pasta de clientes no mesmo painel lateral, permitindo testes locais ágeis via variáveis de ambiente da sessão.
 
 ### Consequências Negativas (Custos / Trade-offs):
 
-* **Dependência do Google Drive para Desktop:** A máquina de desenvolvimento requer o aplicativo do Google Drive ativo para montar as unidades virtuais (`H:` e `I:`).
+* **Dependência do Google Drive para Desktop:** A máquina de desenvolvimento requer o aplicativo do Google Drive ativo para sincronizar e montar as unidades virtuais em nuvem (`<secure-vault>` e `<governance-cloud>`).
 * **Disciplina de Nomenclatura:** Exige manter o padrão de mapeamento nos arquivos de workspace compartilhados.
 
 ### Controles Adotados & Riscos Residuais:

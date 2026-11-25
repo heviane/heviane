@@ -4,7 +4,7 @@
 ![Markdown Lint](https://img.shields.io/badge/markdownlint-passing-brightgreen?style=flat&logo=markdown)
 ![Links Lychee](https://img.shields.io/badge/links-verified-brightgreen?style=flat&logo=link)
 ![Gitleaks Clean](https://img.shields.io/badge/gitleaks-clean-brightgreen?style=flat&logo=shield)
-![Pester Tests](https://img.shields.io/badge/pester-15%20passed-brightgreen?style=flat&logo=powershell)
+![Pester Tests](https://img.shields.io/badge/pester-22%20passed-brightgreen?style=flat&logo=powershell)
 ![Dependabot](https://img.shields.io/badge/dependabot-active-brightgreen?style=flat&logo=dependabot)
 
 > **Central de Governança Ágil, Docs-as-Code e Coordenação de Portfólio**  
@@ -34,7 +34,7 @@ Painel executivo de conformidade contínua dos artefatos e automações do ecoss
 | **Padronização Markdown** | `markdownlint-cli2` (sem erros em arquivos `.md`) | Push / PR / Semanal | `🟢 100% Conforme` |
 | **Integridade de Links** | `Lychee Link Checker` (links internos e externos) | Push / PR / Semanal | `🟢 Verificado` |
 | **Scanner de Segredos** | `Gitleaks Scanner` (detecção de chaves/tokens) | Push / PR / Semanal | `🟢 Zero Leaks` |
-| **Automações PowerShell** | Testes Pester 3.4+ ([`meta-hub/tests`](./tests/README.md)) | Push / PR / Local | `🟢 15/15 Aprovados` |
+| **Automações PowerShell** | Testes Pester 3.4+ ([`meta-hub/tests`](./tests/README.md)) | Push / PR / Local | `🟢 22/22 Aprovados` |
 | **Backlog & Roadmap** | Sincronização Docs-as-Code vs. GitHub Project 14 | Contínuo / HITL | `🟢 Sincronizado` |
 | **Decisões Arquiteturais** | Rastreabilidade Formal de ADRs (001, 002 e 003) | Contínuo | `🟢 3 ADRs Vigentes` |
 | **Catálogo de Repositórios** | Inventário & Matriz de Maturidade (SDD) dos 24 repositórios | Auditoria Periódica | `🟢 24 Repositórios Auditados` |
@@ -124,9 +124,9 @@ flowchart LR
 | :------------------------------------------------------ | :-------------------------------------------------------------------- | :------------------------- |
 | **[`backlog.md`](./backlog.md)**                        | Backlog mestre de ideação e governança de tarefas (Docs-as-Code).     | `Ativo`                    |
 | **[`repository-catalog.md`](./repository-catalog.md)**  | Catálogo unificado e matriz de maturidade dos 24 repositórios públicos. | `Ativo (24 repos)`         |
-| **[`vscode-extensions.md`](./vscode-extensions.md)**    | Inventário padronizado das extensões do ambiente de desenvolvimento.  | `Auditado (76 extensões)`  |
+| **[`vscode-extensions.md`](./vscode-extensions.md)**    | Inventário padronizado das extensões do ambiente de desenvolvimento.  | `Auditado (67 extensões)`  |
 | **[`agents-catalog.md`](./agents-catalog.md)**          | Catálogo canônico e matriz de paridade de contratos de IA (`AGENTS.md`). | `Ativo (9 contratos)`      |
-| **[ADRs (`adrs/`)](./adrs/)**                           | Registros formais de decisões de arquitetura e metodologias adotadas. | `Ativo (ADR-0001, ADR-0002, ADR-0003)` |
+| **[ADRs (`adrs/`)](./adrs/README.md)**                  | Registros formais de decisões de arquitetura e metodologias adotadas. | `Ativo (ADR-0001, ADR-0002, ADR-0003)` |
 | **[`maintenance-guide.md`](./maintenance-guide.md)**    | Guia de convenções de manutenção, commits semânticos e quality gates. | `Ativo`                    |
 | **[Scripts (`scripts/`)](./scripts/)**                  | Automações de auditoria (`audit-workspace.ps1`) e sincronização (`sync-extensions.ps1`). | `Ativo` |
 | **[CI/CD Workflow (`.github/`)](../.github/workflows/)** | Pipeline de validação Markdown, links e sintaxe de scripts em CI.    | `Ativo (Docs CI)`          |
