@@ -1,7 +1,7 @@
 # 🛠️ Guia de Convenções de Manutenção e Governança
 
 > **Manual Operacional e Diretrizes de Engenharia para o Ecossistema Multi-Repositórios (Docs-as-Code)**  
-> **Central de Governança:** [Meta-Hub (`meta-hub`)](./README.md) | **Última Revisão:** 22/11/2026  
+> **Central de Governança:** [Meta-Hub (`meta-hub`)](./README.md) | **Última Revisão:** 25/11/2026  
 
 ---
 
@@ -13,7 +13,7 @@
 - [4. Revisão e Conciliação do Catálogo de Repositórios](#4-revisão-e-conciliação-do-catálogo-de-repositórios)
 - [5. Atualização do Inventário de Extensões do VS Code](#5-atualização-do-inventário-de-extensões-do-vs-code)
 - [6. Política de Obsolescência e Arquivamento de Repositórios](#6-política-de-obsolescência-e-arquivamento-de-repositórios)
-- [7. Quality Gates Locais Pré-Commit (Checklist de Homologação)](#7-quality-gates-locais-pré-commit-checklist-de-homologação)
+- [7. Quality Gates Locais & Checklist Pós-Implementação (DoD)](#7-quality-gates-locais--checklist-pós-implementação-dod)
 
 ---
 
@@ -153,19 +153,33 @@ Para manter a vitrine técnica relevante e sem código legado fantasma:
 
 ---
 
-## 7. Quality Gates Locais Pré-Commit (Checklist de Homologação)
+## 7. Quality Gates Locais & Checklist Pós-Implementação (DoD)
 
-Antes de realizar `git push origin main`, execute a validação local integrada:
+Antes de considerar qualquer entrega finalizada ou realizar `git push origin main`, execute o **Protocolo Compulsório de 4 Fases** formalizado em [`docs/post-implementation-checklist.md`](https://github.com/heviane/project-starter-kit/blob/main/docs/post-implementation-checklist.md) no repositório de templates:
+
+```mermaid
+flowchart LR
+    F1["Fase 1: Quality Gates<br/>(Pester, Linters & Build)"] --> F2["Fase 2: Docs Vivas<br/>(Backlog, Glossário, Playbook)"]
+    F2 --> F3["Fase 3: Cloud Sync<br/>(Project 14 & PR Audit)"]
+    F3 --> F4["Fase 4: Git Delivery<br/>(Conventional Commits & Co-Autoria)"]
+```
+
+### 7.1. Validação Local Pré-Commit no Meta-Hub
+
+No repositório central (`heviane/heviane`), os quality gates automatizados são executados no PowerShell:
 
 ```powershell
 # 1. Validação de formatação Markdown
 npx --yes markdownlint-cli2 "**/*.md"
 
-# 2. Execução da suíte completa de testes Pester
-Invoke-Pester -Path "meta-hub/tests"
+# 2. Execução da suíte completa de testes Pester (22 cenários verdes)
+Invoke-Pester -Path "meta-hub/tests/scripts.Tests.ps1"
 
 # 3. Auditoria estrutural do workspace multi-repositórios
-.\meta-hub\scripts\audit-workspace.ps1 -StrictGovernance
+powershell -ExecutionPolicy Bypass -File .\meta-hub\scripts\audit-workspace.ps1 -StrictGovernance
+
+# 4. Sincronização contínua com o GitHub Project 14
+powershell -ExecutionPolicy Bypass -File .\meta-hub\scripts\sync-project-backlog.ps1 -SyncStatus -SyncPriority
 ```
 
-Se todos os checks passarem sem avisos (`0 issues`, `15 passed`), o código está apto para submissão e o pipeline do GitHub Actions passará em verde.
+Se todos os checks passarem sem avisos (`0 issues`, `22 passed`, `0 divergências`), o incremento satisfaz a *Definition of Done (DoD)* do ecossistema e o pipeline do GitHub Actions passará 100% verde.

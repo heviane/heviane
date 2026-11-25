@@ -50,6 +50,7 @@ Ele segue os princípios de **Docs-as-Code**, **Flight Levels (Coordenação de 
 | 🟢 | `GOV-10` | `P1` | **Engenharia de Testes Pester & Validação AST (`meta-hub/tests`)** | Formalização da arquitetura da suíte com 15 testes em 6 contextos, padrão de compatibilidade universal Pester 3/5 e isolamento em sandbox temporário ([`meta-hub/tests/README.md`](./tests/README.md)). |
 | 🟢 | `GOV-11` | `P1` | **Catálogo Canônico de Contratos de IA (`agents-catalog.md`)** | Criação do inventário centralizado de todos os `AGENTS.md` do ecossistema, com taxonomia em 4 níveis, descrição de escopos, especificidades de domínio e matriz de paridade das 15 Regras de Ouro. |
 | 🟢 | `GOV-12` | `P1` | **Post-Implementation Checklist & Protocolo de Conclusão de Tarefas (DoD)** | Formalização do protocolo compulsório pós-implementação em 4 fases (Quality Gates, Documentação Viva, Governança em Nuvem e Entrega Git/Rastreabilidade) como Definition of Done do Agente no starter kit e contratos de IA. |
+| ⚪ | `GOV-13` | `P1` | **Auditoria Diagnóstica de Maturidade dos Repositórios Legados (Scorecard DoD)** | Aplicação da régua de maturidade em 4 níveis (formalizada em `docs/post-implementation-checklist.md`) nos 24 repositórios públicos pré-starter kit para mapeamento de gaps de governança, testes, CI e contratos de IA. |
 
 ---
 
