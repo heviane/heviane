@@ -75,6 +75,7 @@ Checklist operacional consolidado de todos os 9 contratos vigentes no ecossistem
   - Exigir que qualquer comando `git` seja restrito cirurgicamente ao subdiretório do repositório alvo (`git -C <repo>`).
   - Proibir absolutamente a criação de commits ou pushes a partir da raiz agregadora do workspace.
   - Blindagem de segredos locais (`.env*`, certificados `.pfx`/`.p12`).
+  - **Rastreabilidade & Governança Global:** Co-autoria compulsória de IA (`Co-authored-by`), nomenclatura de arquivos em inglês (`kebab-case`) e diretrizes de integridade técnica (*Anti-Test Tampering*, *Anti-Doc Rot*, *Zero Zombie Code*).
 
 #### 2. Guardião do Cofre em Nuvem (`<cloud-vault>/AGENTS.md`)
 
@@ -152,6 +153,7 @@ Checklist operacional consolidado de todos os 9 contratos vigentes no ecossistem
   - **Segurança Criptográfica:** Uso de mTLS com certificados A1 (`.pfx`) manipulados exclusivamente em memória segura, nunca gravados em disco nem expostos em logs.
   - **Anti-Corruption Layer (ACL):** Camada de adaptação para consumo por ERPs legados e GeneXus via SOAP sem necessidade de certificados locais nos clientes.
   - **Testes Determinísticos:** Mocks offline para validações fiscais sem disparar requisições contra ambientes de produção da Receita Federal.
+  - **Harmonização de IA & Integridade:** Co-autoria de IA (`Co-authored-by`), nomenclatura canônica em inglês, auditoria contínua de PRs, *Anti-Test Tampering*, *Anti-Doc Rot* e *Zero Zombie Code*.
 
 #### 7. Boilerplate Corporativo Web Institucional (`institutional-website-template/AGENTS.md`)
 
@@ -164,6 +166,7 @@ Checklist operacional consolidado de todos os 9 contratos vigentes no ecossistem
   - **Acessibilidade & Inclusão:** Conformidade obrigatória com padrões WCAG 2.1 nível AA e semântica HTML5 estrita.
   - **LGPD by Design:** Gestão modular de consentimento de cookies e políticas de privacidade integradas.
   - **Zero Regressão Visual:** Validações de layout responsivo (Mobile First) e tipagem TypeScript sem uso de `any`.
+  - **Harmonização de IA & Integridade:** Co-autoria compulsória de IA (`Co-authored-by`), nomenclatura canônica em inglês (`kebab-case`), *Anti-Test Tampering*, *Anti-Doc Rot* e *Zero Zombie Code*.
 
 ---
 
@@ -179,6 +182,7 @@ Checklist operacional consolidado de todos os 9 contratos vigentes no ecossistem
   - **Análise Estática Rigorosa:** Todos os scripts `.sh` devem passar com zero warnings no ShellCheck (`shellcheck -x`).
   - **Portabilidade POSIX / Bash:** Verificação explícita de compatibilidade entre distribuições Linux e ambientes WSL.
   - **Testes Unitários de CLI:** Cobertura de cenários de sucesso, modo silencioso, tratamento de erros e códigos de saída via BATS.
+  - **Harmonização de IA & Integridade:** Co-autoria de IA (`Co-authored-by`), auditoria de PRs (`gh pr list`), *Anti-Test Tampering*, *Anti-Doc Rot* e *Zero Zombie Code*.
 
 #### 9. Laboratório de IA Generativa & SDD (`heviane-learning/natty-or-not-lab/AGENTS.md`)
 
@@ -190,6 +194,7 @@ Checklist operacional consolidado de todos os 9 contratos vigentes no ecossistem
   - **SDD para IA:** Ciclo formal onde cada prompt é precedido por uma especificação técnica (`specs/`) com Critérios de Aceite objetivos.
   - **Rastreabilidade de Interações:** Registro versionado de prompts calibrados, parâmetros de temperatura/top-p e saídas brutas para comparação de modelos.
   - **Ética & Transparência:** Rotulagem explícita de todo conteúdo sintético gerado por IA conforme boas práticas de IA responsável.
+  - **Harmonização de IA & Integridade:** Co-autoria de IA (`Co-authored-by`), nomenclatura em inglês (`kebab-case`), auditoria de PRs, *Anti-Doc Rot* e *Zero Zombie Code*.
 
 ---
 
@@ -215,9 +220,24 @@ Esta matriz cruza cada contrato com as **15 Regras de Ouro Universais** consolid
 | **R14: Graph Interconnection** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **R15: Marcadores Canônicos** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
+### 🛠️ Matriz de Diretrizes Complementares de Engenharia de IA
+
+Além das 15 Regras de Ouro, o ecossistema consolida diretrizes de excelência operacional propagadas entre todos os contratos:
+
+| Diretriz Complementar | Host Global | Cloud Vault | Meta-Hub | Starter Kit | Template Base | NFS-e API | Website Template | Shell Lab | Natty Lab |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Co-Autoria de IA (`Co-authored-by`)** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Nomenclatura Canônica em Inglês (`kebab-case`)** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Integridade de Testes (*Anti-Test Tampering*)** | ✅ | N/A | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | N/A |
+| **Prevenção de Deterioração Documental (*Anti-Doc Rot*)** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Eliminação de Código Zumbi (*Zero Zombie Code*)** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Auditoria Ativa de Pull Requests (`gh pr list`)** | N/A | N/A | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Isolamento de Produção (Mocks / Homologação)** | N/A | N/A | N/A | ✅ | ✅ | ✅ | ✅ | N/A | N/A |
+
 ### Legenda da Matriz:
 
 - ✅ **Conformidade Total (100% dos Contratos Alinhados):** Regra explicitamente formalizada, versionada e auditada no contrato. Todos os 9 contratos vigentes possuem paridade contratual integral.
+- **N/A (Não Aplicável):** Escopo específico do repositório (ex.: sem código executável ou sem PRs externos).
 
 ---
 
