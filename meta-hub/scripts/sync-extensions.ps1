@@ -47,8 +47,7 @@ if ([string]::IsNullOrWhiteSpace($DocPath)) {
 
 $resolvedDocPath = Resolve-Path $DocPath -ErrorAction SilentlyContinue
 if (-not $resolvedDocPath) {
-    Write-Error "Arquivo de documentação '$DocPath' não foi encontrado."
-    exit 1
+    throw "Arquivo de documentação '$DocPath' não foi encontrado."
 }
 $docFullPath = $resolvedDocPath.Path
 
@@ -56,8 +55,7 @@ Write-Host "⏳ Consultando extensões instaladas no VS Code (code --list-extens
 $codeOutput = & code --list-extensions --show-versions 2>$null
 
 if (-not $codeOutput) {
-    Write-Error "Não foi possível executar 'code --list-extensions --show-versions'. Verifique se o executável 'code' está no PATH."
-    exit 1
+    throw "Não foi possível executar 'code --list-extensions --show-versions'. Verifique se o executável 'code' está no PATH."
 }
 
 # 1. Parse das extensões instaladas

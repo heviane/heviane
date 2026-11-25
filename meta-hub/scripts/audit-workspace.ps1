@@ -2,19 +2,19 @@
 .SYNOPSIS
     Script de Auditoria de Conformidade e Saúde do Workspace (Docs-as-Code).
 .DESCRIPTION
-    Varre os repositórios sob E:\Projects\GitHub para auditar:
+    Varre os repositórios sob o diretório raiz do workspace para auditar:
     - Estado do Git (árvore limpa, commits não enviados ou desatualizados em relação ao remoto)
     - Conformidade de Governança (AGENTS.md, README.md, .gitignore)
     - Verificação de Segurança (detecção de arquivos sensíveis como .env.*, .pem, .pfx, chaves)
     - Geração opcional de relatório executivo em Markdown para histórico de governança
 .PARAMETER BasePath
-    Caminho raiz do metadiretório. Padrão: E:\Projects\GitHub
+    Caminho raiz do metadiretório. Padrão: descoberto dinamicamente a partir de $env:WORKSPACE_ROOT ou do diretório pai que contém 'github.code-workspace'.
 .PARAMETER Detailed
     Exibe a tabela detalhada de todos os repositórios no console, mesmo os limpos.
 .PARAMETER ExportReport
     Exporta o relatório consolidado em formato Markdown com timestamp.
 .PARAMETER ReportPath
-    Diretório de destino do relatório em Markdown. Padrão: H:\My Drive\Workspace Root Local\Governança Local & Prompts\auditorias
+    Diretório de destino do relatório em Markdown. Padrão: descoberto dinamicamente a partir de $env:GOVERNANCE_CLOUD_ROOT/auditorias ou ./reports/auditorias.
 .PARAMETER Fetch
     Executa git fetch silencioso em cada repositório antes de inspecionar status para sincronização real de ahead/behind.
 .PARAMETER StrictGovernance
@@ -44,13 +44,45 @@
 
 [CmdletBinding()]
 param (
-    [string]$BasePath = "E:\Projects\GitHub",
+    [string]$BasePath = "",
     [switch]$Detailed,
     [switch]$ExportReport,
-    [string]$ReportPath = "H:\My Drive\Workspace Root Local\Governança Local & Prompts\auditorias",
+    [string]$ReportPath = "",
     [switch]$Fetch,
     [switch]$StrictGovernance
 )
+
+# Resolução dinâmica de caminhos caso não fornecidos explicitamente
+if ([string]::IsNullOrWhiteSpace($BasePath)) {
+    if ($env:WORKSPACE_ROOT -and (Test-Path $env:WORKSPACE_ROOT)) {
+        $BasePath = $env:WORKSPACE_ROOT
+    } else {
+        $candidate = (Resolve-Path $PSScriptRoot).Path
+        $foundRoot = $null
+        while ($candidate) {
+            if (Test-Path (Join-Path $candidate "github.code-workspace")) {
+                $foundRoot = $candidate
+                break
+            }
+            $parent = Split-Path $candidate -Parent
+            if ($parent -eq $candidate) { break }
+            $candidate = $parent
+        }
+        if ($foundRoot) {
+            $BasePath = $foundRoot
+        } else {
+            $BasePath = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
+        }
+    }
+}
+
+if ([string]::IsNullOrWhiteSpace($ReportPath)) {
+    if ($env:GOVERNANCE_CLOUD_ROOT -and (Test-Path $env:GOVERNANCE_CLOUD_ROOT)) {
+        $ReportPath = Join-Path $env:GOVERNANCE_CLOUD_ROOT "auditorias"
+    } else {
+        $ReportPath = Join-Path $BasePath "reports\auditorias"
+    }
+}
 
 Write-Host "=================================================================" -ForegroundColor Cyan
 Write-Host " 🔍 AUDITORIA DO WORKSPACE MULTI-REPOSITÓRIOS ($BasePath)" -ForegroundColor Cyan
@@ -58,8 +90,7 @@ Write-Host "=================================================================" -
 Write-Host ""
 
 if (-not (Test-Path $BasePath)) {
-    Write-Error "Caminho base '$BasePath' não encontrado."
-    exit 1
+    throw "Caminho base '$BasePath' não encontrado."
 }
 
 if ($Fetch) {
@@ -93,6 +124,9 @@ foreach ($gitEntry in $gitEntries) {
     # Sincronização remota opcional
     if ($Fetch) {
         git -C $repoPath fetch --prune --quiet 2>$null
+        if ($LASTEXITCODE -ne 0) {
+            Write-Warning "Falha ao executar 'git fetch' no repositório '$relPath'. Verifique a conectividade com o remoto."
+        }
     }
 
     # 1. Checagem do Git (usando status com branch)

@@ -125,6 +125,13 @@ foreach ($line in $backlogLines) {
     }
 }
 
+# Verificação de integridade: detecção de IDs duplicados no Markdown
+$idGroups = $parsedItems | Group-Object -Property ID | Where-Object { $_.Count -gt 1 }
+if ($idGroups) {
+    $dupSummary = ($idGroups | ForEach-Object { "$($_.Name) ($($_.Count)x)" }) -join ", "
+    throw "IDs duplicados detectados no backlog Markdown: $dupSummary. Cada item deve possuir um ID único para garantir a integridade da sincronização."
+}
+
 Write-Host "  ✓ Encontrados $($parsedItems.Count) itens no backlog Markdown." -ForegroundColor Cyan
 
 # 2. Obter Metadados e Itens do GitHub Project 14
@@ -158,6 +165,9 @@ try {
 
     $itemsJson = gh project item-list $ProjectNumber --owner $Owner --limit 300 --format json | ConvertFrom-Json
     $existingItems = $itemsJson.items
+    if ($existingItems.Count -ge 300) {
+        Write-Warning "⚠️ O número de itens retornados atingiu o limite de 300 cards (--limit 300). Considere aumentar o limite na query ou paginar os resultados para prevenir falsos negativos."
+    }
     Write-Host "  ✓ Projeto localizado: '$($targetProject.title)' (ID: $projectId)" -ForegroundColor Cyan
     Write-Host "  ✓ $($existingItems.Count) cards/itens encontrados no GitHub Project." -ForegroundColor Cyan
 } catch {
@@ -262,6 +272,10 @@ if (-not $needsAction) {
 
 Write-Host "`n🚀 Executando ações de sincronização solicitadas..." -ForegroundColor Green
 
+$mutationsAttempted = 0
+$mutationsSucceeded = 0
+$mutationsFailed = 0
+
 # 5.1. Criar Itens Ausentes
 if ($CreateMissing) {
     $missingItems = $auditResults | Where-Object { -not $_.ExistsInProject }
@@ -270,28 +284,43 @@ if ($CreateMissing) {
         $newTitle = "[$($p.ID)] $($p.Title)"
         $newBody = "### 📌 Item do Backlog ($($p.ID))`n`n$($p.Description)`n`n*Origem: Docs-as-Code (`meta-hub/backlog.md`)*"
 
-        Write-Host "  ➕ Criando Draft Issue: $newTitle..." -ForegroundColor Yellow
-        try {
-            $createdJson = gh project item-create $ProjectNumber --owner $Owner --title $newTitle --body $newBody --format json | ConvertFrom-Json
-            $newCardId = $createdJson.id
+        if ($PSCmdlet.ShouldProcess($newTitle, "Criar Draft Issue no GitHub Project $ProjectNumber")) {
+            $mutationsAttempted++
+            Write-Host "  ➕ Criando Draft Issue: $newTitle..." -ForegroundColor Yellow
+            try {
+                $createdRaw = gh project item-create $ProjectNumber --owner $Owner --title $newTitle --body $newBody --format json 2>&1
+                if ($LASTEXITCODE -ne 0) {
+                    throw "Falha na criação do card (exit code $LASTEXITCODE): $createdRaw"
+                }
+                $createdJson = $createdRaw | ConvertFrom-Json
+                $newCardId = $createdJson.id
 
-            # Ajustar Status inicial
-            $statusKey = $p.TargetStatus.ToLower()
-            if ($statusField -and $statusOptions.ContainsKey($statusKey)) {
-                $optId = $statusOptions[$statusKey]
-                gh project item-edit --id $newCardId --project-id $projectId --field-id $statusField.id --single-select-option-id $optId | Out-Null
+                # Ajustar Status inicial
+                $statusKey = $p.TargetStatus.ToLower()
+                if ($statusField -and $statusOptions.ContainsKey($statusKey)) {
+                    $optId = $statusOptions[$statusKey]
+                    $editStatusRaw = gh project item-edit --id $newCardId --project-id $projectId --field-id $statusField.id --single-select-option-id $optId 2>&1
+                    if ($LASTEXITCODE -ne 0) {
+                        throw "Falha ao definir status inicial (exit code $LASTEXITCODE): $editStatusRaw"
+                    }
+                }
+
+                # Ajustar Prioridade inicial
+                $prioKey = $p.TargetPriority.ToLower()
+                if ($priorityField -and $priorityOptions.ContainsKey($prioKey)) {
+                    $optId = $priorityOptions[$prioKey]
+                    $editPrioRaw = gh project item-edit --id $newCardId --project-id $projectId --field-id $priorityField.id --single-select-option-id $optId 2>&1
+                    if ($LASTEXITCODE -ne 0) {
+                        throw "Falha ao definir prioridade inicial (exit code $LASTEXITCODE): $editPrioRaw"
+                    }
+                }
+
+                $mutationsSucceeded++
+                Write-Host "     ✓ Item criado e configurado com sucesso (ID: $newCardId)." -ForegroundColor Cyan
+            } catch {
+                $mutationsFailed++
+                Write-Warning "     ❌ Falha ao criar item $($newTitle): $_"
             }
-
-            # Ajustar Prioridade inicial
-            $prioKey = $p.TargetPriority.ToLower()
-            if ($priorityField -and $priorityOptions.ContainsKey($prioKey)) {
-                $optId = $priorityOptions[$prioKey]
-                gh project item-edit --id $newCardId --project-id $projectId --field-id $priorityField.id --single-select-option-id $optId | Out-Null
-            }
-
-            Write-Host "     ✓ Item criado e configurado com sucesso (ID: $newCardId)." -ForegroundColor Cyan
-        } catch {
-            Write-Warning "     ❌ Falha ao criar item $($newTitle): $_"
         }
     }
 }
@@ -304,12 +333,23 @@ if ($SyncStatus) {
         $statusKey = $p.TargetStatus.ToLower()
         if ($statusField -and $statusOptions.ContainsKey($statusKey)) {
             $optId = $statusOptions[$statusKey]
-            Write-Host "  🔄 Atualizando Status de [$($p.ID)]: '$($d.ProjectStatus)' -> '$($p.TargetStatus)'..." -ForegroundColor Yellow
-            try {
-                gh project item-edit --id $d.CardId --project-id $projectId --field-id $statusField.id --single-select-option-id $optId | Out-Null
-                Write-Host "     ✓ Status atualizado com sucesso." -ForegroundColor Cyan
-            } catch {
-                Write-Warning "     ❌ Falha ao atualizar status de [$($p.ID)]: $_"
+            $targetDesc = "[$($p.ID)] ($($d.CardTitle))"
+            $actionDesc = "Atualizar Status de '$($d.ProjectStatus)' para '$($p.TargetStatus)'"
+
+            if ($PSCmdlet.ShouldProcess($targetDesc, $actionDesc)) {
+                $mutationsAttempted++
+                Write-Host "  🔄 Atualizando Status de [$($p.ID)]: '$($d.ProjectStatus)' -> '$($p.TargetStatus)'..." -ForegroundColor Yellow
+                try {
+                    $editRaw = gh project item-edit --id $d.CardId --project-id $projectId --field-id $statusField.id --single-select-option-id $optId 2>&1
+                    if ($LASTEXITCODE -ne 0) {
+                        throw "Falha ao atualizar status (exit code $LASTEXITCODE): $editRaw"
+                    }
+                    $mutationsSucceeded++
+                    Write-Host "     ✓ Status atualizado com sucesso." -ForegroundColor Cyan
+                } catch {
+                    $mutationsFailed++
+                    Write-Warning "     ❌ Falha ao atualizar status de [$($p.ID)]: $_"
+                }
             }
         }
     }
@@ -323,15 +363,40 @@ if ($SyncPriority) {
         $prioKey = $p.TargetPriority.ToLower()
         if ($priorityField -and $priorityOptions.ContainsKey($prioKey)) {
             $optId = $priorityOptions[$prioKey]
-            Write-Host "  🔄 Atualizando Prioridade de [$($p.ID)]: '$($d.ProjectPrio)' -> '$($p.TargetPriority)'..." -ForegroundColor Yellow
-            try {
-                gh project item-edit --id $d.CardId --project-id $projectId --field-id $priorityField.id --single-select-option-id $optId | Out-Null
-                Write-Host "     ✓ Prioridade atualizada com sucesso." -ForegroundColor Cyan
-            } catch {
-                Write-Warning "     ❌ Falha ao atualizar prioridade de [$($p.ID)]: $_"
+            $targetDesc = "[$($p.ID)] ($($d.CardTitle))"
+            $actionDesc = "Atualizar Prioridade de '$($d.ProjectPrio)' para '$($p.TargetPriority)'"
+
+            if ($PSCmdlet.ShouldProcess($targetDesc, $actionDesc)) {
+                $mutationsAttempted++
+                Write-Host "  🔄 Atualizando Prioridade de [$($p.ID)]: '$($d.ProjectPrio)' -> '$($p.TargetPriority)'..." -ForegroundColor Yellow
+                try {
+                    $editRaw = gh project item-edit --id $d.CardId --project-id $projectId --field-id $priorityField.id --single-select-option-id $optId 2>&1
+                    if ($LASTEXITCODE -ne 0) {
+                        throw "Falha ao atualizar prioridade (exit code $LASTEXITCODE): $editRaw"
+                    }
+                    $mutationsSucceeded++
+                    Write-Host "     ✓ Prioridade atualizada com sucesso." -ForegroundColor Cyan
+                } catch {
+                    $mutationsFailed++
+                    Write-Warning "     ❌ Falha ao atualizar prioridade de [$($p.ID)]: $_"
+                }
             }
         }
     }
+}
+
+Write-Host "`n📊 RESUMO DAS MUTAÇÕES:" -ForegroundColor White
+Write-Host " - Mutações solicitadas : $mutationsAttempted"
+Write-Host " - Mutações com sucesso : $mutationsSucceeded"
+Write-Host " - Mutações com falha   : $mutationsFailed"
+
+if ($WhatIfPreference) {
+    Write-Host "`nℹ️ Simulação (-WhatIf) concluída: Nenhuma alteração foi persistida no GitHub Project." -ForegroundColor Cyan
+    return
+}
+
+if ($mutationsFailed -gt 0) {
+    throw "A sincronização foi finalizada com $mutationsFailed falha(s) em mutações. Verifique os logs e tente novamente."
 }
 
 Write-Host "`n✅ Operação de sincronização concluída com sucesso!" -ForegroundColor Green
